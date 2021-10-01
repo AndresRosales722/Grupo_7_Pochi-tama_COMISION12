@@ -1,6 +1,11 @@
 # ¡Bienvenidos a nuestro repositorio!
 
 
+![Pochita](https://user-images.githubusercontent.com/90283512/135689756-e06d6b79-2a21-48ec-a1e2-6704ad257a51.png)
+
+
+------------
+
 
 ### **Nuestro sitio:**
 nuestro sitio web e-commerce está destinado para todas las edades, para aquellos apasionados del anime, series, peliculas, comics, mangas y más! Podrán comprar sus productos favoritos en un lugar fácil, rápido y confiable.
