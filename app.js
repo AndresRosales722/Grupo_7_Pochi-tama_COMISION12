@@ -4,7 +4,7 @@ const PORT = 3000;                  //DEFINIMOS EL PUERTO
 let path = require('path')          //USAMOS EL METODO PATH
 
 
-app.use(express.static("public"))   //PARA LOS ARCHIVOS DE CSS E IMAGENES
+app.use(express.static("public"))   //PARA LOS ARCHIVOS DE CSS E IMAGENES.
 
 
 //RUTAS
