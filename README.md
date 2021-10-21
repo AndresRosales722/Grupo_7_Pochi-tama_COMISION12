@@ -36,7 +36,6 @@ Somos un grupo de 5 personas organizadas, a fin de realizar lo que mas nos gusta
 ------------
 
 
-
 ##### Inspiraciones:
 - > https://www.deepsidecyt.com/
 - > https://www.instagram.com/seppukudead/
@@ -44,3 +43,6 @@ Somos un grupo de 5 personas organizadas, a fin de realizar lo que mas nos gusta
 - > https://www.instagram.com/shinigamikvit/
 - > https://www.kurogami.com/es/tienda
 
+------------
+
+*Tablero de trabajo*: https://trello.com/b/ZQe9gpvY/proyecto-integrador
