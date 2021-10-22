@@ -1,0 +1,30 @@
+body .header .container{
+    background-color: var(--orange);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+body .header .container .lis .search-bar input{
+    display: none;
+}
+
+body .header .container .lis{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;    
+    flex-grow: 0.7;
+
+}
+
+body .header .container .lis button{
+    height: 20px;
+    background-color:var(--orange);
+    border-style: none;
+    font-size: 20px;
+}
+
+body .header .container .lis .logo a img{
+    width: 100px;
+    margin-top:5px;
+}
