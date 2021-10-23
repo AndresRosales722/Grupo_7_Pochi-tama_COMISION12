@@ -1,0 +1,19 @@
+body .separacion{
+    background-color: salmon;
+    height: 500px;
+}
+
+body footer{
+    background-color: var(--purple);
+}
+
+body footer .container-footer{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body footer .container-footer .container-row{
+    display: flex;
+    
+}
