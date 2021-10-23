@@ -5,7 +5,6 @@ body header .container{
     align-items: center;
 }
 
-
 body header .container .search-bar{
     display: none;
 }
@@ -25,15 +24,11 @@ body header .container .logo a img{
     
 }
 
-body nav ul{
-    display:none;
-}
-
-body header .header-secundary{
+body header nav{
     background-color:var(--purple);
 }
 
-body header .header-secundary ul {
+body header nav ul {
     display: flex;
     height: 50px;
     justify-content:space-evenly;
@@ -41,7 +36,15 @@ body header .header-secundary ul {
     
 }
 
-body header .header-secundary ul li {
+body header nav ul.top-list {
+
+}
+
+body header nav ul.bot-list {
+    display: none;
+}
+
+body header nav ul li {
     display: flex;
     flex-direction: column;
     color: white;
@@ -50,6 +53,6 @@ body header .header-secundary ul li {
     align-items: center;
 }
 
-body header .header-secundary ul li a{
+body header nav ul li a{
     color: white;
 }
