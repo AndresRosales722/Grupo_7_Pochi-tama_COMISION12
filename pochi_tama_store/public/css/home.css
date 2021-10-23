@@ -1,4 +1,66 @@
 /* MEDIA QUERIES */
 /* TABLET */
+
 @media (min-width: 576px){
+    body header .container{
+        height: 80px;
+    }
+
+    body header .container .logo a img{
+        width: 100px;
+    }
+
+    body header .container .burguer-menu{
+        display: none;
+    }
+    
+    body header .container .search-bar{
+        position: relative;
+    }
+
+    body header .container .search-bar .boton{
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        background-color:var(--purple);
+        border: 1px ;
+        border-radius:0px 5px 5px 0px;
+        font-size: 15px;
+        
+    }
+
+    body header .container .search-bar input{
+        display: block;
+        width: 350px;
+        height: 35px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid silver;
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

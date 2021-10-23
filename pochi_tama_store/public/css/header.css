@@ -1,3 +1,4 @@
+
 body header .container{
     background-color: var(--orange);
     display: flex;
@@ -5,8 +6,16 @@ body header .container{
     align-items: center;
 }
 
-body header .container .search-bar{
+body header .container .search-bar input{
     display: none;
+}
+
+body header .container  .boton{
+    height: 20px;
+    background-color:var(--orange);
+    border-style: none;
+    font-size: 20px;
+    color: white;
 }
 
 body header .container  button{
@@ -14,7 +23,7 @@ body header .container  button{
     background-color:var(--orange);
     border-style: none;
     font-size: 20px;
-    color:whitesmoke;
+    color: white;
 }
 
 body header .container .logo a img{
