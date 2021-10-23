@@ -5,19 +5,12 @@ body header .container{
     align-items: center;
 }
 
-body header .container .lis{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;    
-    flex-grow: 0.8;
-    padding: 0 10px;
-}
 
-body header .container .lis .search-bar{
+body header .container .search-bar{
     display: none;
 }
 
-body header .container .lis button{
+body header .container  button{
     height: 20px;
     background-color:var(--orange);
     border-style: none;
@@ -25,7 +18,7 @@ body header .container .lis button{
     color:whitesmoke;
 }
 
-body header .container .lis .logo a img{
+body header .container .logo a img{
     width: 80px;
     margin-top:5px;
     margin-bottom: 5px;
