@@ -5,6 +5,7 @@ body .separacion{
 
 body footer{
     background-color: var(--purple);
+    color: white;
 }
 
 body footer .container-footer{
@@ -15,5 +16,5 @@ body footer .container-footer{
 
 body footer .container-footer .container-row{
     display: flex;
-    
+
 }
