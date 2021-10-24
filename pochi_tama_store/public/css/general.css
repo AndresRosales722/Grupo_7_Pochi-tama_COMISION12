@@ -7,10 +7,10 @@
     font-family:'Roboto', sans-serif;;
 }
 
-body{
+/*  body{
     font-size: calc(1em + 1vw);
     line-height: 1em;
-}
+}*/
 
 li{
     list-style:none;
