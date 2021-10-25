@@ -5,12 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Roboto', sans-serif;;
+    font-size: 1rem;
 }
 
-/*  body{
-    font-size: calc(1em + 1vw);
-    line-height: 1em;
-}*/
 
 li{
     list-style:none;

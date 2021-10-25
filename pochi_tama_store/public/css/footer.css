@@ -4,12 +4,6 @@
 
 
 
-
-
-
-
-
-
 /* FOOTER */
 
 body .footer{
@@ -17,6 +11,7 @@ body .footer{
     width: 100%;
     color: white; 
     padding: 5px;
+    padding-bottom: 15px;
 }
 
 body .footer hr.linea1{
@@ -32,13 +27,11 @@ body .footer hr.linea2{
 }
 
 body .footer .container-footer{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    
 }
 
 body .footer .container-footer-top{
-    width: 100%;
+    
 }
 
 body .footer .container-footer-top img{
@@ -48,7 +41,7 @@ body .footer .container-footer-top img{
 
 
 body .footer .container-footer-top .email{
-    max-width: 600px;
+    
 }
 
 body .footer .container-footer-top .email h4{
@@ -56,12 +49,12 @@ body .footer .container-footer-top .email h4{
 }
 
 body .footer .container-footer-top .redes{
-    max-width: 600px;
+    
 }
 
 body .footer .container-footer-top .redes h4{
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 body .footer .container-footer-top .redes ul {
@@ -82,6 +75,43 @@ body .footer .container-footer-top .container-footer-top-2{
     padding: 20px;
 }
 
+body .footer .container-footer-top .container-footer-top-2 .email h4{
+    margin-bottom: 15px;
+}
+
+body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer{
+    position: relative;
+}
+
+body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer input{
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: 25px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid silver;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton{
+    display: flex;
+    position: absolute;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button{
+    background-color: orange;
+    border-style: none;
+    height: 30px;
+    width: 50px;
+    border: 1px solid orange;
+    color: white;
+    font-size: 15px;
+    border-radius: 3px;
+}
 
 body .footer .container-footer-bot .container-row{
     display: flex;
@@ -94,7 +124,7 @@ body .footer .container-footer-bot .container-row img{
 }
 
 body .footer .container-footer-bot .container-row .contactanos{
-    max-width: 400px;
+    
     margin-left: 20px;
 }
 
@@ -108,7 +138,7 @@ body .footer .container-footer-bot .container-row .contactanos .row label{
 }
 
 body .footer .container-footer-bot .container-row .aceptamos{
-    max-width: 400px;
+    
     text-align:start;
     margin-top: 20px;
     margin-left: 20px;
@@ -126,7 +156,7 @@ body .footer .container-footer-bot .container-row .aceptamos ul li{
 
 
 body .footer .container-footer-bot .container-row .horarios{
-    max-width: 400px;
+    
     display: none;
 }
 
