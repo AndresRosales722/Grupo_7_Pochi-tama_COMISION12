@@ -46,6 +46,24 @@
     }
 
     
+    /* FOOTER */
+
+    body .footer .container-footer-top .container-footer-top-2{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer input{
+        max-width: 100%;
+        width: 250px;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .redes h4{
+        margin-top: 0;
+
+    }
+
+
 }
 
 
