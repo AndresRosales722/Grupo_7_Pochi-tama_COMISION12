@@ -1,11 +1,11 @@
-body header .container{
+ header .container{
     background-color: var(--orange);
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
 
-body header .container .lis{
+ header .container .lis{
     display: flex;
     justify-content:space-between;
     align-items: center;    
@@ -13,11 +13,11 @@ body header .container .lis{
     padding: 0 10px;
 }
 
-body header .container .lis .search-bar{
+ header .container .lis .search-bar{
     display: none;
 }
 
-body header .container .lis button{
+ header .container .lis button{
     height: 20px;
     background-color:var(--orange);
     border-style: none;
@@ -25,22 +25,22 @@ body header .container .lis button{
     color:whitesmoke;
 }
 
-body header .container .lis .logo a img{
+ header .container .lis .logo a img{
     width: 80px;
     margin-top:5px;
     margin-bottom: 5px;
     
 }
 
-body nav ul{
+ nav ul{
     display:none;
 }
 
-body header .header-secundary{
+ header .header-secundary{
     background-color:var(--purple);
 }
 
-body header .header-secundary ul {
+ header .header-secundary ul {
     display: flex;
     height: 50px;
     justify-content:space-evenly;
@@ -48,7 +48,7 @@ body header .header-secundary ul {
     
 }
 
-body header .header-secundary ul li {
+ header .header-secundary ul li {
     display: flex;
     flex-direction: column;
     color: white;
@@ -57,6 +57,8 @@ body header .header-secundary ul li {
     align-items: center;
 }
 
-body header .header-secundary ul li a{
+ header .header-secundary ul li a{
     color: white;
 }
+
+
