@@ -48,14 +48,26 @@
     
     /* FOOTER */
 
+    body .footer hr.linea1{
+        margin: 5px 10px 20px 10px;
+    }
+
+
     body .footer .container-footer-top .container-footer-top-2{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        gap: 100px;
     }
 
     body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer input{
         max-width: 100%;
-        width: 250px;
+        width: 225px;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton{
+        top: -3px;
+        right: -60px;
+        margin-top: 0px;
     }
 
     body .footer .container-footer-top .container-footer-top-2 .redes h4{
@@ -63,6 +75,31 @@
 
     }
 
+
+    body .footer .container-footer-bot hr.linea2{
+        display: none;
+    }
+
+    body .footer .container-footer-bot .container-row{
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+    }
+
+    body .footer .container-footer-bot .container-row .aceptamos{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    body .footer .container-footer-bot .container-row .aceptamos ul{
+        gap: 0px;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    body .footer .container-footer-bot .container-row .contactanos{
+        margin-left: -60px;
+    }
 
 }
 
