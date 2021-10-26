@@ -104,6 +104,25 @@
 }
 
 
+/* DESKTOP */
+
+@media (min-width: 768px){
+
+    footer .container-footer-top h4 br{
+        display: none;
+    }
+
+    footer .container-footer-top .container-footer-top-2 .redes ul{
+        justify-content: center;
+        gap: 60px;
+    }
+
+    footer .container-footer-top .container-footer-top-2 .redes ul li a img{
+        width: 30px;
+        height: 30px;
+    }
+
+}
 
 
 
