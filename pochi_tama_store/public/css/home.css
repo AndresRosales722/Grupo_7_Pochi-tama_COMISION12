@@ -1,0 +1,121 @@
+/* MEDIA QUERIES */
+/* TABLET */
+
+@media (min-width: 576px){
+    body header .container{
+        height: 80px;
+    }
+
+    body header .container .logo a img{
+        width: 100px;
+    }
+
+    body header .container .burguer-menu{
+        display: none;
+    }
+    
+    body header .container .search-bar{
+        position: relative;
+    }
+
+    body header .container .search-bar .boton{
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        background-color:var(--purple);
+        border: 1px ;
+        border-radius:0px 5px 5px 0px;
+        font-size: 15px;
+        
+    }
+
+    body header .container .search-bar input{
+        display: block;
+        width: 350px;
+        height: 35px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid silver;
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+
+    
+    /* FOOTER */
+
+    body .footer hr.linea1{
+        margin: 5px 10px 20px 10px;
+    }
+
+
+    body .footer .container-footer-top .container-footer-top-2{
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 100px;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer input{
+        max-width: 100%;
+        width: 225px;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton{
+        top: -3px;
+        right: -60px;
+        margin-top: 0px;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .redes h4{
+        margin-top: 0;
+
+    }
+
+
+    body .footer .container-footer-bot hr.linea2{
+        display: none;
+    }
+
+    body .footer .container-footer-bot .container-row{
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+    }
+
+    body .footer .container-footer-bot .container-row .aceptamos{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    body .footer .container-footer-bot .container-row .aceptamos ul{
+        gap: 0px;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    body .footer .container-footer-bot .container-row .contactanos{
+        margin-left: -60px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

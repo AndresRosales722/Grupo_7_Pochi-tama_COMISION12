@@ -1,10 +1,16 @@
+<<<<<<< HEAD
  header .container{
+=======
+
+body header .container{
+>>>>>>> refs/remotes/origin/master
     background-color: var(--orange);
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
 
+<<<<<<< HEAD
  header .container .lis{
     display: flex;
     justify-content:space-between;
@@ -18,20 +24,40 @@
 }
 
  header .container .lis button{
+=======
+body header .container .search-bar input{
+    display: none;
+}
+
+body header .container  .boton{
     height: 20px;
     background-color:var(--orange);
     border-style: none;
     font-size: 20px;
-    color:whitesmoke;
+    color: white;
 }
 
+body header .container  button{
+>>>>>>> refs/remotes/origin/master
+    height: 20px;
+    background-color:var(--orange);
+    border-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+<<<<<<< HEAD
  header .container .lis .logo a img{
+=======
+body header .container .logo a img{
+>>>>>>> refs/remotes/origin/master
     width: 80px;
     margin-top:5px;
     margin-bottom: 5px;
     
 }
 
+<<<<<<< HEAD
  nav ul{
     display:none;
 }
@@ -41,6 +67,13 @@
 }
 
  header .header-secundary ul {
+=======
+body header nav{
+    background-color:var(--purple);
+}
+
+body header nav ul {
+>>>>>>> refs/remotes/origin/master
     display: flex;
     height: 50px;
     justify-content:space-evenly;
@@ -48,7 +81,19 @@
     
 }
 
+<<<<<<< HEAD
  header .header-secundary ul li {
+=======
+body header nav ul.top-list {
+
+}
+
+body header nav ul.bot-list {
+    display: none;
+}
+
+body header nav ul li {
+>>>>>>> refs/remotes/origin/master
     display: flex;
     flex-direction: column;
     color: white;
@@ -57,8 +102,14 @@
     align-items: center;
 }
 
+<<<<<<< HEAD
  header .header-secundary ul li a{
     color: white;
 }
 
 
+=======
+body header nav ul li a{
+    color: white;
+}
+>>>>>>> refs/remotes/origin/master

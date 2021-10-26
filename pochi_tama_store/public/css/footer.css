@@ -1,0 +1,176 @@
+.separacion{
+    height: 1000px;
+}
+
+
+
+/* FOOTER */
+
+body .footer{
+    background-color:var(--purple);
+    width: 100%;
+    color: white; 
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+body .footer hr.linea1{
+    border: 1px solid white;
+    margin: 5px 10px 5px 10px;
+    
+}
+
+body .footer hr.linea2{
+    margin: 10px 10px 20px 10px;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+body .footer .container-footer{
+    
+}
+
+body .footer .container-footer-top{
+    
+}
+
+body .footer .container-footer-top img{
+    height: 20px;
+    width: 20px;
+}
+
+
+body .footer .container-footer-top .email{
+    
+}
+
+body .footer .container-footer-top .email h4{
+    font-size: 16px;
+}
+
+body .footer .container-footer-top .redes{
+    
+}
+
+body .footer .container-footer-top .redes h4{
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+body .footer .container-footer-top .redes ul {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+}
+
+body .footer .container-footer-top .redes ul li{
+    margin-top: 20px;
+}
+
+body .footer .container-footer-top .container-footer-top-2{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+body .footer .container-footer-top .container-footer-top-2 .email h4{
+    margin-bottom: 15px;
+}
+
+body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer{
+    position: relative;
+}
+
+body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer input{
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: 25px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid silver;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton{
+    display: flex;
+    position: absolute;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button{
+    background-color: orange;
+    border-style: none;
+    height: 30px;
+    width: 50px;
+    border: 1px solid orange;
+    color: white;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+body .footer .container-footer-bot .container-row{
+    display: flex;
+    flex-direction: column;
+}
+
+body .footer .container-footer-bot .container-row img{
+    height: 20px;
+    width: 20px;
+}
+
+body .footer .container-footer-bot .container-row .contactanos{
+    
+    margin-left: 20px;
+}
+
+body .footer .container-footer-bot .container-row .contactanos .row{
+    margin-top:15px;
+}
+
+
+body .footer .container-footer-bot .container-row .contactanos .row label{
+    margin-left: 10px;
+}
+
+body .footer .container-footer-bot .container-row .aceptamos{
+    
+    text-align:start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+body .footer .container-footer-bot .container-row .aceptamos ul{
+    display:flex;
+    gap: 30px;
+}
+
+
+body .footer .container-footer-bot .container-row .aceptamos ul li{
+    margin-top: 15px;
+}
+
+
+body .footer .container-footer-bot .container-row .horarios{
+    
+    display: none;
+}
+
+body .footer .container-footer-bot .container-row .horarios label{
+    margin-top: 15px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+                    
