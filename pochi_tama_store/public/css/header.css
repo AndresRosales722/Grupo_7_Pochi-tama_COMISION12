@@ -1,35 +1,16 @@
-<<<<<<< HEAD
- header .container{
-=======
 
-body header .container{
->>>>>>> refs/remotes/origin/master
+ header .container{
     background-color: var(--orange);
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
 
-<<<<<<< HEAD
- header .container .lis{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;    
-    flex-grow: 0.8;
-    padding: 0 10px;
-}
-
- header .container .lis .search-bar{
+ header .container .search-bar input{
     display: none;
 }
 
- header .container .lis button{
-=======
-body header .container .search-bar input{
-    display: none;
-}
-
-body header .container  .boton{
+ header .container  .boton{
     height: 20px;
     background-color:var(--orange);
     border-style: none;
@@ -37,8 +18,7 @@ body header .container  .boton{
     color: white;
 }
 
-body header .container  button{
->>>>>>> refs/remotes/origin/master
+ header .container  button{
     height: 20px;
     background-color:var(--orange);
     border-style: none;
@@ -46,34 +26,18 @@ body header .container  button{
     color: white;
 }
 
-<<<<<<< HEAD
- header .container .lis .logo a img{
-=======
-body header .container .logo a img{
->>>>>>> refs/remotes/origin/master
+ header .container .logo a img{
     width: 80px;
     margin-top:5px;
     margin-bottom: 5px;
     
 }
 
-<<<<<<< HEAD
- nav ul{
-    display:none;
-}
-
- header .header-secundary{
+ header nav{
     background-color:var(--purple);
 }
 
- header .header-secundary ul {
-=======
-body header nav{
-    background-color:var(--purple);
-}
-
-body header nav ul {
->>>>>>> refs/remotes/origin/master
+ header nav ul {
     display: flex;
     height: 50px;
     justify-content:space-evenly;
@@ -81,19 +45,13 @@ body header nav ul {
     
 }
 
-<<<<<<< HEAD
- header .header-secundary ul li {
-=======
-body header nav ul.top-list {
 
-}
 
-body header nav ul.bot-list {
+ header nav ul.bot-list {
     display: none;
 }
 
-body header nav ul li {
->>>>>>> refs/remotes/origin/master
+ header nav ul li {
     display: flex;
     flex-direction: column;
     color: white;
@@ -102,14 +60,6 @@ body header nav ul li {
     align-items: center;
 }
 
-<<<<<<< HEAD
- header .header-secundary ul li a{
+ header nav ul li a{
     color: white;
 }
-
-
-=======
-body header nav ul li a{
-    color: white;
-}
->>>>>>> refs/remotes/origin/master
