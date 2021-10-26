@@ -108,16 +108,16 @@
 
 @media (min-width: 768px){
 
-    body footer .container-footer-top h4 br{
+    body .footer .container-footer-top h4 br{
         display: none;
     }
 
-    body footer .container-footer-top .container-footer-top-2 .redes ul{
+    body .footer .container-footer-top .container-footer-top-2 .redes ul{
         justify-content: center;
         gap: 60px;
     }
 
-    body footer .container-footer-top .container-footer-top-2 .redes ul li a img{
+    body .footer .container-footer-top .container-footer-top-2 .redes ul li a img{
         width: 30px;
         height: 30px;
     }
@@ -141,6 +141,7 @@
 
     body .footer .container-footer-bot .container-row .horarios{
         display: block;
+        text-align: center;
     }
 
     body .footer .container-footer-bot .container-row .aceptamos{
@@ -149,9 +150,12 @@
 
     body .footer .container-footer-bot .container-row .contactanos{
         order: 1;
+        margin-left: 0px;
     }
 
-
+    body .footer .container-footer-bot .container-row{
+        gap: 45px;
+    }
 
 }
 
