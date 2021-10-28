@@ -1,46 +1,43 @@
-body header .container{
+
+ header .container{
     background-color: var(--orange);
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
 
-body header .container .lis{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;    
-    flex-grow: 0.8;
-    padding: 0 10px;
-}
-
-body header .container .lis .search-bar{
+ header .container .search-bar input{
     display: none;
 }
 
-body header .container .lis button{
+ header .container  .boton{
     height: 20px;
     background-color:var(--orange);
     border-style: none;
     font-size: 20px;
-    color:whitesmoke;
+    color: white;
 }
 
-body header .container .lis .logo a img{
+ header .container  button{
+    height: 20px;
+    background-color:var(--orange);
+    border-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+ header .container .logo a img{
     width: 80px;
     margin-top:5px;
     margin-bottom: 5px;
     
 }
 
-body nav ul{
-    display:none;
-}
-
-body header .header-secundary{
+ header nav{
     background-color:var(--purple);
 }
 
-body header .header-secundary ul {
+ header nav ul {
     display: flex;
     height: 50px;
     justify-content:space-evenly;
@@ -48,7 +45,13 @@ body header .header-secundary ul {
     
 }
 
-body header .header-secundary ul li {
+
+
+ header nav ul.bot-list {
+    display: none;
+}
+
+ header nav ul li {
     display: flex;
     flex-direction: column;
     color: white;
@@ -57,6 +60,6 @@ body header .header-secundary ul li {
     align-items: center;
 }
 
-body header .header-secundary ul li a{
+ header nav ul li a{
     color: white;
 }

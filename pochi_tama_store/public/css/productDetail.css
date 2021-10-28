@@ -1,0 +1,115 @@
+/*main*/
+/*Mobile*/
+ .detail-product  {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    background-color: whitesmoke;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.banner1 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--purple);
+    width: 120px;
+    margin-right: auto;
+    border-radius: 10px;
+    border-color: solid 10px var(--purple);
+    align-self: stretch;
+}
+
+.banner2{
+    background-color: var(--purple);
+    width: 120px;
+    margin-left: auto;
+    border-radius: 10px;
+    border-color: solid 50px var(--purple);
+    display: flex;
+    align-self: stretch;
+}
+
+ .product-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 50px;
+    background-color: var(--orange);
+    border-radius: 10px;
+    border: solid 1px var(--purple);
+   margin-top: -100px;
+}
+
+.product-foto{
+    margin-top: 15px;
+    background-color: tomato;
+    width: 800px;
+    height: 700px ;
+}
+
+.item-main{
+    margin-top: 30px;
+    background-color: yellowgreen;
+    height: 300px;
+    width: 87.5%;
+  margin: auto;
+}
+
+
+
+ .item{
+  display: flex;
+    justify-content:space-evenly;
+   padding-top: 10px;
+   
+
+}
+.item1{
+    background-color:rgb(185, 16, 201);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.item2{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+.item3{
+    background-color: crimson;
+    width: 200px;
+    height: 200px;
+}
+
+.item-main .item{
+    padding-bottom:  10px;
+}
+
+.precio{
+    background-color: darkgoldenrod;
+    width: 87.4%;
+    height: 20px;
+    display: flex;
+    
+    align-items: center;
+    margin: auto;
+}
+
+.descripcion
+{
+    background-color: darkgoldenrod;
+    width: 87.4%;
+    height: 90px;
+    display: flex;
+    
+    align-items: center;
+    margin: 10px auto 0 auto ;  
+}
