@@ -104,6 +104,60 @@
 }
 
 
+/* DESKTOP */
+
+@media (min-width: 768px){
+
+    body .footer .container-footer-top h4 br{
+        display: none;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .redes ul{
+        justify-content: center;
+        gap: 60px;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .redes ul li a img{
+        width: 30px;
+        height: 30px;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer input{
+        width: 260px;
+        height: 30px;
+        text-align: center;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton{
+        top: -5px;
+        right: -63px;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button{
+        height: 40px;
+        width: 60px;
+    }
+
+
+    body .footer .container-footer-bot .container-row .horarios{
+        display: block;
+        text-align: center;
+    }
+
+    body .footer .container-footer-bot .container-row .aceptamos{
+        order: 1;
+    }
+
+    body .footer .container-footer-bot .container-row .contactanos{
+        order: 1;
+        margin-left: 0px;
+    }
+
+    body .footer .container-footer-bot .container-row{
+        gap: 45px;
+    }
+
+}
 
 
 

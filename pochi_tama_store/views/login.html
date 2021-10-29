@@ -10,64 +10,48 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!--                                 LINK DE ESTILOS CSS                                            -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <title>Pochi Tama Store</title>
 </head>
-<body class="body-header">
-    <header>
-        <div class="container">
-            <div class="lis">
-                <button class="burguer-menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="logo">
-                    <a href="/">
-                        <img src="/img/pochita.svg" width="100" alt="Pochi tama store">
-                    </a>
+<body>
+    <div class="form-container">
+        <h2>Entrar</h2>
+        <hr>
+        <form action="">
+            <div class="form">
+                <div class="input-container">
+                    <label for="email" class="control-label">Email: </label>
+                    <input class="input-style" type="email" name="email" placeholder="Ej: juanperez@gmail.com">
+                    <span class="error-message">Debes ingresar tu email</span>
                 </div>
-                <div class="search-bar">
-                    <input type="" placeholder="¿Que estas buscando?">
+                <div class="input-container">
+                    <label for="email" class="control-label">Contraseña: </label>
+                    <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
+                    <span class="error-message">Debes ingresar una contraseña</span>
                 </div>
-                    <button>
-                        <i class="fas fa-search"></i>
-                    </button>
+                <div class="check">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember"> Recordarme</label>
+                    
+                </div>
+                <div class="button-container">
+                    <span class="error-message">Credenciales inválidas</span>
+                    <button type="submit" class="btn btn-submit">Iniciar sesión</button>
+                </div>
+
+                <a href="https://facebook.com" class="btn btn-facebook"><i class="fab fa-facebook"></i> Iniciar sesión con Facebook</a>
+                <a href="https://gmail.com" class="btn btn-gmail"><i class="fab fa-google fa-3x"></i>Iniciar sesión con Gmail</a>
+                <div class="re-password">
+                    <span><a href="">¿Olvidaste tu contraseña?</a></span>
+                </div>
+                <div class="re-password2">
+                    <span><a href="register.html">Aún no tengo cuenta</a></span>
                 </div>
             </div>
-        </div>
-        <div class="header-secundary">
-            <ul>
-                <li><a href="#">inicio</a></li>
-                <li><a href="#">mi cuenta</a></li>
-                <li><a href="#">carrito</a></li>
-            </ul>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">inicio</a></li>
-                <div class="arrow">
-                    <i class='bx bxs-down-arrow'></i>
-                </div>
-				<li><a href="#">disfracez</a></li>
-                <div class="arrow">
-                    <i class='bx bxs-down-arrow'></i>
-                </div>
-				<li><a href="#">coleccionables</a></li>
-                <div class="arrow">
-                    <i class='bx bxs-down-arrow'></i>
-                </div>
-				<li><a href="#">decoracion</a></li>
-                <div class="arrow">
-                    <i class='bx bxs-down-arrow'></i>
-                </div>
-				<li><a href="#">comics</a></li>
-                <div class="arrow">
-                    <i class='bx bxs-down-arrow'></i>
-                </div>
-            </ul>
-        </nav>
-    </header>
-    
-    
-    
+        </form>
+    </div>
     
     
     

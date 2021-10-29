@@ -118,6 +118,7 @@ body .footer .container-footer-bot .container-row{
     flex-direction: column;
 }
 
+
 body .footer .container-footer-bot .container-row img{
     height: 20px;
     width: 20px;
@@ -130,6 +131,9 @@ body .footer .container-footer-bot .container-row .contactanos{
 
 body .footer .container-footer-bot .container-row .contactanos .row{
     margin-top:15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 
