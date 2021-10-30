@@ -17,11 +17,10 @@
 
 
 .banner1, .banner2 {
-    margin: auto;
+   
     justify-content: space-between;
     background-color: var(--purple);
     width: 120px;
-    border-radius: 10px;
     border-color: solid 10px var(--purple);
     
 }
@@ -37,14 +36,19 @@
     background-color: var(--orange);
     border-radius: 10px;
     border: solid 1px var(--purple);
-   
+    margin-bottom: 20px;
+   margin-top: -20px;
+   margin-left: -4px;
+}
+.foto{
+    margin-top: 20px;
 }
 
 .product-foto{
     margin-top: 15px;
     background-color: #9D4EDD;
     width: 800px;
-    height: 800px ;
+    height: 1000px ;
     border-radius: 10px;
     margin-bottom: 20px;
     border: solid 5px #FF9E00;
@@ -96,7 +100,7 @@
 .precio{
     background-color: #FF9E00;
     width: 87.4%;
-    height: 25px;
+    height: 40px;
     display: flex;
     align-items: center;
     margin: auto;
@@ -119,13 +123,47 @@
    
 }
 
+.unidades {
+    background-color: #FF9E00;
+    width: 87.4%;
+    height: 100px;
+    display: flex;
+    border: solid 2.5px var(--purple);
+    align-items: center;
+    margin: 10px auto 0 auto ; 
+    border-radius: 10px;
+    padding-left: 20px; 
+}
+
 .categorias, .public{ /* con esto desaparezco desde la version mobile*/
     display: none;
 
 }
 
+.star-text{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+align-items: center;
+}
 
+.star-text a{
+    font-size: 20px;
+    padding-right: 35px;
+    font-weight: bold;
 
+}
+.star-text .star{
+    
+    background-color: var(--purple);
+    color: white;
+    border: solid 1px var(--orange);
+    border-radius: 10px;
+}
+
+.star-text .star i{
+    padding: 10px;
+}
 /*Desktop*/
 @media (min-width: 1028px) {
 .banner{
@@ -135,6 +173,7 @@
     display: block; /*con esto hago aparecer los banners*/
     height: 70px ;
     width: 70px;
+    align-items: center;
 }
 .detail-product  {
     display: flex;
@@ -142,9 +181,8 @@
     background-color: whitesmoke;
     padding-top: 10px;
     text-align: center;
-
-    
     justify-content: space-between;
+    align-items: stretch;
     
 }
 .categorias, .public{
@@ -153,7 +191,36 @@
     background-color: #9D4EDD;
     display: flex;
     flex-direction:column ;
+    border: solid 2px var(--orange);
+    border-radius: 15px;
+    padding:10px ;
+    justify-content: center;
+}
+.categorias h1{
+    align-items: center;
+    padding-bottom: 10px;
+}
+.categorias .sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
 
+}
+.categorias .sub .categoria-a{
+    background-color: #FF9E00;
+    width: 90%;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: var(--purple);
+    margin-bottom: 50%;
+    border: solid 2px rebeccapurple;
+    align-items: center;
+    justify-content: center;
+    
 }
 }
 
