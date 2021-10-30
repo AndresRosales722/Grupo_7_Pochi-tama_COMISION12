@@ -70,5 +70,6 @@ body .header .container-header .container-header-top .nav-bar1 ul .carrito li a 
 
 body .header .container-header .container-header-bot{
     display: none;
+    background-color: var(--purple);
 }
 

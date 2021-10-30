@@ -6,6 +6,10 @@
 
        /*---------------HEADER---------------*/
 
+    .header .container-header .container-header-top .logo{
+        margin-left: 15px;
+    }
+
     .header .container-header .container-header-top{
         flex-wrap:nowrap;
     }
@@ -17,7 +21,7 @@
     body .header .container-header .container-header-top .search-bar{
         order: 0;
         width: 80%;
-        margin-left: 25px;
+        margin-left: 80px;
     }
 
     body .header .container-header .container-header-top .nav-bar1{
@@ -64,7 +68,6 @@
     /*-----------------------HEADER BOT----------------------*/
 
     body .header .container-header .container-header-bot{
-        background-color:#3e6197;
         height: 50px;
         width: 100%;
         display: block;
@@ -87,6 +90,8 @@
     body .header .container-header .container-header-bot .nav-bar2 ul.bot-list li a{
         color: white;
     }
+
+    
 
 
 
@@ -159,6 +164,62 @@
 
 @media (min-width: 992px){
 
+/*------------------HEADER---------------------*/
+
+   body .header .container-header .container-header-top{
+       padding: 15px;
+   }
+
+   body .header .container-header .container-header-top .logo{
+       margin-left: 0;
+   }
+
+   body .header .container-header .container-header-top .logo a img{
+       width: 120px;
+   }
+
+   body .header .container-header .container-header-top .nav-bar1 ul li i{
+        font-size: 30px;
+    }
+
+    body .header .container-header .container-header-top .nav-bar1 ul .carrito li i{
+        font-size: 30px;
+    }   
+    
+    body .header .container-header .container-header-top .nav-bar1 ul li a label{
+        font-size: 20px;
+    }
+
+    body .header .container-header .container-header-top .search-bar input{
+        height: 45px;
+    }
+
+
+/*----------------------HEADER BOT------------------*/
+
+    body .header .container-header .container-header-bot .nav-bar2 ul.bot-list li a{
+        font-size: 18px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------FOOTER---------------------*/
+
     body .footer .container-general{
         max-width: 900px;
         margin: 0 auto;
@@ -219,6 +280,8 @@
     body .footer .container-general .container-footer-bot .container-row{
         gap: 45px;
     }
+
+
 
 }
 
