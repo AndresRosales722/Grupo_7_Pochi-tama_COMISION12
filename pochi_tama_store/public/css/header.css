@@ -13,7 +13,7 @@
 }
 
 .header .container-header .container-header-top .menu button{
-    background-color: salmon;
+    background-color: var(--orange);
     border: 0px;
     color: white;   
 }
@@ -30,6 +30,7 @@ body .header .container-header .container-header-top .search-bar{
     align-items: center;
     position: relative;
     margin-left: 10px;
+    margin-top: 10px;
 }
 
 body .header .container-header .container-header-top .search-bar .boton{

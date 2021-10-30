@@ -1,8 +1,10 @@
-/* MEDIA QUERIES */
-/* TABLET */
+/*--------------MEDIA QUERIES------------------*/
+/*------------------TABLET---------------------*/
 
-@media (min-width: 576px){
-   /* HEADER */
+@media (min-width: 768px){
+
+
+       /*---------------HEADER---------------*/
 
     .header .container-header .container-header-top{
         flex-wrap:nowrap;
@@ -14,7 +16,8 @@
 
     body .header .container-header .container-header-top .search-bar{
         order: 0;
-        width: 40%;
+        width: 80%;
+        margin-left: 25px;
     }
 
     body .header .container-header .container-header-top .nav-bar1{
@@ -58,10 +61,10 @@
         justify-content: space-evenly;
     }
 
-    /* HEADER BOT */
+    /*-----------------------HEADER BOT----------------------*/
 
     body .header .container-header .container-header-bot{
-        background-color: dimgray;
+        background-color:#3e6197;
         height: 50px;
         width: 100%;
         display: block;
@@ -69,7 +72,8 @@
 
     body .header .container-header .container-header-bot .nav-bar2 ul.bot-list{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 50px;
         padding-top: 15px;
     }
 
@@ -77,22 +81,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 10px;
+    }
+
+    body .header .container-header .container-header-bot .nav-bar2 ul.bot-list li a{
+        color: white;
     }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-    /* FOOTER */
+    /*----------------FOOTER TOP----------------*/
 
     body .footer .container-general hr.linea1{
         margin: 5px 10px 20px 10px;
@@ -122,6 +122,7 @@
 
     }
 
+    /*----------------FOOTER BOT----------------*/
 
     body .footer .container-general .container-footer-bot hr.linea2{
         display: none;
@@ -152,9 +153,11 @@
 }
 
 
-/* DESKTOP */
+/*--------------MEDIA QUERIES------------------*/
+/*------------------DESKTOP---------------------*/
 
-@media (min-width: 768px){
+
+@media (min-width: 992px){
 
     body .footer .container-general{
         max-width: 900px;
