@@ -9,15 +9,13 @@ body {
     background: linear-gradient(rgb(247, 247, 247), white);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100%;
-    padding: 6rem 1rem;
+    /* padding: 6rem 1rem; COMENTADO PORQUE ME CONFUNDE MIENTRAS HAGO EL HEADER */
 }
 
 
 
 a {
-    color: orange;
     font-size: 1rem;
-    text-decoration: none;
 }
 
 h2 {

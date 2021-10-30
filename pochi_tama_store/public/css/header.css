@@ -1,65 +1,73 @@
-
- header .container{
-    background-color: var(--orange);
+/* HEADER TOP */
+.header .container-header .container-header-top{
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-}
-
- header .container .search-bar input{
-    display: none;
-}
-
- header .container  .boton{
-    height: 20px;
     background-color:var(--orange);
-    border-style: none;
-    font-size: 20px;
-    color: white;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
- header .container  button{
-    height: 20px;
-    background-color:var(--orange);
-    border-style: none;
-    font-size: 20px;
-    color: white;
+.header .container-header .container-header-top .menu{
+    width: 30px;
 }
 
- header .container .logo a img{
-    width: 80px;
-    margin-top:5px;
-    margin-bottom: 5px;
-    
+.header .container-header .container-header-top .menu button{
+    background-color: salmon;
+    border: 0px;
+    color: white;   
 }
 
- header nav{
-    background-color:var(--purple);
+.header .container-header .container-header-top .menu button i{
+    font-size: 25px;
 }
 
- header nav ul {
+body .header .container-header .container-header-top .search-bar{
+    order: 1;
     display: flex;
-    height: 50px;
-    justify-content:space-evenly;
-    align-items:center;
-    
-}
-
-
-
- header nav ul.bot-list {
-    display: none;
-}
-
- header nav ul li {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    list-style: none;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin-left: 10px;
 }
 
- header nav ul li a{
-    color: white;
+body .header .container-header .container-header-top .search-bar .boton{
+    position: relative;
+    right: 20px;
 }
+
+body .header .container-header .container-header-top .search-bar input{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+    outline: none;
+
+}
+
+body .header .container-header .container-header-top .nav-bar1 ul .inicio{
+    display: none;
+}
+
+body .header .container-header .container-header-top .nav-bar1 ul .cuenta{
+    display: none;
+}
+
+body .header .container-header .container-header-top .nav-bar1 ul .carrito li i{
+    color: white;
+    font-size: 25px;
+}
+
+body .header .container-header .container-header-top .nav-bar1 ul .carrito li a label{
+    display: none;
+}
+
+
+/* HEADER BOT */
+
+body .header .container-header .container-header-bot{
+    display: none;
+}
+
