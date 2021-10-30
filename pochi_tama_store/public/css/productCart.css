@@ -1,0 +1,24 @@
+.buys {
+    padding: 10px;
+    height: 1000px;
+    right: auto;
+}
+
+.shopping-cart .rectangulo1, .rectangulo2, .rectangulo3 {
+    display: flex;
+    background: #9d4edd;
+    border-radius: 20px;
+    width: 47rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ff9e00;
+}
+
+.square-buy {
+    width: 100px; 
+    height: 100px; 
+    background: #428bca;
+    display: flex;
+
+}

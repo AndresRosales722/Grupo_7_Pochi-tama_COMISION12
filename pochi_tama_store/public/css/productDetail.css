@@ -1,9 +1,10 @@
 /*main*/
 /*Mobile*/
- .detail-product  {
+
+
+.detail-product  {
     display: flex;
     flex-direction: column;
-    height: 900px;
     background-color: whitesmoke;
     padding-top: 10px;
     text-align: center;
@@ -13,26 +14,19 @@
 }
 
 
-.banner1 {
-    display: flex;
-    justify-content: center;
+
+
+.banner1, .banner2 {
+    margin: auto;
+    justify-content: space-between;
     background-color: var(--purple);
     width: 120px;
-    margin-right: auto;
     border-radius: 10px;
     border-color: solid 10px var(--purple);
-    align-self: stretch;
+    
 }
 
-.banner2{
-    background-color: var(--purple);
-    width: 120px;
-    margin-left: auto;
-    border-radius: 10px;
-    border-color: solid 50px var(--purple);
-    display: flex;
-    align-self: stretch;
-}
+
 
  .product-card{
     display: flex;
@@ -43,22 +37,26 @@
     background-color: var(--orange);
     border-radius: 10px;
     border: solid 1px var(--purple);
-   margin-top: -100px;
+   
 }
 
 .product-foto{
     margin-top: 15px;
-    background-color: tomato;
+    background-color: #9D4EDD;
     width: 800px;
-    height: 700px ;
+    height: 800px ;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: solid 5px #FF9E00;
 }
 
 .item-main{
     margin-top: 30px;
     background-color: yellowgreen;
-    height: 300px;
+    height: 400px;
     width: 87.5%;
   margin: auto;
+  border-radius: 10px;
 }
 
 
@@ -67,7 +65,6 @@
   display: flex;
     justify-content:space-evenly;
    padding-top: 10px;
-   
 
 }
 .item1{
@@ -75,18 +72,21 @@
     width: 200px;
     height: 200px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .item2{
     background-color: blue;
     width: 200px;
     height: 200px;
+    border-radius: 10px;
 }
 
 .item3{
     background-color: crimson;
     width: 200px;
     height: 200px;
+    border-radius: 10px;
 }
 
 .item-main .item{
@@ -94,22 +94,66 @@
 }
 
 .precio{
-    background-color: darkgoldenrod;
+    background-color: #FF9E00;
     width: 87.4%;
-    height: 20px;
+    height: 25px;
     display: flex;
-    
     align-items: center;
     margin: auto;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: solid 2.5px var(--purple);
 }
 
 .descripcion
 {
-    background-color: darkgoldenrod;
+    background-color: #FF9E00;
     width: 87.4%;
     height: 90px;
     display: flex;
-    
+    border: solid 2.5px var(--purple);
     align-items: center;
-    margin: 10px auto 0 auto ;  
+    margin: 10px auto 0 auto ; 
+    border-radius: 10px;
+    padding-left: 20px; 
+   
 }
+
+.categorias, .public{ /* con esto desaparezco desde la version mobile*/
+    display: none;
+
+}
+
+
+
+/*Desktop*/
+@media (min-width: 1028px) {
+.banner{
+    display: none;
+}
+.categorias, .public{
+    display: block; /*con esto hago aparecer los banners*/
+    height: 70px ;
+    width: 70px;
+}
+.detail-product  {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    padding-top: 10px;
+    text-align: center;
+
+    
+    justify-content: space-between;
+    
+}
+.categorias, .public{
+    width: 80px;
+    height: 700px;
+    background-color: #9D4EDD;
+    display: flex;
+    flex-direction:column ;
+
+}
+}
+
