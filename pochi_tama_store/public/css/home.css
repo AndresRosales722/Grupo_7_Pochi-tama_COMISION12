@@ -1,10 +1,9 @@
 /*--------------MEDIA QUERIES------------------*/
-
+/*---------------TABLET---------------*/
 
 @media (min-width: 576px){
 
-
-       /*---------------HEADER---------------*/
+/*---------------HEADER-TOP---------------*/
 
     .header .container-header .container-header-top .logo a img{
         width: 140px;
@@ -117,9 +116,6 @@
     }
 
 
-
-
-
     /*----------------FOOTER TOP----------------*/
 
     body .footer .container-general hr.linea1{
@@ -181,14 +177,11 @@
 }
 
 
-/*--------------MEDIA QUERIES------------------*/
 /*------------------DESKTOP---------------------*/
-
 
 @media (min-width: 768px){
 
-/*------------------HEADER---------------------*/
-
+/*------------------HEADER-TOP---------------------*/
 
     body .header .container-header .container-header-top{
         flex-wrap: nowrap;
@@ -229,9 +222,6 @@
     }
 
 
-
-
-
 /*-----------------HEADER BOT------------------*/
 
     
@@ -242,21 +232,6 @@
     body .header .container-header .container-header-bot .nav-bar2 ul.bot-list li i{
         color: white; 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*------------------FOOTER---------------------*/
@@ -322,10 +297,11 @@
         gap: 45px;
     }
 
-
-
 }
 
+@media (min-width: 992px) and (max-width: 1280px){
+    
+}
 
 
 
