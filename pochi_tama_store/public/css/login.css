@@ -103,7 +103,7 @@ select.input-select:focus {
 
 .form-container {
     background: white;
-    border-top: solid 55px orange;
+    border-top: solid 55px darkorange;
     border-radius: 10px;
     margin: 0 auto;
     height: fit-content;
@@ -223,33 +223,54 @@ select.input-select:focus {
 
 
 /* Media queries*/
-/* Tablet */
+
+/* Movile*/
 
 @media screen and (min-width: 475px) {
     .input-container,
     .button-container,
     .input-file-container {
-    width: 90%;
+        width: 90%;
     }
     .form-container {
         width: 75%;
     }
 
+    .btn-facebook,
+    .btn-gmail{
+        width: 90%;
+    }
 
+    .fa-1x {
+        font-size: 1em;
+        padding-right: 7px;
+    }
 
 }
 
+/* Tablet */
 
 @media screen and (min-width: 768px) {
     .input-container,
     .button-container,
     .input-file-container {
-    width: 80%;
+        width: 80%;
     }
+
+    .btn-facebook,
+    .btn-gmail{
+        width: 80%;
+    }
+
     .form-container {
         width: 50%;
     }
-    
+
+    .fa-1x {
+        font-size: 1em;
+        padding-right: 7px;
+    }
 
 
 }
+
