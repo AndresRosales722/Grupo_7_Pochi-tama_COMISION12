@@ -14,10 +14,10 @@ body .footer{
     padding-bottom: 15px;
 }
 
-body .footer hr.linea1{
+body .footer hr{
     border: 1px solid white;
     margin: 5px 10px 5px 10px;
-    
+    width: 95%;
 }
 
 body .footer hr.linea2{
