@@ -98,8 +98,7 @@
 
     body .header .container-header .container-header-bot .nav-bar2 ul.bot-list{
         display: flex;
-        justify-content: center;
-        gap: 50px;
+        justify-content: space-evenly;
         padding-top: 15px;
     }
 
@@ -114,7 +113,8 @@
         color: white;
     }
 
-    
+    body .header .container-header .container-header-top .search-bar{
+    }
 
 
 
@@ -224,6 +224,10 @@
         display: block;
     }
 
+    body .header .container-header .container-header-top .search-bar{
+        margin: 10px 0px 10px 20px;
+    }
+
 
 
 
@@ -231,7 +235,13 @@
 /*-----------------HEADER BOT------------------*/
 
     
+    body .header .container-header .container-header-bot{
+        display: block;
+    }
 
+    body .header .container-header .container-header-bot .nav-bar2 ul.bot-list li i{
+        color: white; 
+    }
 
 
 
