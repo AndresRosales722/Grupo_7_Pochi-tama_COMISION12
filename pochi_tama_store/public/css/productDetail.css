@@ -111,14 +111,17 @@
         padding: 3px 0 8px 5px;
     }
     
-    .carrito {
+    /*
+        EL NOMBRE DE LA CLASE ME ESTA PISANDO EL DEL HEADER , CAMBIENLE EL NOMBRE
+        .carrito {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 10px;
-    }
+    } */
     
-    .carrito a{
+    /* COMENTADO PORQUE ME ROMPE EL DISEÑO DEL HEADER
+        .carrito a{
         background-color: var(--orange);
         border-radius: 20px;
         border: solid 3px var(--purple);
@@ -130,12 +133,14 @@
         font-size: 20px;
         font-weight: 700 ;
         
-    }
+    } */
     
-    .carrito a:hover{
+   /*  
+    COMENTADO PORQUE ME ROMPE EL DISEÑO DEL HEADER
+        .carrito a:hover{
         transform: scale(1.1);
         transition: all 0.5s ease-in-out;
-    }
+    } */
     
     .carrito img{
         padding: 3px 0 8px 5px;
