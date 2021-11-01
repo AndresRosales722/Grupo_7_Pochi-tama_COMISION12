@@ -287,7 +287,6 @@
     body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer input{
         width: 100%;
         height: 30px;
-        text-align: center;
     }
 
     body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton{
@@ -351,6 +350,7 @@
 
 @media (min-width: 992px){
 
+
     body .header .container-header .container-header-top .nav-bar1{
         width: 25%;
     }
@@ -361,6 +361,22 @@
 
     body .header .container-header .container-header-top .search-bar input{
         height: 45px;
+    }
+
+    body .footer .container-general{
+        max-width: 1100px;
+    }
+
+    body .footer .container-general hr.hr1{
+        max-width: 900px;
+    }
+
+    body .footer .container-general .container-footer-top{
+        max-width: 1100px;
+    }
+
+    body .footer .container-general .container-footer-bot{
+        max-width: 1100px;
     }
 }
 
