@@ -1,0 +1,267 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    padding: 6rem 1rem;
+}
+
+a {
+    color: rgb(86, 19, 209);
+    font-size: 1rem;
+}
+
+h2 {
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+}
+
+hr {
+    height: 2px;
+    margin-bottom: 3rem;
+    width: 100%;
+    background: linear-gradient(90deg, black, white);
+    border: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Form inputs */
+
+.input-container,
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 100%;
+}
+
+.button-container {
+    align-items: center;
+}
+
+span.error-message {
+    color: red;
+    font-size: 10px;
+    margin: 5px auto;
+    display: none;
+}
+
+input.input-style {
+    border: none;
+    border-radius: 1rem;
+    height: 2.5rem;
+    padding: .5rem;
+}
+
+input.input-style::placeholder {
+    color: lightgray;
+}
+
+label {
+    font-size: 16px;
+}
+
+.input-file-container {
+    background-color: white;
+    border-radius: 2rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+select.input-select {
+    border: none;
+    border-radius: 2rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+}
+
+input.input-style:focus,
+.input-file-container,
+select.input-select:focus {
+    box-shadow: 0 0 6px rgb(255, 255, 255);
+    outline: none;
+}
+
+.form-container {
+    background: white;
+    border-top: solid 55px darkorange;
+    border-radius: 10px;
+    margin: 0 auto;
+    height: fit-content;
+    height: -moz-fit-content;
+    padding: 1rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.check label {
+    margin-right: 10px;
+    position: relative;
+    top: -1px;
+    padding-left: 8px;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 40px;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    outline: none;
+}
+
+.btn-submit {
+    background: linear-gradient(45deg, rgb(243, 184, 57) 0%, orange);
+    color: rgb(247, 244, 244);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    color: white;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, .7);
+    background: linear-gradient(285deg, rgba(255, 255, 255, 0.5) 0%, rgba(247, 164, 11, 0.966) 50%);
+}
+
+.btn-facebook {
+    border: 1px solid;
+    width: 80%;
+    background-color: rgba(61, 87, 202, 0.733);
+    color: write;
+    text-align: center;
+    padding: 5px 10px;
+    text-justify: auto;
+}
+
+.btn-facebook:hover {
+    color: darkorange;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, .7);
+    background: write;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-gmail {
+    border: 1px solid;
+    width: 80%;
+    background-color: white;
+    margin-top: 15px;
+    color: rgb(221, 4, 4);
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.btn-gmail:hover {
+    color: darkorange;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, .7);
+    background: write;
+    transition: all 0.3s ease-in-out;
+}
+
+.fab .fa-google-1x::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.fa-1x {
+    font-size: 1em;
+    padding-right: 7px;
+}
+
+.fa-1x:hover {
+    font-size: 1em;
+    padding-right: 7px;
+}
+
+.fab .fa-facebook-1x {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.re-password {
+    padding: 15px 0 15px;
+}
+
+
+/* Media queries*/
+
+/* Movile*/
+
+@media screen and (min-width: 475px) {
+    .input-container,
+    .button-container,
+    .input-file-container {
+        width: 90%;
+    }
+    .form-container {
+        width: 75%;
+    }
+
+    .btn-facebook,
+    .btn-gmail{
+        width: 90%;
+    }
+
+    .fa-1x {
+        font-size: 1em;
+        padding-right: 7px;
+    }
+
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    .input-container,
+    .button-container,
+    .input-file-container {
+        width: 80%;
+    }
+
+    .btn-facebook,
+    .btn-gmail{
+        width: 80%;
+    }
+
+    .form-container {
+        width: 50%;
+    }
+
+    .fa-1x {
+        font-size: 1em;
+        padding-right: 7px;
+    }
+
+
+}
+
