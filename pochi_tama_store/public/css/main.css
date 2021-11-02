@@ -1,0 +1,31 @@
+body .main{
+    margin: 0 auto;
+}
+
+body .main-container{
+    background-color: white;
+    padding: 10px;
+}
+
+body .main-container section.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+body .main-container section.productos article{
+    width: 45%;
+    text-align: center;  
+}
+
+body .main-container section.productos article .img{
+    border: 1px solid ;
+}
+
+body .main-container section.productos article .img img{
+    width: 100%;
+}
+
+body .main-container section.productos article .name-section{
+    
+}

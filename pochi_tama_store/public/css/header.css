@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 /* HEADER TOP */ 
 body .header .container-header .container-header-top .logo a img{
     width: 130px;
 }
-=======
-/*---------------------HEADER TOP--------------------*/
->>>>>>> b963e7912233301187941758f7dbc70ed2675335
 
 body .header .container-header .container-header-top{
     display: flex;
