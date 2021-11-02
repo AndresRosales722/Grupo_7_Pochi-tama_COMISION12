@@ -118,10 +118,16 @@
 
     /*----------------FOOTER TOP----------------*/
 
-    body .footer .container-general hr.linea1{
-        margin: 5px 10px 20px 10px;
-        max-width: 100%;
+    body .footer .container-general hr.hr1{
+        border-top: 1px solid rgb(255, 255, 255);
+        margin: 0 auto;
+        width: 95%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        max-width: 650px;
     }
+
+    
 
 
     body .footer .container-general .container-footer-top .container-footer-top-2{
@@ -136,14 +142,18 @@
     }
 
     body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton{
-        top: -3px;
+        top: -5px;
         right: -60px;
         margin-top: 0px;
     }
 
     body .footer .container-general .container-footer-top .container-footer-top-2 .redes h4{
         margin-top: 0;
+    }
 
+    body .footer .container-footer-top .container-footer-top-2 img{
+        width: 25px;
+        height: 25px;
     }
 
     /*----------------FOOTER BOT----------------*/
@@ -173,6 +183,16 @@
     body .footer .container-general .container-footer-bot .container-row .contactanos{
         margin-left: -60px;
     }
+
+    body .footer .container-general .container-footer-bot .container-row img{
+        width: 25px;
+        height: 25px;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button{
+        height: 35px;
+    }
+
 
 }
 
@@ -236,6 +256,11 @@
 
 /*------------------FOOTER---------------------*/
 
+    body .footer .container-general hr.hr1{
+        max-width: 800px;
+    }
+
+
     body .footer .container-general{
         max-width: 900px;
         margin: 0 auto;
@@ -262,7 +287,6 @@
     body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer input{
         width: 100%;
         height: 30px;
-        text-align: center;
     }
 
     body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton{
@@ -297,10 +321,63 @@
         gap: 45px;
     }
 
+    body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton{
+        right: -70px;
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 img{
+        width: 30px;
+        height: 30px;
+    }
+
+    body .footer .container-general .container-footer-bot .container-row img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button{
+        transition: 0.5s;
+    }
+
+
+    body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button:hover{
+        color: var(--orange);
+        background-color: white;
+        border: var(--orange);
+    }
+
 }
 
-@media (min-width: 992px) and (max-width: 1280px){
-    
+@media (min-width: 992px){
+
+
+    body .header .container-header .container-header-top .nav-bar1{
+        width: 25%;
+    }
+
+    body .header .container-header .container-header-top .search-bar{
+        
+    }
+
+    body .header .container-header .container-header-top .search-bar input{
+        height: 45px;
+    }
+
+    body .footer .container-general{
+        max-width: 1100px;
+    }
+
+    body .footer .container-general hr.hr1{
+        max-width: 900px;
+    }
+
+    body .footer .container-general .container-footer-top{
+        max-width: 1100px;
+    }
+
+    body .footer .container-general .container-footer-bot{
+        max-width: 1100px;
+    }
 }
 
 
