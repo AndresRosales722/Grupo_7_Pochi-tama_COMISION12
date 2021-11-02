@@ -1,7 +1,4 @@
-/* HEADER TOP */
-body .header .container-header .container-header-top .logo a img{
-    width: 130px;
-}
+/*---------------------HEADER TOP--------------------*/
 
 body .header .container-header .container-header-top{
     display: flex;
@@ -12,6 +9,9 @@ body .header .container-header .container-header-top{
     padding: 10px;
 }
 
+body .header .container-header .container-header-top .logo a img{
+    width: 130px;
+}
 
 body .header .container-header .container-header-top .menu button{
     background-color: var(--orange);
@@ -29,17 +29,6 @@ body .header .container-header .container-header-top .search-bar{
    
 }
 
-body .header .container-header .container-header-top .search-bar .boton{
-    position: relative;
-    right: 10px;
-}
-
-body .header .container-header .container-header-top .search-bar .boton i{
-    color: white;
-    font-size: 1.5rem;
-}
-
-
 body .header .container-header .container-header-top .search-bar input{
     width: 100%;
     border: 1px solid white;
@@ -48,6 +37,16 @@ body .header .container-header .container-header-top .search-bar input{
     padding: 10px;
     outline: none;
     display: none;
+}
+
+body .header .container-header .container-header-top .search-bar .boton{
+    position: relative;
+    right: 10px;
+}
+
+body .header .container-header .container-header-top .search-bar .boton i{
+    color: white;
+    font-size: 1.5rem;
 }
 
 body .header .container-header .container-header-top .nav-bar1{
@@ -73,11 +72,10 @@ body .header .container-header .container-header-top .nav-bar1 ul .carrito li a 
 }
 
 
-/* HEADER BOT */
+/*---------------------HEADER BOT---------------------*/
 
 body .header .container-header .container-header-bot{
     display: none;
     background-color: var(--purple);
-    
 }
 

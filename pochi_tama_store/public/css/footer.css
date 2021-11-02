@@ -2,9 +2,7 @@
     height: 1000px;
 }
 
-
-
-/* FOOTER */
+/*---------------------FOOTER-------------------*/
 
 body .footer{
     background-color:var(--purple);
@@ -110,8 +108,7 @@ body .footer .container-footer-bot .container-row img{
     width: 20px;
 }
 
-body .footer .container-footer-bot .container-row .contactanos{
-    
+body .footer .container-footer-bot .container-row .contactanos{  
     margin-left: 20px;
 }
 
