@@ -55,7 +55,7 @@ span.error-message {
 }
 
 input.input-style {
-    border: none;
+    border: 0.5px solid grey;
     border-radius: 1rem;
     height: 2.5rem;
     padding: .5rem;
@@ -67,6 +67,7 @@ input.input-style::placeholder {
 
 label {
     font-size: 16px;
+    padding: 10px;
 }
 
 .input-file-container {
