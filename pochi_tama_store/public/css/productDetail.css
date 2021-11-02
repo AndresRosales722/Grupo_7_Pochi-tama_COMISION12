@@ -1,13 +1,7 @@
 /*main*/
 
-
-
-
-
-/*Mobile*/
-
-@media  (min-width: 320px) {
-     .detail-product  {
+@media(min-width: 320px) {
+    .detail-product  {
         display: flex;
         flex-direction: column;
         padding-top: 10px;
@@ -28,7 +22,6 @@
         flex-direction: row;
         padding-top: 10px;
         padding-bottom: 10px;
-        width: 100%;
     }
     
      .banner .banner1 {
@@ -38,8 +31,7 @@
         border: solid 3px var(--purple);
         border-radius: 10px;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center; 
     }
 
     

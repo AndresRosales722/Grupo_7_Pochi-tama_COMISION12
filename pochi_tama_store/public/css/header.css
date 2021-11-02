@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 /* HEADER TOP */ 
 body .header .container-header .container-header-top .logo a img{
     width: 130px;
 }
+=======
+/*---------------------HEADER TOP--------------------*/
+>>>>>>> b963e7912233301187941758f7dbc70ed2675335
 
 body .header .container-header .container-header-top{
     display: flex;
@@ -12,6 +16,9 @@ body .header .container-header .container-header-top{
     padding: 10px;
 }
 
+body .header .container-header .container-header-top .logo a img{
+    width: 130px;
+}
 
 body .header .container-header .container-header-top .menu button{
     background-color: var(--orange);
@@ -24,17 +31,19 @@ body .header .container-header .container-header-top .menu button i{
 }
 
 body .header .container-header .container-header-top .search-bar{
-    /* order: 1;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-left: 10px;
-    margin-top: 10px; */
     display: flex;
     width: 0px;
    
+}
+
+body .header .container-header .container-header-top .search-bar input{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+    outline: none;
+    display: none;
 }
 
 body .header .container-header .container-header-top .search-bar .boton{
@@ -45,17 +54,6 @@ body .header .container-header .container-header-top .search-bar .boton{
 body .header .container-header .container-header-top .search-bar .boton i{
     color: white;
     font-size: 1.5rem;
-}
-
-
-body .header .container-header .container-header-top .search-bar input{
-    width: 100%;
-    border: 1px solid white;
-    border-radius: 10px;
-    border-style: none;
-    padding: 10px;
-    outline: none;
-    display: none;
 }
 
 body .header .container-header .container-header-top .nav-bar1{
@@ -81,11 +79,10 @@ body .header .container-header .container-header-top .nav-bar1 ul .carrito li a 
 }
 
 
-/* HEADER BOT */
+/*---------------------HEADER BOT---------------------*/
 
 body .header .container-header .container-header-bot{
     display: none;
     background-color: var(--purple);
-    
 }
 

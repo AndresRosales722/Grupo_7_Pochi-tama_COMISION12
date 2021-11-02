@@ -2,9 +2,7 @@
     height: 1000px;
 }
 
-
-
-/* FOOTER */
+/*---------------------FOOTER-------------------*/
 
 body .footer{
     background-color:var(--purple);
@@ -26,13 +24,6 @@ body .footer hr.linea2{
     border: 1px solid white;
 }
 
-body .footer .container-footer{
-    
-}
-
-body .footer .container-footer-top{
-    
-}
 
 body .footer .container-footer-top img{
     height: 20px;
@@ -40,17 +31,10 @@ body .footer .container-footer-top img{
 }
 
 
-body .footer .container-footer-top .email{
-    
-}
-
 body .footer .container-footer-top .email h4{
     font-size: 16px;
 }
 
-body .footer .container-footer-top .redes{
-    
-}
 
 body .footer .container-footer-top .redes h4{
     font-size: 16px;
@@ -124,8 +108,7 @@ body .footer .container-footer-bot .container-row img{
     width: 20px;
 }
 
-body .footer .container-footer-bot .container-row .contactanos{
-    
+body .footer .container-footer-bot .container-row .contactanos{  
     margin-left: 20px;
 }
 
