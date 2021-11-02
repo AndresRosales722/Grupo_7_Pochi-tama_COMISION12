@@ -1,23 +1,24 @@
 /*main*/
+
+
+
+
+
 /*Mobile*/
 
-.detail-product{
-    box-sizing: border-box;
-    
-}
-
-@media(min-width: 320px) {
-    .detail-product  {
+@media  (min-width: 320px) {
+     .detail-product  {
         display: flex;
         flex-direction: column;
-        background-color: whitesmoke;
         padding-top: 10px;
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
-        width: 80vw;
-        
+        border: solid 10x chartreuse;
+        width: 100%;
+        box-sizing: border-box;
+        background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
     
@@ -25,15 +26,12 @@
     .banner{
         display: flex;
         flex-direction: row;
-        
-        
-        
         padding-top: 10px;
         padding-bottom: 10px;
-        
+        width: 100%;
     }
     
-    .banner .banner1 {
+     .banner .banner1 {
         display: flex;
         background-color: var(--orange);
         width: 150px;
@@ -47,27 +45,28 @@
     
     
     
-     .product-card{
+      .product-card{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 800px;
+        width: 100%;
         height: 50px;
-        background-color: var(--orange);
+        background-color: var(--orange2);
         border-radius: 10px;
         border: solid 5px var(--purple);
         margin-bottom: 20px;
        margin-top: -20px;
-       margin-left: -4px;
+       
     }
     .foto{
         margin-top: 20px;
+        width: 100%;
     }
     
     .product-foto{
         margin-top: 15px;
         background-color: #9D4EDD;
-        width: 800px;
+        width: 100%;
         height: 1500px ;
         border-radius: 10px;
         margin-bottom: 20px;
@@ -77,75 +76,24 @@
     
     .item-main{
         margin-top: 30px;
-        background-color: yellowgreen;
-        height: 400px;
-        width: 88.5%;
+        background-color: var(--orange2);
+        height: 88.5%;
+        width: 86.5%;
       margin: auto;
       border-radius: 10px;
       align-content: center;
       object-fit: cover;
-      padding-top: 10px;
-    }
+      padding-top: 5px;
+      border: solid 3px var(--purple);
+    } /*recordar para tablet otro ancho*/
     
-    .comprar{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 10px;
-    }
-    
-    .comprar a{
-        background-color: var(--orange);
-        border-radius: 20px;
-        border: solid 3px var(--purple);
-        width: 40%;
-        height: 40px;
-        align-content: center;
-        align-self: center;
-        padding-top: 5px;
-        font-size: 20px;
-        font-weight: 700 ;
-    }
-    
-    .comprar img{
-        padding: 3px 0 8px 5px;
-    }
-    
-    /*
-        EL NOMBRE DE LA CLASE ME ESTA PISANDO EL DEL HEADER , CAMBIENLE EL NOMBRE
-        .carrito {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 10px;
-    } */
-    
-    /* COMENTADO PORQUE ME ROMPE EL DISEÑO DEL HEADER
-        .carrito a{
-        background-color: var(--orange);
-        border-radius: 20px;
-        border: solid 3px var(--purple);
-        width: 40%;
-        height: 40px;
-        align-content: center;
-        align-self: center;
-        padding-top: 5px;
-        font-size: 20px;
-        font-weight: 700 ;
-        
-    } */
-    
-   /*  
-    COMENTADO PORQUE ME ROMPE EL DISEÑO DEL HEADER
-        .carrito a:hover{
-        transform: scale(1.1);
-        transition: all 0.5s ease-in-out;
-    } */
-    
-    .carrito img{
-        padding: 3px 0 8px 5px;
-    }
-    
+.item-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
      .item{
       display: flex;
         justify-content:space-evenly;
@@ -153,29 +101,23 @@
     
     }
     .item1{
-        background-color:rgb(185, 16, 201);
-        width: 200px;
-        height: 200px;
+        background-color: var(--orange2);
+        width: 80%;
+        height: 80%;
         margin-bottom: 10px;
         border-radius: 10px;
         padding-top: 10px;
+       padding-bottom: 10px;
+       border: solid 3px var(--purple);
     }
     
-    .item2{
-        background-color: blue;
-        width: 200px;
-        height: 200px;
-        border-radius: 10px;
-        padding-top: 10px;
+    .item1 img{
+        width: 100%;
+    height: 100%;
+    object-fit: contain;
     }
+
     
-    .item3{
-        background-color: crimson;
-        width: 200px;
-        height: 200px;
-        border-radius: 10px;
-    padding-top: 10px;
-    }
     
     .item-main .item{
         padding-bottom:  10px;
@@ -191,8 +133,18 @@
         border-radius: 10px;
         padding-left: 20px;
         border: solid 2.5px var(--purple);
+        justify-content: center;
+        font-weight: 700;
     }
     
+.precio a{
+    color: black;
+    font-size: 14px;
+}
+
+.precio i{
+    color: var(--purple2);
+}
     .descripcion
     {
         background-color: #FF9E00;
@@ -204,19 +156,21 @@
         margin: 10px auto 0 auto ; 
         border-radius: 10px;
         padding-left: 20px; 
-       
+       justify-content: center;
+       font-weight: 700;
     }
     
     .caracteristicas {
         display: flex;
+        flex-direction: column;
         background-color: #FF9E00;
         justify-content: space-evenly;
         width: 87.4%;
-        height: 120px;
+        /*height: 60%;*/
         display: flex;
         border: solid 2.5px var(--purple);
         align-items: center;
-        margin: 10px auto 0 auto ; 
+        margin: 25px auto 0 auto ; 
         border-radius: 10px;
         padding-left: 20px; 
         padding-right: 20px;
@@ -225,7 +179,7 @@
     .caracteristicas .table-1{
         background-color: var(--orange) ;
         border-radius: 10px;
-        padding-left: 10px;
+        width: 100%;
     }
 
     .caracteristicas .table-1 td{
@@ -233,15 +187,27 @@
     
     }
 
-    .caracteristicas .table-2 {
-        background-color: var(--orange);
-        border-radius: 10px ;
-        padding-left: 10px;
+    .caracteristicas .table-1 th{
+        background-color: var(--orange2);
         
+        
+    }
+
+    
+    .caracteristicas .table-2 {
+        background-color: var(--orange) ;
+        border-radius: 10px ;
+        margin-right: 4px;
+        width: 100%;
+    }
+    
+    .caracteristicas .table-2 th{
+        background-color: var(--orange2);
     }
 
     .caracteristicas .table-2 td{
         background-color: var(--orange2);
+        width: 44.5%;
     }
 
     .caracteristicas .table-2 .star{
@@ -262,8 +228,9 @@
     
     .star-text{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     align-items: center;
     
     }
@@ -272,18 +239,24 @@
         background-color: var(--orange);
         border-radius: 20px;
         border: solid 3px var(--purple);
-        width: 20%;
+        width: 36%;
         height: 40px;
         align-content: center;
         align-self: center;
         padding-top: 5px;
         font-size: 20px;
         font-weight: 700 ;
-        margin-right: 25px;
+        margin-right: 76px;
     }
+
+    .star-text .star .text-1 a:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+    } 
 
     .star .text-2{
         padding-left: 4px;
+        color: var(--orange2);
     }
 
     .star-text .star{
@@ -292,21 +265,89 @@
         color: white;
         border: solid 1px var(--orange);
         border-radius: 10px;
+        margin-top: 10px;
     }
     
     .star-text .star i{
         padding: 10px;
         background-color: var();
     }
+    .comprar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        width: 60%;
+        margin: auto;
+    }
+    
+    .comprar a{
+        background-color: var(--orange);
+        border-radius: 20px;
+        border: solid 3px var(--purple);
+        width: 40%;
+        height: 40px;
+        align-content: center;
+        align-self: center;
+        padding-top: 1px;
+        font-size: 14px;
+        font-weight: 700 ;
+        justify-content: center;
+
+    }
+    
+    .comprar img{
+        padding: 3px 0 8px 5px;
+    }
+    
+    .comprar a:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+    } 
+    
+        .agregar-carrito {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 7px;
+        width: 60%;
+        margin: auto;
+
+    } 
+    
+    
+        .agregar-carrito a{
+        background-color: var(--orange);
+        border-radius: 20px;
+        border: solid 3px var(--purple);
+        width: 40%;
+        height: 40px;
+        align-content: center;
+        align-self: center;
+        padding-top: 1px;
+        font-size: 14px;
+        font-weight: 700 ;
+        
+    } 
+    
+   
+        .agregar-carrito a:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+    } 
+    
+    .agregar-carrito img{
+        padding: 3px 0 8px 5px;
+    }
     
 }
 
-/*END MOBILE*/
+/*-------END MOBILE--------*/
 
 
 
-/*Desktop*/
-@media (min-width: 1028px) {
+/*------Desktop-------*/
+ @media (min-width: 1028px) {
 .banner{
     display: none;
 }
@@ -326,8 +367,65 @@
     align-items: stretch;
     width: 100%;
 }
+/*---------ITEM-----------*/
+.foto{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.product-foto{
+    margin-top: 15px;
+    background-color: #9D4EDD;
+    width: 800px;
+    height: 1500px ;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: solid 5px #FF9E00;
+  
+}
+
+.item-main{
+    margin-top: 30px;
+    background-color: var(--orange2);
+    height: 400px;
+    width: 700px;
+  margin: auto;
+  border-radius: 10px;
+  align-content: center;
+  object-fit: cover;
+  
+}
+
+.item{
+    display: flex;
+      justify-content:space-evenly;
+     padding-top: 10px;
+  
+  }
+
+  .item-main .item{
+    padding-bottom:  10px;
+}
+
+  .item1{
+    background-color: var(--orange2);
+      width: 200px;
+      height: 200px;
+
+      border-radius: 10px;
+      padding-top: 10px;
+      
+  }
+  
+  
+  
+  .item-main .item{
+      padding-bottom:  10px;
+  }
+/*-------END ITEM---------*/
 
 
+/*-------CATEGORIAS-------*/
 .categorias, .public{
     width: 80px;
     height: 700px;
@@ -355,7 +453,7 @@
 }
 .categorias .sub .categoria-a{
     background-color: #FF9E00;
-    width: 90%;
+    width: 100%;
     padding-top: 4px;
     border-radius: 10px;
     color: var(--purple);
@@ -369,8 +467,225 @@
     background-color: rgb(62, 182, 170);
     transition: all 0.5s ease-in-out
 }
+/*PRECIO Y DESCRIPCION*/
+.precio{
+    background-color: #FF9E00;
+    width: 87.4%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: solid 2.5px var(--purple);
+}
+
+.descripcion
+{
+    background-color: #FF9E00;
+    width: 87.4%;
+    height: 90px;
+    display: flex;
+    border: solid 2.5px var(--purple);
+    align-items: center;
+    margin: 10px auto 0 auto ; 
+    border-radius: 10px;
+    padding-left: 20px; 
+   
+}
+/*----CARACTERISTICAS----*/
+.caracteristicas {
+    display: flex;
+    flex-direction: row;
+    background-color: #FF9E00;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    border: solid 2.5px var(--purple);
+    align-items: center;
+    margin: 10px auto 0 auto ; 
+    border-radius: 10px;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+.caracteristicas .table-1{
+    background-color: var(--orange) ;
+    border-radius: 10px;
+    
+    width: 100%;
+    
+}
+
+.caracteristicas .table-1 td{
+    background-color: var(--orange2);
+
+}
+
+.caracteristicas .table-2 {
+    background-color: var(--orange);
+    border-radius: 10px ;
+    
+    width: 100%;
+}
+
+.caracteristicas .table-2 td{
+    background-color: var(--orange2);
+}
+
+.caracteristicas .table-2 .star{
+    background-color: var(--orange2);
+    border: var(--orange2);
+}
+
+.caracteristicas .table-2 .star i{
+    background-color: var(--orange2);
+    color: var(--purple2);
+}
+.star-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    
+    }
+    
+    .star-text .text-1 {
+        background-color: var(--orange);
+        border-radius: 20px;
+        border: solid 3px var(--purple);
+        width: 36%;
+        height: 40px;
+        align-content: center;
+        align-self: center;
+        padding-top: 5px;
+        font-size: 20px;
+        font-weight: 700 ;
+        justify-content: center;
+    }
+
+    .star-text .star .text-1 a:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+    } 
+
+    .star .text-2{
+        padding-left: 4px;
+        color: var(--orange2);
+    }
+
+    .star-text .star{
+        
+        background-color: var(--purple);
+        color: white;
+        border: solid 1px var(--orange);
+        border-radius: 10px;
+        margin-right: 73px;
+        justify-content: center;
+    }
+    
+    .star-text .star i{
+        padding: 10px;
+        background-color: var();
+    }
+    .comprar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+       
+    }
+    
+    .comprar a{
+        background-color: var(--orange);
+        border-radius: 20px;
+        border: solid 3px var(--purple);
+        width: 60%;
+        height: 40px;
+        align-content: center;
+        align-self: center;
+        padding-top: 5px;
+        font-size: 20px;
+        font-weight: 700 ;
+    }
+    
+    .comprar img{
+        padding: 3px 0 8px 5px;
+    }
+    
+    .comprar a:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+    } 
+    
+        .agregar-carrito {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        width: 60%;
+    } 
+    
+    
+        .agregar-carrito a{
+        background-color: var(--orange);
+        border-radius: 20px;
+        border: solid 3px var(--purple);
+        width: 60%;
+        height: 40px;
+        align-content: center;
+        align-self: center;
+        padding-top: 5px;
+        font-size: 20px;
+        font-weight: 700 ;
+        
+    } 
+    
+   
+        .agregar-carrito a:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+    } 
+    
+    .agregar-carrito img{
+        padding: 3px 0 8px 5px;
+    }
 }
 
 @media (min-width: 768px) {
 
+    .comprar a {
+        background-color: var(--orange);
+        border-radius: 20px;
+        border: solid 3px var(--purple);
+        width: 40%;
+        height: 40px;
+        align-content: center;
+        align-self: center;
+        padding-top: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        justify-content: center;
+    }
+    .agregar-carrito a {
+        background-color: var(--orange);
+        border-radius: 20px;
+        border: solid 3px var(--purple);
+        width: 40%;
+        height: 40px;
+        align-content: center;
+        align-self: center;
+        padding-top: 5px;
+        font-size: 20px;
+        font-weight: 700;
+} 
+.star-text .star {
+    background-color: var(--purple);
+    color: white;
+    border: solid 1px var(--orange);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 65px;
+}
 }
