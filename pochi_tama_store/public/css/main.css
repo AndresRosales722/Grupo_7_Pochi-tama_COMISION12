@@ -7,25 +7,24 @@ body .main-container{
     padding: 10px;
 }
 
-body .main-container section.productos{
+body .main-container .container-section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 1rem;
+    justify-content: space-evenly;
 }
 
-body .main-container section.productos article{
-    width: 45%;
-    text-align: center;  
+body .main-container .container-section .caja {
+    width: 210px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    height: 210px;
+    display: flex;
+    border-bottom: 5px solid orange;
+    /* transition: all 0.5s ease-in-out; */
 }
 
-body .main-container section.productos article .img{
-    border: 1px solid ;
-}
-
-body .main-container section.productos article .img img{
+body .main-container .container-section .caja img {
     width: 100%;
-}
-
-body .main-container section.productos article .name-section{
-    
+    height: 100%;
+    object-fit: contain;
 }
