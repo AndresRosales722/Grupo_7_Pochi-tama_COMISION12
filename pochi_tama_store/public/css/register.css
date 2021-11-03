@@ -1,5 +1,8 @@
 body {
+<<<<<<< HEAD
     background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
+=======
+>>>>>>> 697d5dd839699d96b457034a2d9fbf0021087547
     height: 100%;
     
 }
@@ -13,19 +16,9 @@ h2 {
     align-items: center;
     margin-bottom: 1rem;
     padding-left: 20px;
-    font-family: 'Luckiest Guy', cursive;
     font-size: 20px;
 }
 
-/* PONGANLE CLASE A LOS HR QUE USEN PORQUE PISAN A LOS DE LOS DEMAS
-
-hr {
-    height: 2px;
-    margin-bottom: 3rem;
-    width: 100%;
-    background: linear-gradient(90deg, black, white);
-    border: none;
-} */
 
 .form {
     display: flex;
