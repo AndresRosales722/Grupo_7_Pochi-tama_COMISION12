@@ -22,6 +22,7 @@
         align-items: center; 
         transition: all 0.3s ease-in; 
         border-radius: 25px;
+        background-color: #bb98d975;
      }
     
      .detail-buy {
@@ -32,7 +33,7 @@
      .cuadrado-buy {
         background-color: #7b2cbf; 
         justify-content: flex-end;
-        border-radius: 2px;
+        border-radius: 25px;
         align-items: center; 
     }
     
@@ -47,8 +48,11 @@
         color: black 50%;
     }
     
-    .objects-izq {
+    .objects-izq2 {
         display: flex;
+        position: absolute;
+        top: 1300px;
+        left: 20px;
     }
     
     .boton-calcular {
@@ -57,22 +61,30 @@
         color: black 50%;
     }
     
-    .boton-compra {
+    .boton-compra1 {
         background-color: #cf9afd;
         border: #2a024d 15px;
         color: black 50%;
-    }
-    
-    .cuadrado-correo {
-        background-color: #cf9afd;  
         display: flex;
         align-items: center;
-        width: 15rem;
-        height: 4rem;
-        border: 1px solid rgb(250, 115, 37);
         justify-content: center;
         position: absolute;
-        left: 735px;
+        left: 263px;
+
+        /* width: 15rem;
+        height: 4rem; */
+    }
+    
+    .boton-compra2 {
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        background-color: #cf9afd;
+        border: #2a024d 15px;
+        color: black 50%;
+        left: 263px;
+        top: 1000px;
+
     }
     
     .cuadrado-cantidad {
@@ -89,7 +101,7 @@
         height: 30px;
         background-color: rgb(163, 41, 233);
         position: absolute;
-        left: 330px;
+        left: 225px;
         border-radius: 10px;
         align-items: center;
         top: 240px;
@@ -100,7 +112,7 @@
         height: 30px;
         background-color: rgb(163, 41, 233);
         position: absolute;
-        left: 330px;
+        left: 225px;
         border-radius: 10px;
         align-items: center;
         top: 400px;
@@ -111,7 +123,7 @@
         height: 30px;
         background-color: rgb(163, 41, 233);
         position: absolute;
-        left: 330px;
+        left: 225px;
         border-radius: 10px;
         align-items: center;
         top: 580px;
@@ -120,6 +132,28 @@
     .circulo-stock1, .circulo-stock2, .circulo-stock3 {
         font-size: 14px;
         flex-grow: 7;
+    }
+
+    .name-product1 {
+        position: absolute;
+        left: 260px;
+        top: 200px;
+        color: var(--purple);
+        
+    }
+    
+    .name-product2 {
+        position: absolute;
+        left: 265px;
+        top: 360px;
+        color: var(--purple);
+    }
+    
+    .name-product3 {
+        position: absolute;
+        left: 265px;
+        top: 530px;
+        color: var(--purple);
     }
     
     }
@@ -154,6 +188,7 @@
             align-items: center; 
             transition: all 0.3s ease-in; 
             border-radius: 25px;
+            background-color: #bb98d975;
          }
         
          .detail-buy {
@@ -164,7 +199,7 @@
          .cuadrado-buy {
             background-color: #7b2cbf; 
             justify-content: flex-end;
-            border-radius: 2px;
+            border-radius: 25px;
             align-items: center; 
         }
         
@@ -181,6 +216,15 @@
         
         .objects-izq {
             display: flex;
+            position: absolute;
+            top: 792px;
+            left: 20px;
+        }
+        .objects-izq2 {
+            display: flex;
+            position: absolute;
+            top: 792px;
+            left: 20px;
         }
         
         .boton-calcular {
@@ -189,37 +233,48 @@
             color: black 50%;
         }
         
-        .boton-compra {
+        .boton-compra1 {
             background-color: #cf9afd;
             border: #2a024d 15px;
             color: black 50%;
-        }
-        
-        .cuadrado-correo {
-            background-color: #cf9afd;  
             display: flex;
             align-items: center;
-            width: 15rem;
-            height: 4rem;
-            border: 1px solid rgb(250, 115, 37);
             justify-content: center;
             position: absolute;
-            left: 735px;
+            left: 263px;
+
+            /* width: 15rem;
+            height: 4rem; */
         }
+        
+        .boton-compra2 {
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            background-color: #cf9afd;
+            border: #2a024d 15px;
+            color: black 50%;
+            left: 263px;
+            top: 1000px;
+
+        }
+        
         
         .cuadrado-cantidad1 {
             position: absolute;
             top: 225px;
-            left: 760px;
+            left: 580px;
             width: 55px;
             height: 30px;
             background-color: var(--orange);
+            display: flex;
+            justify-content: space-evenly;
         }
     
         .cuadrado-cantidad2 {
             position: absolute;
             top: 392px;
-            left: 760px;
+            left: 580px;
             width: 55px;
             height: 30px;
             background-color: var(--orange);
@@ -228,7 +283,7 @@
         .cuadrado-cantidad3 {
             position: absolute;
             top: 563px;
-            left: 760px;
+            left: 580px;
             width: 55px;
             height: 30px;
             background-color: var(--orange);
@@ -239,7 +294,7 @@
             height: 30px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 330px;
+            left: 225px;
             border-radius: 10px;
             align-items: center;
             top: 240px;
@@ -250,7 +305,7 @@
             height: 30px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 330px;
+            left: 225px;
             border-radius: 10px;
             align-items: center;
             top: 400px;
@@ -261,7 +316,7 @@
             height: 30px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 330px;
+            left: 225px;
             border-radius: 10px;
             align-items: center;
             top: 580px;
@@ -274,7 +329,7 @@
     
         .name-product1 {
             position: absolute;
-            left: 320px;
+            left: 260px;
             top: 200px;
             color: var(--purple);
             
@@ -282,21 +337,17 @@
         
         .name-product2 {
             position: absolute;
-            left: 305px;
+            left: 265px;
             top: 360px;
             color: var(--purple);
         }
         
         .name-product3 {
             position: absolute;
-            left: 305px;
+            left: 265px;
             top: 530px;
             color: var(--purple);
         }
-        
-        .fas-fa-plus1 {}
-        .fas-fa-plus2 {}
-        .fas-fa-plus3 {}
     
     
     }
@@ -331,6 +382,7 @@
             align-items: center; 
             transition: all 0.3s ease-in; 
             border-radius: 25px;
+            background-color: #bb98d975;
          }
         
          .detail-buy {
@@ -341,7 +393,7 @@
          .cuadrado-buy {
             background-color: #7b2cbf; 
             justify-content: flex-end;
-            border-radius: 2px;
+            border-radius: 25px;
             align-items: center; 
         }
         
@@ -356,8 +408,18 @@
             color: black 50%;
         }
         
-        .objects-izq {
+        .objects-izq1 {
             display: flex;
+            position: absolute;
+            top: 792px;
+            left: 20px;
+        }
+
+        .objects-izq2 {
+            display: flex;
+            position: absolute;
+            top: 1060px;
+            left: 20px;
         }
         
         .boton-calcular {
@@ -386,8 +448,8 @@
         
         .cuadrado-cantidad1 {
             position: absolute;
-            top: 225px;
-            left: 760px;
+            top: 350px;
+            left: 430px;
             width: 55px;
             height: 30px;
             background-color: var(--orange);
@@ -395,8 +457,8 @@
     
         .cuadrado-cantidad2 {
             position: absolute;
-            top: 392px;
-            left: 760px;
+            top: 522px;
+            left: 430px;
             width: 55px;
             height: 30px;
             background-color: var(--orange);
@@ -404,8 +466,8 @@
     
         .cuadrado-cantidad3 {
             position: absolute;
-            top: 563px;
-            left: 760px;
+            top: 685px;
+            left: 430px;
             width: 55px;
             height: 30px;
             background-color: var(--orange);
@@ -416,10 +478,10 @@
             height: 30px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 330px;
+            left: 240px;
             border-radius: 10px;
             align-items: center;
-            top: 240px;
+            top: 355px;
         }
         
         .circulo-stock2 {
@@ -427,10 +489,10 @@
             height: 30px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 330px;
+            left: 240px;
             border-radius: 10px;
             align-items: center;
-            top: 400px;
+            top: 525px;
         }
         
         .circulo-stock3 {
@@ -438,10 +500,10 @@
             height: 30px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 330px;
+            left: 240px;
             border-radius: 10px;
             align-items: center;
-            top: 580px;
+            top: 690px;
         }
         
         .circulo-stock1, .circulo-stock2, .circulo-stock3 {
@@ -451,27 +513,24 @@
     
         .name-product1 {
             position: absolute;
-            left: 320px;
-            top: 200px;
+            left: 235px;
+            top: 315px;
             color: var(--purple);
             
         }
         
         .name-product2 {
             position: absolute;
-            left: 305px;
-            top: 360px;
+            left: 215px;
+            top: 490px;
             color: var(--purple);
         }
         
         .name-product3 {
             position: absolute;
-            left: 305px;
-            top: 530px;
+            left: 220px;
+            top: 650px;
             color: var(--purple);
         }
         
-        .fas-fa-plus1 {}
-        .fas-fa-plus2 {}
-        .fas-fa-plus3 {}
     }
