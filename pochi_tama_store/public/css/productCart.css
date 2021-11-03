@@ -1,24 +1,477 @@
-.buys {
-    padding: 10px;
-    height: 1000px;
-    right: auto;
-}
-
-.shopping-cart .rectangulo1, .rectangulo2, .rectangulo3 {
-    display: flex;
-    background: #9d4edd;
-    border-radius: 20px;
-    width: 47rem;
-    height: 10rem;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #ff9e00;
-}
-
-.square-buy {
-    width: 100px; 
-    height: 100px; 
-    background: #428bca;
-    display: flex;
-
-}
+@media (min-width: 1028px) {
+    .space-buys {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+        text-align: center;
+        border: var(--orange) 20px;
+        height: 500px; 
+        padding: 10px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+      
+    }
+    
+     .art-buys {
+        width: 100%; 
+        box-shadow: 2px 2px 3px rgba(191, 64, 191, 50%); 
+        height: 150px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        transition: all 0.3s ease-in; 
+        border-radius: 25px;
+     }
+    
+     .detail-buy {
+        text-decoration: dotted;
+        color: blueviolet;
+     }
+    
+     .cuadrado-buy {
+        background-color: #7b2cbf; 
+        justify-content: flex-end;
+        border-radius: 2px;
+        align-items: center; 
+    }
+    
+    .cuadrado-buy p{
+        font-size: 14px;
+        flex-grow: 7;
+    }
+    
+    .codigo-postal {   
+        background-color: #cf9afd;
+        border: #7b2cbf px;
+        color: black 50%;
+    }
+    
+    .objects-izq {
+        display: flex;
+    }
+    
+    .boton-calcular {
+        background-color: #cf9afd;
+        border: #2a024d 15px;
+        color: black 50%;
+    }
+    
+    .boton-compra {
+        background-color: #cf9afd;
+        border: #2a024d 15px;
+        color: black 50%;
+    }
+    
+    .cuadrado-correo {
+        background-color: #cf9afd;  
+        display: flex;
+        align-items: center;
+        width: 15rem;
+        height: 4rem;
+        border: 1px solid rgb(250, 115, 37);
+        justify-content: center;
+        position: absolute;
+        left: 735px;
+    }
+    
+    .cuadrado-cantidad {
+        width: 60px;
+        height: 40px;
+        background-color: rgba(250, 115, 37, 0.87);
+        position: relative;
+        top: -25px;
+        border: #2a024d 5px;   
+    }
+    
+    .circulo-stock1 {
+        width: 60px;
+        height: 30px;
+        background-color: rgb(163, 41, 233);
+        position: absolute;
+        left: 330px;
+        border-radius: 10px;
+        align-items: center;
+        top: 240px;
+    }
+    
+    .circulo-stock2 {
+        width: 60px;
+        height: 30px;
+        background-color: rgb(163, 41, 233);
+        position: absolute;
+        left: 330px;
+        border-radius: 10px;
+        align-items: center;
+        top: 400px;
+    }
+    
+    .circulo-stock3 {
+        width: 60px;
+        height: 30px;
+        background-color: rgb(163, 41, 233);
+        position: absolute;
+        left: 330px;
+        border-radius: 10px;
+        align-items: center;
+        top: 580px;
+    }
+    
+    .circulo-stock1, .circulo-stock2, .circulo-stock3 {
+        font-size: 14px;
+        flex-grow: 7;
+    }
+    
+    }
+    
+    @media (min-device-width : 768px) {
+        .space-buys {
+            height: 1000px;
+            padding: 30px;
+            display: flex;
+            
+        }
+        .space-buys {
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+            text-align: center;
+            border: var(--orange) 20px;
+            height: 500px; 
+            padding: 10px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+          
+        }
+        
+         .art-buys {
+            width: 100%; 
+            box-shadow: 2px 2px 3px rgba(191, 64, 191, 50%); 
+            height: 150px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            transition: all 0.3s ease-in; 
+            border-radius: 25px;
+         }
+        
+         .detail-buy {
+            text-decoration: dotted;
+            color: blueviolet;
+         }
+        
+         .cuadrado-buy {
+            background-color: #7b2cbf; 
+            justify-content: flex-end;
+            border-radius: 2px;
+            align-items: center; 
+        }
+        
+        .cuadrado-buy p{
+            font-size: 14px;
+            flex-grow: 7;
+        }
+        
+        .codigo-postal {   
+            background-color: #cf9afd;
+            border: #7b2cbf px;
+            color: black 50%;
+        }
+        
+        .objects-izq {
+            display: flex;
+        }
+        
+        .boton-calcular {
+            background-color: #cf9afd;
+            border: #2a024d 15px;
+            color: black 50%;
+        }
+        
+        .boton-compra {
+            background-color: #cf9afd;
+            border: #2a024d 15px;
+            color: black 50%;
+        }
+        
+        .cuadrado-correo {
+            background-color: #cf9afd;  
+            display: flex;
+            align-items: center;
+            width: 15rem;
+            height: 4rem;
+            border: 1px solid rgb(250, 115, 37);
+            justify-content: center;
+            position: absolute;
+            left: 735px;
+        }
+        
+        .cuadrado-cantidad1 {
+            position: absolute;
+            top: 225px;
+            left: 760px;
+            width: 55px;
+            height: 30px;
+            background-color: var(--orange);
+        }
+    
+        .cuadrado-cantidad2 {
+            position: absolute;
+            top: 392px;
+            left: 760px;
+            width: 55px;
+            height: 30px;
+            background-color: var(--orange);
+        }
+    
+        .cuadrado-cantidad3 {
+            position: absolute;
+            top: 563px;
+            left: 760px;
+            width: 55px;
+            height: 30px;
+            background-color: var(--orange);
+        }
+        
+        .circulo-stock1 {
+            width: 60px;
+            height: 30px;
+            background-color: rgb(163, 41, 233);
+            position: absolute;
+            left: 330px;
+            border-radius: 10px;
+            align-items: center;
+            top: 240px;
+        }
+        
+        .circulo-stock2 {
+            width: 60px;
+            height: 30px;
+            background-color: rgb(163, 41, 233);
+            position: absolute;
+            left: 330px;
+            border-radius: 10px;
+            align-items: center;
+            top: 400px;
+        }
+        
+        .circulo-stock3 {
+            width: 60px;
+            height: 30px;
+            background-color: rgb(163, 41, 233);
+            position: absolute;
+            left: 330px;
+            border-radius: 10px;
+            align-items: center;
+            top: 580px;
+        }
+        
+        .circulo-stock1, .circulo-stock2, .circulo-stock3 {
+            font-size: 14px;
+            flex-grow: 7;
+        }
+    
+        .name-product1 {
+            position: absolute;
+            left: 320px;
+            top: 200px;
+            color: var(--purple);
+            
+        }
+        
+        .name-product2 {
+            position: absolute;
+            left: 305px;
+            top: 360px;
+            color: var(--purple);
+        }
+        
+        .name-product3 {
+            position: absolute;
+            left: 305px;
+            top: 530px;
+            color: var(--purple);
+        }
+        
+        .fas-fa-plus1 {}
+        .fas-fa-plus2 {}
+        .fas-fa-plus3 {}
+    
+    
+    }
+    
+    @media(min-width: 320px) {
+        .space-buys {
+            height: 1000px;
+            padding: 30px;
+            display: flex;
+            
+        }
+        .space-buys {
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+            text-align: center;
+            border: var(--orange) 20px;
+            height: 500px; 
+            padding: 10px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+          
+        }
+        
+         .art-buys {
+            width: 100%; 
+            box-shadow: 2px 2px 3px rgba(191, 64, 191, 50%); 
+            height: 150px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            transition: all 0.3s ease-in; 
+            border-radius: 25px;
+         }
+        
+         .detail-buy {
+            text-decoration: dotted;
+            color: blueviolet;
+         }
+        
+         .cuadrado-buy {
+            background-color: #7b2cbf; 
+            justify-content: flex-end;
+            border-radius: 2px;
+            align-items: center; 
+        }
+        
+        .cuadrado-buy p{
+            font-size: 14px;
+            flex-grow: 7;
+        }
+        
+        .codigo-postal {   
+            background-color: #cf9afd;
+            border: #7b2cbf px;
+            color: black 50%;
+        }
+        
+        .objects-izq {
+            display: flex;
+        }
+        
+        .boton-calcular {
+            background-color: #cf9afd;
+            border: #2a024d 15px;
+            color: black 50%;
+        }
+        
+        .boton-compra {
+            background-color: #cf9afd;
+            border: #2a024d 15px;
+            color: black 50%;
+        }
+        
+        .cuadrado-correo {
+            background-color: #cf9afd;  
+            display: flex;
+            align-items: center;
+            width: 15rem;
+            height: 4rem;
+            border: 1px solid rgb(250, 115, 37);
+            justify-content: center;
+            position: absolute;
+            left: 735px;
+        }
+        
+        .cuadrado-cantidad1 {
+            position: absolute;
+            top: 225px;
+            left: 760px;
+            width: 55px;
+            height: 30px;
+            background-color: var(--orange);
+        }
+    
+        .cuadrado-cantidad2 {
+            position: absolute;
+            top: 392px;
+            left: 760px;
+            width: 55px;
+            height: 30px;
+            background-color: var(--orange);
+        }
+    
+        .cuadrado-cantidad3 {
+            position: absolute;
+            top: 563px;
+            left: 760px;
+            width: 55px;
+            height: 30px;
+            background-color: var(--orange);
+        }
+        
+        .circulo-stock1 {
+            width: 60px;
+            height: 30px;
+            background-color: rgb(163, 41, 233);
+            position: absolute;
+            left: 330px;
+            border-radius: 10px;
+            align-items: center;
+            top: 240px;
+        }
+        
+        .circulo-stock2 {
+            width: 60px;
+            height: 30px;
+            background-color: rgb(163, 41, 233);
+            position: absolute;
+            left: 330px;
+            border-radius: 10px;
+            align-items: center;
+            top: 400px;
+        }
+        
+        .circulo-stock3 {
+            width: 60px;
+            height: 30px;
+            background-color: rgb(163, 41, 233);
+            position: absolute;
+            left: 330px;
+            border-radius: 10px;
+            align-items: center;
+            top: 580px;
+        }
+        
+        .circulo-stock1, .circulo-stock2, .circulo-stock3 {
+            font-size: 14px;
+            flex-grow: 7;
+        }
+    
+        .name-product1 {
+            position: absolute;
+            left: 320px;
+            top: 200px;
+            color: var(--purple);
+            
+        }
+        
+        .name-product2 {
+            position: absolute;
+            left: 305px;
+            top: 360px;
+            color: var(--purple);
+        }
+        
+        .name-product3 {
+            position: absolute;
+            left: 305px;
+            top: 530px;
+            color: var(--purple);
+        }
+        
+        .fas-fa-plus1 {}
+        .fas-fa-plus2 {}
+        .fas-fa-plus3 {}
+    }
