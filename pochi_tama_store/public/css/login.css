@@ -8,17 +8,6 @@ h2 {
     font-size: 20px;
 }
 
-/* 
-
-hrPONGANLE CLASE A LOS HR QUE USEN PORQUE PISAN A LOS DE LOS DEMAS
-{
-    height: 2px;
-    margin-bottom: 3rem;
-    width: 100%;
-    background: linear-gradient(90deg, black, white);
-    border: none;
-} */
-
 .form {
     display: flex;
     flex-direction: column;
