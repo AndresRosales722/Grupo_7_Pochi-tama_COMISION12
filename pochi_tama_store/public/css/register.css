@@ -1,23 +1,20 @@
 body {
-<<<<<<< HEAD
     background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
-=======
->>>>>>> 697d5dd839699d96b457034a2d9fbf0021087547
     height: 100%;
     
 }
 
 a {
-    color: rgb(86, 19, 209);
+  
     font-size: 1rem;
 }
 
-h2 {
+/* h2 {
     align-items: center;
     margin-bottom: 1rem;
     padding-left: 20px;
     font-size: 20px;
-}
+} */
 
 
 .form {

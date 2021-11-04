@@ -2,11 +2,11 @@ a {
     font-size: 1rem;
 }
 
-h2 {
+/* h2 {
     margin-bottom: 1rem;
     padding-left: 20px;
     font-size: 20px;
-}
+} */
 
 .form {
     display: flex;
