@@ -1,4 +1,9 @@
-@media (min-width: 1028px) {
+@media (min-width: 320px) {
+
+    body {
+        background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
+    }
+
     .space-buys {
         display: flex; 
         flex-direction: column; 
@@ -10,7 +15,6 @@
         display: flex; 
         flex-direction: column; 
         justify-content: space-between;
-      
     }
     
      .art-buys {
@@ -24,6 +28,40 @@
         border-radius: 25px;
         background-color: #bb98d975;
      }
+
+     .img-duende {
+        max-height: 90px; 
+        justify-content: flex-start; 
+        position: absolute; 
+        top: 192px; 
+        right: 100px; 
+        left: 30px;
+     }
+     
+     .img-casco {
+        max-height: 90px; 
+        justify-content: flex-start; 
+        position: absolute; 
+        top: 361px; 
+        right: 100px; 
+        left: 33px;
+     }
+     
+     .img-guante {
+        max-height: 90px;  
+        justify-content: flex-start; 
+        position: absolute; 
+        top: 534px; 
+        right: 100px; 
+        left: 30px;
+     }
+
+     .cart-buys-p {
+        position: absolute;
+        left: 11px;
+        top: 127px;
+        color: var(--purple);
+    }
     
      .detail-buy {
         text-decoration: dotted;
@@ -37,10 +75,6 @@
         align-items: center; 
     }
     
-    .cuadrado-buy p{
-        font-size: 14px;
-        flex-grow: 7;
-    }
     
     .codigo-postal {   
         background-color: #cf9afd;
@@ -48,10 +82,16 @@
         color: black 50%;
     }
     
+    .objects-izq1 {
+        display: flex;
+        position: absolute;
+        top: 695px;
+        left: 20px;
+    }
     .objects-izq2 {
         display: flex;
         position: absolute;
-        top: 1300px;
+        top: 960px;
         left: 20px;
     }
     
@@ -60,102 +100,124 @@
         border: #2a024d 15px;
         color: black 50%;
     }
-    
-    .boton-compra1 {
-        background-color: #cf9afd;
-        border: #2a024d 15px;
-        color: black 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        left: 263px;
 
-        /* width: 15rem;
-        height: 4rem; */
+    .boton-compra {
+        background-color: rgba(248, 126, 45, 0.363);
+    }
+
+    .boton-compra:hover {
+        color: rgba(255, 255, 255, 1) !important;
+        box-shadow: 0 4px 16px rgb(216, 129, 48);
+        transition: all 0.2s ease
     }
     
-    .boton-compra2 {
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        background-color: #cf9afd;
-        border: #2a024d 15px;
-        color: black 50%;
-        left: 263px;
-        top: 1000px;
-
-    }
-    
-    .cuadrado-cantidad {
-        width: 60px;
-        height: 40px;
-        background-color: rgba(250, 115, 37, 0.87);
+    .cuadrado-cantidad1 {
+        width: 23px;
+        background-color: var(--orange);
         position: relative;
-        top: -25px;
-        border: #2a024d 5px;   
+        left: 18px;
+        top: -9px;
     }
     
-    .circulo-stock1 {
-        width: 60px;
-        height: 30px;
-        background-color: rgb(163, 41, 233);
-        position: absolute;
-        left: 225px;
-        border-radius: 10px;
-        align-items: center;
-        top: 240px;
+    .cuadrado-cantidad2 {
+        width: 23px;
+        background-color: var(--orange);
+        position: relative;
+        left: 18px;
+        top: -10px;
     }
     
-    .circulo-stock2 {
-        width: 60px;
-        height: 30px;
-        background-color: rgb(163, 41, 233);
-        position: absolute;
-        left: 225px;
-        border-radius: 10px;
-        align-items: center;
-        top: 400px;
+    .cuadrado-cantidad3 {
+        width: 23px;
+        background-color: var(--orange);
+        position: relative;
+        left: 18px;
+        top: -10px;
+    }
+
+    .precio1 {
+        position: relative;
+        left: 88px;
+        top: 10px;
+        color: var(--purple);
     }
     
-    .circulo-stock3 {
-        width: 60px;
-        height: 30px;
-        background-color: rgb(163, 41, 233);
-        position: absolute;
-        left: 225px;
-        border-radius: 10px;
-        align-items: center;
-        top: 580px;
+    .precio2 {
+        position: relative;
+        left: 88px;
+        top: 10px;
+        color: var(--purple);
     }
     
-    .circulo-stock1, .circulo-stock2, .circulo-stock3 {
-        font-size: 14px;
-        flex-grow: 7;
+    .precio3 {
+        position: relative;
+        left: 88px;
+        top: 10px;
+        color: var(--purple);
+    }
+
+    .preciofinal1{
+        display: none !important;
+    }
+    
+    .preciofinal2{
+        display: none !important;
+    }
+    
+    .preciofinal3{
+        display: none !important;
+    }
+    
+    .circulo-stock1{
+        display: none !important;
+    }
+    .circulo-stock2{
+        display: none !important;
+    }
+    .circulo-stock3{
+        display: none !important;
     }
 
     .name-product1 {
         position: absolute;
-        left: 260px;
-        top: 200px;
+        left: 38px;
+        top: 287px;
         color: var(--purple);
         
     }
     
     .name-product2 {
         position: absolute;
-        left: 265px;
-        top: 360px;
+        left: 19px;
+        top: 456px;
         color: var(--purple);
     }
     
     .name-product3 {
         position: absolute;
-        left: 265px;
-        top: 530px;
+        left: 14px;
+        top: 628px;
         color: var(--purple);
     }
+
+    #sum-icon1 {
+        display: none !important;
+    }
     
+    #sum-icon2 {
+        display: none !important;
+    }
+    
+    #sum-icon3 {
+        display: none !important;
+    }
+
+    #min-icon1 {
+        display: none !important;
+    }
+    
+    #min-icon2 {
+        display: none !important;
     }
     
     #min-icon3 {
@@ -178,7 +240,7 @@
     width: 82px;
     }
     
-    
+    }
 
     @media (min-width:575px) {
 
@@ -189,46 +251,60 @@
             color: var(--purple);
         }
         
-         .art-buys {
-            width: 100%; 
-            box-shadow: 2px 2px 3px rgba(191, 64, 191, 50%); 
-            height: 150px; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            transition: all 0.3s ease-in; 
-            border-radius: 25px;
-            background-color: #bb98d975;
+        .img-duende {
+            max-height: 106px;
+            justify-content: flex-start;
+            position: absolute;
+            top: 254px;
+            right: 100px;
+            left: 38px;
          }
-        
-         .detail-buy {
-            text-decoration: dotted;
-            color: blueviolet;
+         
+         .img-casco {
+            max-height: 106px; 
+            justify-content: flex-start; 
+            position: absolute; 
+            top: 421px; 
+            right: 100px; 
+            left: 36px;
          }
-        
-         .cuadrado-buy {
-            background-color: #7b2cbf; 
-            justify-content: flex-end;
-            border-radius: 25px;
-            align-items: center; 
+         
+         .img-guante {
+            max-height: 106px;  
+            justify-content: flex-start; 
+            position: absolute; 
+            top: 591px; 
+            right: 100px; 
+            left: 30px;
+         }
+
+         .name-product1 {
+            position: absolute;
+            left: 172px;
+            top: 274px;
+            color: var(--purple);
+            
         }
         
-        .cuadrado-buy p{
-            font-size: 14px;
-            flex-grow: 7;
+        .name-product2 {
+            position: absolute;
+            left: 156px;
+            top: 438px;
+            color: var(--purple);
         }
         
-        .codigo-postal {   
-            background-color: #cf9afd;
-            border: #7b2cbf px;
-            color: black 50%;
+        .name-product3 {
+            position: absolute;
+            left: 152px;
+            top: 615px;
+            color: var(--purple);
         }
-        
-        .objects-izq {
+
+        .objects-izq1 {
             display: flex;
             position: absolute;
-            top: 792px;
-            left: 20px;
+            top: 750px;
+            left: 28px;
         }
         .objects-izq2 {
             display: flex;
@@ -236,209 +312,115 @@
             top: 985px;
             left: 20px;
         }
-        
-        .boton-calcular {
-            background-color: #cf9afd;
-            border: #2a024d 15px;
-            color: black 50%;
-        }
-        
-        .boton-compra1 {
-            background-color: #cf9afd;
-            border: #2a024d 15px;
-            color: black 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            left: 263px;
 
-            /* width: 15rem;
-            height: 4rem; */
-        }
-        
-        .boton-compra2 {
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            background-color: #cf9afd;
-            border: #2a024d 15px;
-            color: black 50%;
-            left: 263px;
-            top: 1000px;
-
-        }
-        
-        
-        .cuadrado-cantidad1 {
-            position: absolute;
-            top: 225px;
-            left: 580px;
-            width: 55px;
-            height: 30px;
-            background-color: var(--orange);
-            display: flex;
-            justify-content: space-evenly;
-        }
-    
-        .cuadrado-cantidad2 {
-            position: absolute;
-            top: 392px;
-            left: 580px;
-            width: 55px;
-            height: 30px;
-            background-color: var(--orange);
-        }
-    
-        .cuadrado-cantidad3 {
-            position: absolute;
-            top: 563px;
-            left: 580px;
-            width: 55px;
-            height: 30px;
-            background-color: var(--orange);
-        }
-        
         .circulo-stock1 {
+            display: block !important;
             width: 60px;
-            height: 30px;
+            height: 22px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 225px;
+            left: 180px;
             border-radius: 10px;
             align-items: center;
-            top: 240px;
+            top: 310px;
         }
         
         .circulo-stock2 {
+            display: block !important;
             width: 60px;
-            height: 30px;
+            height: 22px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 225px;
+            left: 182px;
             border-radius: 10px;
             align-items: center;
-            top: 400px;
+            top: 476px;
         }
         
         .circulo-stock3 {
+            display: block !important;
             width: 60px;
-            height: 30px;
+            height: 22px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 225px;
+            left: 178px;
             border-radius: 10px;
             align-items: center;
-            top: 580px;
+            top: 654px;
         }
         
         .circulo-stock1, .circulo-stock2, .circulo-stock3 {
             font-size: 14px;
             flex-grow: 7;
+        } 
+
+        .precio1 {
+            position: relative;
+            left: 114px;
+            top: 30px;
+            color: var(--purple);
+        }
+        
+        .precio2 {
+            position: relative;
+            left: 113px;
+            top: 27px;
+            color: var(--purple);
+        }
+        
+        .precio3 {
+            position: relative;
+            left: 111px;
+            top: 30px;
+            color: var(--purple);
         }
     
-        .name-product1 {
-            position: absolute;
-            left: 260px;
-            top: 200px;
-            color: var(--purple);
-            
-        }
-        
-        .name-product2 {
-            position: absolute;
-            left: 265px;
-            top: 360px;
+        .preciofinal1{
+            display: block !important;
+            position: relative;
+            left: 224px;
+            top: 11px;
             color: var(--purple);
         }
         
-        .name-product3 {
-            position: absolute;
-            left: 265px;
-            top: 530px;
+        .preciofinal2{
+            display: block !important;
+            position: relative;
+            left: 222px;
+            top: 6px;
             color: var(--purple);
         }
-    
-    @media(min-width: 320px) {
-        .space-buys {
-            height: 1000px;
-            padding: 30px;
-            display: flex;
-            
-        }
-        .space-buys {
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between;
-            text-align: center;
-            border: var(--orange) 20px;
-            height: 500px; 
-            padding: 10px; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between;
-          
-        }
         
-         .art-buys {
-            width: 100%; 
-            box-shadow: 2px 2px 3px rgba(191, 64, 191, 50%); 
-            height: 150px; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            transition: all 0.3s ease-in; 
-            border-radius: 25px;
-            background-color: #bb98d975;
-         }
-        
-         .detail-buy {
-            text-decoration: dotted;
-            color: blueviolet;
-         }
-        
-         .cuadrado-buy {
-            background-color: #7b2cbf; 
-            justify-content: flex-end;
-            border-radius: 25px;
-            align-items: center; 
-        }
-        
-        .cuadrado-buy p{
-            font-size: 14px;
-            flex-grow: 7;
-        }
-        
-        .codigo-postal {   
-            background-color: #cf9afd;
-            border: #7b2cbf px;
-            color: black 50%;
-        }
-        
-        .objects-izq1 {
-            display: flex;
-            position: absolute;
-            top: 792px;
-            left: 20px;
+        .preciofinal3{
+            display: block !important;
+            position: relative;
+            left: 220px;
+            top: 9px;
+            color: var(--purple);
         }
 
-        .objects-izq2 {
-            display: flex;
-            position: absolute;
-            top: 1060px;
-            left: 20px;
+        #sum-icon1 {
+            display: none !important;
         }
         
-        .boton-calcular {
-            background-color: #cf9afd;
-            border: #2a024d 15px;
-            color: black 50%;
+        #sum-icon2 {
+            display: none !important;
         }
         
-        .boton-compra {
-            background-color: #cf9afd;
-            border: #2a024d 15px;
-            color: black 50%;
+        #sum-icon3 {
+            display: none !important;
+        }
+
+        #min-icon1 {
+            display: none !important;
+        }
+        
+        #min-icon2 {
+            display: none !important;
+        }
+        
+        #min-icon3 {
+            display: none !important;
         }
 
         .precio4{
@@ -682,6 +664,7 @@
         align-items: center;
         top: 85px;
     }
+    
     .circulo-stock3 {
         display: block !important;
         width: 60px;
@@ -706,14 +689,12 @@
         color: var(--purple);
     }
     
-        .cuadrado-cantidad2 {
-            position: absolute;
-            top: 522px;
-            left: 430px;
-            width: 55px;
-            height: 30px;
-            background-color: var(--orange);
-        }
+    .name-product2 {
+        position: absolute;
+        left: 172px; 
+        top: 40px;
+        color: var(--purple);
+    }
     
     .name-product3 {
         position: absolute;
@@ -771,5 +752,7 @@
         color: black;
         width: 82px;
     }
-}             
+
+
 }
+

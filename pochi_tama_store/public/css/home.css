@@ -114,6 +114,12 @@
     }
 
 
+    /*---------------------------MAIN HOME----------------------*/
+
+    
+
+
+
     /*-------------------------FOOTER TOP--------------------------*/
 
     body .footer .container-general hr.hr1{
@@ -242,6 +248,18 @@
     body .header .container-header .container-header-bot .nav-bar2 ul.bot-list li i{
         color: white; 
     }
+
+
+
+/*-----------------------------MAIN HOME-----------------------------*/
+
+
+    body main.main .main-container .section-productos article .caja{
+        width: 240px;
+        height: 240px;
+    }
+
+
 
 /*---------------------------FOOTER-----------------------------*/
 
