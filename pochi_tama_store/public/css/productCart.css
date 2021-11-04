@@ -158,25 +158,35 @@
     
     }
     
-    @media (min-device-width : 768px) {
-        .space-buys {
-            height: 1000px;
-            padding: 30px;
-            display: flex;
-            
-        }
-        .space-buys {
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between;
-            text-align: center;
-            border: var(--orange) 20px;
-            height: 500px; 
-            padding: 10px; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between;
-          
+    #min-icon3 {
+        display: none !important;
+    }
+
+    .precio4{
+        position: relative;
+        left: 161px;
+        top: 10px;
+        color: black;
+        width: 82px;
+    }
+
+    .preciofinal4{
+    position: relative;
+    left: 70px;
+    top: 256px;
+    color: black;
+    width: 82px;
+    }
+    
+    
+
+    @media (min-width:575px) {
+
+        .cart-buys-p {
+            position: absolute;
+            left: 11px;
+            top: 180px;
+            color: var(--purple);
         }
         
          .art-buys {
@@ -223,7 +233,7 @@
         .objects-izq2 {
             display: flex;
             position: absolute;
-            top: 792px;
+            top: 985px;
             left: 20px;
         }
         
@@ -349,9 +359,6 @@
             color: var(--purple);
         }
     
-    
-    }
-    
     @media(min-width: 320px) {
         .space-buys {
             height: 1000px;
@@ -433,27 +440,271 @@
             border: #2a024d 15px;
             color: black 50%;
         }
-        
-        .cuadrado-correo {
-            background-color: #cf9afd;  
-            display: flex;
-            align-items: center;
-            width: 15rem;
-            height: 4rem;
-            border: 1px solid rgb(250, 115, 37);
-            justify-content: center;
-            position: absolute;
-            left: 735px;
+
+        .precio4{
+            position: relative;
+            left: 161px;
+            top: 10px;
+            color: black;
+            width: 82px;
+        }
+    
+        .preciofinal4{
+        position: relative;
+        left: 70px;
+        top: 226px;
+        color: black;
+        width: 82px;
         }
         
-        .cuadrado-cantidad1 {
-            position: absolute;
-            top: 350px;
-            left: 430px;
-            width: 55px;
-            height: 30px;
-            background-color: var(--orange);
-        }
+    }
+
+@media (min-width: 768px) {
+
+    #sum-icon1 {
+        display: block !important;
+        left: 100px;
+        top: 150px;
+    }
+    
+    #sum-icon2 {
+        display: block !important;
+    }
+    
+    #sum-icon3 {
+        display: block !important;
+    }
+    
+    #min-icon1 {
+        display: block !important;
+    }
+    
+    #min-icon2 {
+        display: block !important;
+    }
+    
+    #min-icon3 {
+        display: block !important;
+    }
+
+    .cuadrado-cantidad1 {
+        width: 50px;
+        height: 32px;
+        background-color: var(--orange);
+        position: relative;
+        left: 2px;
+        top: -23px;
+    }
+    
+    .cuadrado-cantidad2 {
+        width: 50px;
+        height: 32px;
+        background-color: var(--orange);
+        position: relative;
+        left: 2px;
+        top: -23px;
+    }
+    
+    .cuadrado-cantidad3 {
+        width: 50px;
+        height: 32px;
+        background-color: var(--orange);
+        position: relative;
+        left: 2px;
+        top: -23px;
+    }
+
+    .precio1 {
+        position: relative;
+        left: 172px;
+        top: 42px;
+        color: var(--purple);
+    }
+    
+    .precio2 {
+        position: relative;
+        left: 172px;
+        top: 42px;
+        color: var(--purple);
+    }
+    
+    .precio3 {
+        position: relative;
+        left: 172px;
+        top: 42px;
+        color: var(--purple);
+    }
+
+    .preciofinal1 {
+        display: block !important;
+        left: 303px;
+        top: 22px;
+        color: var(--purple);
+    }
+    
+    .preciofinal2 {
+        display: block !important;
+        left: 303px;
+        top: 22px;
+        color: var(--purple);
+    }
+    
+    .preciofinal3 {
+        display: block !important;
+        left: 303px;
+        top: 22px;
+        color: var(--purple);
+    }
+
+    
+    .precio4{
+        position: relative;
+        left: 161px;
+        top: 16px;
+        color: black;
+        width: 82px;
+    }
+
+    .preciofinal4{
+    position: relative;
+    left: 70px;
+    top: 230px;
+    color: black;
+    width: 82px;
+    }
+
+}
+
+@media (min-width: 1028px){
+
+    .space-buys {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+        text-align: center;
+        border: var(--orange) 20px;
+        height: 500px; 
+        padding: 10px; 
+        display: flex; 
+        flex-direction:row; 
+        justify-content: space-between;
+    }
+
+    .art-buys {
+        box-shadow: 2px 2px 3px rgb(191 64 191 / 50%);
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in;
+        border-radius: 25px;
+        background-color: #bb98d975;
+        position: relative;
+        width: 650px;
+        height: 154px;
+     }
+
+     .cuadrado-buy {
+        display: inline-grid;
+        width: 357px;
+        height: 515px;
+        align-items: center;
+        justify-content: center;
+        background-color: #7b2cbf;
+    } 
+
+    .boton-calcular {
+        background-color: #cf9afd;
+        border: #2a024d 15px;
+        color: black 50%;
+        border-radius: 26px;
+        width: 89px;
+        height: 28px;
+        position: relative;
+        top: -33px;
+        left: 182px;
+    }
+
+    .codigo-postal {
+        background-color: #cf9afd;
+        border: #7b2cbf px;
+        color: black 50%;
+        width: 177px;
+        height: 39px;
+        border-radius: 5px;
+    }
+
+    .img-duende {
+        max-height: 106px;
+        justify-content: flex-start;
+        position: absolute;
+        top: 21px;
+        right: 100px;
+        left: 38px;
+    }
+
+    .img-casco {
+        max-height: 106px;
+        justify-content: flex-start;
+        position: absolute;
+        top: 17px;
+        right: 100px;
+        left: 36px;
+    }
+
+    .img-guante {
+        max-height: 106px;
+        justify-content: flex-start;
+        position: absolute;
+        top: 17px;
+        right: 100px;
+        left: 30px;
+    }
+
+    .circulo-stock1 {
+        display: block !important;
+        width: 60px;
+        height: 22px;
+        background-color: rgb(163, 41, 233);
+        position: absolute;
+        left: 180px;
+        border-radius: 10px;
+        align-items: center;
+        top: 80px;
+    }
+    
+    .circulo-stock2 {
+        display: block !important;
+        width: 60px;
+        height: 22px;
+        background-color: rgb(163, 41, 233);
+        position: absolute;
+        left: 182px;
+        border-radius: 10px;
+        align-items: center;
+        top: 85px;
+    }
+    .circulo-stock3 {
+        display: block !important;
+        width: 60px;
+        height: 22px;
+        background-color: rgb(163, 41, 233);
+        position: absolute;
+        left: 178px;
+        border-radius: 10px;
+        align-items: center;
+        top: 85px;
+    }
+    
+    .circulo-stock1, .circulo-stock2, .circulo-stock3 {
+        font-size: 14px;
+        flex-grow: 7;
+    } 
+
+    .name-product1 {
+        position: absolute;
+        left: 172px; 
+        top: 42px;
+        color: var(--purple);
+    }
     
         .cuadrado-cantidad2 {
             position: absolute;
@@ -464,73 +715,59 @@
             background-color: var(--orange);
         }
     
-        .cuadrado-cantidad3 {
-            position: absolute;
-            top: 685px;
-            left: 430px;
-            width: 55px;
-            height: 30px;
-            background-color: var(--orange);
-        }
-        
-        .circulo-stock1 {
-            width: 60px;
-            height: 30px;
-            background-color: rgb(163, 41, 233);
-            position: absolute;
-            left: 240px;
-            border-radius: 10px;
-            align-items: center;
-            top: 355px;
-        }
-        
-        .circulo-stock2 {
-            width: 60px;
-            height: 30px;
-            background-color: rgb(163, 41, 233);
-            position: absolute;
-            left: 240px;
-            border-radius: 10px;
-            align-items: center;
-            top: 525px;
-        }
-        
-        .circulo-stock3 {
-            width: 60px;
-            height: 30px;
-            background-color: rgb(163, 41, 233);
-            position: absolute;
-            left: 240px;
-            border-radius: 10px;
-            align-items: center;
-            top: 690px;
-        }
-        
-        .circulo-stock1, .circulo-stock2, .circulo-stock3 {
-            font-size: 14px;
-            flex-grow: 7;
-        }
-    
-        .name-product1 {
-            position: absolute;
-            left: 235px;
-            top: 315px;
-            color: var(--purple);
-            
-        }
-        
-        .name-product2 {
-            position: absolute;
-            left: 215px;
-            top: 490px;
-            color: var(--purple);
-        }
-        
-        .name-product3 {
-            position: absolute;
-            left: 220px;
-            top: 650px;
-            color: var(--purple);
-        }
-        
+    .name-product3 {
+        position: absolute;
+        left: 172px; 
+        top: 40px;
+        color: var(--purple);
     }
+
+    .objects-izq1 {
+        position: relative;
+        top: -11px;
+        left: -36px;
+    }
+    
+    .objects-izq2 {
+        display: flex;
+        position: relative;
+        top: -25px;
+        left: -35px;
+    }
+
+    .precio4{
+        position: relative;
+        left: 223px;
+        top: 27px;
+        color: black;
+        width: 82px;
+    }
+
+    .preciofinal1 {
+        display: block !important;
+        left: 271px;
+        top: 22px;
+        color: var(--purple);
+    }
+    
+    .preciofinal2 {
+        display: block !important;
+        left: 271px;
+        top: 22px;
+        color: var(--purple);
+    }
+    
+    .preciofinal3 {
+        display: block !important;
+        left: 271px;
+        top: 22px;
+        color: var(--purple);
+    }
+
+    .preciofinal4{
+        position: relative;
+        left: 214px;
+        top: 380px;
+        color: black;
+        width: 82px;}}
+}                                                                   
