@@ -87,13 +87,31 @@
 
     }
     
-    .cuadrado-cantidad {
-        width: 60px;
-        height: 40px;
-        background-color: rgba(250, 115, 37, 0.87);
-        position: relative;
-        top: -25px;
-        border: #2a024d 5px;   
+    .cuadrado-cantidad1 {
+        position: absolute;
+        top: 563px;
+        left: 600px;
+        width: 55px;
+        height: 30px;
+        background-color: var(--orange);
+    }
+    
+    .cuadrado-cantidad2 {
+        position: absolute;
+        top: 563px;
+        left: 600px;
+        width: 55px;
+        height: 30px;
+        background-color: var(--orange);   
+    }
+    
+    .cuadrado-cantidad3 {
+        position: absolute;
+        top: 563px;
+        left: 600px;
+        width: 55px;
+        height: 30px;
+        background-color: var(--orange); 
     }
     
     .circulo-stock1 {
@@ -136,8 +154,8 @@
 
     .name-product1 {
         position: absolute;
-        left: 260px;
-        top: 200px;
+        left: 180px;
+        top: 270px;
         color: var(--purple);
         
     }
@@ -329,8 +347,8 @@
     
         .name-product1 {
             position: absolute;
-            left: 260px;
-            top: 200px;
+            left: 180px;
+            top: 270px;
             color: var(--purple);
             
         }
@@ -411,14 +429,14 @@
         .objects-izq1 {
             display: flex;
             position: absolute;
-            top: 792px;
+            top: 745px;
             left: 20px;
         }
 
         .objects-izq2 {
             display: flex;
             position: absolute;
-            top: 1060px;
+            top: 930px;
             left: 20px;
         }
         
@@ -448,7 +466,7 @@
         
         .cuadrado-cantidad1 {
             position: absolute;
-            top: 350px;
+            top: 295px;
             left: 430px;
             width: 55px;
             height: 30px;
@@ -457,7 +475,7 @@
     
         .cuadrado-cantidad2 {
             position: absolute;
-            top: 522px;
+            top: 460px;
             left: 430px;
             width: 55px;
             height: 30px;
@@ -466,7 +484,7 @@
     
         .cuadrado-cantidad3 {
             position: absolute;
-            top: 685px;
+            top: 630px;
             left: 430px;
             width: 55px;
             height: 30px;
@@ -478,10 +496,10 @@
             height: 30px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 240px;
             border-radius: 10px;
             align-items: center;
-            top: 355px;
+            top: 305px;
+            left: 190px;
         }
         
         .circulo-stock2 {
@@ -489,10 +507,10 @@
             height: 30px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 240px;
             border-radius: 10px;
             align-items: center;
-            top: 525px;
+            top: 475px;
+            left: 190px;
         }
         
         .circulo-stock3 {
@@ -500,10 +518,10 @@
             height: 30px;
             background-color: rgb(163, 41, 233);
             position: absolute;
-            left: 240px;
             border-radius: 10px;
             align-items: center;
-            top: 690px;
+            top: 640px;
+            left: 190px;
         }
         
         .circulo-stock1, .circulo-stock2, .circulo-stock3 {
@@ -513,23 +531,23 @@
     
         .name-product1 {
             position: absolute;
-            left: 235px;
-            top: 315px;
+            left: 180px;
+            top: 270px;
             color: var(--purple);
             
         }
         
         .name-product2 {
             position: absolute;
-            left: 215px;
-            top: 490px;
+            left: 170px;
+            top: 440px;
             color: var(--purple);
         }
         
         .name-product3 {
             position: absolute;
-            left: 220px;
-            top: 650px;
+            left: 170px;
+            top: 605px;
             color: var(--purple);
         }
         
