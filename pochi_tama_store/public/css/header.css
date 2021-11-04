@@ -19,7 +19,7 @@ body .header .container-header .container-header-top .logo a img{
 body .header .container-header .container-header-top .menu button{
     background-color: var(--orange);
     border: 0px;
-    color: white;   
+    
 }
 
 body .header .container-header .container-header-top .menu button i{
