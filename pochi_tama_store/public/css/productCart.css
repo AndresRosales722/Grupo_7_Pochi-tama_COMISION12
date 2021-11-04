@@ -38,8 +38,8 @@
     }
     
     .cuadrado-buy p{
-        font-size: 14px;
-        flex-grow: 7;
+        color: white;
+        padding: 5px;
     }
     
     .codigo-postal {   
@@ -341,8 +341,8 @@
         }
         
         .circulo-stock1, .circulo-stock2, .circulo-stock3 {
-            font-size: 14px;
-            flex-grow: 7;
+            color: white;
+            padding: 5px;
         }
     
         .name-product1 {
@@ -384,7 +384,7 @@
             text-align: center;
             border: var(--orange) 20px;
             height: 500px; 
-            padding: 10px; 
+            padding: 5px; 
             display: flex; 
             flex-direction: column; 
             justify-content: space-between;
@@ -525,8 +525,8 @@
         }
         
         .circulo-stock1, .circulo-stock2, .circulo-stock3 {
-            font-size: 14px;
-            flex-grow: 7;
+            color: white;
+            padding: 5px;
         }
     
         .name-product1 {
