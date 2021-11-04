@@ -67,7 +67,7 @@
         border-radius: 10px;
         margin-bottom: 20px;
         border: solid 5px #FF9E00;
-      
+       height: fit-content;
     }
     
     .item-main{
@@ -289,7 +289,7 @@
         font-size: 14px;
         font-weight: 700 ;
         justify-content: center;
-
+        height: fit-content;
     }
     
     .comprar img{
