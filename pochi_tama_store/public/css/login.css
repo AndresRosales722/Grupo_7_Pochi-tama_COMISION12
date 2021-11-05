@@ -1,7 +1,3 @@
-a {
-    font-size: 1rem;
-}
-
 /* h2 {
     margin-bottom: 1rem;
     padding-left: 20px;
@@ -45,11 +41,6 @@ input.input-style {
 
 input.input-style::placeholder {
     color: lightgray;
-}
-
-label {
-    font-size: 16px;
-    padding: 10px;
 }
 
 .input-file-container {

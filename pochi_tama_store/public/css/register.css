@@ -1,14 +1,3 @@
-body {
-    background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
-    height: 100%;
-    
-}
-
-a {
-  
-    font-size: 1rem;
-}
-
 /* h2 {
     align-items: center;
     margin-bottom: 1rem;
@@ -55,11 +44,6 @@ input.input-style {
 
 input.input-style::placeholder {
     color: lightgray;
-}
-
-label {
-    font-size: 16px;
-    padding: 10px;
 }
 
 .input-file-container {

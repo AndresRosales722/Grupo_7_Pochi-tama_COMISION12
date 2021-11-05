@@ -14,7 +14,7 @@ body .main-container .boton-productos{
     border-radius: 5px;
     width: 250px;
     margin: 0 auto;
-    background-color: orange;
+    background-color: var(--orange3);
     height: 30px;
     align-items: center;
 }
@@ -24,7 +24,7 @@ body .main-container .boton-productos a{
 }
 
 body .main-container h5{
-    color: orange;
+    color: var(--orange3);
     font-family: 'Titan One', cursive;
     font-weight: 400;
     font-size: 24px;
@@ -62,7 +62,7 @@ body .main-container .section-productos article .caja {
     box-shadow: 0px -1px 5px 0px rgba(87, 87, 87, 0.74);
     height: 210px;
     display: flex;
-    border-bottom: 4px solid orange;
+    border-bottom: 4px solid var(--orange3);
     /* transition: all 0.5s ease-in-out; */
 }
 
@@ -100,7 +100,7 @@ body .main-container .section-vendido article.producto .caja {
     box-shadow: 0px -1px 5px 0px rgba(87, 87, 87, 0.74);
     height: 210px;
     display: flex;
-    border-bottom: 4px solid orange;
+    border-bottom: 4px solid var(--orange3);
     /* transition: all 0.5s ease-in-out; */
 }
 
@@ -123,7 +123,7 @@ body .main-container .section-vendido article.producto .botones button{
 }
 
 body .main-container .section-vendido article.producto .botones button.buy{
-    background-color: orange;
+    background-color: var(--orange3);
     border: none;
     border-radius: 5px;
     color: white;
@@ -131,12 +131,17 @@ body .main-container .section-vendido article.producto .botones button.buy{
 
 body .main-container .section-vendido article.producto .botones button.see{
     background-color: white;
-    border: 1px solid orange;
+    border: 1px solid var(--orange3);
     border-radius: 5px;
-    color: orange;
+    color: var(--orange3);
 }
 
 /* SECTION 3 */
+
+body .main-container section.zonas{
+    max-width: 500px;
+    margin: 0 auto;
+}
 
 .card-bg {
     position: relative;
@@ -146,6 +151,11 @@ body .main-container .section-vendido article.producto .botones button.see{
     display: flex;
     padding-top: 20px;
 }
+
+.card-bg h2{
+    font-size: 1.5rem;
+}
+
 
 .card-bg img {
     height: 150px;

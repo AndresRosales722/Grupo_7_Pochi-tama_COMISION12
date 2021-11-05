@@ -1,8 +1,9 @@
 @media (min-width: 320px) {
 
+    /*  PISA EL HOME
     body {
         background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
-    }
+    } */
 
     .space-buys {
         display: flex; 
