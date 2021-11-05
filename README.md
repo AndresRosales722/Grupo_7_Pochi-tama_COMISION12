@@ -30,9 +30,6 @@ Somos un grupo de 5 personas organizadas, a fin de realizar lo que mas nos gusta
 - ¡Hola! soy Maria Mamani, tengo 19 años. Estoy en mi primer año de Analista de Sistemas y cursando Programación Web Full Stack en Formar. Parte de mi día es leer y codear
 
 
-- ¡Hola! soy Valeria Cequeira, desde el 2017 me incursione en el tema de la informatica, actualmente estoy cursando Analisis de Sistemas en un terciario, en 2018 conoci a la formación Formar junto con ella incursione el aprendizaje de Full Stack Web, junto con el curso de Full Stack de node.js
-
-
 ------------
 
 
