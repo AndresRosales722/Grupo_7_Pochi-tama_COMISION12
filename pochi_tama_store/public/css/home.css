@@ -117,7 +117,9 @@
     /*---------------------------MAIN HOME----------------------*/
 
     
-
+    body main.main .main-container section.zonas{
+        max-width: 600px;
+    }
 
 
     /*-------------------------FOOTER TOP--------------------------*/
@@ -254,10 +256,35 @@
 /*-----------------------------MAIN HOME-----------------------------*/
 
 
-    body main.main .main-container .section-productos article .caja{
-        width: 240px;
-        height:240px;
+    body main.main .main-container section.zonas{
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    body main.main .main-container section.zonas article.card-bg.marvel{
+        width: 290px;
+    }
+
+    body main.main .main-container section.zonas article.card-bg.dc{
+        width: 290px;
+    }
+
+    body main.main .main-container section.zonas article.card-bg.anime{
+        width: 320px;
+    }
+
+
+    body main.main .main-container .section-productos article .caja{
+        width: 250px;
+        height:250px;
+    }
+    
+    body main.main .main-container .section-vendido article.producto .caja{
+        width: 240px;
+        height:230px;
+    }
+
+    
 
 
 

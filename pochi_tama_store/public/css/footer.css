@@ -87,11 +87,11 @@ body .footer .container-footer-top .container-footer-top-2 .email .search-bar-fo
 }
 
 body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button{
-    background-color: orange;
+    background-color: var(--orange3);
     border-style: none;
     height: 30px;
     width: 50px;
-    border: 1px solid orange;
+    border: 1px solid var(--orange3);
     color: white;
     font-size: 15px;
     border-radius: 3px;

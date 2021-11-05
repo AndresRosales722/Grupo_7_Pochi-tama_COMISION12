@@ -7,7 +7,7 @@ body .header .container-header .container-header-top{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:var(--orange);
+    background-color:var(--orange3);
     flex-wrap: wrap;
     padding: 10px;
 }
@@ -17,7 +17,7 @@ body .header .container-header .container-header-top .logo a img{
 }
 
 body .header .container-header .container-header-top .menu button{
-    background-color: var(--orange);
+    background-color: var(--orange3);
     border: 0px;
     color: white;   
 }

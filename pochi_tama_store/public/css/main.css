@@ -15,12 +15,16 @@ body .main-container .boton-productos{
     width: 250px;
     margin: 0 auto;
     background-color: var(--orange3);
-    height: 30px;
+    height: 35px;
     align-items: center;
 }
 
 body .main-container .boton-productos a{
     color: white;
+}
+
+body .main-container .boton-productos a h4{
+    font-weight: 500;
 }
 
 body .main-container h5{
@@ -93,6 +97,8 @@ body .main-container .section-vendido article.producto p{
 
 body .main-container .section-vendido article.producto h4{
     margin: 10px 0 10px 0;
+    font-weight: 500;
+    color: var(--orange3);
 }
 
 body .main-container .section-vendido article.producto .caja {
@@ -120,6 +126,10 @@ body .main-container .section-vendido article.producto .botones{
 body .main-container .section-vendido article.producto .botones button{
     width: 80px;
     height: 30px;
+}
+
+body .main-container .section-vendido article.producto .botones button span{
+    font-weight: 500;
 }
 
 body .main-container .section-vendido article.producto .botones button.buy{
