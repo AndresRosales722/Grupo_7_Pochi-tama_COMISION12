@@ -90,7 +90,7 @@
 
 }
 
-    /*  .item{
+     .item{
       display: flex;
         justify-content:space-evenly;
        padding-top: 10px;
@@ -105,7 +105,7 @@
         padding-top: 10px;
        padding-bottom: 10px;
        border: solid 3px var(--purple);
-    } */
+    } 
     
     .item1 img{
     width: 100%;
@@ -136,6 +136,7 @@
 .precio a{
     color: black;
     font-size: 14px;
+    font-weight: 700;
 }
 
 .precio i{
@@ -239,10 +240,10 @@
         height: 40%;
         align-content: center;
         align-self: center;
-        padding-top: 5px;
+        padding-top: 1px;
         font-size: 20px;
         font-weight: 700 ;
-        margin-right: 76px;
+       
     }
 
     .star-text .star .text-1 a:hover{
@@ -741,5 +742,9 @@ padding-top: 15px;
     border-radius: 10px;
     margin-top: 10px;
     margin-right: 65px;
+}
+.star-text .text-1{
+    margin-right: 75px;
+    width: 25%;
 }
 }
