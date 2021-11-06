@@ -1,9 +1,8 @@
 @media (min-width: 320px) {
 
-    /*  PISA EL HOME
-    body {
+    .body-header {
         background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
-    } */
+    } 
 
     .space-buys {
         display: flex; 
@@ -196,7 +195,7 @@
     
     .name-product3 {
         position: absolute;
-        left: 14px;
+        left: 56px;
         top: 628px;
         color: var(--purple);
     }
@@ -296,7 +295,7 @@
         
         .name-product3 {
             position: absolute;
-            left: 152px;
+            left: 190px;
             top: 615px;
             color: var(--purple);
         }
@@ -446,12 +445,11 @@
 
     #sum-icon1 {
         display: block !important;
-        left: 100px;
-        top: 150px;
     }
     
     #sum-icon2 {
         display: block !important;
+
     }
     
     #sum-icon3 {
@@ -475,8 +473,8 @@
         height: 32px;
         background-color: var(--orange);
         position: relative;
-        left: 2px;
-        top: -23px;
+        left: 35px;
+        top: -16px;
     }
     
     .cuadrado-cantidad2 {
@@ -484,8 +482,8 @@
         height: 32px;
         background-color: var(--orange);
         position: relative;
-        left: 2px;
-        top: -23px;
+        left: 35px;
+        top: -16px;
     }
     
     .cuadrado-cantidad3 {
@@ -493,8 +491,8 @@
         height: 32px;
         background-color: var(--orange);
         position: relative;
-        left: 2px;
-        top: -23px;
+        left: 35px;
+        top: -16px;
     }
 
     .precio1 {
@@ -539,7 +537,6 @@
         color: var(--purple);
     }
 
-    
     .precio4{
         position: relative;
         left: 161px;
@@ -593,6 +590,33 @@
         justify-content: center;
         background-color: #7b2cbf;
     } 
+
+    .cuadrado-cantidad1 {
+        width: 50px;
+        height: 32px;
+        background-color: var(--orange);
+        position: relative;
+        left: 35px;
+        top: -16px;
+    }
+    
+    .cuadrado-cantidad2 {
+        width: 50px;
+        height: 32px;
+        background-color: var(--orange);
+        position: relative;
+        left: 35px;
+        top: -16px;
+    }
+    
+    .cuadrado-cantidad3 {
+        width: 50px;
+        height: 32px;
+        background-color: var(--orange);
+        position: relative;
+        left: 35px;
+        top: -16px;
+    }
 
     .boton-calcular {
         background-color: #cf9afd;
@@ -699,7 +723,7 @@
     
     .name-product3 {
         position: absolute;
-        left: 172px; 
+        left: 187px; 
         top: 40px;
         color: var(--purple);
     }
@@ -717,9 +741,30 @@
         left: -35px;
     }
 
+    .preciofinal1 {
+        display: block !important;
+        left: 156px;
+        top: 42px;
+        color: var(--purple);
+    }
+    
+    .preciofinal2 {
+        display: block !important;
+        left: 156px;
+        top: 42px;
+        color: var(--purple);
+    }
+    
+    .preciofinal3 {
+        display: block !important;
+        left: 156px;
+        top: 42px;
+        color: var(--purple);
+    }
+
     .precio4{
         position: relative;
-        left: 223px;
+        left: 113px;
         top: 27px;
         color: black;
         width: 82px;
@@ -727,29 +772,29 @@
 
     .preciofinal1 {
         display: block !important;
-        left: 271px;
+        left: 255px;
         top: 22px;
         color: var(--purple);
     }
     
     .preciofinal2 {
         display: block !important;
-        left: 271px;
+        left: 255px;
         top: 22px;
         color: var(--purple);
     }
     
     .preciofinal3 {
         display: block !important;
-        left: 271px;
+        left: 255px;
         top: 22px;
         color: var(--purple);
     }
 
     .preciofinal4{
         position: relative;
-        left: 214px;
-        top: 380px;
+        left: 22px;
+        top: 381px;
         color: black;
         width: 82px;
     }
