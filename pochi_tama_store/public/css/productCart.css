@@ -33,7 +33,7 @@
         max-height: 90px; 
         justify-content: flex-start; 
         position: absolute; 
-        top: 192px; 
+        top: 245px; 
         right: 100px; 
         left: 30px;
      }
@@ -42,7 +42,7 @@
         max-height: 90px; 
         justify-content: flex-start; 
         position: absolute; 
-        top: 361px; 
+        top: 413px; 
         right: 100px; 
         left: 33px;
      }
@@ -51,7 +51,7 @@
         max-height: 90px;  
         justify-content: flex-start; 
         position: absolute; 
-        top: 534px; 
+        top: 584px; 
         right: 100px; 
         left: 30px;
      }
@@ -85,13 +85,13 @@
     .objects-izq1 {
         display: flex;
         position: absolute;
-        top: 695px;
+        top: 745px;
         left: 20px;
     }
     .objects-izq2 {
         display: flex;
         position: absolute;
-        top: 960px;
+        top: 995px;
         left: 20px;
     }
     
@@ -181,7 +181,7 @@
     .name-product1 {
         position: absolute;
         left: 38px;
-        top: 287px;
+        top: 340px;
         color: var(--purple);
         
     }
@@ -189,14 +189,14 @@
     .name-product2 {
         position: absolute;
         left: 19px;
-        top: 456px;
+        top: 510px;
         color: var(--purple);
     }
     
     .name-product3 {
         position: absolute;
         left: 56px;
-        top: 628px;
+        top: 683px;
         color: var(--purple);
     }
 
@@ -234,8 +234,8 @@
 
     .preciofinal4{
     position: relative;
-    left: 70px;
-    top: 256px;
+    left: 62px;
+    top: 242px;
     color: black;
     width: 82px;
     }
@@ -255,7 +255,7 @@
             max-height: 106px;
             justify-content: flex-start;
             position: absolute;
-            top: 254px;
+            top: 298px;
             right: 100px;
             left: 38px;
          }
@@ -264,7 +264,7 @@
             max-height: 106px; 
             justify-content: flex-start; 
             position: absolute; 
-            top: 421px; 
+            top: 464px; 
             right: 100px; 
             left: 36px;
          }
@@ -273,7 +273,7 @@
             max-height: 106px;  
             justify-content: flex-start; 
             position: absolute; 
-            top: 591px; 
+            top: 635px; 
             right: 100px; 
             left: 30px;
          }
@@ -281,7 +281,7 @@
          .name-product1 {
             position: absolute;
             left: 172px;
-            top: 274px;
+            top: 314px;
             color: var(--purple);
             
         }
@@ -289,28 +289,28 @@
         .name-product2 {
             position: absolute;
             left: 156px;
-            top: 438px;
+            top: 480px;
             color: var(--purple);
         }
         
         .name-product3 {
             position: absolute;
             left: 190px;
-            top: 615px;
+            top: 653px;
             color: var(--purple);
         }
 
         .objects-izq1 {
             display: flex;
             position: absolute;
-            top: 750px;
+            top: 800px;
             left: 28px;
         }
         .objects-izq2 {
             display: flex;
             position: absolute;
-            top: 985px;
-            left: 20px;
+            top: 1032px;
+            left: 28px;
         }
 
         .circulo-stock1 {
@@ -322,7 +322,7 @@
             left: 180px;
             border-radius: 10px;
             align-items: center;
-            top: 310px;
+            top: 355px;
         }
         
         .circulo-stock2 {
@@ -334,7 +334,7 @@
             left: 182px;
             border-radius: 10px;
             align-items: center;
-            top: 476px;
+            top: 520px;
         }
         
         .circulo-stock3 {
@@ -346,7 +346,7 @@
             left: 178px;
             border-radius: 10px;
             align-items: center;
-            top: 654px;
+            top: 695px;
         }
         
         .circulo-stock1, .circulo-stock2, .circulo-stock3 {
@@ -468,6 +468,13 @@
         display: block !important;
     }
 
+    .objects-izq2 {
+        display: flex;
+        position: absolute;
+        top: 1028px;
+        left: 28px;
+    }
+
     .cuadrado-cantidad1 {
         width: 50px;
         height: 32px;
@@ -548,7 +555,7 @@
     .preciofinal4{
     position: relative;
     left: 70px;
-    top: 230px;
+    top: 222px;
     color: black;
     width: 82px;
     }
@@ -737,7 +744,7 @@
     .objects-izq2 {
         display: flex;
         position: relative;
-        top: -25px;
+        top: -42px;
         left: -35px;
     }
 
@@ -794,7 +801,7 @@
     .preciofinal4{
         position: relative;
         left: 22px;
-        top: 381px;
+        top: 364px;
         color: black;
         width: 82px;
     }
