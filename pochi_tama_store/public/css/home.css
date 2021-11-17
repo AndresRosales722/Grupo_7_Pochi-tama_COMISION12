@@ -239,6 +239,7 @@
         display: block;
     }
 
+
 /*----------------------------HEADER BOT------------------------------*/
 
     
@@ -275,6 +276,12 @@
     body main.main .main-container .section-productos article .caja{
         width: 250px;
         height:250px;
+        transition: 0.5s ;
+    }
+
+    body main.main .main-container .section-productos article .caja:hover{
+        transform: scale(0.9) ;
+        
     }
     
     body main.main .main-container .section-vendido article.producto .caja{
@@ -310,6 +317,12 @@
     body .footer .container-footer-top .container-footer-top-2 img{
         width: 30px;
         height: 30px;
+        transition: 0.5s;
+
+    }
+
+    body .footer .container-footer-top .container-footer-top-2 img:hover{
+        transform: scale(1.5);
     }
 
     body .footer .container-general .container-footer-top .container-footer-top-2 .redes ul{
@@ -352,6 +365,7 @@
         width: 30px;
         height: 30px;
     }
+
 
     body .footer .container-general .container-footer-bot .container-row .horarios{
         display: block;

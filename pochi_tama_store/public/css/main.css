@@ -7,7 +7,6 @@ body .main-container{
     padding: 10px;
 }
 
-body .main-container .container-carrousel{}
 
 body .main-container .container-carrousel .carrousel{
     height: 150px;
@@ -81,6 +80,7 @@ body .main-container .section-productos article .caja {
     display: flex;
     border-bottom: 4px solid var(--orange3);
     /* transition: all 0.5s ease-in-out; */
+    justify-content: center;
 }
 
 body .main-container .section-productos article .caja img {
@@ -120,6 +120,7 @@ body .main-container .section-vendido article.producto .caja {
     height: 210px;
     display: flex;
     border-bottom: 4px solid var(--orange3);
+    justify-content: center;
     /* transition: all 0.5s ease-in-out; */
 }
 
