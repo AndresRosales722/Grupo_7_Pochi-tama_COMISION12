@@ -1,9 +1,8 @@
 @media (min-width: 320px) {
 
-    /*  PISA EL HOME
-    body {
+    .body-header {
         background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
-    } */
+    } 
 
     .space-buys {
         display: flex; 
@@ -34,7 +33,7 @@
         max-height: 90px; 
         justify-content: flex-start; 
         position: absolute; 
-        top: 192px; 
+        top: 245px; 
         right: 100px; 
         left: 30px;
      }
@@ -43,7 +42,7 @@
         max-height: 90px; 
         justify-content: flex-start; 
         position: absolute; 
-        top: 361px; 
+        top: 413px; 
         right: 100px; 
         left: 33px;
      }
@@ -52,7 +51,7 @@
         max-height: 90px;  
         justify-content: flex-start; 
         position: absolute; 
-        top: 534px; 
+        top: 584px; 
         right: 100px; 
         left: 30px;
      }
@@ -86,13 +85,13 @@
     .objects-izq1 {
         display: flex;
         position: absolute;
-        top: 695px;
+        top: 745px;
         left: 20px;
     }
     .objects-izq2 {
         display: flex;
         position: absolute;
-        top: 960px;
+        top: 995px;
         left: 20px;
     }
     
@@ -182,7 +181,7 @@
     .name-product1 {
         position: absolute;
         left: 38px;
-        top: 287px;
+        top: 340px;
         color: var(--purple);
         
     }
@@ -190,14 +189,14 @@
     .name-product2 {
         position: absolute;
         left: 19px;
-        top: 456px;
+        top: 510px;
         color: var(--purple);
     }
     
     .name-product3 {
         position: absolute;
-        left: 14px;
-        top: 628px;
+        left: 56px;
+        top: 683px;
         color: var(--purple);
     }
 
@@ -235,8 +234,8 @@
 
     .preciofinal4{
     position: relative;
-    left: 70px;
-    top: 256px;
+    left: 62px;
+    top: 242px;
     color: black;
     width: 82px;
     }
@@ -256,7 +255,7 @@
             max-height: 106px;
             justify-content: flex-start;
             position: absolute;
-            top: 254px;
+            top: 298px;
             right: 100px;
             left: 38px;
          }
@@ -265,7 +264,7 @@
             max-height: 106px; 
             justify-content: flex-start; 
             position: absolute; 
-            top: 421px; 
+            top: 464px; 
             right: 100px; 
             left: 36px;
          }
@@ -274,7 +273,7 @@
             max-height: 106px;  
             justify-content: flex-start; 
             position: absolute; 
-            top: 591px; 
+            top: 635px; 
             right: 100px; 
             left: 30px;
          }
@@ -282,7 +281,7 @@
          .name-product1 {
             position: absolute;
             left: 172px;
-            top: 274px;
+            top: 314px;
             color: var(--purple);
             
         }
@@ -290,28 +289,28 @@
         .name-product2 {
             position: absolute;
             left: 156px;
-            top: 438px;
+            top: 480px;
             color: var(--purple);
         }
         
         .name-product3 {
             position: absolute;
-            left: 152px;
-            top: 615px;
+            left: 190px;
+            top: 653px;
             color: var(--purple);
         }
 
         .objects-izq1 {
             display: flex;
             position: absolute;
-            top: 750px;
+            top: 800px;
             left: 28px;
         }
         .objects-izq2 {
             display: flex;
             position: absolute;
-            top: 985px;
-            left: 20px;
+            top: 1032px;
+            left: 28px;
         }
 
         .circulo-stock1 {
@@ -323,7 +322,7 @@
             left: 180px;
             border-radius: 10px;
             align-items: center;
-            top: 310px;
+            top: 355px;
         }
         
         .circulo-stock2 {
@@ -335,7 +334,7 @@
             left: 182px;
             border-radius: 10px;
             align-items: center;
-            top: 476px;
+            top: 520px;
         }
         
         .circulo-stock3 {
@@ -347,7 +346,7 @@
             left: 178px;
             border-radius: 10px;
             align-items: center;
-            top: 654px;
+            top: 695px;
         }
         
         .circulo-stock1, .circulo-stock2, .circulo-stock3 {
@@ -446,12 +445,11 @@
 
     #sum-icon1 {
         display: block !important;
-        left: 100px;
-        top: 150px;
     }
     
     #sum-icon2 {
         display: block !important;
+
     }
     
     #sum-icon3 {
@@ -470,13 +468,20 @@
         display: block !important;
     }
 
+    .objects-izq2 {
+        display: flex;
+        position: absolute;
+        top: 1028px;
+        left: 28px;
+    }
+
     .cuadrado-cantidad1 {
         width: 50px;
         height: 32px;
         background-color: var(--orange);
         position: relative;
-        left: 2px;
-        top: -23px;
+        left: 35px;
+        top: -16px;
     }
     
     .cuadrado-cantidad2 {
@@ -484,8 +489,8 @@
         height: 32px;
         background-color: var(--orange);
         position: relative;
-        left: 2px;
-        top: -23px;
+        left: 35px;
+        top: -16px;
     }
     
     .cuadrado-cantidad3 {
@@ -493,8 +498,8 @@
         height: 32px;
         background-color: var(--orange);
         position: relative;
-        left: 2px;
-        top: -23px;
+        left: 35px;
+        top: -16px;
     }
 
     .precio1 {
@@ -539,7 +544,6 @@
         color: var(--purple);
     }
 
-    
     .precio4{
         position: relative;
         left: 161px;
@@ -551,7 +555,7 @@
     .preciofinal4{
     position: relative;
     left: 70px;
-    top: 230px;
+    top: 222px;
     color: black;
     width: 82px;
     }
@@ -593,6 +597,33 @@
         justify-content: center;
         background-color: #7b2cbf;
     } 
+
+    .cuadrado-cantidad1 {
+        width: 50px;
+        height: 32px;
+        background-color: var(--orange);
+        position: relative;
+        left: 35px;
+        top: -16px;
+    }
+    
+    .cuadrado-cantidad2 {
+        width: 50px;
+        height: 32px;
+        background-color: var(--orange);
+        position: relative;
+        left: 35px;
+        top: -16px;
+    }
+    
+    .cuadrado-cantidad3 {
+        width: 50px;
+        height: 32px;
+        background-color: var(--orange);
+        position: relative;
+        left: 35px;
+        top: -16px;
+    }
 
     .boton-calcular {
         background-color: #cf9afd;
@@ -699,7 +730,7 @@
     
     .name-product3 {
         position: absolute;
-        left: 172px; 
+        left: 187px; 
         top: 40px;
         color: var(--purple);
     }
@@ -713,13 +744,34 @@
     .objects-izq2 {
         display: flex;
         position: relative;
-        top: -25px;
+        top: -42px;
         left: -35px;
+    }
+
+    .preciofinal1 {
+        display: block !important;
+        left: 156px;
+        top: 42px;
+        color: var(--purple);
+    }
+    
+    .preciofinal2 {
+        display: block !important;
+        left: 156px;
+        top: 42px;
+        color: var(--purple);
+    }
+    
+    .preciofinal3 {
+        display: block !important;
+        left: 156px;
+        top: 42px;
+        color: var(--purple);
     }
 
     .precio4{
         position: relative;
-        left: 223px;
+        left: 113px;
         top: 27px;
         color: black;
         width: 82px;
@@ -727,29 +779,29 @@
 
     .preciofinal1 {
         display: block !important;
-        left: 271px;
+        left: 255px;
         top: 22px;
         color: var(--purple);
     }
     
     .preciofinal2 {
         display: block !important;
-        left: 271px;
+        left: 255px;
         top: 22px;
         color: var(--purple);
     }
     
     .preciofinal3 {
         display: block !important;
-        left: 271px;
+        left: 255px;
         top: 22px;
         color: var(--purple);
     }
 
     .preciofinal4{
         position: relative;
-        left: 214px;
-        top: 380px;
+        left: 22px;
+        top: 364px;
         color: black;
         width: 82px;
     }

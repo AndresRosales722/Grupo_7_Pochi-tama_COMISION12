@@ -1,11 +1,27 @@
-/* h2 {
+
+body {
+    background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
+    height: 100%;
+    
+}
+a {
+    color: rgb(86, 19, 209);
+    font-size: 1rem;
+}
+h2 {
     align-items: center;
     margin-bottom: 1rem;
     padding-left: 20px;
+    font-family: 'Luckiest Guy', cursive;
     font-size: 20px;
-} */
-
-
+}
+hr {
+    height: 2px;
+    margin-bottom: 3rem;
+    width: 100%;
+    background: linear-gradient(90deg, black, white);
+    border: none;
+}
 .form {
     display: flex;
     flex-direction: column;
@@ -44,6 +60,12 @@ input.input-style {
 
 input.input-style::placeholder {
     color: lightgray;
+}
+
+
+label {
+    font-size: 16px;
+    padding: 10px;
 }
 
 .input-file-container {
@@ -134,7 +156,7 @@ select.input-select:focus {
 }
 
 .btn-facebook:hover {
-    color: darkorange;
+    color: rgb(86, 127, 240);
     box-shadow: -5px -5px 10px rgba(255, 255, 255, .7);
     background: write;
     transition: all 0.3s ease-in-out;
