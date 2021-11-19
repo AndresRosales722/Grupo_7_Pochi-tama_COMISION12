@@ -7,18 +7,16 @@ let path = require('path')          //USAMOS EL METODO PATH
 app.use(express.static("public"))   //PARA LOS ARCHIVOS DE CSS E IMAGENES.
 
 app.set('view engine','ejs')    // INDICAMOS QUE USAREMOS EJS
-app.set('views',path.join(__dirname,'views')) //INDICA LA UBICACION DE LA CARPETA DE VISTAS
+app.set('views',path.join(__dirname,'views')) //INDICA LA UBICACION DE LA CARPETA DE VIEWS
 
 // Enrutadores
 let indexRouter = require('./routes/index') 
 
 // Rutas
-
 app.use('/', indexRouter)
 
 
 //RUTAS
-
 app.get('/productDetail', function(req,res) {
     res.sendFile(path.join(__dirname,"/views/productDetail.html"))
 })
@@ -38,6 +36,6 @@ app.get('/login', function(req,res) {
 
 //PARA LEVANTAR EL SERVIDOR
 
-app.listen(PORT, ()=> console.log(`Servidor corriendo en el puerto ${PORT}     
+app.listen(PORT, ()=> console.log(`Servidor levantado en el puerto ${PORT}     
 http://localhost:${PORT} 
 `))

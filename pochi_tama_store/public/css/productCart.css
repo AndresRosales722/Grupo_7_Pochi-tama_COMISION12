@@ -1,8 +1,10 @@
 @media (min-width: 320px) {
 
-    .body-header {
+    /* .body-header {  Sean especificos con estos elementos
+           porque si los seleccionan solos sin que especifiquen que son de su html pisan el de los demas
+           
         background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
-    } 
+    }  */
 
     .space-buys {
         display: flex; 

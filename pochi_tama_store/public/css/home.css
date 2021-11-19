@@ -343,12 +343,12 @@
     body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button{
         height: 40px;
         width: 60px;
-        
+        transition: 0.5s;
     }
     
     body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button:hover{
         color: var(--orange);
-        background-color: white;
+        background-color:whitesmoke;
         border: var(--orange);
         transition: 0.5s;
     }

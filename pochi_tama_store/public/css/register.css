@@ -1,5 +1,7 @@
 
-body {
+/* body {  Sean especificos con estos elementos
+           porque si los seleccionan solos sin que especifiquen que son de su html pisan el de los demas
+           
     background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
     height: 100%;
     
@@ -7,21 +9,21 @@ body {
 a {
     color: rgb(86, 19, 209);
     font-size: 1rem;
-}
-h2 {
+} */
+/*  h2 pisa todos los h2  {
     align-items: center;
     margin-bottom: 1rem;
     padding-left: 20px;
     font-family: 'Luckiest Guy', cursive;
     font-size: 20px;
-}
-hr {
+} */
+/* hr {        pisa el home
     height: 2px;
     margin-bottom: 3rem;
     width: 100%;
     background: linear-gradient(90deg, black, white);
     border: none;
-}
+} */
 .form {
     display: flex;
     flex-direction: column;
@@ -65,7 +67,7 @@ input.input-style::placeholder {
 
 label {
     font-size: 16px;
-    padding: 10px;
+   /*  padding: 10px;  pisa el home */
 }
 
 .input-file-container {
