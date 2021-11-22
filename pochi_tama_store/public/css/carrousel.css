@@ -1,7 +1,7 @@
 /* Carousel container */
 .carousel-container {
     position: relative;
-    margin: 20px auto 30px;
+    margin: 110px auto 30px;
 }
 
 /* Esconde las imágenes por default */
@@ -45,19 +45,19 @@
     align-items: center;
 }
 
+.carousel-container .prev, .carousel-container .next , .prev {
+    display: none;
+}
+
 /* Posición de el boton siguiente a la derecha */
 .carousel-container .next {
     right: 2%;
-    border-radius: ;
 }
 
 /* En hover, agrega un fondo con transparencia */
 .prev:hover, .next:hover {
     background-color: var(--purple);
-       
 }
-
-
 
 /* Puntos indicadores */
 .dot {
@@ -93,8 +93,21 @@
     to {opacity: 1}
 }
 
+@media (min-width: 576px) {
+    .carousel-container {
+    margin: 160px auto 30px;
+    }
+}
+
+@media (min-width: 768px) {
+.carousel-container .prev, .carousel-container .next , .prev {
+    display: flex;
+}
+
 @media screen and (min-width: 1024px) {
     .carousel-container {
-        margin: 20px auto 50px;
+        margin: 160px auto 50px;
     }
+}
+
 }

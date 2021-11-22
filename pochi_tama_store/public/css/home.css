@@ -116,7 +116,11 @@
 
     /*---------------------------MAIN HOME----------------------*/
 
-    
+    body .main-container .section-productos,.section-vendido{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
     body main.main .main-container section.zonas{
         max-width: 600px;
     }
@@ -272,22 +276,36 @@
         width: 48%;
     }
 
-
     body main.main .main-container .section-productos article .caja{
-        width: 250px;
-        height:250px;
-        transition: 0.5s ;
+        width: 230px;
+        height: 230px;
     }
 
     body main.main .main-container .section-productos article .caja:hover{
-        transform: scale(0.9) ;
-        
+        transform: scale(0.9) ;   
     }
     
-    body main.main .main-container .section-vendido article.producto .caja{
-        width: 240px;
-        height:230px;
+    body .main-container .section-productos,.section-vendido{
+        max-width: 900px;
     }
+
+    body main.main .main-container .section-vendido article .caja{
+        width: 230px;
+        height: 230px;
+    }
+
+    body section.info .container-info{
+        justify-content: space-evenly;
+    }
+
+    body section.info .container-info .tarjeta-shield{
+        display: block;
+    }
+
+    body section.info .container-info .tarjeta-card{
+        display: block;
+    }
+
     
 /*---------------------------FOOTER-----------------------------*/
 
@@ -397,35 +415,29 @@
     }
 
 
-
-
 /*----------------------------MAIN HOME--------------------------*/
 
     body main.main .main-container .section-productos{
-        max-width: 1100px;
         margin: 0 auto;
     }
 
-    body main.main .main-container .section-productos article .caja{
-        width:300px;
-        height: 300px;
-        max-width: 1100px;
+    body main.main .main-container .section-productos,.section-vendido{
+        max-width: 1000px;
     }
 
-    body .main-container .section-vendido{
-        max-width: 1149px;
-        margin: 0 auto;
+    body main.main .main-container .section-productos article .caja {
+        width: 250px;
+        height: 250px;
     }
 
     body main.main .main-container .section-vendido article.producto .caja{
-        width: 280px;
-        height: 260px;
+        width: 250px;
+        height: 250px;
     }
 
     body main.main .main-container section.zonas{
         max-width: 1000px;
     }
-
 
     /*--------------------------FOOTER-------------------------*/
 
@@ -443,6 +455,18 @@
 
     body .footer .container-general .container-footer-bot{
         max-width: 1100px;
+    }
+}
+
+@media(min-width:1200px){
+    body main.main .main-container .section-productos article .caja {
+        width: 300px;
+        height: 300px;
+    }
+
+    body main.main .main-container .section-vendido article.producto .caja {
+        width: 300px;
+        height: 300px;
     }
 }
 
