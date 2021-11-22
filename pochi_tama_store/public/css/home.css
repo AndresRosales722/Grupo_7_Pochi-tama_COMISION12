@@ -265,24 +265,47 @@
     }
 
     body main.main .main-container section.zonas article.card-bg.marvel{
-        width: 48%;
+        width: 45%;
+        transition: 0.7s;
+    }
+
+    body main.main .main-container section.zonas article.card-bg.marvel:hover{
+        transform: scale(1.1);
     }
 
     body main.main .main-container section.zonas article.card-bg.dc{
-        width: 48%;
+        width: 45%;
+        transition: 0.7s;
+
     }
 
+    body main.main .main-container section.zonas article.card-bg.dc:hover{
+        transform: scale(1.1);
+    }
+
+
     body main.main .main-container section.zonas article.card-bg.anime{
-        width: 48%;
+        width: 45%;
+        transition: 0.7s;
+    }
+
+    body main.main .main-container section.zonas article.card-bg.anime:hover{
+        transform: scale(1.1);
     }
 
     body main.main .main-container .section-productos article .caja{
         width: 230px;
         height: 230px;
+        transition: 0.5s;
     }
 
     body main.main .main-container .section-productos article .caja:hover{
         transform: scale(0.9) ;   
+    }
+
+    body main.main .main-container .section-vendido article .caja:hover{
+        transform: scale(0.9) ;   
+
     }
     
     body .main-container .section-productos,.section-vendido{
@@ -292,6 +315,7 @@
     body main.main .main-container .section-vendido article .caja{
         width: 230px;
         height: 230px;
+        transition: 0.5s;
     }
 
     body section.info .container-info{
