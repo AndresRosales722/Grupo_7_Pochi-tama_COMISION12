@@ -1,7 +1,29 @@
-/* h2 {
+/* body {   Sean especificos con estos elementos
+           porque si los seleccionan solos sin que especifiquen que son de su html pisan el de los demas
+
+    background: linear-gradient(rgb(247, 247, 247), white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}*/
+
+
+a {
+    font-size: 1rem;
+}
+
+/* h2  pisa todos los h2 {
     margin-bottom: 1rem;
     padding-left: 20px;
+    font-family: 'Luckiest Guy', cursive;
     font-size: 20px;
+} */
+
+/* hr { pisa todos los hr
+    height: 2px;
+    margin-bottom: 3rem;
+    width: 100%;
+    background: linear-gradient(90deg, black, white);
+    border: none;
 } */
 
 .form {
@@ -37,6 +59,11 @@ input.input-style {
     border-radius: 1rem;
     height: 2.5rem;
     padding: .5rem;
+}
+
+label {
+    font-size: 16px;
+    /* padding: 10px;  pisa el home */
 }
 
 input.input-style::placeholder {
@@ -134,7 +161,7 @@ select.input-select:focus {
 }
 
 .btn-facebook:hover {
-    color: black;
+    color: rgb(86, 127, 240);
     box-shadow: -5px -5px 10px rgba(255, 255, 255, .7);
     background: #4cb2f7;
     transition: all 0.3s ease-in-out;
@@ -191,7 +218,7 @@ select.input-select:focus {
 
 /* Media queries*/
 
-/* Movile*/
+/* Mobile*/
 
 @media screen and (min-width: 475px) {
     .input-container,

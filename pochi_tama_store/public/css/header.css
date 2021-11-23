@@ -1,6 +1,13 @@
 /* HEADER TOP */ 
+body .header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
 body .header .container-header .container-header-top .logo a img{
     width: 130px;
+    
 }
 
 body .header .container-header .container-header-top{
