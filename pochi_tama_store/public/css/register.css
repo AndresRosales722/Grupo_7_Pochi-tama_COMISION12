@@ -34,8 +34,7 @@ a {
 
 /* Form inputs */
 
-.input-container,
-.button-container {
+.input-container,.button-container {
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -55,9 +54,7 @@ span.error-message {
 
 input.input-style {
     border: 0.5px solid grey;
-    border-radius: 1rem;
-    height: 2.5rem;
-    padding: .5rem;
+    border-radius: 5px;
 }
 
 input.input-style::placeholder {
@@ -65,9 +62,10 @@ input.input-style::placeholder {
 }
 
 
-label {
+.input-container label {
     font-size: 16px;
-   /*  padding: 10px;  pisa el home */
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .input-file-container {
@@ -88,16 +86,14 @@ select.input-select {
     padding: 0.5rem;
 }
 
-input.input-style:focus,
-.input-file-container,
-select.input-select:focus {
+input.input-style:focus,.input-file-container,select.input-select:focus {
     box-shadow: 0 0 6px rgb(255, 255, 255);
     outline: none;
 }
 
 .form-container {
     background: white;
-    border-top: solid 55px darkorange;
+    border-top: solid 55px var(--orange3);
     border-radius: 10px;
     margin: 0 auto;
     height: fit-content;
@@ -125,35 +121,30 @@ select.input-select:focus {
 
 .btn {
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
     cursor: pointer;
     height: 40px;
-    text-transform: uppercase;
-    width: 100%;
-    font-weight: 700;
-    font-size: 16px;
+    width: 90%;
+    font-weight: 500;
     outline: none;
 }
 
 .btn-submit {
-    background: linear-gradient(45deg, rgb(243, 184, 57) 0%, orange);
-    color: rgb(247, 244, 244);
-    transition: all 0.3s ease-in-out;
+    background: var(--orange3);
+    color: white;
+   
 }
 
-.btn-submit:hover {
-    color: white;
-    box-shadow: -5px -5px 10px rgba(255, 255, 255, .7);
-    background: linear-gradient(285deg, rgba(255, 255, 255, 0.5) 0%, rgba(247, 164, 11, 0.966) 50%);
-}
+
 
 .btn-facebook {
     border: 1px solid;
-    width: 80%;
+    width: 90%;
     background-color: rgba(61, 87, 202, 0.733);
-    color: write;
+    color: white;
     text-align: center;
     padding: 5px 10px;
+    font-size: 1rem;
     text-justify: auto;
 }
 
@@ -166,16 +157,15 @@ select.input-select:focus {
 
 .btn-gmail {
     border: 1px solid;
-    width: 80%;
+    width: 90%;
     background-color: white;
-    margin-top: 15px;
     color: rgb(221, 4, 4);
     text-align: center;
     padding: 5px 10px;
 }
 
 .btn-gmail:hover {
-    color: darkorange;
+    color: var(--orange3);
     box-shadow: -5px -5px 10px rgba(255, 255, 255, .7);
     background: write;
     transition: all 0.3s ease-in-out;

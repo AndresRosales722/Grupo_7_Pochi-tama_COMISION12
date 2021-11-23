@@ -14,7 +14,7 @@
     <title>Pochi Tama Store</title>
 </head>
 <body class="body-header">
-    <header>
+    <div class="register">
               
         <div class="form-container">
             <h2> Crear Nueva Cuenta </h2>
@@ -22,17 +22,22 @@
             <form action="">
                 <div class="form">
                     <div class="input-container">
-                        <label for="email" class="control-label">E-mail: </label>
+                        <label for="nombre" class="control-label">Nombre </label>
+                        <input class="input-style" type="text" name="nombre" placeholder="Ej: juanperez@gmail.com ">
+                        <span class="error-message">Debes ingresar tu nombre</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="email" class="control-label">Apellido </label>
+                        <input class="input-style" type="text" name="apellido" placeholder="Ej: juanperez@gmail.com ">
+                        <span class="error-message">Debes ingresar tu apellido</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="email" class="control-label">E-mail</label>
                         <input class="input-style" type="mail" name="mail" placeholder="Ej: juanperez@gmail.com ">
                         <span class="error-message">Debes ingresar tu email</span>
                     </div>
                     <div class="input-container">
-                        <label for="email" class="control-label">Repetir E-mail: </label>
-                        <input class="input-style" type="email" name="email">
-                        <span class="error-message">Debes repetir tu email</span>
-                    </div> 
-                    <div class="input-container">
-                        <label for="email" class="control-label">Contraseña: </label>
+                        <label for="email" class="control-label">Contraseña</label>
                         <input class="input-style" type="contraseña" name="contraseña" placeholder="Ingrese su contraseña">
                         <span class="error-message">Debes ingresar tu contraseña </span>
                     </div>
@@ -41,28 +46,12 @@
                         <input class="input-style" type="contraseña" name="contraseña">
                         <span class="error-message">Debes repetir tu contraseña </span>
                     </div>
-                    <div class="input-container">
-                        <label for="select">País: </label>
-                        <select name="sexo" id="select">
-                            <option value="M">España</option>
-                            <option value="F">Argentina</option>
-                            <option value="NB">Chile</option>
-                            <option value="NB">Brasil</option>
-                            <option value="NB">Uruguay</option>
-                            <option value="NB">Perú</option>
-                            <option value="NB">Bolivia</option>
-                            <option value="NB">México</option>
-                        </select>
-                    </div>
 
                     <div class="check">
                             <input type="checkbox" name="remember" id="remember">
                             <label for="remember"> He leido y acepto las<a href= "#"> políticas de privacidad</a></label>
                     </div>
-                    <div class="check">
-                        <input type="checkbox" name="remember" id="remember">
-                        <label for="remember"> Acepto subscribirme al<a href= "#" > boletin de noticias</a></label>
-                    </div>
+                    
                         <hr>
                     <div class="button-container">
                         <button type="submit" class="btn btn-submit">Crear Nueva Cuenta</button>
@@ -82,6 +71,6 @@
         </div>
                                 
 
-    </header>
+    </div>
 </body>
 </html>

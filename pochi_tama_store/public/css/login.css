@@ -1,30 +1,10 @@
-/* body {   Sean especificos con estos elementos
-           porque si los seleccionan solos sin que especifiquen que son de su html pisan el de los demas
-
-    background: linear-gradient(rgb(247, 247, 247), white);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 100%;
-}*/
-
-
-a {
-    font-size: 1rem;
+.login h2{
+    text-align: center;
 }
 
-/* h2  pisa todos los h2 {
-    margin-bottom: 1rem;
-    padding-left: 20px;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 20px;
-} */
-
-/* hr { pisa todos los hr
-    height: 2px;
-    margin-bottom: 3rem;
-    width: 100%;
-    background: linear-gradient(90deg, black, white);
-    border: none;
-} */
+.login form .form .button-container{
+    width: 90%;
+}
 
 .form {
     display: flex;
@@ -35,12 +15,11 @@ a {
 
 /* Form inputs */
 
-.input-container,
-.button-container {
+.input-container,.button-container {
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    width: 100%;
+    width: 90%;
 }
 
 .button-container {
@@ -61,10 +40,6 @@ input.input-style {
     padding: .5rem;
 }
 
-label {
-    font-size: 16px;
-    /* padding: 10px;  pisa el home */
-}
 
 input.input-style::placeholder {
     color: lightgray;
@@ -125,7 +100,6 @@ select.input-select:focus {
 
 .btn {
     border: none;
-    border-radius: 25px;
     cursor: pointer;
     height: 40px;
     text-transform: uppercase;
@@ -143,50 +117,8 @@ select.input-select:focus {
 
 }
 
-.btn-submit:hover {
-    color: white;
-    box-shadow: -5px -5px 10px rgba(255, 255, 255, .7);
-    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(247, 164, 11, 0.966) 50%);
-
-}
-
-.btn-facebook{
-    border: 1px solid;
-    width: 80%;
-    background-color: #2691d9;
-    color: #e9f4fb;
-    text-align: center;
-    padding: 5px 10px;
- 
-}
-
-.btn-facebook:hover {
-    color: rgb(86, 127, 240);
-    box-shadow: -5px -5px 10px rgba(255, 255, 255, .7);
-    background: #4cb2f7;
-    transition: all 0.3s ease-in-out;
-
-}
 
 
-.btn-gmail{
-    border: 1px solid;
-    width: 80%;
-    background-color: white;
-    margin-top: 15px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 5px 10px;
- 
-}
-
-.btn-gmail:hover{
-    color: white;
-    box-shadow: -5px -5px 10px rgba(255, 255, 255, .7);
-    background: red;
-    transition: all 0.3s ease-in-out;
-    
-}
 
 .fab .fa-google-3x::before {
   font-family:'Font Awesome 5 Free';
