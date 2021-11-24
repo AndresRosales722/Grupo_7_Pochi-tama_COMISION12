@@ -1,19 +1,4 @@
-.login h2{
-    text-align: center;
-}
 
-.login form .form .button-container{
-    width: 90%;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Form inputs */
 
 .input-container,.button-container {
     display: flex;

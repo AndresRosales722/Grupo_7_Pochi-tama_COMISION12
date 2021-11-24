@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--                                 BOX ICONS                                                      -->
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <!--                                 FONT AWESOME                                                   -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <!--                                 LINK DE ESTILOS CSS                                            -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-    <title>Pochi Tama Store</title>
-</head>
-<body class="body-header">
-    <div class="register">
-              
-        <div class="form-container">
-            <h2> Crear Nueva Cuenta </h2>
-            <hr>
-            <form action="">
-                <div class="form">
-                    <div class="input-container">
-                        <label for="nombre" class="control-label">Nombre </label>
-                        <input class="input-style" type="text" name="nombre" placeholder="Ej: juanperez@gmail.com ">
-                        <span class="error-message">Debes ingresar tu nombre</span>
-                    </div>
-                    <div class="input-container">
-                        <label for="email" class="control-label">Apellido </label>
-                        <input class="input-style" type="text" name="apellido" placeholder="Ej: juanperez@gmail.com ">
-                        <span class="error-message">Debes ingresar tu apellido</span>
-                    </div>
-                    <div class="input-container">
-                        <label for="email" class="control-label">E-mail</label>
-                        <input class="input-style" type="mail" name="mail" placeholder="Ej: juanperez@gmail.com ">
-                        <span class="error-message">Debes ingresar tu email</span>
-                    </div>
-                    <div class="input-container">
-                        <label for="email" class="control-label">Contraseña</label>
-                        <input class="input-style" type="contraseña" name="contraseña" placeholder="Ingrese su contraseña">
-                        <span class="error-message">Debes ingresar tu contraseña </span>
-                    </div>
-                    <div class="input-container">
-                        <label for="email" class="control-label">Repetir Contraseña: </label>
-                        <input class="input-style" type="contraseña" name="contraseña">
-                        <span class="error-message">Debes repetir tu contraseña </span>
-                    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!---------BOX ICONS--------->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        
+        <!--------FONT AWESOME------->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <!----LINK DE ESTILOS CSS---->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Pochi Tama Store</title>
+    </head>
 
-                    <div class="check">
-                            <input type="checkbox" name="remember" id="remember">
-                            <label for="remember"> He leido y acepto las<a href= "#"> políticas de privacidad</a></label>
-                    </div>
-                    
-                        <hr>
-                    <div class="button-container">
-                        <button type="submit" class="btn btn-submit">Crear Nueva Cuenta</button>
-                    </div>
-
-                    <a href="https://facebook.com" class="btn btn-facebook"><i class="fab fa-facebook"></i>Registrarse con Facebook</a>
-                    <a href="https://gmail.com" class="btn btn-gmail"><i class="fab fa-google fa-1x"></i>Registrarse con Gmail</a>
-                    <div class="re-password">
-                        <span><a href="">¿Olvidaste tu contraseña?</a></span>
-                    </div>
-                    <div class="re-password2">
-                        <span><a href="http://localhost:3000/login">Ya tengo una cuenta</a></span>
-                    </div>
-                </div>                                  
-            </form>                         
-                                            
-        </div>
-                                
-
+<body class="register">
+    <div class="logo">
+        <a href=""><img src="Pochita.svg" alt=""></a>
     </div>
+    <div class="form-container">
+        <h2>Registrarse</h2>
+        <form action="">
+            <div class="form">
+                <div class="input-container">
+                    <label for="nombre">Nombre</label>
+                    <input class="input-style" type="text" name="nombre" placeholder="Nombre">
+                    <span class="error-message">Debes ingresar tu nombre</span>
+                </div>
+                <div class="input-container">
+                    <label for="apellido">Apellido</label>
+                    <input class="input-style" type="text" name="apellido" placeholder="Apellido">
+                    <span class="error-message">Debes ingresar tu apellido</span>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input class="input-style" type="email" name="email" placeholder="Ingrese su email">
+                    <span class="error-message">Debes ingresar tu email</span>
+                </div>
+                <div class="input-container">
+                    <label for="contraseña">Contraseña</label>
+                    <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
+                    <span class="error-message">Debes ingresar una contraseña</span>
+                </div>
+                <div class="input-container">
+                    <label for="repeat contraseña">Repetir contraseña</label>
+                    <input class="input-style" type="password" name="pass2" placeholder="Repita su contraseña">
+                    <span class="error-message">Debes re-ingresar tu contraseña</span>
+                </div>
+                <div class="check">
+                    <label for="terms">Acepto los <a href="">términos y condiciones</a></label>
+                    <input type="checkbox" name="terms" id="terms">
+                    <span class="error-message">Debes aceptar los términos y condiciones</span>
+                </div>
+                <div class="button-container">
+                    <span class="error-message">Hubo errores en el envío</span>
+                    <button type="submit" class="btn btn-submit">Registrarme</button>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="btn btn-submit facebook"><a href="">Continuar con facebook</a></button>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="btn btn-submit google"><a href="">Continuar con google</a></button>
+                </div>
+                
+                <span><a href="login.html">Ya tengo cuenta</a></span>
+            </div>
+            
+        </form>
+    </div>
+    
 </body>
 </html>
