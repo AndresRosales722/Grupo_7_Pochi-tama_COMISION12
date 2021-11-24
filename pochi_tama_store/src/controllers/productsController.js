@@ -1,5 +1,5 @@
 let controller = {
-    cart:(req,res)=>{
+    cart:(req, res)=>{
         res.render('productCart')
     }
 }
