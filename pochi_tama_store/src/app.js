@@ -11,19 +11,18 @@ app.set('views',path.join(__dirname,'views')) //INDICA LA UBICACION DE LA CARPET
 
 // Enrutadores
 let indexRouter = require('./routes/index') 
+let cartRouter = require('./routes/products') 
+
 
 // Rutas
 app.use('/', indexRouter)
-
+app.use('/productCart', cartRouter)
 
 //RUTAS
 app.get('/productDetail', function(req,res) {
     res.sendFile(path.join(__dirname,"/views/productDetail.html"))
 })
 
-app.get('/productCart', function(req,res) {
-    res.sendFile(path.join(__dirname,"/views/productCart.html"))
-})
 
 app.get('/register', function(req,res) {
     res.sendFile(path.join(__dirname,"/views/register.html"))
