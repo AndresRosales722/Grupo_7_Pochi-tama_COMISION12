@@ -258,3 +258,16 @@ body section.info .container-info .tarjeta i{
     color: var(--purple);
 }
 
+@media (min-width: 992px){
+    body section.info .container-info{
+        justify-content: space-evenly;
+    }
+    
+    body section.info .container-info .tarjeta-shield{
+        display: block;
+    }
+    
+    body section.info .container-info .tarjeta-card{
+        display: block;
+    }
+}
