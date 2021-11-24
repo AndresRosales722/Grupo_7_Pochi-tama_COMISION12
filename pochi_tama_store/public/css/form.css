@@ -22,6 +22,17 @@ body.register h2 {
     align-items: center;
 }
 
+.form .re-password span a{
+    color: var(--orange);
+}
+
+.form .olvidaste{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Form inputs */
 
 .input-container,
@@ -122,11 +133,11 @@ select.input-select:focus {
 }
 
 .check {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-    width: 80%;
+    width: 80%; */
 }
 
 .check label {
@@ -143,20 +154,27 @@ select.input-select:focus {
     border-radius: 5px;
     cursor: pointer;
     height: 2.5rem;
-    text-transform: uppercase;
     width: 8rem;
 }
 
 .btn-submit {
     color: white;
     background-color: var(--orange);
-    width: 90%;
+    width: 100%;
     font-size: 15px;
     letter-spacing: 1px;
 }
 
 .btn-submit.facebook{
-    background-color: #466ab5 ;    
+    background-color: #466ab5;   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn-submit.facebook i{
+    margin-right: 10px;
+    font-size: 1.5rem;
 }
 
 .btn-submit.facebook a{
@@ -166,6 +184,14 @@ select.input-select:focus {
 
 .btn-submit.google{
     background-color: #db4a39;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn-submit.google i{
+    margin-right: 10px;
+    font-size: 1.5rem;
 }
 
 .btn-submit.google a{
@@ -204,7 +230,7 @@ select.input-select:focus {
 /* Media queries*/
 /* Tablet */
 
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 576px) {
     .input-container,
     .button-container,
     .input-file-container {
@@ -218,15 +244,12 @@ select.input-select:focus {
 
 
 @media screen and (min-width: 768px) {
-    .input-container,
-    .button-container,
-    .input-file-container {
-    width: 80%;
-    }
-    .form-container {
-        width: 50%;
-    }
 
+    body.register .form-container{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
 }
 
 

@@ -14,9 +14,11 @@ let indexRouter = require('./routes/index')
 let cartRouter = require('./routes/products') 
 
 
-// Rutas
+
+// Middlewares de rutas
 app.use('/', indexRouter)
 app.use('/productCart', cartRouter)
+
 
 //RUTAS
 app.get('/productDetail', function(req,res) {
