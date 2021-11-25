@@ -81,6 +81,11 @@ body.register h2 {
     width: 100%;
 }
 
+.input-container label{
+    color:#2c3e50 ;
+}
+
+
 .button-container {
     align-items: center;
 }
@@ -93,7 +98,6 @@ span.error-message {
 }
 
 input.input-style {
-   
     border-radius: 5px;
     height: 2.5rem;
     padding: .5rem;
@@ -102,7 +106,7 @@ input.input-style {
 }
 
 input.input-style::placeholder {
-    color: rgb(168, 168, 168);
+    color: rgb(99, 99, 99);
 }
 
 body.register label {
@@ -199,11 +203,19 @@ select.input-select:focus {
     letter-spacing: 1px;
 }
 
+.btn-submit:hover{
+    background-color: #ff9725;;
+}
+
 .btn-submit.facebook{
     background-color: #466ab5;   
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+.btn-submit.facebook:hover{
+    background-color:#5174c0 ;
 }
 
 .btn-submit.facebook i{
@@ -221,6 +233,10 @@ select.input-select:focus {
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+.btn-submit.google:hover{
+    background-color: #ec5645;
 }
 
 .btn-submit.google i{
@@ -262,7 +278,6 @@ select.input-select:focus {
 }
 
 /* Media queries*/
-/* Tablet */
 
 @media screen and (min-width: 576px) {
     body.register .form-container{
@@ -273,16 +288,13 @@ select.input-select:focus {
     .btn-submit{
         width: 90%;
     }
-
 }
 
 
 @media screen and (min-width: 768px) {
-
     body.register .form-container{
         max-width: 600px;
     }
-    
 }
 
 
@@ -290,7 +302,6 @@ select.input-select:focus {
     body.register .form-container{
         max-width: 700px;
     }
-
     .btn-submit{
         width: 80%;
     }

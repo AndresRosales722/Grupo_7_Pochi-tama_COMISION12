@@ -12,13 +12,24 @@ app.set('views',path.join(__dirname,'views')) //INDICA LA UBICACION DE LA CARPET
 // Enrutadores
 let indexRouter = require('./routes/index') 
 let cartRouter = require('./routes/products') 
+<<<<<<< HEAD
 let detailRouter = require('./routes/detail')
+=======
+let adminRouter = require('./routes/admin')
+>>>>>>> 1a4b383746caf602020a9deb7b827386753f5f10
 
 
 // Middlewares de rutas
 app.use('/', indexRouter)
 app.use('/productCart', cartRouter)
+<<<<<<< HEAD
 app.use('/productDetail', detailRouter)
+=======
+app.use('/admin',adminRouter)
+
+
+
+>>>>>>> 1a4b383746caf602020a9deb7b827386753f5f10
 
 //RUTAS
 /*app.get('/productDetail', function(req,res) {
