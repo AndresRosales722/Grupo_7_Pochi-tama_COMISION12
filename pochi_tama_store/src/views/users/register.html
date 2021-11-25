@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!---------BOX ICONS--------->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        
+        <!--------FONT AWESOME------->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <!----LINK DE ESTILOS CSS---->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Pochi Tama Store</title>
+    </head>
+
+<body class="register">
+    <div class="logo">
+        <a href=""><img src="Pochita.svg" alt=""></a>
+    </div>
+    <div class="form-container">
+        <h2>Registrarse</h2>
+        <form action="">
+            <div class="form">
+                <div class="input-container">
+                    <label for="nombre">Nombre</label>
+                    <input class="input-style" type="text" name="nombre" placeholder="Nombre">
+                    <span class="error-message">Debes ingresar tu nombre</span>
+                </div>
+                <div class="input-container">
+                    <label for="apellido">Apellido</label>
+                    <input class="input-style" type="text" name="apellido" placeholder="Apellido">
+                    <span class="error-message">Debes ingresar tu apellido</span>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input class="input-style" type="email" name="email" placeholder="Ingrese su email">
+                    <span class="error-message">Debes ingresar tu email</span>
+                </div>
+                <div class="input-container">
+                    <label for="contraseña">Contraseña</label>
+                    <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
+                    <span class="error-message">Debes ingresar una contraseña</span>
+                </div>
+                <div class="input-container">
+                    <label for="repeat contraseña">Confirmar contraseña</label>
+                    <input class="input-style" type="password" name="pass2" placeholder="Repita su contraseña">
+                    <span class="error-message">Debes re-ingresar tu contraseña</span>
+                </div>
+                <div class="check">
+                    <label for="terms">Acepto los <a href="">términos y condiciones</a></label>
+                    <input type="checkbox" name="terms" id="terms">
+                    <span class="error-message">Debes aceptar los términos y condiciones</span>
+                </div>
+                <div class="button-container">
+                    <span class="error-message">Hubo errores en el envío</span>
+                    <button type="submit" class="btn btn-submit">Registrarme</button>
+                </div>
+
+                <div class="button-container">
+                    
+                    <button type="submit" class="btn btn-submit facebook"><i class="fab fa-facebook-square"></i><a href="">Continuar con Facebook</a></button>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="btn btn-submit google"><i class="fab fa-google-plus-square"></i><a href="" class="google">Continuar con Google</a></button>
+                </div>
+                
+                <div class="yes-account">
+                    <span>¿Ya tenés una cuenta?</span><br>
+                    <span><a href="/login">Inicia sesion</a></span>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
