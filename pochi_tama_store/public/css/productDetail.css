@@ -13,6 +13,7 @@
         box-sizing: border-box;
         background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
     }
     
     
@@ -22,6 +23,7 @@
         flex-direction: row;
         padding-top: 10px;
         padding-bottom: 10px;
+        margin-top: 100px;
     }
     
      .banner .banner1 {
@@ -32,6 +34,7 @@
         border-radius: 10px;
         justify-content: space-evenly;
         align-items: center; 
+        
     }
 
     
@@ -47,7 +50,7 @@
         border-radius: 10px;
         border: solid 5px var(--purple);
         margin-bottom: 20px;
-        margin-top: -20px;
+        margin-top: -80px;
        
     }
 
@@ -68,6 +71,7 @@
         margin-bottom: 20px;
         border: solid 5px #FF9E00;
        height: fit-content;
+       margin-top: 100px;
     }
     
     .item-main{
@@ -370,7 +374,9 @@
     margin-top: 20px;
     width: 100%;
 }
-
+.product-card{
+    margin-top: 20px;
+}
 .product-foto{
     margin-top: 15px;
     background-color: #9D4EDD;
@@ -379,8 +385,9 @@
     border-radius: 10px;
     margin-bottom: 20px;
     border: solid 5px #FF9E00;
-  
+  margin-top: 200px;
 }
+
 
 .item-main{
     margin-top: 30px;
@@ -424,6 +431,10 @@
 
 
 /*-------CATEGORIAS-------*/
+.categorias{
+    margin-top: 200px;
+}
+
 .categorias, .public{
     width: 80px;
     height: 700px;
@@ -434,6 +445,7 @@
     border-radius: 15px;
     padding:10px ;
     justify-content: center;
+    margin-top: 200px;
 }
 .categorias h1{
     align-items: center;
@@ -710,6 +722,8 @@ padding-top: 15px;
 /*------TABLET*-------*/
 
 @media (min-width: 768px) {
+
+   
 
     .comprar a {
         background-color: var(--orange);
