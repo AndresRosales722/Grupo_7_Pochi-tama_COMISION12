@@ -249,34 +249,6 @@ select.input-select:focus {
     font-size: 14px;
 }
 
-
-
-
-
-.btn-reset {
-    background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  rgba(39, 151, 255, 0.5) 50%);
-    color: rgb(75, 75, 75);
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-reset:hover {
-    color: rgb(172, 172, 172);
-    box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
-    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(39, 151, 255, 0.5) 50%);
-}
-
-.btn-edit {
-    background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  rgba(43, 236, 124, 0.5) 50%);
-    color: rgb(75, 75, 75);
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-edit:hover {
-    color: rgb(172, 172, 172);
-    box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
-    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(43, 236, 124, 0.5) 50%);
-}
-
 /* Media queries*/
 
 @media screen and (min-width: 576px) {

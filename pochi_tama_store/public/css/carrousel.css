@@ -1,7 +1,7 @@
 /* Carousel container */
 .carousel-container {
     position: relative;
-    margin: 110px auto 30px;
+    margin: 0 auto 30px;
 }
 
 /* Esconde las imágenes por default */
@@ -95,7 +95,7 @@
 
 @media (min-width: 576px) {
     .carousel-container {
-    margin: 160px auto 30px;
+    margin: 0 auto 30px;
     }
 }
 
@@ -106,7 +106,7 @@
 
 @media screen and (min-width: 1024px) {
     .carousel-container {
-        margin: 160px auto 50px;
+        margin: 0 auto 50px;
     }
 }
 

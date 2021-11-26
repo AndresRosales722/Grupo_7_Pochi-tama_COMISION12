@@ -234,7 +234,7 @@ body section.info .container-info .tarjeta{
 }
 
 body section.info .container-info .tarjeta .text p{
-    color: #8e44ad;
+    color: #2c3e50;
     font-size: 18px;
 }
 
@@ -255,7 +255,7 @@ body section.info .container-info .tarjeta .icon-tarjeta{
 
 body section.info .container-info .tarjeta i{
     font-size: 30px;
-    color: var(--purple);
+    color: #2c3e50;
 }
 
 @media (min-width: 992px){
