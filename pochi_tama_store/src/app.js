@@ -14,6 +14,7 @@ let indexRouter = require('./routes/index')
 let cartRouter = require('./routes/products') 
 let detailRouter = require('./routes/detail')
 let adminRouter = require('./routes/admin')
+let usersRouter = require('./routes/users')
 
 
 // Middlewares de rutas
@@ -21,6 +22,8 @@ app.use('/', indexRouter)
 app.use('/productCart', cartRouter)
 app.use('/productDetail', detailRouter)
 app.use('/admin',adminRouter)
+app.use('/users', usersRouter)
+
 
 
 
