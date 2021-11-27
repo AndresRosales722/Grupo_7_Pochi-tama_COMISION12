@@ -15,7 +15,7 @@ app.set('views',path.join(__dirname,'views')) //INDICA LA UBICACION DE LA CARPET
 
 // Enrutadores
 let indexRouter = require('./routes/index') 
-let detailRouter = require('./routes/detail')
+let productsRouter = require('./routes/products')
 let adminRouter = require('./routes/admin')
 let usersRouter = require('./routes/users')
 
@@ -23,28 +23,12 @@ let usersRouter = require('./routes/users')
 
 // Middlewares de rutas
 app.use('/', indexRouter)
-app.use('/productDetail', detailRouter)
 app.use('/admin',adminRouter)
 app.use('/users', usersRouter)
+app.use('/products', productsRouter)
 
 
 
-
-
-
-//RUTAS
-/*app.get('/productDetail', function(req,res) {
-    res.sendFile(path.join(__dirname,"/views/productDetail.html"))
-})
-
-
-app.get('/register', function(req,res) {
-    res.sendFile(path.join(__dirname,"/views/users/register.html"))
-})
-
-app.get('/login', function(req,res) {
-    res.sendFile(path.join(__dirname,"/views/users/login.html"))
-})*/
 
 
 //PARA LEVANTAR EL SERVIDOR
