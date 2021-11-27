@@ -1,0 +1,24 @@
+{
+  "name": "Grupo_7_Pochi-tama_COMISION12",
+  "version": "1.0.0",
+  "description": "![Pochita](https://user-images.githubusercontent.com/90283512/135689756-e06d6b79-2a21-48ec-a1e2-6704ad257a51.png)",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresRosales722/Grupo_7_Pochi-tama_COMISION12.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresRosales722/Grupo_7_Pochi-tama_COMISION12/issues"
+  },
+  "homepage": "https://github.com/AndresRosales722/Grupo_7_Pochi-tama_COMISION12#readme"
+}

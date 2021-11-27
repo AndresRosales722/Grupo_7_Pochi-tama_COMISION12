@@ -17,6 +17,7 @@ app.set('views',path.join(__dirname,'views')) //INDICA LA UBICACION DE LA CARPET
 let indexRouter = require('./routes/index') 
 let detailRouter = require('./routes/detail')
 let adminRouter = require('./routes/admin')
+let usersRouter = require('./routes/users')
 
 
 
@@ -24,6 +25,8 @@ let adminRouter = require('./routes/admin')
 app.use('/', indexRouter)
 app.use('/productDetail', detailRouter)
 app.use('/admin',adminRouter)
+app.use('/users', usersRouter)
+
 
 
 
