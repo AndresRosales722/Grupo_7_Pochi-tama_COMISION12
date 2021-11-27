@@ -1,80 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-    <%- include('../partials/head.ejs')  %> 
 
-    <%- include('../partials/header.ejs')  %> 
-<body class="body-header">
-    <header>
-              
+    <%- include('../partials/head.ejs')  %> 
+    
+    <body class="register">
+        <div class="logo">
+            <a href=""><img src="Pochita.svg" alt=""></a>
+        </div>
         <div class="form-container">
-            <h2 class="crear-cuenta"> Crear Nueva Cuenta </h2>
-            <hr>
+            <h2>Registrarse</h2>
             <form action="">
                 <div class="form">
                     <div class="input-container">
-                        <label for="email" class="control-label">E-mail: </label>
-                        <input class="input-style" type="mail" name="mail" placeholder="Ej: juanperez@gmail.com ">
+                        <label for="nombre">Nombre</label>
+                        <input class="input-style" type="text" name="nombre" placeholder="Nombre">
+                        <span class="error-message">Debes ingresar tu nombre</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="apellido">Apellido</label>
+                        <input class="input-style" type="text" name="apellido" placeholder="Apellido">
+                        <span class="error-message">Debes ingresar tu apellido</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input class="input-style" type="email" name="email" placeholder="Ingrese su email">
                         <span class="error-message">Debes ingresar tu email</span>
                     </div>
                     <div class="input-container">
-                        <label for="email" class="control-label">Repetir E-mail: </label>
-                        <input class="input-style" type="email" name="email">
-                        <span class="error-message">Debes repetir tu email</span>
-                    </div> 
-                    <div class="input-container">
-                        <label for="email" class="control-label">Contraseña: </label>
-                        <input class="input-style" type="contraseña" name="contraseña" placeholder="Ingrese su contraseña">
-                        <span class="error-message">Debes ingresar tu contraseña </span>
+                        <label for="contraseña">Contraseña</label>
+                        <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
+                        <span class="error-message">Debes ingresar una contraseña</span>
                     </div>
                     <div class="input-container">
-                        <label for="email" class="control-label">Repetir Contraseña: </label>
-                        <input class="input-style" type="contraseña" name="contraseña">
-                        <span class="error-message">Debes repetir tu contraseña </span>
-                    </div>
-                    <div class="input-container">
-                        <label for="select">País: </label>
-                        <select name="sexo" id="select">
-                            <option value="M">España</option>
-                            <option value="F">Argentina</option>
-                            <option value="NB">Chile</option>
-                            <option value="NB">Brasil</option>
-                            <option value="NB">Uruguay</option>
-                            <option value="NB">Perú</option>
-                            <option value="NB">Bolivia</option>
-                            <option value="NB">México</option>
-                        </select>
-                    </div>
-
-                    <div class="check">
-                            <input type="checkbox" name="remember" id="remember">
-                            <label for="remember"> He leido y acepto las<a href= "#"> políticas de privacidad</a></label>
+                        <label for="repeat contraseña">Confirmar contraseña</label>
+                        <input class="input-style" type="password" name="pass2" placeholder="Repita su contraseña">
+                        <span class="error-message">Debes re-ingresar tu contraseña</span>
                     </div>
                     <div class="check">
-                        <input type="checkbox" name="remember" id="remember">
-                        <label for="remember"> Acepto subscribirme al<a href= "#" > boletin de noticias</a></label>
+                        <label for="terms">Acepto los <a href="">términos y condiciones</a></label>
+                        <input type="checkbox" name="terms" id="terms">
+                        <span class="error-message">Debes aceptar los términos y condiciones</span>
                     </div>
-                        <hr>
                     <div class="button-container">
-                        <button type="submit" class="btn btn-submit">Crear Nueva Cuenta</button>
+                        <span class="error-message">Hubo errores en el envío</span>
+                        <button type="submit" class="btn btn-submit">Registrarme</button>
                     </div>
-
-                    <a href="https://facebook.com" class="btn btn-facebook"><i class="fab fa-facebook"></i>Registrarse con Facebook</a>
-                    <a href="https://gmail.com" class="btn btn-gmail"><i class="fab fa-google fa-1x"></i>Registrarse con Gmail</a>
-                    <div class="re-password">
-                        <span><a href="">¿Olvidaste tu contraseña?</a></span>
-                    </div>
-                    <div class="re-password2">
-                        <span><a href="http://localhost:3000/login">Ya tengo una cuenta</a></span>
-                    </div>
-                </div>                                  
-            </form>                         
-                                            
-        </div>
-                                
-
-    </header>
-
-    <%- include('../partials/footer.ejs')  %> 
     
-</body>
-</html>
+                    <div class="button-container">
+                        
+                        <button type="submit" class="btn btn-submit facebook"><i class="fab fa-facebook-square"></i><a href="">Continuar con Facebook</a></button>
+                    </div>
+    
+                    <div class="button-container">
+                        <button type="submit" class="btn btn-submit google"><i class="fab fa-google-plus-square"></i><a href="" class="google">Continuar con Google</a></button>
+                    </div>
+                    
+                    <div class="yes-account">
+                        <span>¿Ya tenés una cuenta?</span><br>
+                        <span><a href="/users/login">Inicia sesion</a></span>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        
+    </body>
+    </html>
