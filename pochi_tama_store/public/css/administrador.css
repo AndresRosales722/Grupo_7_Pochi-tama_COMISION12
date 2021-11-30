@@ -1,0 +1,208 @@
+.carga{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+
+
+/*----MOBILE----*/
+@media (min-width: 320px){
+    .admin-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
+    }
+    
+    .admin-main .carga-product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px; 
+        
+    }
+    /*desde aca jode el grid*/
+    .admin-main .carga-product .category-product{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    
+    .admin-main .carga-product .category-product .barras input{
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        margin-top: 5px;
+        flex-direction: column;
+        
+        margin-left: 30px;
+    }
+    
+    .admin-main .carga-product .category-product .sub-category{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 75px;
+        /*aca mueve el ancho por alguna razon y perjudica medianamente el grid*/
+     }
+
+    .admin-main .carga-product .category-product .sub-category2{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       width: 70%;
+       margin-left: 75px;
+    } /*apartir de aca jode el grid*/
+    .admin-main .carga-product .category-product .admin-title-1{
+        font-weight: 700;
+        margin-left: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .admin-main .carga-product .img-charge{
+        border: solid 2px var(--purple2);
+        border-radius: 20px;
+        background-color: var(--orange2);
+        width: 60%;
+        height: 125px;
+        margin-top: 20px;
+        margin-left: 123px;
+    }
+    .admin-main .carga-product .img-charge p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        
+    }
+    .admin-main .carga-product .img-charge input{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .admin-main .box-description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+    .admin-main .box-description .admin-title-2 {
+        font-weight: 700;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+    .admin-main .box-description textarea{
+        border-radius: 10px;
+        width: 50%;
+        height: 150px;
+    }
+    .admin-main .price {
+        display: flex;
+        margin-top: 10px;
+        margin-left: 130px;
+    }
+
+    .admin-main .price input {
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*---- END MOBILE----*/
+@media (min-width: 928px){
+    .admin-main{
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        
+        background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
+    }
+    
+    .admin-main .carga-product{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;  
+    }
+    
+    .admin-main .carga-product .category-product{
+        display: grid;
+        
+    }
+    .admin-main .carga-product .category-product .barras{
+        width: 100%;
+    }
+    .admin-main .carga-product .category-product .barras input{
+        border-radius: 10px;
+        margin-top: 5px;
+        width: 300px;
+    }
+    .admin-main .carga-product .category-product .sub-category1 input{
+     
+        width: 100px
+    }
+    .admin-main .carga-product .category-product .sub-category2{
+        
+        
+        width: 100%;
+    }
+    .admin-main .carga-product .category-product .admin-title-1{
+        font-weight: 700;
+        margin-left: 135px;
+     
+    }
+
+    .admin-main .carga-product .img-charge{
+        border: solid 2px var(--purple2);
+        border-radius: 20px;
+        background-color: var(--orange2);
+        width: 500px;
+        height: 100px;
+        margin-left: 75px;
+    }
+    .admin-main .carga-product .img-charge p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+    }
+    .admin-main .carga-product .img-charge input{
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .admin-main .box-description {
+        
+    }
+    .admin-main .box-description .admin-title-2 {
+        font-weight: 700;
+        margin-left: 5px;
+    }
+    .admin-main .box-description textarea{
+        border-radius: 10px;
+        width: 450px;
+    }
+    .admin-main .price {
+        display: flex;
+
+    }
+
+    .admin-main .price input {
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+}
