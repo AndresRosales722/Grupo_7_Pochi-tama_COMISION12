@@ -17,7 +17,7 @@
     align-items: center;
     background-color:var(--orange3);
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 12px;
 }
 
  .header-admin .container-header-admin .container-header-top-admin .logo-admin a img{
@@ -85,12 +85,22 @@
 
 /*---------------------HEADER BOT---------------------*/
 
- .header-admin .container-header-admin .container-header-bot-admin{
+  .header-admin .container-header-admin .container-header-bot-admin{
 
     background-color: var(--purple);
+    
 }
 
+/*
 .header-admin .container-header-admin .container-header-bot-admin .nav-var-admin2{
 display: flex;
 flex-direction: row;
+} */
+
+.bot-list-admin {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 9px;
+    padding-bottom: 12px;
+    font-style: italic;
 }

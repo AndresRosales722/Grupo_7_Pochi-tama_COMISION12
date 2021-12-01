@@ -1,22 +1,17 @@
 @media (min-width: 320px) {
 
-    /* .body-header {  Sean especificos con estos elementos
-           porque si los seleccionan solos sin que especifiquen que son de su html pisan el de los demas
-           
-        background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
-    }  */
-
     .space-buys {
         display: flex; 
         flex-direction: column; 
         justify-content: space-between;
         text-align: center;
         border: var(--orange) 20px;
-        height: 500px; 
+        height: 892px; 
         padding: 10px; 
         display: flex; 
         flex-direction: column; 
         justify-content: space-between;
+        background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));
     }
     
      .art-buys {
@@ -35,7 +30,7 @@
         max-height: 90px; 
         justify-content: flex-start; 
         position: absolute; 
-        top: 245px; 
+        top: 200px; 
         right: 100px; 
         left: 30px;
      }
@@ -44,7 +39,7 @@
         max-height: 90px; 
         justify-content: flex-start; 
         position: absolute; 
-        top: 413px; 
+        top: 372px; 
         right: 100px; 
         left: 33px;
      }
@@ -53,7 +48,7 @@
         max-height: 90px;  
         justify-content: flex-start; 
         position: absolute; 
-        top: 584px; 
+        top: 534px; 
         right: 100px; 
         left: 30px;
      }
@@ -87,13 +82,13 @@
     .objects-izq1 {
         display: flex;
         position: absolute;
-        top: 745px;
-        left: 20px;
+        top: 778px;
+        left: 27px;
     }
     .objects-izq2 {
         display: flex;
         position: absolute;
-        top: 995px;
+        top: 966px;
         left: 20px;
     }
     
@@ -183,7 +178,7 @@
     .name-product1 {
         position: absolute;
         left: 38px;
-        top: 340px;
+        top: 294px;
         color: var(--purple);
         
     }
@@ -191,14 +186,14 @@
     .name-product2 {
         position: absolute;
         left: 19px;
-        top: 510px;
+        top: 468px;
         color: var(--purple);
     }
     
     .name-product3 {
         position: absolute;
         left: 56px;
-        top: 683px;
+        top: 632px;
         color: var(--purple);
     }
 
@@ -229,7 +224,7 @@
     .precio4{
         position: relative;
         left: 161px;
-        top: 10px;
+        top: 18px;
         color: black;
         width: 82px;
     }
@@ -237,7 +232,7 @@
     .preciofinal4{
     position: relative;
     left: 62px;
-    top: 242px;
+    top: 186px;
     color: black;
     width: 82px;
     }
@@ -257,7 +252,7 @@
             max-height: 106px;
             justify-content: flex-start;
             position: absolute;
-            top: 298px;
+            top: 250px;
             right: 100px;
             left: 38px;
          }
@@ -266,7 +261,7 @@
             max-height: 106px; 
             justify-content: flex-start; 
             position: absolute; 
-            top: 464px; 
+            top: 420px; 
             right: 100px; 
             left: 36px;
          }
@@ -275,7 +270,7 @@
             max-height: 106px;  
             justify-content: flex-start; 
             position: absolute; 
-            top: 635px; 
+            top: 587px; 
             right: 100px; 
             left: 30px;
          }
@@ -283,7 +278,7 @@
          .name-product1 {
             position: absolute;
             left: 172px;
-            top: 314px;
+            top: 283px;
             color: var(--purple);
             
         }
@@ -291,27 +286,27 @@
         .name-product2 {
             position: absolute;
             left: 156px;
-            top: 480px;
+            top: 452px;
             color: var(--purple);
         }
         
         .name-product3 {
             position: absolute;
             left: 190px;
-            top: 653px;
+            top: 612px;
             color: var(--purple);
         }
 
         .objects-izq1 {
             display: flex;
             position: absolute;
-            top: 800px;
+            top: 855px;
             left: 28px;
         }
         .objects-izq2 {
             display: flex;
             position: absolute;
-            top: 1032px;
+            top: 1015px;
             left: 28px;
         }
 
@@ -324,7 +319,7 @@
             left: 180px;
             border-radius: 10px;
             align-items: center;
-            top: 355px;
+            top: 320px;
         }
         
         .circulo-stock2 {
@@ -336,7 +331,7 @@
             left: 182px;
             border-radius: 10px;
             align-items: center;
-            top: 520px;
+            top: 487px;
         }
         
         .circulo-stock3 {
@@ -348,7 +343,7 @@
             left: 178px;
             border-radius: 10px;
             align-items: center;
-            top: 695px;
+            top: 650px;
         }
         
         .circulo-stock1, .circulo-stock2, .circulo-stock3 {
@@ -428,7 +423,7 @@
         .precio4{
             position: relative;
             left: 161px;
-            top: 10px;
+            top: 17px;
             color: black;
             width: 82px;
         }
@@ -436,7 +431,7 @@
         .preciofinal4{
         position: relative;
         left: 70px;
-        top: 226px;
+        top: 158px;
         color: black;
         width: 82px;
         }
@@ -473,7 +468,7 @@
     .objects-izq2 {
         display: flex;
         position: absolute;
-        top: 1028px;
+        top: 1015px;
         left: 28px;
     }
 
@@ -549,7 +544,7 @@
     .precio4{
         position: relative;
         left: 161px;
-        top: 16px;
+        top: 22px;
         color: black;
         width: 82px;
     }
@@ -557,7 +552,7 @@
     .preciofinal4{
     position: relative;
     left: 70px;
-    top: 222px;
+    top: 160px;
     color: black;
     width: 82px;
     }
@@ -572,7 +567,7 @@
         justify-content: space-between;
         text-align: center;
         border: var(--orange) 20px;
-        height: 500px; 
+        height: 720px; 
         padding: 10px; 
         display: flex; 
         flex-direction:row; 
@@ -746,7 +741,7 @@
     .objects-izq2 {
         display: flex;
         position: relative;
-        top: -42px;
+        top: -30px;
         left: -35px;
     }
 
@@ -773,8 +768,8 @@
 
     .precio4{
         position: relative;
-        left: 113px;
-        top: 27px;
+        left: 110px;
+        top: 32px;
         color: black;
         width: 82px;
     }
@@ -803,7 +798,7 @@
     .preciofinal4{
         position: relative;
         left: 22px;
-        top: 364px;
+        top: 332px;
         color: black;
         width: 82px;
     }
