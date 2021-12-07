@@ -3,7 +3,6 @@ let controller = {
     admin:(req,res)=>{
         res.render('administrador')
     },
-
     productCreate:(req,res)=>{
         res.render('productCreate')
     },

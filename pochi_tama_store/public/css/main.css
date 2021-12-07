@@ -153,6 +153,10 @@ body .main-container .section-vendido article.producto .botones button.buy{
     color: white;
 }
 
+body .main-container .section-vendido article.producto .botones button.buy:hover{
+    background-color: #ff7d38;
+}
+
 body .main-container .section-vendido article.producto .botones button.see{
     background-color: white;
     border: 1px solid var(--orange3);

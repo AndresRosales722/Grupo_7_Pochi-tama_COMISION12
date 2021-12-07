@@ -5,6 +5,10 @@
 
 /*-------------------------HEADER-TOP-----------------------*/
 
+    .header label{
+        cursor: pointer;
+    }
+
     .header .container-header .container-header-top{
         flex-wrap:wrap;
     }
@@ -80,6 +84,7 @@
 
     body .header .container-header .container-header-top .nav-bar1 ul .carrito li a label{
         display: none;
+        
     }
     
     body .header .container-header .container-header-top .nav-bar1 ul.top-list{
@@ -237,6 +242,7 @@
 
     body .header .container-header .container-header-top .nav-bar1 ul .cuenta{
         display: block;
+        cursor: pointer;
     }
 
     body .header .container-header .container-header-top .nav-bar1 ul .carrito li a label{
