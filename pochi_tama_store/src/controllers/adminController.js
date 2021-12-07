@@ -1,5 +1,5 @@
 let controller = {
-    
+    //aca hay que administrar los productos con metodos array//
     admin:(req,res)=>{
         res.render('administrador')
     },
