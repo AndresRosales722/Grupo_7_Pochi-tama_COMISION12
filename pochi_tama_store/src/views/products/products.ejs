@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('../partials/head.ejs')  %>  
+
+<body>
+    
+    <%- include('../partials/header.ejs')  %> 
+    
+    
+    <main class="main">
+        <div class="main-container">
+            <h2 class="all-products">Todos Los Productos</h2>
+            <section class="section-vendido">
+                
+                <% products.forEach(product => { %>
+                    
+                    
+                    <article class="producto">
+                        
+                        <div class="caja">
+                            <div>
+                                <a href="/products/productdetail/<%- product.id %> "><img src="/img/imagenes home/<%- product.image %>" alt=""></a>
+                            </div>   
+                        </div>
+                        <div class="parrafo">
+                            <p><%- product.name %></p>
+                            <span><%- product.discount > 0 ? `${product.discount}% OFF` : "" %></span>
+                        </div>
+                        <h4><%- toThousand  (product.price - product.price * product.discount /100) %></h4>
+                        <div class="botones">
+                            <button class="buy"> 
+                                <span>Comprar</span>
+                            </button>
+                            <button class="see">
+                                <span>Ver</span>
+                            </button>
+                        </div>
+                    </a>
+                </article>
+                
+                <% }) %>
+                
+                <a href="../admin/productCreate/">crear producto</a>
+                
+            </section>
+        </div>
+    </main>
+    
+    <%- include('../partials/footer.ejs')  %> 
+    
+</body>
+</html>

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-    <%- include('../partials/head.ejs')  %>
+  <%- include('../partials/head.ejs') %>
 
-<body class="body-header">
-
-    <%- include('../partials/header.ejs')  %> 
-    
-    <main class="detail-product">
+  <body class="body-header">
+    <%- include('../partials/header.ejs') %>
+      <button><a href="/admin/<%- product.id %>/productEdit">Editar</a></button> 
+     <main class="detail-product">
         <div class="banner">
             <a class="banner1">Manga</a>
             <a class="banner1">Anime</a>
@@ -18,122 +17,176 @@
         <div class="categorias">
             
             <div class="sub">
-            <a class="categoria-a">Manga</a>
-            <a class="categoria-a">Anime</a>
-            <a class="categoria-a">DCU</a>
-            <a class="categoria-a">MU</a>
-            <a class="categoria-a">Series</a>
-            <a class="categoria-a">Peliculas</a>
+                <a class="categoria-a">Manga</a>
+                <a class="categoria-a">Anime</a>
+                <a class="categoria-a">DCU</a>
+                <a class="categoria-a">MU</a>
+                <a class="categoria-a">Series</a>
+                <a class="categoria-a">Peliculas</a>
             </div>
         </div>
-
+        
         
         <div class="product-foto">
             <div class="product-card">
-                <p>Kirby's Dream Land "POYO" series set</p>
+                <p> <%- product.name  %> </p>
             </div>
             <section class="foto">
-                <div class="item-main"><img src="/img/productDetail/kirby-1038x576.jpg" alt="" style="max-width: 90%;"></div>
+                <div class="item-main"><img src="/img/productDetail/<%- product.image  %>" alt="" style="max-width: 90%;"></div>
                 <div class="item">
-                    <a class="item1"><img src="/img/productDetail/kirby-1.jpg" alt="" style="max-width: 95%"></a>
-                    <a class="item1"><img src="/img/productDetail/kirby-2.jpg" alt="" style="max-width: 95%"></a>
-                    <a class="item1"><img src="/img/productDetail/kirby-3.jpg" alt="" style="max-width: 95%"></a>
+                    <a class="item1"><img src="/img/productDetail/<%- product.image  %> " alt="" style="max-width: 95%"></a>
+                    <a class="item1"><img src="/img/productDetail/<%- product.image  %>" alt="" style="max-width: 95%"></a>
+                    <a class="item1"><img src="/img/productDetail/<%- product.image  %>" alt="" style="max-width: 95%"></a>
                 </div>
                 <section class="carteles">
-                    <div class="precio"><a href="">3000$ Efectivo o 3 cuotas sin interés con Tarjeta de credito, o debito  <i class="fas fa-credit-card"></i></a>
+                    <div class="precio"><a href=""><p><%- product.price  %>  $  </p><i class="fas fa-credit-card"></i></a>
                         
                     </div>
-                <div class="descripcion">Figuras para tazas, copas u otros objetos cotidianos con fines decorativos.</div>
-                <div class="caracteristicas"> 
-                    <table class="table-1">
-                   <tr>
-                    <th>Requiere baterias?</th>
-                    <td>No</td>
-                   </tr>
-                   <tr>
-                    <th> Incluye Baterias?</th>
-                    <td>No</td>
-                   </tr>
-                   <tr>
-                    <th>Edad Recomendada</th>
-                    <td>15 Años en adelante</td>
-                   </tr>
-                   <tr>
-                    <th>Numero de Referencia</th>
-                    <td>g170237s01</td>
-                   </tr>
-                   <tr>
-                    <th>Dimensiones del Paquete</th>
-                    <td>9 x 8 x 3.7 cm; 90 g</td>
-                   </tr>
-                    
-                </table>
-                <table class="table-2">
-                    <tr>
-                     <th>Empresa</th>
-                     <td>Nintendo</td>
-                    </tr>
-                    <tr>
-                     <th> Envíos</th>
-                     <td>A todo el pais</td>
-                    </tr>
-                    <tr>
-                     <th>Stock</th>
-                     <td>15 unidades</td>
-                    </tr>
-                    <tr>
-                     <th>Fecha de Lanzamiento</th>
-                     <td>02/11/2021</td>
-                    </tr>
-                    <tr>
-                     <th>Opiniones</th>
-                     <td><button class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i></td>
-                    </tr>
-                     
-                 </table>
-            </div>
-                
-                <div class="comprar">
-                    <a href="http://localhost:3000/productcart">Comprar Ahora</a>
-                    <img src="/img/Pochita.svg" width="80">
-                </div>
-                <div class="agregar-carrito">
-                    <a href="">Agregar al Carrito</a>
-                    <img src="/img/Pochita.svg" width="80">
-                </div>
-                <div>
-                    <div class="star-text">
-                        <a class="text-1">Calificanos</a>
-                        <button class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <a class="text-2">7 opiniones</a>
-                        </button></div>
+                    <div class="descripcion"><p> <%- product.discount %>  % OFF</p></div>
+                    <div class="caracteristicas"> 
+                        <table class="table-1">
+                            <tr>
+                                <th>Requiere baterias?</th>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <th> Incluye Baterias?</th>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <th>Edad Recomendada</th>
+                                <td>15 Años en adelante</td>
+                            </tr>
+                            <tr>
+                                <th>Numero de Referencia</th>
+                                <td>g170237s01</td>
+                            </tr>
+                            <tr>
+                                <th>Dimensiones del Paquete</th>
+                                <td>9 x 8 x 3.7 cm; 90 g</td>
+                            </tr>
+                            
+                        </table>
+                        <table class="table-2">
+                            <tr>
+                                <th>Empresa</th>
+                                <td>Nintendo</td>
+                            </tr>
+                            <tr>
+                                <th> Envíos</th>
+                                <td>A todo el pais</td>
+                            </tr>
+                            <tr>
+                                <th>Stock</th>
+                                <td>15 unidades</td>
+                            </tr>
+                            <tr>
+                                <th>Fecha de Lanzamiento</th>
+                                <td>02/11/2021</td>
+                            </tr>
+                            <tr>
+                                <th>Opiniones</th>
+                                <td><button class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i></td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                        
+                        <div class="comprar">
+                            <a href="http://localhost:3000/productcart">Comprar Ahora</a>
+                            <img src="/img/Pochita.svg" width="80">
+                        </div>
+                        <div class="agregar-carrito">
+                            <a href="">Agregar al Carrito</a>
+                            <img src="/img/Pochita.svg" width="80">
+                        </div>
+                        <div>
+                            <div class="star-text">
+                                <a class="text-1">Calificanos</a>
+                                <button class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <a class="text-2">7 opiniones</a>
+                                </button></div>
+                            </section>
+                            
+                        </div>
+                    </div>
+                    <div class="public">
+                        <a href="http://localhost:3000/register" class="a1">No olvides registrarte!</a>
+                        <a href="http://localhost:3000/login" class="a1">Iniciar sesión</a>
+                        <a href="" class="a1">O saludá a Kobeni!</a>
+                        <i class="fas fa-angle-double-down"></i>
+                        <a href="https://www.youtube.com/watch?v=4qMfVH053ww"><img src="/img/productDetail/Kobeni chiquita.png" alt="" style="max-width: 95%"></a>
+                        
+                    </div>
                 </section>
-                  
-                </div>
-        </div>
-        <div class="public">
-            <a href="http://localhost:3000/register" class="a1">No olvides registrarte!</a>
-            <a href="http://localhost:3000/login" class="a1">Iniciar sesión</a>
-            <a href="" class="a1">O saludá a Kobeni!</a>
-            <i class="fas fa-angle-double-down"></i>
-            <a href="https://www.youtube.com/watch?v=4qMfVH053ww"><img src="/img/productDetail/Kobeni chiquita.png" alt="" style="max-width: 95%"></a>
-            
-        </div>
+            </main> 
+
+   <!-- <main class="main-detail">
+      <div class="main-container">
+        <section class="tittle">
+          <h2>Figura de Master Chief</h2>  
         </section>
-    </main>
 
-    <%- include('../partials/footer.ejs')  %> 
+        <div class="image-container">
+          <div class="caja">
+            <div>
+              <a href="#"><img src="/img/imagenes home/halo.jpg" alt="" /></a>  
+            </div>
+          </div>
+        </div>
 
-</body>
+        <article class="info-container">
 
+          <section class="price">
+              <span>Descuento:</span>
+            <h4 class="discount">40% OFF</h4>    
+              <span>Precio:</span>
+            <h4 class="price">$2.500</h4>      
+          </section>
+
+          <section class="description">
+            <h3 class="tittle-description">Descripcion:</h3>
+            <p class="description-info">        
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              recusandae facere iure animi obcaecati, aut excepturi, eos hic
+              dolorem ex doloribus!
+            </p>
+          </section>
+
+          <section class="buy-product">
+
+            <div class="quantity">
+                 <input type="number" min="1" max="9" step="1" value="1">
+            </div>
+  
+            <div class="buttons">
+
+              <div class="buy">
+                <button>Comprar Ahora</button>
+              </div>
+
+              <div class="add">
+                <button>Agregar al Carrito</button>
+              </div>
+
+            </div>
+
+          </section>
+        </article>
+
+      </div>
+    </main>    -->
+
+    <%- include('../partials/footer.ejs') %>
+  </body>
 </html>

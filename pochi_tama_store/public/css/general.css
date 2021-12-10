@@ -19,3 +19,20 @@ a{
     color: black;
 }
 
+h2.all-products{
+    margin: 30px auto;
+    font-size: 24px;
+    
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 30%;
+    background-color: var(--orange3);
+    height: 35px;
+    align-items: center;
+    color: white;
+    font-family:  'Titan One', cursive;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
