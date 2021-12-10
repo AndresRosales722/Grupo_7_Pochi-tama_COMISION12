@@ -5,9 +5,7 @@ let path = require('path')          //USAMOS EL METODO PATH
 
 
 app.use(express.static('public'))
-app.use(methodOverride('_method'))
-app.use(express.urlencoded({ extended: false}))
-app.use(express.json())
+
 
 
 //PARA LOS ARCHIVOS DE CSS E IMAGENES.
