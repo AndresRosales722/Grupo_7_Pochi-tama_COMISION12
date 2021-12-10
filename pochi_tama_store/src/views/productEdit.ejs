@@ -23,6 +23,8 @@
                         <option value="Peliculas">
                         <input list="categorias" name="" id="" placeholder="Producto"> 
                     </div>
+
+                    <form action="/products/<%= product.id %>?_method=PUT" method="POST">
                            <div class="categoria2">
                                <input list="sub-category2" name="" id="" placeholder="Elija Subcategoria" >
                             <datalist id="sub-category2">
@@ -31,28 +33,22 @@
                                 <option value="Marvel">
                                 <option value="DC">
                                 <option value="Otro">
-                                
                               </datalist>
-                            <input type="text" name="name" id="" placeholder="nombre" value="">
+                            <input type="text" name="name" id="" placeholder="nombre" value="<%= product.name %> ">
                         </div>
                  </div>
            </div>
            <div class="img-agregar"><p>Agregar archivo de imagen</p>
             <hr>
         <input type="file">
-    </div>
-       </div>
-       <div class="caja-descripciones">
-        <h1 class="admin-2-titulo">Descripcion del producto</h1>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        
     </div> 
     <div >
         <p class="precio-admin">Precio $:</p>
-    <input type="number" name="price" class="text-precio-admin" placeholder="precio" value="">
-    <input type="number" name="discount" class="text-precio-admin" placeholder="descuento" value="">
-
+    <input type="number" name="price" class="text-precio-admin" placeholder="precio" value="<%= product.price %>">
+    <input type="number" name="discount" class="text-precio-admin" placeholder="descuento" value="<%= product.discount %>">
     </div>
+    <button type="submit">ENVIAR</button>
+            </form> 
       </main>
       <%- include('./partials/footer.ejs')  %>
 

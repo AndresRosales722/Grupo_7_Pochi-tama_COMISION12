@@ -13,9 +13,10 @@ router.get('/productCreate/', controller.create);  // Creacion de un producto
 router.post('/create', controller.store);  // Formulario de creacion del producto
 
 router.get('/:id/edit', controller.edit); 
+
 router.put('/:id', controller.update); 
 
-
+router.delete('/:id', controller.destroy); 
 
 
 module.exports = router

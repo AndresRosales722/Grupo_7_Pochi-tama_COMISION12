@@ -73,11 +73,45 @@ let controller = {
         })
     },
 
-    update:(req,res)=>{
-        res.render('')
+    update: (req, res) => {
+		let productId = +req.params.id
+
+		const {name,price,discount,category,description} = req.body
+
+		products.forEach(product =>{
+			if(product.id === productId){
+				product.id = product.id,
+				product.name = name
+				product.price = price
+				product.discount = discount
+				product.description = description
+				product.image = product.image
+			}
+		})
+
+		writeJson(products)
+
+		res.redirect("/products")
+
     },
 
-    
+    destroy : (req, res) => {
+		let productId = +req.params.id
+		
+
+		products.forEach(product => {
+			if(product.id === productId){
+				let productToDestroyIndex = products.indexOf(product)
+				productToDestroyIndex !== -1 ?
+				products.splice(productToDestroyIndex,  1) :
+			    console.log('no encontre el producto')
+			}
+		})
+
+		writeJson(products)
+		res.redirect("/products")
+
+    }
 }
 
 
