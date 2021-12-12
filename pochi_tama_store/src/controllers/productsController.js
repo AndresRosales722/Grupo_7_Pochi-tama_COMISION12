@@ -74,7 +74,23 @@ let controller = {
     },
 
     update:(req,res)=>{
-        res.render('')
+        let productId = +req.params.id;
+		let {name, price, discount, category, description, image} = req.body;
+		products.forEach(product => {
+			if(product.id === productId){
+				product.id = product.id;
+                product.name = name,
+				product.price = price,
+				product.discount = discount,
+                product.category = category,
+				product.description = description,
+                product.image = image
+			}
+		})
+
+		writeJson(productsDataBase)
+		res.redirect(`products/productdetail/${productId}`)
+
     },
 
     
