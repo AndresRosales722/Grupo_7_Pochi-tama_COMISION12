@@ -5,8 +5,10 @@ let path = require('path')          //USAMOS EL METODO PATH
 
 
 app.use(express.static('public'))
-   //PARA LOS ARCHIVOS DE CSS E IMAGENES.
 
+
+
+//PARA LOS ARCHIVOS DE CSS E IMAGENES.
 app.set('view engine','ejs')    // INDICAMOS QUE USAREMOS EJS
 app.set('views',path.join(__dirname,'views')) //INDICA LA UBICACION DE LA CARPETA DE VIEWS
 
