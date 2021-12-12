@@ -4,7 +4,7 @@
         "name": "Lampara Baby Yoda",
         "price": 2500,
         "discount": 10,
-        "category": "Figuras",
+        "category": "Figuras/articulos",
         "subcategory" : "Otro",
         "description": "Lampara baby yoda de 40cm, edicion limitada.",
         "image": "duendefeo.jpg"
@@ -25,7 +25,7 @@
         "price": 5000,
         "discount": 50,
         "category": "figuras/articulos",
-        "subcategory" : "marvel",
+        "subcategory" : "Articulos",
         "description": "Hacha y de Thor, Calidad Premium, 35 cm.",
         "image": "thor.jpg"
     },
@@ -34,8 +34,8 @@
         "name": "Guantelete del infinito",
         "price": 3990,
         "discount": 20,
-        "category": "figuras/articulos",
-        "subcategory" : "marvel",
+        "category": "Figuras/Articulos",
+        "subcategory" : "Articulos",
         "description": "replica de guantelete del infinito version iron man de 40cm.",
         "image": "iron.jpg"
     },
@@ -45,7 +45,7 @@
         "price": 3299,
         "discount": 15,
         "category": "Figuras/Articulos",
-        "subcategory" : "otro",
+        "subcategory" : "Articulos",
         "description": "replica de casco boba fett. Dimensiones del producto 26,6 x 25,4 x 27,9 cm; 1,66 kg.",
         "image": "bobba.jpg"
     },
@@ -55,7 +55,7 @@
         "price": 9500,
         "discount": 25,
         "category": "Indumentaria/Disfraces",
-        "subcategory" : "Otro",
+        "subcategory" : "otro",
         "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
         "image": "img-cafetera-moulinex.jpg"
     },
@@ -65,7 +65,7 @@
         "price": 2200,
         "discount": 0,
         "category": "Figuras/Articulos",
-        "subcategory" : "Otro",
+        "subcategory" : "Figuras",
         "description": "Figura de artorias del abismo, Dark souls, bandai-namco de 24cm.",
         "image": "artorias.jpg"
     },
@@ -91,13 +91,113 @@
     },
     {
         "id": 10,
-        "name": "Superman núm 97/18 ECC Comics",
+        "name": "Bufanda Harry Potter Slytherin",
+        "price": 3600,
+        "discount": 0,
+        "category": "Indumentaria/Disfraces",
+        "subcategory" : "Accesorios",
+        "description": "Bufanda Harry Potter casa slytherin, hilado de algodon.",
+        "image": "bufanda-slytherin"
+    },
+    {
+        "id": 11,
+        "name": "Yakuza 0 - Ps4(Fisico)",
+        "price": 1500,
+        "discount": 5,
+        "category": "Videojuegos",
+        "subcategory" : "Otro",
+        "description": "Yakuza 0. Plataforma ps4. Fisico.",
+        "image": "yakuza0-ps4.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Peluche Pokemon-Charmander ",
+        "price": 2500,
+        "discount": 10,
+        "category": "Figuras/Articulos",
+        "subcategory" : "Figuras",
+        "description": "Peluche pokemon Charmander, de 60cm.",
+        "image": "peluche-charmander.jpg"
+    },
+    {
+        "id": 13,
+        "name": "DC Collectibles Justice League: Darkseid Deluxe Figura de acción",
+        "price": 8500,
+        "discount": 15,
+        "category": "Figuras/Articulos",
+        "subcategory" : "Figuras",
+        "description": "Figura de accion Darkseid, DC Collectibles, 2,21 kg.",
+        "image": "figuraDarkseid.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Manga 'Chainsaw Man' Tomo 1",
+        "price": 650,
+        "discount": 5,
+        "category": "Comics/Manga",
+        "subcategory" : "Manga",
+        "description": "Manga 'Chainsaw Man' Tomo 1 editorial Ivrea.",
+        "image": "chainsaw-man-tomo1.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Taza Stranger Things",
+        "price": 750,
+        "discount": 0,
+        "category": "Figuras/Articulos",
+        "subcategory" : "Articulos",
+        "description": "Taza Stranger Things. Ceramica.",
+        "image": "taza-strangerthings.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Disfraz 'muñeca el juego del calamar",
+        "price": 2500,
+        "discount": 25,
+        "category": "Indumentaria/Disfraces",
+        "subcategory" : "Disfraces",
+        "description": "Disfraz de 'el juego del calamar. Algodon premium talle S, L, XL, XXL.'",
+        "image": "muneca-calamar-a.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Comic 'Marvel Zombies' Vol.1",
         "price": 750,
         "discount": 10,
         "category": "Comics/Manga",
         "subcategory" : "Comic",
-        "description": "Superman núm 97/18 ECC Comics 25 paginas.",
-        "image": "Superman_97_18.jpg"
+        "description": "Marvel Zombies Vol.1. 25 paginas.",
+        "image": "marvel-zombies.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Call of Duty 'Vanguard' PS5-Fisico",
+        "price": 16000,
+        "discount": 10,
+        "category": "Videojuegos",
+        "subcategory" : "Otros",
+        "description": "Call of Duty 'Vanguard' PS5-Fisico. Sellado.",
+        "image": "Call-of-Duty-Vanguard-PS5.jpg"
+    },
+    {
+        "id": 19,
+        "name": "It takes two Xbox-series X/One Fisico",
+        "price": 14000,
+        "discount": 15,
+        "category": "Videojuegos",
+        "subcategory" : "Otros",
+        "description": "It takes two Xbox-series X/One Fisico. Sellado.",
+        "image": "it-takes-two.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Peluche Evangelion 'Rei chiquita'",
+        "price": 1500,
+        "discount": 20,
+        "category": "Figuras/Articulos",
+        "subcategory" : "Figuras",
+        "description": "Rei Chikita Chiquita Evangelion Peluche 22 Cm x 13 Cm. Colección Rey.",
+        "image": "rei-chiquita.jpg"
     }
     
 ]

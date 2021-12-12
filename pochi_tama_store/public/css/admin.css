@@ -1,0 +1,48 @@
+.admin-stock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin-stock .datos-admin{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+
+.admin-stock .datos-admin .cajita-datos-1{
+    background-color: var(--orange);
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 60%;
+    box-shadow: 0 2px 2px 0 violet;
+}
+
+.admin-stock .tabla-admin{
+    background-color: var(--orange);
+    margin-top: 20px;
+    border-radius: 5px;
+    border: solid 1px var(--purple);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.admin-stock .tabla-admin .categorias-tablita{
+    border: solid 1px var(--purple);
+    width: 60%;
+    
+}
+
+.admin-stock .tabla-admin .categorias-tablita th{
+    background-color: var(--purple);
+    
+}
+
+.admin-stock .tabla-admin .categorias-tablita .items-tablita{
+    width: 40%;
+    
+}

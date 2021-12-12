@@ -8,8 +8,10 @@ let controller = {
     },
     productEdit:(req,res)=>{
         res.render('productEdit')
+    },
+    productAdmin:(req,res)=>{
+        res.render('productAdmin')
     }
-    
 }
 
 

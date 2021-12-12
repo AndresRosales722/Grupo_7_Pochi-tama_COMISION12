@@ -8,6 +8,7 @@
 @import url("productCart.css");
 @import url("carrousel.css");
 @import url("form.css");
-@import url("administrador.css");
+@import url("productCreate.css");
 @import url("headerAdmin.css");
-@import url("administradorEdit.css");
+@import url("productEdit.css");
+@import url("admin.css");

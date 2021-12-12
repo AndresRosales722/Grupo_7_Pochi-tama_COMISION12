@@ -10,7 +10,7 @@ router.get('/productCreate',controller.productCreate)
 
 router.get('/productEdit',controller.productEdit)
 
-
+router.get('/product', controller.productAdmin)
 
 
 module.exports = router

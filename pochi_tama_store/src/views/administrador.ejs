@@ -3,50 +3,70 @@
     <%- include('./partials/head.ejs')  %> 
 <body>
     <%- include('./partials/headerAdmin.ejs')  %> 
-<main class="admin-main">
-    <h1 class="carga">Carga de productos</h1>
+<main class="admin-stock">
+
     <form action="">
-        <div class="carga-product">
-            <div class="category-product">
-             <h1 class="admin-title-1">Agregar</h1>
-                  <div class="barras">
-                     <div class="sub-category"><input list="sub-category" name="" id="" placeholder="Elige la categoria"><datalist id="sub-category">
-                         <option value="Figuras">
-                         <option value="Comics/Mangas">
-                         <option value="Indumentaria/Disfraces">
-                         <option value="Videojuegos">
-                         <option value="Peliculas">
-                         
-                       </datalist>
-                         <input list="categorias" name="" id="" placeholder="Producto"> 
-                     </div>
-                            <div class="sub-category2">
-                                <input list="sub-category2" name="" id="" placeholder="Elija Subcategoria">
-                             <datalist id="sub-category2">
-                                 <option value="Manga">
-                                 <option value="Comics">
-                                 <option value="Marvel">
-                                 <option value="DC">
-                                 <option value="Otro">
-                                 
-                               </datalist>
-                             <input type="text" name="" id="" placeholder="Cantidad"></div>
-                  </div>
+        <div class="datos-admin">
+            
+         <div class="cajita-datos-1"> 
+             <div class="mini-cajita">
+                 <p>Si</p>
+                 <p>No</p>
+                 <p>Puede ser</p>
+             </div>
+         </div>
+         <div class="cajita-datos-1"> 
+            <div class="mini-cajita">
+                <p>Si</p>
+                <p>No</p>
+                <p>Puede ser</p>
             </div>
-            <div class="img-charge"><p>Agregar archivo de imagen</p>
-             <hr>
-         <input type="file">
-     </div>
         </div>
-        <div class="box-description">
-         <h1 class="admin-title-2">Descripcion del producto</h1>
-         <textarea name="" id="" cols="30" rows="10"></textarea>
-         
-     </div> 
-     <div class="price">
-         <p>Precio $:</p>
-     <input type="text">
-     </div>
+        <div class="cajita-datos-1"> 
+            <div class="mini-cajita">
+                <p>Si</p>
+                <p>No</p>
+                <p>Puede ser</p>
+            </div>
+        </div>
+        </div>
+        <div>
+            <table class="tabla-admin">
+                    <tr class="categorias-tablita">
+                     <th>Id</th>
+                     <th>Nombre</th>
+                     <th>Categoria</th>
+                     <th>Subcategoria</th>
+                     <th>Stock</th>
+                     <th>Acciones</th>
+                    </tr>
+                    <tr class="items-tablita">
+                     <th><p>1</p></th>
+                     <td>Buenas noches pun pun</td>
+                     <th>Comics/Manga</th>
+                     <td>Manga</td>
+                     <th>6</th>
+                     <th>
+                        <i class="fas fa-plus-square"></i>
+                        <i class="fas fa-trash-alt"></i>
+                        <i class="fas fa-edit"></i>
+                     </th>
+                    </tr>
+                    <tr class="items-tablita">
+                        <th><p>1</p></th>
+                        <td>Buenas noches pun pun</td>
+                        <th>Comics/Manga</th>
+                        <td>Manga</td>
+                        <th>6</th>
+                        <th>
+                           <i class="fas fa-plus-square"></i>
+                           <i class="fas fa-trash-alt"></i>
+                           <i class="fas fa-edit"></i>
+                        </th>
+                       </tr>
+            </table>
+        </div>
+       
     </form>
    
   </main>
