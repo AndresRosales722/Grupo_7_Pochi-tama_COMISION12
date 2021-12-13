@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('../partials/head.ejs') %>
+
+  <body class="body-header">
+    <%-include('../partials/header.ejs') %>
+  
+    <main class="main-detail">
+      <div class="main-container">
+       
+        <div class="image-container">
+          <div class="caja">
+            <div>
+              <a href="#"><img src="/img/imagenes home/<%- product.image %>" alt="" /></a>  
+            </div>
+          </div>
+        </div>
+
+        <article class="info-container">
+
+          <section class="tittle">
+            <h2><%- product.name %></h2>  
+          </section>
+
+          <section class="price">
+              <!-- <span>Precio:</span> -->
+              <h4 class="price">$<%- product.price %></h4>      
+              <!-- <span>Descuento:</span>  -->  
+              <h4 class="discount"><%- product.discount %>% OFF</h4>   
+          </section>
+
+          <section class="description">
+            <h3 class="tittle-description">Descripcion:</h3>
+            <p class="description-info"><%- product.description %></p>
+          </section>
+
+          <section class="buy-product">
+
+            <div class="buttons">
+
+              <div class="buy">
+                <button>Comprar Ahora</button>
+              </div>
+
+              <div class="add">
+                <button>Agregar al Carrito</button>
+              </div>
+            </div>
+
+          </section>
+        </article>
+
+      </div>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+
+  </body>
+</html>

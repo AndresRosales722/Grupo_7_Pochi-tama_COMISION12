@@ -6,3 +6,27 @@
     --purple2:#9D4EDD;
     --orange3:#ff894a; /* Color naranja principal */
 }
+
+
+button.delete,.edit{
+    color: white;
+    border: 1px solid var(--orange3);
+    border-radius: 5px;
+    background-color: var(--orange3);
+}
+
+button.edit:hover{
+    background-color:#ff9055 ;
+}
+
+button.delete:hover{
+    background-color:#ff9055 ;
+}
+
+button.edit a{
+    color: white;
+}
+
+button.create{
+    
+}

@@ -10,5 +10,7 @@
 @import url("form.css");
 @import url("productCreate.css");
 @import url("headerAdmin.css");
-@import url("productEdit.css");
-@import url("admin.css");
+@import url("administradorEdit.css");
+@import url("formCreate.css");
+@import url("indexAdmin.css");
+
