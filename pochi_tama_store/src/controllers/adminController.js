@@ -1,13 +1,101 @@
+const fs = require('fs');
+const path = require('path');
+
+const productsFilePath = path.join(__dirname, '../database/productsDataBase.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const writeJson = dataBase => fs.writeFileSync(productsFilePath,JSON.stringify(dataBase), 'utf-8')
+
+
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
 let controller = {
-    //aca hay que administrar los productos con metodos array//
-    admin:(req,res)=>{
-        res.render('administrador')
+    
+	index:(req,res)=>{
+        res.render('products/products',{      
+            products,
+            toThousand
+        })
     },
-    productCreate:(req,res)=>{
+
+    create:(req,res)=>{
         res.render('productCreate')
     },
-    productEdit:(req,res)=>{
-        res.render('productEdit')
+
+    store:(req,res)=>{
+        const {name,price,discount,category,description} = req.body
+
+		let lastId = 1
+
+		products.forEach(product => {
+			if(product.id > lastId){
+				lastId = product.id
+			}
+		});
+
+		let newProduct ={
+			id : lastId + 1, 
+			name,
+			price,
+			discount,
+			description,
+			category,
+			image: "default-image.png"
+		}
+
+			products.push(newProduct)
+
+			writeJson(products)
+
+			res.redirect('/admin')
+    },
+
+    edit:(req,res)=>{
+        let productId = +req.params.id
+        let productToEdit = products.find(product => product.id === productId)
+
+        res.render('productEdit',{
+            product: productToEdit
+        })
+    },
+
+    update: (req, res) => {
+		let productId = +req.params.id
+
+		const {name,price,discount,category,description} = req.body
+
+		products.forEach(product =>{
+			if(product.id === productId){
+				product.id = product.id,
+				product.name = name
+				product.price = price
+				product.discount = discount
+				product.description = description
+				product.image = product.image
+			}
+		})
+
+		writeJson(products)
+
+		res.redirect("/admin")
+
+    },
+
+    destroy : (req, res) => {
+		let productId = +req.params.id
+		
+
+		products.forEach(product => {
+			if(product.id === productId){
+				let productToDestroyIndex = products.indexOf(product)
+				productToDestroyIndex !== -1 ?
+				products.splice(productToDestroyIndex,  1) :
+			    console.log('no encontre el producto')
+			}
+		})
+
+		writeJson(products)
+		res.redirect("/admin")
+
     }
     
 }

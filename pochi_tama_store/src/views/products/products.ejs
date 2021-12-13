@@ -1,53 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html style="font-size:62.5%;" lang="es">
+ 
 <%- include('../partials/head.ejs')  %>  
 
 <body>
-    
-    <%- include('../partials/header.ejs')  %> 
-    
-    
-    <main class="main">
-        <div class="main-container">
-            <h2 class="all-products">Todos Los Productos</h2>
-            <section class="section-vendido">
-                
-                <% products.forEach(product => { %>
+
+    <%- include('../partials/headerAdmin.ejs')  %> 
+
+    <main class="panel-admin">
+      <!--    <section class="options-info">
+            <div>
+                <h3>233</h3>
+                <p>productos</p>
+                <span>inhabilitado: 10</span>
+            </div>
+            <div>
+                <h3>90</h3>
+                <p>productos en local</p>
+                <span>inhabilitado: 2</span>
+            </div>
+            <div>
+                <h3>50</h3>
+                <p>usuarios</p>
+            </div>
+        </section>  -->
+        <section class="tablas">
+
+            <h3>Listado de Productos</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>categoria</th>
+                        <th>subcategoria</th>
+                        <th>nombre</th>
+                        <th>stock</th>
+                        <th>estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% products.forEach(product => { %>
                     
-                    
-                    <article class="producto">
-                        
-                        <div class="caja">
-                            <div>
-                                <a href="/products/productdetail/<%- product.id %>"><img src="/img/imagenes home/<%- product.image %>" alt=""></a>
-                            </div>   
-                        </div>
-                        <div class="parrafo">
-                            <p><%- product.name %></p>
-                            <span><%- product.discount > 0 ? `${product.discount}% OFF` : "" %></span>
-                        </div>
-                        <h4><%- toThousand  (product.price - product.price * product.discount /100) %></h4>
-                        <div class="botones">
-                            <button class="buy"> 
-                                <span>Comprar</span>
-                            </button>
-                            <button class="see">
-                                <span>Ver</span>
-                            </button>
-                        </div>
-                    </a>
-                </article>
-                
-                <% }) %>
-                
-                <a href="../admin/productCreate/">crear producto</a>
-                
-            </section>
-        </div>
+                    <tr>
+                        <td data-label="ID"><%= product.id %></td>
+                        <td data-label="CATEGORY"><%= product.category %></td>
+                        <td data-label="SUBCATEGORY"><%= product.subcategory %></td>
+                        <td data-label="NAME"><%= product.name %></td>
+                        <td data-label="STOCK"><%= product.stock %></td>
+                        <td data-label="STATUS">
+                            <% if (product.status == true) { %>
+                                Active
+                            <% } else { %>
+                                Inactive
+                            <% } %> 
+                        </td>
+                        <td data-label="ACTION">
+                            <!-- los dos links son mostrar en caso de estar  -->
+                            <a href="/" style="display: none;"><i class="fas fa-eye-slash"></i></a>
+                            <a href="/admin/create/"><i class="fas fa-plus-circle"></i></a>
+                            <!-- el siguiente link nos envia a un vista para editar el producto con determinado id -->
+                            <a href="/admin/<%- product.id %>/edit"><i class="fas fa-edit"></i></a>
+                            <!-- el siguiente link es para eliminar un producto, con determinado id -->
+                            <form action="/admin/<%= product.id %>?_method=DELETE" method="POST">
+                                <button type="submit"><i class="fas fa-trash"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </section>
+
     </main>
-    
-    <%- include('../partials/footer.ejs')  %> 
+    <script src="/js/headerAdmin.js"></script>
+</body>
     
 </body>
 </html>
+
+

@@ -3,54 +3,44 @@
 
     <%- include('./partials/head.ejs')  %> 
 
-<body>
-    <%- include('./partials/headerAdmin.ejs')  %> 
-    <main class="admin-main">
-        <br>
-        <h1 class="edit-product">Editar productos</h1>
-        <br>
-        <hr style="border: 1px dashed rgba(100, 68, 241, 0.651); height: 0; width: 100%">
-       <div class="carga-product">
-        
-           <div class="category-product">
-            <h1 class="admin-1-titulo">Agregar</h1>
-                 <div class="bars">
-                    <div class="sub-category"><input list="sub-category" name="" id="" placeholder="Elige la categoria"><datalist id="sub-category">
-                        <option value="Figuras">
-                        <option value="Comics/Mangas">
-                        <option value="Indumentaria/Disfraces">
-                        <option value="Videojuegos">
-                        <option value="Peliculas">
-                        <input list="categorias" name="" id="" placeholder="Producto"> 
-                    </div>
+    <body class="admin">
 
-                    <form action="/products/<%= product.id %>?_method=PUT" method="POST">
-                           <div class="categoria2">
-                               <input list="sub-category2" name="" id="" placeholder="Elija Subcategoria" >
-                            <datalist id="sub-category2">
-                                <option value="Manga">
-                                <option value="Comics">
-                                <option value="Marvel">
-                                <option value="DC">
-                                <option value="Otro">
-                              </datalist>
-                            <input type="text" name="name" id="" placeholder="nombre" value="<%= product.name %> ">
+    <%- include('./partials/headerAdmin.ejs')  %> 
+    
+            <div class="form-container-admin">
+                <h2>Esta editando el producto:      <%= product.name %></h2>
+                <form action="/admin/<%= product.id %>?_method=PUT" method="POST">
+                    <div class="form-admin">
+                        <div class="input-admin">
+                            <label for="name">Nombre del Producto</label>
+                            <input class="input-style-admin" type="text" name="name" placeholder="Ej: Guante del infinito" value="<%= product.name %>">
+                            <span class="error-message">Debes ingresar el nombre del producto</span>
                         </div>
-                 </div>
-           </div>
-           <div class="img-agregar"><p>Agregar archivo de imagen</p>
-            <hr>
-        <input type="file">
-    </div> 
-    <div >
-        <p class="precio-admin">Precio $:</p>
-    <input type="number" name="price" class="text-precio-admin" placeholder="precio" value="<%= product.price %>">
-    <input type="number" name="discount" class="text-precio-admin" placeholder="descuento" value="<%= product.discount %>">
-    </div>
-    <button type="submit">ENVIAR</button>
-            </form> 
-      </main>
-      <%- include('./partials/footer.ejs')  %>
+                        <div class="input-admin">
+                            <label for="price">Precio del producto</label>
+                            <input class="input-style-admin" type="text" name="price" placeholder="Ej: 3000" value="<%= product.price %>">
+                            <span class="error-message">Debes ingresar un precio</span>
+                        </div>
+                        <div class="input-admin">
+                            <label for="discount">Descuento</label>
+                            <input class="input-style-admin" type="text" name="discount" placeholder="Ej: 50" value="<%= product.discount %>">
+                            <span class="error-message">Debes ingresar el descuento</span>
+                        </div>
+                        <div class="input-admin description">
+                            <label for="description">Descripcion</label>
+                            <textarea class="description" name="description" id="description"><%= product.description %></textarea>
+                            <span class="error-message">Debes ingresar una descripcion</span>
+                        </div>
+                       
+                        <div class="button-admin">
+                            <span class="error-message">Hubo errores en el envío</span>
+                            <button type="submit" class="btn btn-submit">Guardar producto</button>
+                        </div>
+                
+                    </div>
+                    
+                </form>
+            </div>
 
 </body>
 </html>
