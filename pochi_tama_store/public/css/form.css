@@ -1,9 +1,7 @@
 body.register {
     background: white;
     height: 100%;
-    padding: 6rem 1rem;
 }
-
 
 body.register h2 {
     text-align: center;
@@ -114,17 +112,6 @@ body.register label {
     margin-left: 5px;
     margin-bottom: 5px;
     letter-spacing: 0.5px;
-}
-
-body.register .logo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: orange;
-    padding: 5px 0 5px;
-    border-radius: 5px 5px 0px 0px;
-    display: none;
 }
 
 body.register .logo img{

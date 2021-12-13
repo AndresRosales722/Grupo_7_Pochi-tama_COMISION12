@@ -5,6 +5,8 @@ body .main{
 body .main-container{
     background-color: white;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -104,8 +106,13 @@ body .main-container .section-vendido article.producto{
     margin-bottom: 30px;
 }
 
+body .main-container .section-vendido article.producto .parrafo{
+   
+}
+
 body .main-container .section-vendido article.producto p{
     margin-top: 5px;
+   
 }
 
 body .main-container .section-vendido article.producto h4{
@@ -262,16 +269,3 @@ body section.info .container-info .tarjeta i{
     color: #2c3e50;
 }
 
-@media (min-width: 992px){
-    body section.info .container-info{
-        justify-content: space-evenly;
-    }
-    
-    body section.info .container-info .tarjeta-shield{
-        display: block;
-    }
-    
-    body section.info .container-info .tarjeta-card{
-        display: block;
-    }
-}

@@ -2,10 +2,26 @@ let express = require('express')
 let router = express.Router() 
 let controller = require('../controllers/productsController')
 
+/* router.get('/',controller.index)   // Listado de productos */
 
-router.get('/productCart',controller.cart)
+router.get('/detail/:id/', controller.detail);   // Detalle del producto
 
-router.get('/productdetail',controller.detail)
+router.get('/productCart',controller.cart)  // Carrito de compras
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
