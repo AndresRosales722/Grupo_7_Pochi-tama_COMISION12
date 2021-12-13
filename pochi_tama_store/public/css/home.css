@@ -271,7 +271,7 @@
     }
 
     body main.main .main-container section.zonas article.card-bg.marvel{
-        width: 45%;
+        width: 400px;
         transition: 0.7s;
     }
 
@@ -280,7 +280,7 @@
     }
 
     body main.main .main-container section.zonas article.card-bg.dc{
-        width: 45%;
+        width: 400px;
         transition: 0.7s;
 
     }
@@ -291,7 +291,7 @@
 
 
     body main.main .main-container section.zonas article.card-bg.anime{
-        width: 45%;
+        width: 400px;
         transition: 0.7s;
     }
 

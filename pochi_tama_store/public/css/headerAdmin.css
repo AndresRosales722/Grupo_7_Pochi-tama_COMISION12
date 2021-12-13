@@ -11,7 +11,21 @@
     
 }
 
- .header-admin .container-header-admin .container-header-top-admin{
+.header-admin .container-header-admin .container-header-top-admin .menu-admin{
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.header-admin .container-header-admin .container-header-top-admin .menu-admin h3{
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+}
+
+.header-admin .container-header-admin .container-header-top-admin{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,9 +49,7 @@
 }
 
  .header-admin .container-header-admin .container-header-top-admin .search-bar-admin{
-    display: flex;
-    width: 0px;
-   
+    display: none;
 }
 
  .header-admin .container-header-admin .container-header-top-admin .search-bar-admin input{
@@ -103,4 +115,37 @@ flex-direction: row;
     padding-top: 9px;
     padding-bottom: 12px;
     font-style: italic;
+}
+
+
+@media (min-width: 768px) {
+
+.header-admin .container-header-admin .container-header-top-admin .search-bar-admin{
+    display: flex;
+}
+
+.header-admin .container-header-admin .container-header-top-admin .menu-admin h3{
+    display: flex;
+    margin-right: 15px;
+}
+
+.header-admin .container-header-admin .container-header-top-admin .search-bar-admin{
+    width: 50%;
+}
+
+.header-admin .container-header-admin .container-header-top-admin .search-bar-admin input{
+    display: flex;
+    
+}
+
+.header-admin .container-header-admin .container-header-top-admin .search-bar-admin .boton-admin{
+    right: 30px;
+    top: 7px
+}
+
+.header-admin .container-header-admin .container-header-top-admin .search-bar-admin .boton-admin i{
+    color: black;
+    font-size: 1.5rem;
+}
+    
 }

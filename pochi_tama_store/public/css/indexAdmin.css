@@ -87,10 +87,15 @@
     border: none;
     color: white;
 }
+
+.panel-admin .tablas table tbody tr form button:hover {
+    color: black;
+}
+
 .panel-admin .tablas table tbody tr a,
 .panel-admin .tablas table tbody tr .fa-trash-alt {
     font-size: 1.5rem;
-    color: rgb(233, 231, 231);
+    color: white;
     margin: 0 5px;
 }
 .panel-admin .tablas table tbody tr a:hover,

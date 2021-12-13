@@ -180,7 +180,7 @@ body .main-container section.zonas{
 
 .card-bg {
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
     display: flex;
@@ -269,3 +269,10 @@ body section.info .container-info .tarjeta i{
     color: #2c3e50;
 }
 
+/* media queries */
+
+@media (min-width: 576px) {
+    .card-bg img {
+        width: 400px;
+}
+}
