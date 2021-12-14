@@ -1,0 +1,184 @@
+[
+    {
+    "id": 1,
+    "nombre": "Julian ",
+    "apellido": "Alvarez",
+    "email": "clandeacero@gmail.com",
+    "contraseña": "Clandeacero2021",
+    "genero" : "masculino",
+    "imagen": ""
+},
+    {
+    "id": 2,
+    "nombre": "mariana",
+    "apellido": "caceceres",
+    "email": "marianacaceres1994@hotmail.com",
+    "contraseña": "vidaverdesiempre1",
+    "genero" : "femenino",
+    "imagen": ""
+},
+    {
+    "id": 3,
+    "nombre": "Alicia",
+    "apellido": "Matienzo",
+    "email": "aliciamatienzo54@yahoo.com",
+    "contraseña": "aliciamatienzo54",
+    "genero" : "femenino",
+    "imagen": ""
+},
+    {
+    "id": 4,
+    "nombre": "Ruben",
+    "apellido": "Castro",
+    "email": "rubencastro@gmail.com",
+    "contraseña": "chevroletcorsa5",
+    "genero" : "masculino",
+    "imagen": ""
+},
+    {
+    "id": 5,
+    "nombre": "Eduardo",
+    "apellido": "Castelli",
+    "email": "eduardocastelli1993@gmail.com",
+    "contraseña": "castellieduardo",
+    "genero" : "masculino",
+    "imagen": ""
+},
+    {
+    "id": 6,
+    "nombre": "Carina",
+    "apellido": "Rosales",
+    "email": "carinarosales@hotmail.com",
+    "contraseña": "carinarosales1992",
+    "genero" : "fenemino",
+    "imagen": ""
+},
+    {
+    "id": 7,
+    "nombre": "Edith",
+    "apellido": "Gontanet",
+    "email": "edithfontanet@outlook.com",
+    "contraseña": "contraseña456",
+    "genero" : "femenino",
+    "imagen": ""
+},
+    {
+    "id": 8,
+    "nombre": "Giuliana",
+    "apellido": "Palavecini",
+    "email": "tearparty@hotmail.com",
+    "contraseña": "tearparty912",
+    "genero" : "femenino",
+    "imagen": ""
+},
+    {
+    "id": 9,
+    "nombre": "Roberto Carlos",
+    "apellido": "Escudero",
+    "email": "robertoescudero5@outlook.com",
+    "contraseña": "robertoescuderocarlos2",
+    "genero" : "masculino",
+    "imagen": ""
+},
+    {
+    "id": 10,
+    "nombre": "Matias",
+    "apellido": "Hernandez",
+    "email": "hernandezmatias789@hotmail.com",
+    "contraseña": "798matiashernandez",
+    "genero" : "masculino",
+    "imagen": ""
+},
+    {
+    "id": 11,
+    "nombre": "Maria Carla",
+    "apellido": "Tabares",
+    "email": "mariacarlatabares23@gmail.com.ar",
+    "contraseña": "carlatabares1",
+    "genero" : "femenino",
+    "imagen": ""
+},
+    {
+    "id": 12,
+    "nombre": "Hernan",
+    "apellido": "Portillo",
+    "email": "hernanportillo7@hotmail.com.ar",
+    "contraseña": "hernaporti647",
+    "genero" : "masculino",
+    "imagen": ""
+},
+    {
+    "id": 13,
+    "nombre": "Rosario",
+    "apellido": "Casanova",
+    "email": "rosariocasanova@outlook.com.ar",
+    "contraseña": "casanovarosario10",
+    "genero" : "femenino",
+    "imagen": ""
+},
+    {
+    "id": 14,
+    "nombre": "Daniel",
+    "apellido": "Benitez",
+    "email": "danielcuadro54@gmail.com.ar",
+    "contraseña": "benitezdaniel1988",
+    "genero" : "masculino",
+    "imagen": ""
+},
+    {
+    "id": 15,
+    "nombre": "Claudia",
+    "apellido": "Esporas",
+    "email": "claudiaesporas1985@hotmail.com.ar",
+    "contraseña": "esporasclaudia1985",
+    "genero" : "femenino",
+    "imagen": ""
+},
+    {
+    "id": 16,
+    "nombre": "Mateo",
+    "apellido": "Cabuli",
+    "email": "cabulimateo1996@hotmail.com",
+    "contraseña": "mateo1996",
+    "genero" : "masculino",
+    "imagen": ""
+},
+    {
+    "id": 17,
+    "nombre": "Roman Esteban",
+    "apellido": "Paccielo",
+    "email": "paccieloesteban@gmail.com.ar",
+    "contraseña": "estebanpaciello8",
+    "genero" : "masculino",
+    "imagen": ""
+},
+    {
+    "id": 18,
+    "nombre": "Analia",
+    "apellido": "Pertutti",
+    "email": "pertuttianalia@outlook.com",
+    "contraseña": "casa345",
+    "genero" : "femenino",
+    "imagen": ""
+},
+    {
+    "id": 19,
+    "nombre": "Felix",
+    "apellido": "Ravena",
+    "email": "felixravena@hotmail.com",
+    "contraseña": "ravenafelix154",
+    "genero" : "masculino",
+    "imagen": ""
+},
+    {
+    "id": 20,
+    "nombre": "Sofia",
+    "apellido": "Gonzales",
+    "email": "sofiagonzales@gmail.com.ar",
+    "contraseña": "gonzalessofia1995",
+    "genero" : "femenino",
+    "imagen": ""
+}
+    
+
+]
