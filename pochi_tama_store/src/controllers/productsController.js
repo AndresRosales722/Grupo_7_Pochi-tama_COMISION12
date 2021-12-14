@@ -10,7 +10,7 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 
 let controller = {
-
+    
     detail:(req,res)=>{
     let productId = +req.params.id
     let product = products.find(product => product.id === productId)

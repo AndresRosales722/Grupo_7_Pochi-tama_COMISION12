@@ -1,1 +1,181 @@
-[{"id":1,"name":"Lampara Baby Yoda","price":"2500","discount":"10","category":"Figuras/articulos","subcategory":"Otro","description":"Accesorios de juguetes interactivos: el juguete animatronic Galactic Snackin' Grogu viene con 4 accesorios interactivos (tazón con tentáculos, galletas, palanca de cambios y cuchara) que, cuando se coloca en su mano, reaccionará con animaciones y efectos de sonido.","image":"duendefeo.jpg"},{"id":2,"name":"'Buenas noches pun pun' - tomo 1","price":"600","discount":"10","category":"comics/mangas","subcategory":"manga","description":"Tomo 1 de Buenas noches pun pun ,\r\nEdicion especial de aniversario.","image":"punpun.jpeg"},{"id":3,"name":"Hacha Stormbreaker","price":"5000","discount":"50","category":"figuras/articulos","subcategory":"Articulos","description":"Material: Madera MDF\r\nLargo: 66 cm\r\nAncho: 27 cm\r\nPeso: 480 gramos\r\nPintura: Hidroesmalte no toxico","image":"thor.jpg"},{"id":4,"name":"Guantelete del infinito","price":"3990","discount":"20","category":"Figuras/Articulos","subcategory":"Articulos","description":"Replica del guantelete del infinito con sus 5 gemas , version de Stark industries.","image":"iron.jpg"},{"id":5,"name":"Casco de Boba Fett","price":3299,"discount":15,"category":"Figuras/Articulos","subcategory":"Articulos","description":"replica de casco boba fett.","image":"bobba.jpg"},{"id":6,"name":"Traje Realista Master Chief","price":"9500","discount":"25","category":"Indumentaria/Disfraces","subcategory":"otro","description":"Traje del jefe maestro de la franquicia de Halo , Medidas realistas cuerpo completo.","image":"img-cafetera-moulinex.jpg"},{"id":7,"name":"Figura de artorias del abismo","price":"2200","discount":"0","category":"Figuras/Articulos","subcategory":"Figuras","description":"Figura  exclusiva de artorias el caminante del abismo, Dark souls, bandai-namco de 24cm.","image":"artorias.jpg"},{"id":8,"name":"Remera Kobeni - edicion seppuku","price":"1700","discount":"5","category":"Indumentaria/Disfraces","subcategory":"Anime","description":"Remera kobeni Higashiyama - Chainsaw man. Algodon premium talle S, L, XL, XXL.","image":"kobeni front.png"},{"id":9,"name":"Comic Ultimate Spiderman Vol 1.","price":600,"discount":5,"category":"Comics","subcategory":"Marvel","description":"Vol 1 Ultimate Spiderman editorial Panini.","image":"Ultimate_Spider-Man_Vol_1.png"},{"id":10,"name":"Bufanda Harry Potter Slytherin","price":3600,"discount":0,"category":"Indumentaria/Disfraces","subcategory":"Accesorios","description":"Bufanda Harry Potter casa slytherin, hilado de algodon.","image":"bufanda-slytherin"},{"id":11,"name":"Yakuza 0 - Ps4(Fisico)","price":1500,"discount":5,"category":"Videojuegos","subcategory":"Otro","description":"Yakuza 0. Plataforma ps4. Fisico.","image":"yakuza0-ps4.jpg"},{"id":12,"name":"Peluche Pokemon-Charmander ","price":2500,"discount":10,"category":"Figuras/Articulos","subcategory":"Figuras","description":"Peluche pokemon Charmander, de 60cm.","image":"peluche-charmander.jpg"},{"id":13,"name":"DC Collectibles Justice League: Darkseid Deluxe","price":"8500","discount":"15","category":"Figuras/Articulos","subcategory":"Figuras","description":"Figura de accion Darkseid, DC Collectibles, 2,21 kg.","image":"figuraDarkseid.jpg"},{"id":14,"name":"Manga 'Chainsaw Man' Tomo 1","price":650,"discount":5,"category":"Comics/Manga","subcategory":"Manga","description":"Manga 'Chainsaw Man' Tomo 1 editorial Ivrea.","image":"chainsaw-man-tomo1.jpg"},{"id":15,"name":"Taza Stranger Things","price":750,"discount":0,"category":"Figuras/Articulos","subcategory":"Articulos","description":"Taza Stranger Things. Ceramica.","image":"taza-strangerthings.jpg"},{"id":16,"name":"Disfraz 'muñeca el juego del calamar","price":2500,"discount":25,"category":"Indumentaria/Disfraces","subcategory":"Disfraces","description":"Disfraz de 'el juego del calamar. Algodon premium talle S, L, XL, XXL.'","image":"muneca-calamar-a.jpg"},{"id":17,"name":"Comic 'Marvel Zombies' Vol.1","price":750,"discount":10,"category":"Comics/Manga","subcategory":"Comic","description":"Marvel Zombies Vol.1. 25 paginas.","image":"marvel-zombies.jpg"},{"id":18,"name":"Call of Duty 'Vanguard' PS5-Fisico","price":16000,"discount":10,"category":"Videojuegos","subcategory":"Otros","description":"Call of Duty 'Vanguard' PS5-Fisico. Sellado.","image":"Call-of-Duty-Vanguard-PS5.jpg"},{"id":19,"name":"It takes two Xbox-series X/One Fisico","price":14000,"discount":15,"category":"Videojuegos","subcategory":"Otros","description":"It takes two Xbox-series X/One Fisico. Sellado.","image":"it-takes-two.jpg"},{"id":20,"name":"Peluche Evangelion 'Rei chiquita'","price":1500,"discount":20,"category":"Figuras/Articulos","subcategory":"Figuras","description":"Rei Chikita Chiquita Evangelion Peluche 22 Cm x 13 Cm. Colección Rey.","image":"rei-chiquita.jpg"}]
+[{
+    "id": 1,
+    "name": "Lampara Baby Yoda",
+    "price": "2500",
+    "discount": "10",
+    "category": "Figuras/articulos",
+    "subcategory": "Otro",
+    "description": "Accesorios de juguetes interactivos: el juguete animatronic Galactic Snackin' Grogu viene con 4 accesorios interactivos (tazón con tentáculos, galletas, palanca de cambios y cuchara) que, cuando se coloca en su mano, reaccionará con animaciones y efectos de sonido.",
+    "image": "duendefeo.jpg"
+}, {
+    "id": 2,
+    "name": "'Buenas noches pun pun' - tomo 1",
+    "price": "600",
+    "discount": "10",
+    "category": "comics/mangas",
+    "subcategory": "manga",
+    "description": "Tomo 1 de Buenas noches pun pun ,\r\nEdicion especial de aniversario.",
+    "image": "punpun.jpeg"
+}, {
+    "id": 3,
+    "name": "Hacha Stormbreaker",
+    "price": "5000",
+    "discount": "50",
+    "category": "figuras/articulos",
+    "subcategory": "Articulos",
+    "description": "Material: Madera MDF\r\nLargo: 66 cm\r\nAncho: 27 cm\r\nPeso: 480 gramos\r\nPintura: Hidroesmalte no toxico",
+    "image": "thor.jpg"
+}, {
+    "id": 4,
+    "name": "Guantelete del infinito",
+    "price": "3990",
+    "discount": "20",
+    "category": "Figuras/Articulos",
+    "subcategory": "Articulos",
+    "description": "Replica del guantelete del infinito con sus 5 gemas , version de Stark industries.",
+    "image": "replica.jpg"
+}, {
+    "id": 5,
+    "name": "Casco de Boba Fett",
+    "price": 3299,
+    "discount": 15,
+    "category": "Figuras/Articulos",
+    "subcategory": "Articulos",
+    "description": "replica de casco boba fett.",
+    "image": "bobba.jpg"
+}, {
+    "id": 6,
+    "name": "Traje Realista Master Chief",
+    "price": "9500",
+    "discount": "25",
+    "category": "Indumentaria/Disfraces",
+    "subcategory": "otro",
+    "description": "Traje del jefe maestro de la franquicia de Halo , Medidas realistas cuerpo completo.",
+    "image": "halo.jpg"
+}, {
+    "id": 7,
+    "name": "Figura de artorias del abismo",
+    "price": "2200",
+    "discount": "0",
+    "category": "Figuras/Articulos",
+    "subcategory": "Figuras",
+    "description": "Figura  exclusiva de artorias el caminante del abismo, Dark souls, bandai-namco de 24cm.",
+    "image": "artorias.jpg"
+}, {
+    "id": 8,
+    "name": "Remera Kobeni - edicion seppuku",
+    "price": "1700",
+    "discount": "5",
+    "category": "Indumentaria/Disfraces",
+    "subcategory": "Anime",
+    "description": "Remera kobeni Higashiyama - Chainsaw man. Algodon premium talle S, L, XL, XXL.",
+    "image": "kobeni front.png"
+}, {
+    "id": 9,
+    "name": "Comic Ultimate Spiderman Vol 1.",
+    "price": 600,
+    "discount": 5,
+    "category": "Comics",
+    "subcategory": "Marvel",
+    "description": "Vol 1 Ultimate Spiderman editorial Panini.",
+    "image": "Ultimate_Spider-Man_Vol_1.png"
+}, {
+    "id": 10,
+    "name": "Bufanda Harry Potter Slytherin",
+    "price": 3600,
+    "discount": 0,
+    "category": "Indumentaria/Disfraces",
+    "subcategory": "Accesorios",
+    "description": "Bufanda Harry Potter casa slytherin, hilado de algodon.",
+    "image": "bufanda-slytherin.jpg"
+}, {
+    "id": 11,
+    "name": "Yakuza 0 - Ps4(Fisico)",
+    "price": 1500,
+    "discount": 5,
+    "category": "Videojuegos",
+    "subcategory": "Otro",
+    "description": "Yakuza 0. Plataforma ps4. Fisico.",
+    "image": "yakuza0-ps4.jpg"
+}, {
+    "id": 12,
+    "name": "Peluche Pokemon-Charmander ",
+    "price": 2500,
+    "discount": 10,
+    "category": "Figuras/Articulos",
+    "subcategory": "Figuras",
+    "description": "Peluche pokemon Charmander, de 60cm.",
+    "image": "peluche-charmander.jpg"
+}, {
+    "id": 13,
+    "name": "DC Justice League: Darkseid Deluxe",
+    "price": "8500",
+    "discount": "15",
+    "category": "Figuras/Articulos",
+    "subcategory": "Figuras",
+    "description": "Figura de accion Darkseid, DC Collectibles, 2,21 kg.",
+    "image": "figuraDarkseid.jpg"
+}, {
+    "id": 14,
+    "name": "Manga 'Chainsaw Man' Tomo 1",
+    "price": 650,
+    "discount": 5,
+    "category": "Comics/Manga",
+    "subcategory": "Manga",
+    "description": "Manga 'Chainsaw Man' Tomo 1 editorial Ivrea.",
+    "image": "chainsaw-man-tomo1.jpg"
+}, {
+    "id": 15,
+    "name": "Taza Stranger Things",
+    "price": 750,
+    "discount": 0,
+    "category": "Figuras/Articulos",
+    "subcategory": "Articulos",
+    "description": "Taza Stranger Things. Ceramica.",
+    "image": "taza-strangerthings.jpg"
+}, {
+    "id": 16,
+    "name": "Disfraz del juego del calamar",
+    "price": 2500,
+    "discount": 25,
+    "category": "Indumentaria/Disfraces",
+    "subcategory": "Disfraces",
+    "description": "Disfraz de 'el juego del calamar. Algodon premium talle S, L, XL, XXL.'",
+    "image": "muneca-calamar-a.jpg"
+}, {
+    "id": 17,
+    "name": "Comic 'Marvel Zombies' Vol.1",
+    "price": 750,
+    "discount": 10,
+    "category": "Comics/Manga",
+    "subcategory": "Comic",
+    "description": "Marvel Zombies Vol.1. 25 paginas.",
+    "image": "marvel-zombies.jpg"
+}, {
+    "id": 18,
+    "name": "Call of Duty 'Vanguard' PS5-Fisico",
+    "price": 16000,
+    "discount": 10,
+    "category": "Videojuegos",
+    "subcategory": "Otros",
+    "description": "Call of Duty 'Vanguard' PS5-Fisico. Sellado.",
+    "image": "Call-of-Duty-Vanguard-PS5.jpg"
+}, {
+    "id": 19,
+    "name": "It takes two Xbox-series X/One Fisico",
+    "price": 14000,
+    "discount": 15,
+    "category": "Videojuegos",
+    "subcategory": "Otros",
+    "description": "It takes two Xbox-series X/One Fisico. Sellado.",
+    "image": "it-takes-two.jpg"
+}, {
+    "id": 20,
+    "name": "Peluche Evangelion 'Rei chiquita'",
+    "price": 1500,
+    "discount": 20,
+    "category": "Figuras/Articulos",
+    "subcategory": "Figuras",
+    "description": "Rei Chikita Chiquita Evangelion Peluche 22 Cm x 13 Cm. Colección Rey.",
+    "image": "rei-chiquita.jpg"
+}]

@@ -1,243 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<%- include('./partials/head.ejs')  %> 
+<%- include('./partials/head.ejs')  %>
 
 <body class="body-header">
 
-    <%- include('./partials/header.ejs')  %> 
-    
+    <%- include('./partials/header.ejs')  %>
+
     <main class="main">
         <div class="main-container">
-         
-            <%- include('./partials/carrousel.ejs')  %> 
+
+            <%- include('./partials/carrousel.ejs')  %>
 
             <div class="titulo">
                 <h5>PRODUCTOS</h5>
             </div>
             <hr class="hr1">
-            
+
             <section class="section-productos">
-                
+
                 <article class="productos-primary">
                     <div class="caja">
                         <div>
                             <a href=""><img src="/img/imagenes home/araña.jpg" alt=""></a>
-                        </div>   
+                        </div>
                     </div>
                     <h4><a href="/">Comics y Manga</a></h4>
                 </article>
-                
+
                 <article class="productos-primary">
                     <div class="caja">
                         <div>
                             <a href=""><img src="/img/imagenes home/iron.jpg" alt=""></a>
-                        </div>   
+                        </div>
                     </div>
                     <h4><a href="/">Tazas</a></h4>
                 </article>
-                
+
                 <article class="productos-primary">
                     <div class="caja">
                         <div>
                             <a href=""><img src="/img/imagenes home/remera.png" alt=""></a>
-                        </div>   
+                        </div>
                     </div>
                     <h4><a href="/">Remeras</a></h4>
                 </article>
-                
+
                 <article class="productos-primary">
                     <div class="caja">
                         <div>
                             <a href=""><img src="/img/imagenes home/perro.jpg" alt=""></a>
-                        </div>   
+                        </div>
                     </div>
                     <h4><a href="/">Disfrazes</a></h4>
                 </article>
-                
+
                 <article class="productos-primary">
                     <div class="caja">
                         <div>
                             <a href=""><img src="/img/imagenes home/god.jpg" alt=""></a>
-                        </div>   
+                        </div>
                     </div>
                     <h4><a href="/">Videojuegos</a></h4>
                 </article>
-                
+
                 <article class="productos-primary">
                     <div class="caja">
                         <div>
                             <a href=""><img src="/img/imagenes home/vegete.jpg" alt=""></a>
-                        </div>   
+                        </div>
                     </div>
                     <h4><a href="/">Funko Pop!</a></h4>
                 </article>
             </section>
-            
+
             <div class="titulo">
                 <h5>LO MAS VENDIDO</h5>
             </div>
             <hr class="hr1">
-            
-            
+
+
             <section class="section-vendido">
-                
+                <% products.forEach(product => { %>
                 <article class="producto">
                     <div class="caja">
                         <div>
-                            <a href=""><img src="/img/imagenes home/duendefeo.jpg" alt=""></a>
-                        </div>   
+                            <a href="/products/detail/<%- product.id %>"><img src="/img/imagenes home/<%- product.image %>" alt=""></a>
+                        </div>
                     </div>
+                <div class="container-product-index">
                     <div class="parrafo">
-                        <p>Lampara de Baby yoda</p>
+                        <p><%- product.name %></p>
                     </div>
-                    <h4>$ 2,500.00</h4>
+                    <h4><%- toThousand(product.price - product.price * product.discount / 100) %></h4>
+                    <h4><%- product.discount > 0 ? `${product.discount}$ OFF` : "En oferta proximamente" %></h4>
                     <div class="botones">
-                        <button class="buy"> 
+                        <button class="buy">
                             <span>Comprar</span>
                         </button>
                         <button class="see">
                             <span>Ver</span>
                         </button>
                     </div>
+                </div>
                 </article>
-                
-                <article class="producto">
-                    <div class="caja">
-                        <div>
-                            <a href=""><img src="/img/imagenes home/replica.jpg" alt=""></a>
-                        </div>   
-                    </div>
-                    <div class="parrafo">
-                        <p>Guantele del Infinito</p>
-                    </div>
-                    <h4>$ 3,990.00</h4>
-                    <div class="botones">
-                        <button class="buy"> 
-                            <span>Comprar</span>
-                        </button>
-                        <button class="see">
-                            <span>Ver</span>
-                        </button>
-                    </div>
-                </article>
-                
-                <article class="producto">
-                    <div class="caja">
-                        <div>
-                            <a href=""><img src="/img/imagenes home/thor.jpg" alt=""></a>
-                        </div>   
-                    </div>
-                    <div class="parrafo">
-                        <p>Stormbreaker de Thor</p>
-                    </div>
-                    <h4>$ 5,000.00</h4>
-                    <div class="botones">
-                        <button class="buy"> 
-                            <span>Comprar</span>
-                        </button>
-                        <button class="see">
-                            <span>Ver</span>
-                        </button>
-                    </div>
-                </article>
-                
-                <article class="producto">
-                    <div class="caja">
-                        <div>
-                            <a href=""><img src="/img/imagenes home/bobba.jpg" alt=""></a>
-                        </div>   
-                    </div>
-                    <div class="parrafo">
-                        <p>Casco de Boba fett</p>
-                    </div>
-                    <h4>$ 3,299.00</h4>
-                    <div class="botones">
-                        <button class="buy"> 
-                            <span>Comprar</span>
-                        </button>
-                        <button class="see">
-                            <span>Ver</span>
-                        </button>
-                    </div>
-                </article>
-                
-                <article class="producto">
-                    <div class="caja">
-                        <div>
-                            <a href=""><img src="/img/imagenes home/halo.jpg" alt=""></a>
-                        </div>   
-                    </div>
-                    <div class="parrafo">
-                        <p>Traje Realista Master Chief</p>
-                    </div>
-                    <h4>$ 9,500.00</h4>
-                    <div class="botones">
-                        <button class="buy"> 
-                            <span>Comprar</span>
-                        </button>
-                        <button class="see">
-                            <span>Ver</span>
-                        </button>
-                    </div>
-                </article>
-                
-                <article class="producto">
-                    <div class="caja">
-                        <div>
-                            <a href=""><img src="/img/imagenes home/artorias.jpg" alt=""></a>
-                        </div>   
-                    </div>
-                    <div class="parrafo">
-                        <p>Figura de artorias del abismo</p>
-                    </div>
-                    <h4>$ 2,200.00</h4>
-                    <div class="botones">
-                        <button class="buy"> 
-                            <span>Comprar</span>
-                        </button>
-                        <button class="see">
-                            <span>Ver</span>
-                        </button>
-                    </div>
-                </article>
-                
+                <% }) %>
             </section>
-            
+
             <div class="boton-productos">
-                <a href=""><h4>VER TODOS LOS PRODUCTOS</h4></a>
+                <a href="">
+                    <h4>VER TODOS LOS PRODUCTOS</h4>
+                </a>
             </div>
-            
+
             <section class="zonas">
-                
+
                 <article class="item card-bg marvel">
-                    <img src="/img/zonas/marvel.jpg" alt="">                
+                    <img src="/img/zonas/marvel.jpg" alt="">
                     <div class="card-data">
                         <h2>ZONA MARVEL</h2>
                     </div>
                 </article>
-                
+
                 <article class="item card-bg dc">
-                    <img src="/img/zonas/dc.jpg" alt="">                
+                    <img src="/img/zonas/dc.jpg" alt="">
                     <div class="card-data">
                         <h2>ZONA DC</h2>
                     </div>
                 </article>
-                
+
                 <article class="item card-bg anime">
-                    <img src="/img/zonas/anime.jpg" alt="">                
+                    <img src="/img/zonas/anime.jpg" alt="">
                     <div class="card-data">
                         <h2>ZONA ANIME</h2>
                     </div>
                 </article>
-                
-            </section>        
+
+            </section>
         </div>
     </main>
-    
+
     <section class="info">
         <div class="container-info">
-            
+
             <div class="tarjeta-truck">
                 <div class="tarjeta">
                     <div class="icon-tarjeta">
@@ -249,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="tarjeta-shield">
                 <div class="tarjeta">
                     <div class="icon-tarjeta">
@@ -261,7 +166,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="tarjeta-card">
                 <div class="tarjeta">
                     <div class="icon-tarjeta">
@@ -273,12 +178,13 @@
                     </div>
                 </div>
             </div>
-            
-        </section>
 
-        <script src="/js/carrousel.js"></script>
+    </section>
 
-        <%- include('./partials/footer.ejs') %> 
+    <script src="/js/carrousel.js"></script>
 
-    </body>
-    </html>
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+
+</html>

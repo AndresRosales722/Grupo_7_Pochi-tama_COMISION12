@@ -106,13 +106,10 @@ body .main-container .section-vendido article.producto{
     margin-bottom: 30px;
 }
 
-body .main-container .section-vendido article.producto .parrafo{
-   
-}
 
 body .main-container .section-vendido article.producto p{
     margin-top: 5px;
-   
+    height: 30px;
 }
 
 body .main-container .section-vendido article.producto h4{
@@ -128,7 +125,6 @@ body .main-container .section-vendido article.producto .caja {
     display: flex;
     border-bottom: 4px solid var(--orange3);
     justify-content: center;
-    /* transition: all 0.5s ease-in-out; */
 }
 
 body .main-container .section-vendido article.producto .caja img {
@@ -137,6 +133,9 @@ body .main-container .section-vendido article.producto .caja img {
     object-fit: contain;
 }
 
+body .main-container .section-vendido article.producto .container-product-index{
+    width: 210px;
+}
 
 body .main-container .section-vendido article.producto .botones{
     display: flex;
@@ -274,5 +273,23 @@ body section.info .container-info .tarjeta i{
 @media (min-width: 576px) {
     .card-bg img {
         width: 400px;
+}
+}
+
+@media (min-width: 768px) {
+    body .main-container .section-vendido article.producto .container-product-index{
+        width: 230px;
+}
+}
+
+@media (min-width: 992px) {
+    body .main-container .section-vendido article.producto .container-product-index{
+        width: 250px;
+}
+}
+
+@media (min-width: 1200px) {
+    body .main-container .section-vendido article.producto .container-product-index{
+        width: 300px;
 }
 }
