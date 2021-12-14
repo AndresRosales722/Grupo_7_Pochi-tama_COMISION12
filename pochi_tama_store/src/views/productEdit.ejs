@@ -9,7 +9,7 @@
     
             <div class="form-container-admin">
                 <h2>Esta editando el producto:      <%= product.name %></h2>
-                <form action="/admin/<%= product.id %>?_method=PUT" method="POST">
+                <form action="/admin/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
                     <div class="form-admin">
                         <div class="input-admin">
                             <label for="name">Nombre del Producto</label>
@@ -32,6 +32,13 @@
                             <span class="error-message">Debes ingresar una descripcion</span>
                         </div>
                        
+                        <div class="container-file">
+                            <i class="fas fa-upload"></i>
+                            <p>Ingrese una Imagen</p>
+                            <input type="file" name="image" id="" value="">
+                        </div>
+                        <span class="error-image">Debe ingresar una imagen</span>
+
                         <div class="button-admin">
                             <span class="error-message">Hubo errores en el envío</span>
                             <button type="submit" class="btn btn-submit">Guardar producto</button>

@@ -24,8 +24,6 @@ let controller = {
     store:(req,res)=>{
         const {name,price,discount,category,description} = req.body
 
-		res.send(req.file)
-
 		let lastId = 1
 
 		products.forEach(product => {
@@ -41,7 +39,7 @@ let controller = {
 			discount,
 			description,
 			category,
-			image: "default-image.png"
+			image: req.file ? req.file.filename :"default-image.png"
 		}
 
 			products.push(newProduct)
@@ -68,11 +66,20 @@ let controller = {
 		products.forEach(product =>{
 			if(product.id === productId){
 				product.id = product.id,
-				product.name = name
-				product.price = price
-				product.discount = discount
+				product.name = name,
+				product.price = +price,
+				product.discount = discount,
 				product.description = description
-				product.image = product.image
+				if(req.file){
+					if(fs.existsSync("./public/img/imagenes home/", product.image)){
+						fs.unlinkSync(`./public/img/imagenes home/${product.image}`)
+					}else{
+						console.log("no encontre el archivo")
+					}
+					product.image = req.file.filename
+				}else{
+					product.image = product.image
+				}
 			}
 		})
 
@@ -83,15 +90,21 @@ let controller = {
     },
 
     destroy : (req, res) => {
-		let productId = +req.params.id
-		
-
+		let productId = +req.params.id	
 		products.forEach(product => {
 			if(product.id === productId){
+				if(fs.existsSync("./public/img/imagenes home/", product.image)){
+					fs.unlinkSync(`./public/img/imagenes home/${product.image}`)
+				}else{
+					console.log("no encontre el archivo")
+				}
+				
 				let productToDestroyIndex = products.indexOf(product)
-				productToDestroyIndex !== -1 ?
-				products.splice(productToDestroyIndex,  1) :
-			    console.log('no encontre el producto')
+				if (productToDestroyIndex !== -1) {
+					products.splice(productToDestroyIndex, 1)
+				}else{
+					console.log('no encontre el producto')
+				}	
 			}
 		})
 
