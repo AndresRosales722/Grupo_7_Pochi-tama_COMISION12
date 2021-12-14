@@ -24,6 +24,8 @@ let controller = {
     store:(req,res)=>{
         const {name,price,discount,category,description} = req.body
 
+		res.send(req.file)
+
 		let lastId = 1
 
 		products.forEach(product => {
