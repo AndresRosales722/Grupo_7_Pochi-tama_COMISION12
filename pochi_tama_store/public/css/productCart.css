@@ -6,7 +6,7 @@
         justify-content: space-between;
         text-align: center;
         border: var(--orange) 20px;
-        height: 892px; 
+        height: 810px; 
         padding: 10px; 
         display: flex; 
         flex-direction: column; 
@@ -300,13 +300,13 @@
         .objects-izq1 {
             display: flex;
             position: absolute;
-            top: 855px;
+            top: 773px;
             left: 28px;
         }
         .objects-izq2 {
             display: flex;
             position: absolute;
-            top: 1015px;
+            top: 931px;
             left: 28px;
         }
 
@@ -468,7 +468,7 @@
     .objects-izq2 {
         display: flex;
         position: absolute;
-        top: 1015px;
+        top: 931px;
         left: 28px;
     }
 
@@ -568,10 +568,10 @@
         text-align: center;
         border: var(--orange) 20px;
         height: 720px; 
-        padding: 10px; 
+        padding: 80px; 
         display: flex; 
         flex-direction:row; 
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .art-buys {

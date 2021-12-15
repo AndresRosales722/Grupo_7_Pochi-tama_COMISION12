@@ -1,21 +1,21 @@
 [
     {
     "id": 1,
-    "nombre": "Julian ",
+    "nombre": "Julian",
     "apellido": "Alvarez",
     "email": "clandeacero@gmail.com",
     "contraseña": "Clandeacero2021",
     "genero" : "masculino",
-    "imagen": ""
+    "imagen": "male_boy_person_people_avatar_icon_159358.png"
 },
     {
     "id": 2,
-    "nombre": "mariana",
+    "nombre": "Mariana",
     "apellido": "caceceres",
     "email": "marianacaceres1994@hotmail.com",
     "contraseña": "vidaverdesiempre1",
     "genero" : "femenino",
-    "imagen": ""
+    "imagen": "avatar-mujer.png"
 },
     {
     "id": 3,
@@ -24,7 +24,7 @@
     "email": "aliciamatienzo54@yahoo.com",
     "contraseña": "aliciamatienzo54",
     "genero" : "femenino",
-    "imagen": ""
+    "imagen": "avatar-mujer.png"
 },
     {
     "id": 4,
@@ -33,7 +33,7 @@
     "email": "rubencastro@gmail.com",
     "contraseña": "chevroletcorsa5",
     "genero" : "masculino",
-    "imagen": ""
+    "imagen": "male_boy_person_people_avatar_icon_159358.png"
 },
     {
     "id": 5,
@@ -42,7 +42,7 @@
     "email": "eduardocastelli1993@gmail.com",
     "contraseña": "castellieduardo",
     "genero" : "masculino",
-    "imagen": ""
+    "imagen": "male_boy_person_people_avatar_icon_159358.png"
 },
     {
     "id": 6,
@@ -51,7 +51,7 @@
     "email": "carinarosales@hotmail.com",
     "contraseña": "carinarosales1992",
     "genero" : "fenemino",
-    "imagen": ""
+    "imagen": "avatar-mujer.png"
 },
     {
     "id": 7,
@@ -60,7 +60,7 @@
     "email": "edithfontanet@outlook.com",
     "contraseña": "contraseña456",
     "genero" : "femenino",
-    "imagen": ""
+    "imagen": "avatar-mujer.png"
 },
     {
     "id": 8,
@@ -69,7 +69,7 @@
     "email": "tearparty@hotmail.com",
     "contraseña": "tearparty912",
     "genero" : "femenino",
-    "imagen": ""
+    "imagen": "avatar-mujer.png"
 },
     {
     "id": 9,
@@ -78,7 +78,7 @@
     "email": "robertoescudero5@outlook.com",
     "contraseña": "robertoescuderocarlos2",
     "genero" : "masculino",
-    "imagen": ""
+    "imagen": "male_boy_person_people_avatar_icon_159358.png"
 },
     {
     "id": 10,
@@ -87,7 +87,7 @@
     "email": "hernandezmatias789@hotmail.com",
     "contraseña": "798matiashernandez",
     "genero" : "masculino",
-    "imagen": ""
+    "imagen": "male_boy_person_people_avatar_icon_159358.png"
 },
     {
     "id": 11,
@@ -96,7 +96,7 @@
     "email": "mariacarlatabares23@gmail.com.ar",
     "contraseña": "carlatabares1",
     "genero" : "femenino",
-    "imagen": ""
+    "imagen": "avatar-mujer.png"
 },
     {
     "id": 12,
@@ -105,7 +105,7 @@
     "email": "hernanportillo7@hotmail.com.ar",
     "contraseña": "hernaporti647",
     "genero" : "masculino",
-    "imagen": ""
+    "imagen": "male_boy_person_people_avatar_icon_159358.png"
 },
     {
     "id": 13,
@@ -114,7 +114,7 @@
     "email": "rosariocasanova@outlook.com.ar",
     "contraseña": "casanovarosario10",
     "genero" : "femenino",
-    "imagen": ""
+    "imagen": "avatar-mujer.png"
 },
     {
     "id": 14,
@@ -123,7 +123,7 @@
     "email": "danielcuadro54@gmail.com.ar",
     "contraseña": "benitezdaniel1988",
     "genero" : "masculino",
-    "imagen": ""
+    "imagen": "male_boy_person_people_avatar_icon_159358.png"
 },
     {
     "id": 15,
@@ -132,7 +132,7 @@
     "email": "claudiaesporas1985@hotmail.com.ar",
     "contraseña": "esporasclaudia1985",
     "genero" : "femenino",
-    "imagen": ""
+    "imagen": "avatar-mujer.png"
 },
     {
     "id": 16,
@@ -141,7 +141,7 @@
     "email": "cabulimateo1996@hotmail.com",
     "contraseña": "mateo1996",
     "genero" : "masculino",
-    "imagen": ""
+    "imagen": "male_boy_person_people_avatar_icon_159358.png"
 },
     {
     "id": 17,
@@ -150,7 +150,7 @@
     "email": "paccieloesteban@gmail.com.ar",
     "contraseña": "estebanpaciello8",
     "genero" : "masculino",
-    "imagen": ""
+    "imagen": "male_boy_person_people_avatar_icon_159358.png"
 },
     {
     "id": 18,
@@ -159,7 +159,7 @@
     "email": "pertuttianalia@outlook.com",
     "contraseña": "casa345",
     "genero" : "femenino",
-    "imagen": ""
+    "imagen": "avatar-mujer.png"
 },
     {
     "id": 19,
@@ -168,7 +168,7 @@
     "email": "felixravena@hotmail.com",
     "contraseña": "ravenafelix154",
     "genero" : "masculino",
-    "imagen": ""
+    "imagen": "male_boy_person_people_avatar_icon_159358.png"
 },
     {
     "id": 20,
@@ -177,7 +177,7 @@
     "email": "sofiagonzales@gmail.com.ar",
     "contraseña": "gonzalessofia1995",
     "genero" : "femenino",
-    "imagen": ""
+    "imagen": "avatar-mujer.png"
 }
     
 
