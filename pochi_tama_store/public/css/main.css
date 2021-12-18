@@ -119,9 +119,9 @@ body .main-container .section-vendido article.producto h4{
 }
 
 body .main-container .section-vendido article.producto .caja {
-    width: 210px;
+    width: 190px;
     box-shadow: 0px -1px 5px 0px rgba(87, 87, 87, 0.74);
-    height: 210px;
+    height: 190px;
     display: flex;
     border-bottom: 4px solid var(--orange3);
     justify-content: center;
@@ -134,7 +134,7 @@ body .main-container .section-vendido article.producto .caja img {
 }
 
 body .main-container .section-vendido article.producto .container-product-index{
-    width: 210px;
+    width: 190px;
 }
 
 body .main-container .section-vendido article.producto .botones{

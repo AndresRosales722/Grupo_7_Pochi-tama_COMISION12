@@ -1,6 +1,6 @@
 let express = require('express');   //REQUERIMOS EL MODULO EXPRESS
 let app = express();                //EJECUTAMOS EXPRESS
-const PORT = 3000;                  //DEFINIMOS EL PUERTO 
+const PORT = 3001;                  //DEFINIMOS EL PUERTO 
 let path = require('path')          //USAMOS EL METODO PATH
 const methodOverride =  require('method-override') //PARA USAR EL METODO PUT Y DELETE
 

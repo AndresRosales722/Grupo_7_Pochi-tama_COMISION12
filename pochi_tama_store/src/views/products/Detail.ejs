@@ -1,61 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
-  <%- include('../partials/head.ejs') %>
+<html lang="en">
+  <%- include('../partials/head.ejs')  %>
+<body class="detail">
 
-  <body class="body-header">
-    <%-include('../partials/header.ejs') %>
-  
-    <main class="main-detail">
-      <div class="main-container">
-       
-        <div class="image-container">
-          <div class="caja">
-            <div>
-              <a href="#"><img src="/img/imagenes home/<%- product.image %>" alt="" /></a>  
-            </div>
-          </div>
+    <%- include('../partials/header.ejs')  %>
+
+    <div class="product">
+        <div class="product-img">
+            <img src="/img/imagenes home/<%- product.image %>" alt="">
+            <span class="tag">new</span>
         </div>
-
-        <article class="info-container">
-
-          <section class="tittle">
-            <h2><%- product.name %></h2>  
-          </section>
-
-          <section class="price">
-              <!-- <span>Precio:</span> -->
-              <h4 class="price">$<%- product.price %></h4>      
-              <!-- <span>Descuento:</span>  -->  
-              <h4 class="discount"><%- product.discount %>% OFF</h4>   
-          </section>
-
-          <section class="description">
-            <h3 class="tittle-description">Descripcion:</h3>
-            <p class="description-info"><%- product.description %></p>
-          </section>
-
-          <section class="buy-product">
-
-            <div class="buttons">
-
-              <div class="buy">
-                <button>Comprar Ahora</button>
-              </div>
-
-              <div class="add">
-                <button>Agregar al Carrito</button>
-              </div>
+        <div class="product-listing">
+            <div class="content">
+                <h1 class="name"><%- product.name %></h1>
+                <p class="info"><%- product.description %></p>
+                <p class="price">$ <%- product.price %></p>
+                <p class="price">$ <%- product.discount %></p>
+                <div class="btn-and-rating-box">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="btn-detail">Comprar Ahora</button>
+                </div>
             </div>
+        </div>
+    </div>
+    
+    <%- include('../partials/footer.ejs')  %>
 
-          </section>
-        </article>
 
-      </div>
-    </main>
-
-    <%- include('../partials/footer.ejs') %>
-
-  </body>
+</body>
 </html>
-
-<!-- prueba -->
