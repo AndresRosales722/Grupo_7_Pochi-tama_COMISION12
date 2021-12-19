@@ -26,19 +26,19 @@ body .footer hr.linea2{
 
 
 body .footer .container-footer-top img{
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 }
 
 
 body .footer .container-footer-top .email h4{
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 
 
 body .footer .container-footer-top .redes h4{
-    font-size: 16px;
-    margin-top: 60px;
+    font-size: 1.2rem;
+    margin-top: 70px;
 }
 
 body .footer .container-footer-top .redes ul {
@@ -61,6 +61,7 @@ body .footer .container-footer-top .container-footer-top-2{
 
 body .footer .container-footer-top .container-footer-top-2 .email h4{
     margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 
 body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer{
@@ -71,7 +72,7 @@ body .footer .container-footer-top .container-footer-top-2 .email .search-bar-fo
     display: block;
     width: 300px;
     max-width: 100%;
-    height: 25px;
+    height: 40px;
     outline: none;
     border-radius: 3px;
     border: 1px solid silver;
@@ -89,12 +90,17 @@ body .footer .container-footer-top .container-footer-top-2 .email .search-bar-fo
 body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button{
     background-color: var(--orange3);
     border-style: none;
-    height: 30px;
-    width: 50px;
+    height: 40px;
+    width: 60px;
     border: 1px solid var(--orange3);
     color: white;
-    font-size: 15px;
     border-radius: 3px;
+}
+
+body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button b{
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
 body .footer .container-footer-bot .container-row{
@@ -104,8 +110,8 @@ body .footer .container-footer-bot .container-row{
 
 
 body .footer .container-footer-bot .container-row img{
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 }
 
 body .footer .container-footer-bot .container-row .contactanos{  
@@ -122,13 +128,17 @@ body .footer .container-footer-bot .container-row .contactanos .row{
 
 body .footer .container-footer-bot .container-row .contactanos .row label{
     margin-left: 10px;
+    font-size: 1.1rem;
 }
 
 body .footer .container-footer-bot .container-row .aceptamos{
-    
     text-align:start;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+body .footer .container-footer-bot .container-row .aceptamos h4{
+    font-size: 1.1rem;
 }
 
 body .footer .container-footer-bot .container-row .aceptamos ul{
@@ -150,6 +160,10 @@ body .footer .container-footer-bot .container-row .horarios{
 body .footer .container-footer-bot .container-row .horarios label{
     margin-top: 15px;
     display: inline-block;
+}
+
+body .footer .container-footer-bot .container-row .contactanos h4{
+    font-size: 1.2rem;
 }
 
 

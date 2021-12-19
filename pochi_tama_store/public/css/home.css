@@ -143,8 +143,7 @@
     }
 
     body .footer .container-footer-top .container-footer-top-2 img{
-        width: 25px;
-        height: 25px;
+        
     }
 
     body .footer .container-general .container-footer-top .container-footer-top-2{
@@ -155,6 +154,12 @@
     
     body .footer .container-general .container-footer-top .container-footer-top-2 .redes h4{
         margin-top: 0;
+        text-align: center;
+        height: 45px;
+    }
+
+    body .footer .container-footer-top .redes ul{
+        justify-content: center;
     }
     
     body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer input{
@@ -163,8 +168,8 @@
     }
 
     body .footer .container-general .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton{
-        top: -5px;
-        right: -60px;
+        top: 0px;
+        right: -70px;
         margin-top: 0px;
     }
 
@@ -182,8 +187,7 @@
     }
 
     body .footer .container-general .container-footer-bot .container-row img{
-        width: 25px;
-        height: 25px;
+        
     }
 
     body .footer .container-general .container-footer-bot .container-row .aceptamos{
@@ -203,7 +207,7 @@
 
 
     body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button{
-        height: 35px;
+        
     }
 
 }

@@ -3,14 +3,24 @@ body.register {
     height: 100%;
 }
 
+body .login {
+    padding: 20px;
+}
+
+
 body.register h2 {
     text-align: center;
     margin-bottom: 1rem;
     font-weight: 500;
     color: var(--orange);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     letter-spacing: 1px;
     margin-top: 1rem;
+}
+
+body.register .form-container{
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .form-container h2{
@@ -36,11 +46,13 @@ body.register h2 {
 }
 
 .not-account span{
-    color:#2c3e50 ;
+    color:#2c3e50;
+    font-size: 1.1rem;
 }
 
 .not-account a{
     color: var(--orange);
+    font-size: 1.1rem;
 }
 .yes-account{
     margin-top: 10px;
@@ -50,14 +62,17 @@ body.register h2 {
 
 .yes-account span{
     color:#2c3e50 ;
+    font-size: 1.1rem;
 }
 
 .yes-account a{
     color: var(--orange);
+    font-size: 1.1;
 }
 
 .form .re-password span a{
     color: var(--orange);
+    font-size: 1.1rem;
 }
 
 .form .olvidaste{
@@ -108,7 +123,7 @@ input.input-style::placeholder {
 }
 
 body.register label {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 5px;
     margin-bottom: 5px;
     letter-spacing: 0.5px;
@@ -207,7 +222,7 @@ select.input-select:focus {
 
 .btn-submit.facebook i{
     margin-right: 10px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .btn-submit.facebook a{
@@ -228,7 +243,7 @@ select.input-select:focus {
 
 .btn-submit.google i{
     margin-right: 10px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .btn-submit.google a{
@@ -241,11 +256,60 @@ select.input-select:focus {
 @media screen and (min-width: 576px) {
     body.register .form-container{
         max-width: 600px;
-        margin: 0 auto;
+    }
+
+    body.register h2{
+        font-size: 2rem;
+    }
+
+    body.register label{
+        font-size: 1rem;
     }
 
     .btn-submit{
         width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .btn-submit.facebook a{
+        font-size: 1.2rem;
+    }
+
+    .btn-submit.google a{
+        font-size: 1.2rem;
+    }
+
+    .btn-submit.facebook i{
+        font-size: 1.9rem;
+    }
+
+    .btn-submit.google i{
+        font-size: 1.9rem;
+    }
+
+    .form .re-password span a{
+        font-size: 1.3rem;
+    }
+
+    input.input-style{
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+
+    .not-account span{
+        font-size: 1.3rem;
+    }
+
+    .not-account a{
+        font-size: 1.3rem;
+    }
+
+    .yes-account span{
+        font-size: 1.3rem;
+    }
+
+    .yes-account a{
+        font-size: 1.3rem;
     }
 }
 
@@ -253,6 +317,10 @@ select.input-select:focus {
 @media screen and (min-width: 768px) {
     body.register .form-container{
         max-width: 600px;
+    }
+
+    .btn-submit{
+        height: 45px;
     }
 }
 

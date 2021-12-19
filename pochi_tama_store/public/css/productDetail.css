@@ -46,6 +46,7 @@ body.detail{
 }
 
 .product-img{
+    border-radius: 5px 5px 0px 0px;
     width: 80%;
     height: 350px;
     background: #fff;
@@ -98,6 +99,7 @@ body.detail{
     opacity: 0;
     transform: translateY(50px);
     animation: fade-in 1s forwards 1;
+    border-radius: 0px 0px 5px 5px;
 }
 
 @keyframes fade-in{
@@ -141,6 +143,7 @@ body.detail{
     align-items: center;
     margin-right: 5px;
     gap: 3px;
+    color: #fbe110;
 }
 
 .rating img{
@@ -161,7 +164,9 @@ body.detail{
 }
 
 .btn-detail{
-    background: #eae3d2;
+    font-weight: 500;
+    background: white;
+    border-radius: 5px;
     color: #292929;
     border: none;
     text-transform: capitalize;
@@ -172,7 +177,7 @@ body.detail{
 }
 
 .btn-detail:hover{
-    background-color: #eedbaf;
+    background-color: var(--orange3);
 }
 
 @media (min-width: 768px){
@@ -182,10 +187,12 @@ body.detail{
 
     .product-img{
         height: 750px;
+        border-radius: 5px 0px 0px 5px;
     }
 
     .product-listing{
       height: 750px; 
+      border-radius: 0px 5px 5px 0px;
     }
 }
 

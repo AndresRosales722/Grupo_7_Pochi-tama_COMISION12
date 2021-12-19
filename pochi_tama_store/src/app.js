@@ -31,6 +31,11 @@ app.use('/admin',adminRouter)
 app.use('/users', usersRouter)
 app.use('/products', productsRouter)
 
+// Error 4040
+app.use((req, res, next)=>{
+    res.status(404)
+})
+
 
 
 
