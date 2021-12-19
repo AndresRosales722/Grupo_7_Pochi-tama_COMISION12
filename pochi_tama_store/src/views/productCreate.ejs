@@ -13,23 +13,29 @@
                 <div class="form-admin">
                     <div class="input-admin">
                         <label for="name">Nombre del Producto</label>
-                        <input class="input-style-admin" type="text" name="name" placeholder="Ej: Guante del infinito">
-                        <span class="error-message">Debes ingresar el nombre del producto</span>
+                        <input class="input-style-admin" type="text" name="name" placeholder="Ej: Guante del infinito" value='<%= locals.old && old.name %>'>
+                        <% if (locals.errors && errors.name) { %>
+                        <small class="error-message"><%= errors.name.msg %></small>
+                        <% } %>
+
                     </div>
                     <div class="input-admin">
                         <label for="price">Precio del producto</label>
                         <input class="input-style-admin" type="text" name="price" placeholder="Ej: 3000">
-                        <span class="error-message">Debes ingresar un precio</span>
+                        <small class="error-message"></small>
+
                     </div>
                     <div class="input-admin">
                         <label for="discount">Descuento</label>
                         <input class="input-style-admin" type="text" name="discount" placeholder="Ej: 50">
-                        <span class="error-message">Debes ingresar el descuento</span>
+                        <small class="error-message"></small>
+
                     </div>
                     <div class="input-admin description">
                         <label for="description">Descripcion</label>
                         <textarea class="description" name="description" id="description"></textarea>
-                        <span class="error-message">Debes ingresar una descripcion</span>
+                        <small class="error-message"><%= errors.description.msg %></small>
+
                     </div>
 
                     <div class="container-file">

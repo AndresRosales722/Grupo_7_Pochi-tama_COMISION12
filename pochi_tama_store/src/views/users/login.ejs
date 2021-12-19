@@ -9,17 +9,21 @@
     <div class="login">
         <div class="form-container">
             <h2>Iniciar Sesion</h2>
-            <form action="">
+            <form action="/users/login" method="POST">
                 <div class="form">
                     <div class="input-container">
                         <label for="email" class="control-label">Email</label>
                         <input class="input-style" type="email" name="email" placeholder="Ej: juanperez@gmail.com">
-                        <span class="error-message">Debes ingresar tu email</span>
+                        <% if (locals.errors && errors.email) { %>
+                        <small class="error-message"><%= errors.email.msg %></small>
+                        <% } %>
                     </div>
                     <div class="input-container">
                         <label for="pass" class="control-label">Contraseña</label>
                         <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
-                        <span class="error-message">Debes ingresar una contraseña</span>
+                        <% if (locals.errors && errors.pass) { %>
+                            <small class="error-message"><%= errors.pass.msg %></small>
+                            <% } %>
                     </div>
                     <div class="olvidaste">
                         <div class="check">
@@ -31,7 +35,7 @@
                         </div>
                     </div>
                     <div class="button-container">
-                        <span class="error-message">Credenciales inválidas</span>
+                        <!-- <span class="error-message">Credenciales inválidas</span> -->
                         <button type="submit" class="btn btn-submit">Iniciar sesión</button>
                     </div>
                     

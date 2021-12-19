@@ -10,33 +10,47 @@
     <div class="login">
         <div class="form-container">
             <h2>Registrarse</h2>
-            <form action="">
+            <form action="/users/register" method="POST">
                 <div class="form">
                     <div class="input-container">
                         <label for="nombre">Nombre</label>
                         <input class="input-style" type="text" name="nombre" placeholder="Nombre">
-                        <span class="error-message">Debes ingresar tu nombre</span>
+                        <% if (locals.errors && errors.nombre) { %>
+                            <small class="error-message"><%= errors.nombre.msg %></small>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="apellido">Apellido</label>
                         <input class="input-style" type="text" name="apellido" placeholder="Apellido">
-                        <span class="error-message">Debes ingresar tu apellido</span>
+                        <% if (locals.errors && errors.apellido) { %>
+                            <small class="error-message"><%= errors.apellido.msg %></small>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="email">Email</label>
                         <input class="input-style" type="email" name="email" placeholder="Ingrese su email">
-                        <span class="error-message">Debes ingresar tu email</span>
+                        <% if (locals.errors && errors.email) { %>
+                            <small class="error-message"><%= errors.email.msg %></small>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="contraseña">Contraseña</label>
                         <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
-                        <span class="error-message">Debes ingresar una contraseña</span>
+                        <% if (locals.errors && errors.pass) { %>
+                            <small class="error-message"><%= errors.pass.msg %></small>
+                            <% } %>
                     </div>
                     <div class="input-container">
                         <label for="repeat contraseña">Confirmar contraseña</label>
                         <input class="input-style" type="password" name="pass2" placeholder="Repita su contraseña">
                         <span class="error-message">Debes re-ingresar tu contraseña</span>
                     </div>
+                    <div class="container-file">
+                        <i class="fas fa-upload"></i>
+                        <p>Subir una foto</p>
+                        <input type="file" name="image" id="" value="">
+                    </div>
+                    <span class="error-image">Debe ingresar una imagen</span>
                     <div class="check">
                         <label for="terms">Acepto los <a href="">términos y condiciones</a></label>
                         <input type="checkbox" name="terms" id="terms">

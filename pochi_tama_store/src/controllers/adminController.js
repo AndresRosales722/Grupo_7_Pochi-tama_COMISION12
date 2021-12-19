@@ -5,8 +5,9 @@ const productsFilePath = path.join(__dirname, '../database/productsDataBase.json
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const writeJson = dataBase => fs.writeFileSync(productsFilePath,JSON.stringify(dataBase), 'utf-8')
 
-
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const {validationResult} = require('express-validator')
+
 
 let controller = {
     
@@ -22,7 +23,9 @@ let controller = {
     },
 
     store:(req,res)=>{
-        const {name,price,discount,category,description} = req.body
+		let errors = validationResult(req)
+		if (errors.isEmpty()) {
+			const {name,price,discount,category,description} = req.body
 
 		let lastId = 1
 
@@ -47,6 +50,12 @@ let controller = {
 			writeJson(products)
 
 			res.redirect('/admin')
+		} else {
+			res.render('productCreate',{
+				errors: errors.mapped(),
+				old: req.body
+			})
+		}   
     },
 
     edit:(req,res)=>{
