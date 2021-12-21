@@ -25,7 +25,8 @@ let controller = {
             res.send('Te registraste')
         }else{
             res.render('users/register',{
-                errors: errors.mapped()
+                errors: errors.mapped(),
+                old:req.body
             })
         }
     }

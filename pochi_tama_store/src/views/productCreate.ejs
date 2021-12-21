@@ -3,9 +3,9 @@
 <%- include('./partials/head.ejs')  %>
 
 <body>
-
+    
     <%- include('./partials/headerAdmin.ejs')  %> 
-
+    
     <body class="admin">
         <div class="form-container-admin">
             <h2>Formulario de Creacion de producto</h2>
@@ -15,48 +15,54 @@
                         <label for="name">Nombre del Producto</label>
                         <input class="input-style-admin" type="text" name="name" placeholder="Ej: Guante del infinito" value='<%= locals.old && old.name %>'>
                         <% if (locals.errors && errors.name) { %>
-                        <small class="error-message"><%= errors.name.msg %></small>
-                        <% } %>
-
-                    </div>
-                    <div class="input-admin">
-                        <label for="price">Precio del producto</label>
-                        <input class="input-style-admin" type="text" name="price" placeholder="Ej: 3000">
-                        <small class="error-message"></small>
-
-                    </div>
-                    <div class="input-admin">
-                        <label for="discount">Descuento</label>
-                        <input class="input-style-admin" type="text" name="discount" placeholder="Ej: 50">
-                        <small class="error-message"></small>
-
-                    </div>
-                    <div class="input-admin description">
-                        <label for="description">Descripcion</label>
-                        <textarea class="description" name="description" id="description"></textarea>
-                        <small class="error-message"><%= errors.description.msg %></small>
-
-                    </div>
-
-                    <div class="container-file">
-                        <i class="fas fa-upload"></i>
-                        <p>Ingrese una Imagen</p>
-                        <input type="file" name="image" id="" value="">
-                    </div>
-                    <span class="error-image">Debe ingresar una imagen</span>
-                   
-                    <div class="button-admin">
-                        <span class="error-message">Hubo errores en el envío</span>
-                        <button type="submit" class="btn btn-submit">Crear Producto</button>
-                    </div>
-            
+                            <small class="error-message"><%= errors.name.msg %></small>
+                            <% } %>
+                            
+                        </div>
+                        <div class="input-admin">
+                            <label for="price">Precio del producto</label>
+                            <input class="input-style-admin" type="text" name="price" placeholder="Ej: 3000" value='<%= locals.old && old.price %>'>
+                            <% if (locals.errors && errors.price) { %>
+                                <small class="error-message"><%= errors.price.msg %></small>
+                                <% } %>
+                                
+                            </div>
+                            <div class="input-admin">
+                                <label for="discount">Descuento</label>
+                                <input class="input-style-admin" type="text" name="discount" placeholder="Ej: 50" value='<%= locals.old && old.price %>'>
+                                <% if (locals.errors && errors.discount) { %>
+                                    <small class="error-message"><%= errors.discount.msg %></small>
+                                    <% } %>
+                                
+                            </div>
+                            <div class="input-admin description">
+                                <label for="description">Descripcion</label>
+                                <textarea class="description" name="description" id="description" ><%= locals.old && old.description %></textarea>
+                                <% if (locals.errors && errors.description) { %>
+                                    <small class="error-message"><%= errors.description.msg %></small>
+                                    <% } %>
+                                
+                            </div>
+                            
+                            <div class="container-file">
+                                <i class="fas fa-upload"></i>
+                                <p>Ingrese una Imagen</p>
+                                <input type="file" name="image" id="" value="">
+                            </div>
+                            <span class="error-image">Debe ingresar una imagen</span>
+                            
+                            <div class="button-admin">
+                                <span class="error-message">Hubo errores en el envío</span>
+                                <button type="submit" class="btn btn-submit">Crear Producto</button>
+                            </div>
+                            
+                        </div>
+                        
+                    </form>
                 </div>
                 
-            </form>
-        </div>
+            </body>
+            
+        </body>
         
-    </body>
-
-</body>
-
-</html>
+        </html>

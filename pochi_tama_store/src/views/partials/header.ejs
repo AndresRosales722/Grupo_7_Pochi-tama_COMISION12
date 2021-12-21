@@ -1,42 +1,150 @@
-<header class="header">
-    <div class="container-header">
-        <div class="container-header-top">
-            <div class="menu">
-                <button class="burguer-menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+<header>
+    <div class="main-header">
+        <div class="logo">
+            <a href="/">
+                <img src="/img/pochita.svg" width="100" alt="Logo de Pochi tama store">
+            </a>
+        </div>
+
+        <i class="fas fa-bars"></i>
+
+        <!-- menu de navegacion mobile -->
+        <nav class="navigation-bar" id="navigation-bar-mobile">
+            <div class="user-icons-mobile">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
             </div>
-            <div class="logo">
-                <a href="/">
-                    <img src="/img/pochita.svg" width="100" alt="Pochi tama store">
-                </a>
-            </div>
+
+            <!-- lista con los elementos del menu (categorias) -->
+            <ul class="menu">
+                <li class="dropdown-menu">
+                    <a href="">Funko POP</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="dropdown-menu">
+                    <a href="">Figuras Coleccionables</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="dropdown-menu">
+                    <a href="">Comics y manga</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="dropdown-menu">
+                    <a href="">Articulos Geek</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- icono del buscador del header mobile -->
+        <div class="search-icon">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <!-- buscador escritorio -->
+        <form action="" class="search-form-desktop">
             <div class="search-bar">
-                <input type="" placeholder="¿Que estas buscando?">
-                <div class="boton">
-                    <i class="fas fa-search"></i>
-                </div>
+                <input type="search" name="" id="">
+                <button type="submit"><i class="fas fa-search"></i></button>
             </div>
+        </form>
+
+        <!-- iconos de usuario escritorio -->
+        <div class="user-icons-desktop">
+            <i class="fas fa-user"><span>cuenta</span></i>
             
-            <div class="nav-bar1">
-                <ul class="top-list">
-                    <div class="inicio"><li><i class="fas fa-envelope"></i><a href="#"><label>Inicio</label></a></li></div>
-                    <div class="cuenta"><li><i class="fas fa-user"></i><a href="/users/register"><label>Cuenta</label></a></li></div>
-                    <div class="carrito"><li><i class="fas fa-shopping-cart"></i><a href="#"><label>Carrito</label></a></li></div>
-                </ul>
-            </div>
+            <i class="fas fa-shopping-cart"><span>carrito</span></i>
+            <i class="fas fa-envelope"><span>cuenta</span></i>
         </div>
-        <div class="container-header-bot">
-            <div class="nav-bar2">
-                <ul class="bot-list">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Categorias</a><i class="fas fa-angle-down"></i></li>
-                    <li><a href="#">Funko POP</a><i class="fas fa-angle-down"></i></li>
-                    <li><a href="#">Comics</a><i class="fas fa-angle-down"></i></li>
-                    <li><a href="#">Ofertas</a><i class="fas fa-angle-down"></i></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
+
     </div>
+     <!-- menu de navegacion desktop -->
+     <nav class="navigation-bar" id="navigation-bar-desktop">
+
+        <!-- lista con los elementos del menu (categorias) -->
+        <ul class="menu">
+            <li class="dropdown-menu">
+                <a href="">Funko POP</a>
+                <i class="fas fa-angle-down"></i>
+            </li>
+            <li class="dropdown-menu">
+                <a href="">Figuras Coleccionables</a>
+                <i class="fas fa-angle-down"></i>
+            </li>
+            <li class="dropdown-menu">
+                <a href="">Comics y manga</a>
+                <i class="fas fa-angle-down"></i>
+            </li>
+            <li class="dropdown-menu">
+                <a href="">Articulos Geek</a>
+                <i class="fas fa-angle-down"></i>
+            </li>
+            <li>
+                <a href="">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="nav-menu">
+
+        <!-- buscador mobile -->
+
+        <form action="" class="search-form-mobile">
+            <div class="search-bar">
+                <input type="search" name="" id="" placeholder="¿Que estas buscando?">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+
+        <!-- subcategorias desplegables -->
+
+        <section class="subcategory-menu" id="funko">
+            <div class="subcategory-header">
+                <h3><a href="">Funko POP</a></h3>
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <ul>
+                <li><a href="">subcategorias</a></li>
+                <li><a href="">subcategorias</a></li>
+                <li><a href="">subcategorias</a></li>
+            </ul>
+        </section>
+        <section class="subcategory-menu" id="figuras">
+            <div class="subcategory-header">
+                <h3><a href="">figuras coleccionables</a></h3>
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <ul>
+                <li><a href="">subcategorias</a></li>
+                <li><a href="">subcategorias</a></li>
+                <li><a href="">subcategorias</a></li>
+            </ul>
+        </section>
+        <section class="subcategory-menu" id="comics">
+            <div class="subcategory-header">
+                <h3><a href="">comics y manga</a></h3>
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <ul>
+                <li><a href="">subcategorias</a></li>
+                <li><a href="">subcategorias</a></li>
+                <li><a href="">subcategorias</a></li>
+            </ul>
+        </section>
+        <section class="subcategory-menu" id="articulos">
+            <div class="subcategory-header">
+                <h3><a href="">articulos geek</a></h3>
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <ul>
+                <li><a href="">subcategorias</a></li>
+                <li><a href="">subcategorias</a></li>
+                <li><a href="">subcategorias</a></li>
+            </ul>
+        </section>
+    </nav>
+
 </header>

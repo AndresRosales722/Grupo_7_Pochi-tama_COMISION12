@@ -1,92 +1,264 @@
-/* HEADER TOP */ 
-body .header{
-    position: sticky;
+/* Maquetacion de mobile-first (320px) */
+
+.main-header .navigation-bar,
+.main-header .user-icons-desktop,
+.main-header .search-form-desktop,
+nav.navigation-bar,
+.nav-menu .subcategory-menu
+{
+    display: none;
+}
+
+header{
+    position:sticky;
     top: 0;
-    width: 100%;
     z-index: 999;
+    user-select: none;
 }
 
-body .header .container-header .container-header-top .logo a img{
-    width: 130px;
-    
-}
-
-body .header .container-header .container-header-top{
+.main-header{
+    background-color: var(--orange3);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:var(--orange3);
     flex-wrap: wrap;
-    padding: 10px;
-}
-
-body .header .container-header .container-header-top .logo a img{
-    width: 130px;
-}
-
-body .header .container-header .container-header-top .menu button{
-    background-color: var(--orange3);
-    border: 0px;
-    color: white;   
-}
-
-body .header .container-header .container-header-top .menu button i{
-    font-size: 25px;
-}
-
-body .header .container-header .container-header-top .search-bar{
-    display: flex;
-    width: 0px;
-   
-}
-
-body .header .container-header .container-header-top .search-bar input{
+    font-size: 1rem;
+    height: fit-content;
+    height: -moz-fit-content;
+    min-height: 75px;
+    padding: 10px 15px;
     width: 100%;
-    border: 1px solid white;
-    border-radius: 10px;
-    border-style: none;
+}
+
+.main-header .fas.fa-bars {
+    color: white;
+    font-size: 1.5rem;
+    order: -1;
+}
+
+.main-header .logo{
+    width: 120px;
+    height: 80px;
+}
+
+.main-header .logo img{
+   width: 100%;
+}
+
+.main-header .search-icon{
+    font-size: 1.5rem;
+    color: white;
+}
+
+i.fa-search{
+    cursor: pointer;
+}
+
+/* Boton y barra de busqueda mobile */
+
+.search-form-mobile{
+    background-color: var(--orange3);
     padding: 10px;
+    display: none;
+}
+
+.search-form-mobile .search-bar{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin: 0 10px;
+    background-color: white;
+}
+
+.search-form-mobile .search-bar input{
+    border: none;
     outline: none;
-    display: none;
+    flex-grow: 1;
 }
 
-body .header .container-header .container-header-top .search-bar .boton{
-    position: relative;
-    right: 10px;
-}
-
-body .header .container-header .container-header-top .search-bar .boton i{
-    color: white;
-    font-size: 1.5rem;
-}
-
-body .header .container-header .container-header-top .nav-bar1{
-    display: none;
-}
-
-body .header .container-header .container-header-top .nav-bar1 ul .inicio{
-    display: none;
-}
-
-body .header .container-header .container-header-top .nav-bar1 ul .cuenta{
-    display: none;
-}
-
-body .header .container-header .container-header-top .nav-bar1 ul .carrito li i{
-    color: white;
-    font-size: 1.5rem;
-    display: none;
-}
-
-body .header .container-header .container-header-top .nav-bar1 ul .carrito li a label{
-    display: none;
+.search-bar button{
+    border: none;
+    background-color: white;
 }
 
 
-/*---------------------HEADER BOT---------------------*/
+/* Finaliza botón y barra de búsqueda mobile */
 
-body .header .container-header .container-header-bot{
-    display: none;
-    background-color: var(--purple);
+/* Botón y menú desplegable mobile */
+.main-header .navigation-bar {
+    order: 4;
+    padding: 15px;
+    width: 100%;
 }
 
+.main-header .navigation-bar ul.menu li {
+    padding: 10px 0;
+    cursor: pointer;
+    transition: color .5s ease;
+}
+
+.main-header .navigation-bar ul.menu li:hover {
+    color: var(--primary);
+}
+
+.main-header .navigation-bar .user-icons-mobile {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-header .navigation-bar .user-icons-mobile i{
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+
+/* Menu desplegable de subcategorías */
+
+.nav_menu {
+    font-family: var(--font_poppins);
+    font-size: 1rem;
+}
+
+
+.subcategory_menu.active {
+    display: block;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+}
+
+.subcategory_menu .subcategory_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.subcategory_menu .subcategory_header img {
+    width: 20px;
+    height: 20px;
+}
+
+.subcategory_menu ul {
+    padding: 15px;
+}
+
+.header-opacity {
+    opacity: 0.8;
+    background-color: blueviolet;
+}
+
+.menu-user-admin {
+    width: 10rem;
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    right: 200px;
+    padding: 0.5rem;
+    margin-top: 10px;
+    font-family: var(--font_poppins);
+    z-index: 999;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+/* MEDIA QUERIES */
+/* Tablet */
+
+@media (min-width: 576px){
+    .search-form-mobile{
+        display: block;
+    }
+}
+
+@media (min-width: 768px){
+    .search-form-mobile {
+        display: none;
+    }
+
+    nav.navigation-bar{
+        background-color: var(--purple);
+        display: block;
+    }
+
+    nav.navigation-bar ul.menu{
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    nav.navigation-bar ul.menu li a{
+        color: white;
+    }
+
+    .main-header .fas.fa-bars{
+        display: none;
+    }
+
+    .main-header .search-icon i.fa-search{
+        display: none;
+    }
+
+    .main-header .search-form-desktop{
+        display: block;
+        width: 50%;
+        position:relative;
+    }
+
+    .main-header .search-form-desktop .search-bar{
+        display: flex;    
+        height: 30px;
+        align-items: center;
+    }
+
+    .main-header .search-form-desktop .search-bar input{
+        width: 100%;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        padding: 12px;
+    }
+    
+    .main-header .user-icons-desktop{
+        display: flex;
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-header .user-icons-desktop i{
+        color: white;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-header .user-icons-desktop i span{
+        font-size: 1.2rem;
+    }
+
+    .search-bar button{
+        position: relative;
+        height: 30px;
+        right: 25px;
+        font-size: 1.2rem;
+    }
+
+
+}
+
+/* Escritorio */
+@media screen and (min-width: 992px){
+    .main-header .search-form-desktop{
+        width: 55%;
+    }
+
+    .main-header .user-icons-desktop{
+        width: 230px;
+    }
+}
+
+    

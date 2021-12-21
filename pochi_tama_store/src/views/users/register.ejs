@@ -14,21 +14,21 @@
                 <div class="form">
                     <div class="input-container">
                         <label for="nombre">Nombre</label>
-                        <input class="input-style" type="text" name="nombre" placeholder="Nombre">
+                        <input class="input-style" type="text" name="nombre" placeholder="Nombre" value="<%= locals.old && old.nombre %>">
                         <% if (locals.errors && errors.nombre) { %>
                             <small class="error-message"><%= errors.nombre.msg %></small>
                             <% } %>
                     </div>
                     <div class="input-container">
                         <label for="apellido">Apellido</label>
-                        <input class="input-style" type="text" name="apellido" placeholder="Apellido">
+                        <input class="input-style" type="text" name="apellido" placeholder="Apellido" value="<%= locals.old && old.apellido %>">
                         <% if (locals.errors && errors.apellido) { %>
                             <small class="error-message"><%= errors.apellido.msg %></small>
                             <% } %>
                     </div>
                     <div class="input-container">
                         <label for="email">Email</label>
-                        <input class="input-style" type="email" name="email" placeholder="Ingrese su email">
+                        <input class="input-style" type="email" name="email" placeholder="Ingrese su email" value="<%= locals.old && old.email %>">
                         <% if (locals.errors && errors.email) { %>
                             <small class="error-message"><%= errors.email.msg %></small>
                             <% } %>

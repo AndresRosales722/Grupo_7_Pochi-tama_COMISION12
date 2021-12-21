@@ -6,7 +6,7 @@ module.exports = [
     .withMessage('El campo nombre es obligatorio').bail()
     .isLength({min:5, max:50})
     .withMessage('El nombre debe tener entre 5 y 50 caracteres')
-    .isAlphanumeric('Ingresa un nombre valido'),
+    ,
     
 
     /* check('category')
@@ -29,5 +29,5 @@ module.exports = [
 
     check('description')
     .isLength({max:300})
-    .withMessage('El nombre debe tener hasta 300 caracteres')
+    .withMessage('El nombre puede tener hasta 300 caracteres')
 ]
