@@ -2,7 +2,6 @@ let express = require('express')
 let router = express.Router() 
 const upload = require('../middlewares/uploadProductFiles')  // Requerimos a multer
 let controller = require('../controllers/adminController')
-let userAdminCheck = require('../middlewares/userAdminCheck')
 let productFormValidator = require('../validations/productFormValidator')
 
 

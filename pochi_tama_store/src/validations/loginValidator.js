@@ -11,5 +11,7 @@ module.exports = [
 
     check('pass')
     .notEmpty()
-    .withMessage('Debes escribir tu contraseña')
+    .withMessage('Debes escribir tu contraseña').bail()
+    .isUppercase()
+    
 ]

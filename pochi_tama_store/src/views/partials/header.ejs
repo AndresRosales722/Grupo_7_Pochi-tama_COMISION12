@@ -1,150 +1,156 @@
 <header>
     <div class="main-header">
-        <div class="logo">
-            <a href="/">
-                <img src="/img/pochita.svg" width="100" alt="Logo de Pochi tama store">
-            </a>
+       <div class="logo">
+        <a href="/">
+          <img src="/img/pochita.svg" alt="">
+        </a>
+       </div>
+
+       <i class="fas fa-bars burguer-menu-icon" onclick="dropMenu()"></i>
+
+       <!-- Menú de navegación mobile -->
+       <nav class="navigation-bar" id="navigation-bar-mobile">
+
+        <div class="user-icons-mobile">
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
         </div>
 
-        <i class="fas fa-bars"></i>
+        <!-- Lista con los elementos del menú (categorías) -->
+        <ul class="menu">
+            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`funko`)">
+               Funko POP
+                <i class="fas fa-chevron-down" ></i>
+            </li>
+            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`art`)">
+               Artística
+                <i class="fas fa-chevron-down" ></i>
+            </li>
+            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`office`)">
+               Oficina
+                <i class="fas fa-chevron-down" ></i>
+            </li>
+            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`caca`)">
+                caca
+                 <i class="fas fa-chevron-down" ></i>
+             </li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+       </nav>
 
-        <!-- menu de navegacion mobile -->
-        <nav class="navigation-bar" id="navigation-bar-mobile">
-            <div class="user-icons-mobile">
-                <i class="fas fa-user"></i>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
+       
+       <!-- Icono del buscador en header mobile -->
+       <div class="search-icon" onclick="dropSearch()">
+        <i class="fas fa-search"></i>
+       </div>
 
-            <!-- lista con los elementos del menu (categorias) -->
-            <ul class="menu">
-                <li class="dropdown-menu">
-                    <a href="">Funko POP</a>
-                    <i class="fas fa-angle-down"></i>
-                </li>
-                <li class="dropdown-menu">
-                    <a href="">Figuras Coleccionables</a>
-                    <i class="fas fa-angle-down"></i>
-                </li>
-                <li class="dropdown-menu">
-                    <a href="">Comics y manga</a>
-                    <i class="fas fa-angle-down"></i>
-                </li>
-                <li class="dropdown-menu">
-                    <a href="">Articulos Geek</a>
-                    <i class="fas fa-angle-down"></i>
-                </li>
-                <li>
-                    <a href="">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+       <!-- Buscador escritorio -->
 
-        <!-- icono del buscador del header mobile -->
-        <div class="search-icon">
-            <i class="fas fa-search"></i>
-        </div>
+       <form action="/products/search" method="GET" class="search-form-desktop">
+           <div class="search-bar">
+               <input type="search" name="keywords" placeholder="¿Que estas buscando?">
+               <button type="submit"><i class="fas fa-search"></i></button>
+           </div>
+       </form>
 
-        <!-- buscador escritorio -->
-        <form action="" class="search-form-desktop">
-            <div class="search-bar">
-                <input type="search" name="" id="">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </div>
-        </form>
-
-        <!-- iconos de usuario escritorio -->
-        <div class="user-icons-desktop">
-            <i class="fas fa-user"><span>cuenta</span></i>
+       <!-- Iconos de usuario escritorio -->
+       <div class="user-icons-desktop">
+            <a href="/users/register"><i class="fas fa-user"><span>Cuenta</span></i></a>
             
-            <i class="fas fa-shopping-cart"><span>carrito</span></i>
-            <i class="fas fa-envelope"><span>cuenta</span></i>
+            <a href="/users/register"><i class="fas fa-shopping-cart"><span>Carrito</span></i></a>
+            
+            <a href="/users/register"><i class="fas fa-shopping-cart"><span>Contacto</span></i></a>
+            
         </div>
 
     </div>
-     <!-- menu de navegacion desktop -->
-     <nav class="navigation-bar" id="navigation-bar-desktop">
+    <!-- Menú de navegación desktop -->
+    <nav class="navigation-bar" id="navigation-bar-desktop">
 
-        <!-- lista con los elementos del menu (categorias) -->
+        <!-- Lista con los elementos del menú (categorías) -->
         <ul class="menu">
-            <li class="dropdown-menu">
-                <a href="">Funko POP</a>
-                <i class="fas fa-angle-down"></i>
+            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`funko`)">
+               Funko POP
+                <i class="fas fa-chevron-down" ></i>
             </li>
-            <li class="dropdown-menu">
-                <a href="">Figuras Coleccionables</a>
-                <i class="fas fa-angle-down"></i>
+            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`art`)">
+               Artística
+                <i class="fas fa-chevron-down" ></i>
             </li>
-            <li class="dropdown-menu">
-                <a href="">Comics y manga</a>
-                <i class="fas fa-angle-down"></i>
+            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`office`)">
+               Oficina
+                <i class="fas fa-chevron-down" ></i>
             </li>
-            <li class="dropdown-menu">
-                <a href="">Articulos Geek</a>
-                <i class="fas fa-angle-down"></i>
-            </li>
-            <li>
-                <a href="">Contacto</a>
-            </li>
+            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`caca`)">
+                caca
+                 <i class="fas fa-chevron-down" ></i>
+             </li>
+            <li><a href="">Contacto</a></li>
         </ul>
-    </nav>
+       </nav>
+    <nav class="nav_menu">
 
-    <nav class="nav-menu">
+        <!-- Buscador Mobile -->
 
-        <!-- buscador mobile -->
-
-        <form action="" class="search-form-mobile">
+        <form action="/products/search" method="GET" class="search-form-mobile" id="search">
             <div class="search-bar">
-                <input type="search" name="" id="" placeholder="¿Que estas buscando?">
+                <input type="search" name="keywords" placeholder="¿Que estas buscando?">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
         </form>
 
-        <!-- subcategorias desplegables -->
+        <!-- Subcategorias desplegables -->
 
-        <section class="subcategory-menu" id="funko">
-            <div class="subcategory-header">
+        <div class="subcategory_menu" id="funko">
+            <div class="subcategory_header">
                 <h3><a href="">Funko POP</a></h3>
-                <i class="fas fa-times-circle"></i>
+                <img src="/images/close.png" alt="" onclick="closeWindow()">
             </div>
             <ul>
-                <li><a href="">subcategorias</a></li>
-                <li><a href="">subcategorias</a></li>
-                <li><a href="">subcategorias</a></li>
+                <li><a href="">Subcategoria</a></li>
+                <li><a href="">Subcategoria</a></li>
+                <li><a href="">Subcategoria</a></li>
             </ul>
-        </section>
-        <section class="subcategory-menu" id="figuras">
-            <div class="subcategory-header">
-                <h3><a href="">figuras coleccionables</a></h3>
-                <i class="fas fa-times-circle"></i>
-            </div>
-            <ul>
-                <li><a href="">subcategorias</a></li>
-                <li><a href="">subcategorias</a></li>
-                <li><a href="">subcategorias</a></li>
-            </ul>
-        </section>
-        <section class="subcategory-menu" id="comics">
-            <div class="subcategory-header">
-                <h3><a href="">comics y manga</a></h3>
-                <i class="fas fa-times-circle"></i>
-            </div>
-            <ul>
-                <li><a href="">subcategorias</a></li>
-                <li><a href="">subcategorias</a></li>
-                <li><a href="">subcategorias</a></li>
-            </ul>
-        </section>
-        <section class="subcategory-menu" id="articulos">
-            <div class="subcategory-header">
-                <h3><a href="">articulos geek</a></h3>
-                <i class="fas fa-times-circle"></i>
-            </div>
-            <ul>
-                <li><a href="">subcategorias</a></li>
-                <li><a href="">subcategorias</a></li>
-                <li><a href="">subcategorias</a></li>
-            </ul>
-        </section>
-    </nav>
+        </div>
 
+        <div class="subcategory_menu" id="art">
+            <div class="subcategory_header">
+                <h3><a href="">ARTÍSTICA</a></h3>
+                <img src="/images/close.png" alt="" onclick="closeWindow()">
+            </div>
+            <ul>
+                <li><a href="">Subcategoria</a></li>
+                <li><a href="">Subcategoria</a></li>
+                <li><a href="">Subcategoria</a></li>
+            </ul>
+        </div>
+
+        <div class="subcategory_menu" id="office">
+            <div class="subcategory_header">
+                <h3><a href="">OFICINA</a></h3>
+                <img src="/images/close.png" alt="" onclick="closeWindow()">
+            </div>
+            <ul>
+                <li><a href="">Subcategoria</a></li>
+                <li><a href="">Subcategoria</a></li>
+                <li><a href="">Subcategoria</a></li>
+            </ul>
+        </div>
+
+        <div class="subcategory_menu" id="caca">
+            <div class="subcategory_header">
+                <h3><a href="">caca</a></h3>
+                <img src="/images/close.png" alt="" onclick="closeWindow()">
+            </div>
+            <ul>
+                <li><a href="">Subcategoria</a></li>
+                <li><a href="">Subcategoria</a></li>
+                <li><a href="">Subcategoria</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
 </header>
+
+<script src="/js/header.js"></script>

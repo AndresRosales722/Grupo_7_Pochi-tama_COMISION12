@@ -1,9 +1,3 @@
-.separacion{
-    height: 1000px;
-}
-
-/*---------------------FOOTER-------------------*/
-
 body .footer{
     background-color:var(--purple);
     width: 100%;
@@ -12,166 +6,232 @@ body .footer{
     padding-bottom: 15px;
 }
 
-body .footer hr{
-    border: 1px solid white;
-    margin: 5px 10px 5px 10px;
-    width: 95%;
+body .footer .container-footer-bot .container-row img{
+    height: 30px;
+    width: 30px;
 }
-
-body .footer hr.linea2{
-    margin: 10px 10px 20px 10px;
-    margin-top: 20px;
-    border: 1px solid white;
-}
-
 
 body .footer .container-footer-top img{
     height: 30px;
     width: 30px;
 }
 
-
-body .footer .container-footer-top .email h4{
-    font-size: 1.1rem;
-}
-
-
-body .footer .container-footer-top .redes h4{
-    font-size: 1.2rem;
-    margin-top: 70px;
-}
-
-body .footer .container-footer-top .redes ul {
-    display: flex;
-    justify-content: start;
-    gap: 30px;
-}
-
-body .footer .container-footer-top .redes ul li{
-    margin-top: 20px;
-}
-
-body .footer .container-footer-top .container-footer-top-2{
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-body .footer .container-footer-top .container-footer-top-2 .email h4{
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-}
-
-body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer{
-    position: relative;
-}
-
-body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer input{
-    display: block;
-    width: 300px;
-    max-width: 100%;
-    height: 40px;
-    outline: none;
-    border-radius: 3px;
-    border: 1px solid silver;
-    padding: 0 10px;
-    font-size: 1rem;
-}
-
-body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton{
-    display: flex;
-    position: absolute;
-    font-size: 16px;
-    margin-top: 15px;
-}
-
-body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button{
-    background-color: var(--orange3);
-    border-style: none;
-    height: 40px;
-    width: 60px;
-    border: 1px solid var(--orange3);
-    color: white;
-    border-radius: 3px;
-}
-
-body .footer .container-footer-top .container-footer-top-2 .email .search-bar-footer .boton button b{
-    font-size: 1.1rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-}
-
-body .footer .container-footer-bot .container-row{
-    display: flex;
-    flex-direction: column;
-}
-
-
-body .footer .container-footer-bot .container-row img{
-    height: 30px;
+body .footer img{ 
     width: 30px;
 }
 
-body .footer .container-footer-bot .container-row .contactanos{  
-    margin-left: 20px;
+footer .container-general{
+    padding: 1rem;
 }
 
-body .footer .container-footer-bot .container-row .contactanos .row{
-    margin-top:15px;
+footer .container-general .informacion-footer{
+    margin-top: 3rem;
+    width: 100%;
+}
+
+footer .container-general .informacion-footer ul{
     display: flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .container-general .informacion-footer ul li{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+footer .container-general .informacion-footer ul li a{
+    color: white;
+}
+
+footer .container-general h4{
+    font-family: 'Raleway', sans-serif;
+}
+
+footer .container-general .redes{
+    width: 100%;
+}
+
+footer .container-general .redes h4{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+footer .container-general .redes ul{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
     justify-content: start;
     align-items: center;
 }
 
+footer .container-general .aceptamos{
+    width: 100%;
+    margin-top: 3rem;
+}
 
-body .footer .container-footer-bot .container-row .contactanos .row label{
+footer .container-general .aceptamos h4{
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+footer .container-general .aceptamos ul{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    justify-content: start;
+    align-items: center;
+}
+
+footer .container-general .envios{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    margin-top: 3rem;
+}
+
+footer .container-general .envios h4{
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+footer .container-general .envios img{
+    margin-top: 10px;
+}
+
+footer .container-general .container-row-2{
+    margin-top: 3rem;
+}
+
+footer .container-general .container-row-2 .email button{
+    background-color: var(--orange3);
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+}
+
+footer .container-general .container-row-2 .email h4{
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+footer .container-general .container-row-2 .email .search-bar-footer{
+    margin-top: 15px;
+}
+
+footer .container-general .container-row-2 .email .search-bar-footer input{
+    width: 100%;    
+    border-radius: 2px;
+    border: none;
+    padding: 10px 8px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+footer .container-general .container-row-2 .contactanos{
+    margin-top: 3rem;
+}
+
+footer .container-general .container-row-2 .contactanos h4{
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+footer .container-general .container-row-2 .contactanos ul{
+    margin-top:10px ;
+}
+
+footer .container-general .container-row-2 .contactanos ul li.row{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer .container-general .container-row-2 .contactanos ul li.row label{
     margin-left: 10px;
-    font-size: 1.1rem;
-}
-
-body .footer .container-footer-bot .container-row .aceptamos{
-    text-align:start;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-body .footer .container-footer-bot .container-row .aceptamos h4{
-    font-size: 1.1rem;
-}
-
-body .footer .container-footer-bot .container-row .aceptamos ul{
-    display:flex;
-    gap: 30px;
 }
 
 
-body .footer .container-footer-bot .container-row .aceptamos ul li{
-    margin-top: 15px;
-}
-
-
-body .footer .container-footer-bot .container-row .horarios{
+@media(min-width:576px){
     
-    display: none;
+footer .container-general{
+    max-width: 540px;
+    margin: 0 auto;
 }
 
-body .footer .container-footer-bot .container-row .horarios label{
-    margin-top: 15px;
-    display: inline-block;
 }
 
-body .footer .container-footer-bot .container-row .contactanos h4{
-    font-size: 1.2rem;
+@media(min-width:768px){
+    footer .container-general{
+        max-width: 740px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    footer .container-general .container-row-1{
+        margin-top: 3rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 170px;
+    }
+
+    footer .container-general .redes{
+        
+    }
+
+    footer .container-general .informacion-footer ul{
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer .container-general .informacion-footer ul li{
+        width: 100%;
+    }
+
+    footer .container-general .informacion-footer{
+        margin-top: 4.5rem;
+    }
+    
+    footer .container-general .container-row-2{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer .container-general .container-row-3{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 170px;
+    }
+
+    footer .container-general .container-row-2{
+        width: 230px;
+    }
+
+    footer .container-general .aceptamos ul{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    footer .container-general .informacion-footer{
+        width: 170px;
+    }
+
 }
 
-
-
-
-
-
-
-
-
-                    
+@media(min-width:992px){
+    footer .container-general{
+        max-width: 960px;
+        justify-content: space-between;
+    }
+}

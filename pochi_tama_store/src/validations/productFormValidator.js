@@ -8,7 +8,7 @@ module.exports = [
     .withMessage('El nombre debe tener entre 5 y 50 caracteres')
     ,
     
-
+    
     /* check('category')
     .notEmpty()
     .withMessage('Debes elegir una categoria'),

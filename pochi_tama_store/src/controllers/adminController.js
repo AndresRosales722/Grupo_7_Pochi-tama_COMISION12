@@ -68,6 +68,12 @@ let controller = {
     },
 
     update: (req, res) => {
+		let errors = validationResult(req)
+		if (errors.isEmpty()) {
+			
+		} else {
+			
+		}
 		let productId = +req.params.id
 
 		const {name,price,discount,category,description} = req.body
