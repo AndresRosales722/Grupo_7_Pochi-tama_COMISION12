@@ -1,15 +1,24 @@
 let express = require('express');   //REQUERIMOS EL MODULO EXPRESS
 let app = express();                //EJECUTAMOS EXPRESS
-const PORT = 3001;                  //DEFINIMOS EL PUERTO 
+const PORT = 3000;                  //DEFINIMOS EL PUERTO 
 let path = require('path')          //USAMOS EL METODO PATH
 const methodOverride =  require('method-override') //PARA USAR EL METODO PUT Y DELETE
+const session = require('express-session')
+const cookieParser = require('cookie-parser')
+const cookieSession = require('./middlewares/cookieSession')
 
 
 app.use(express.static('public'))
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: false}))
 app.use(express.json())
-
+app.use(session({
+    secret: "PochiTama",
+    resave: false,
+    saveUninitialized: true
+}))
+app.use(cookieParser())
+app.use(cookieSession)
 
 //PARA LOS ARCHIVOS DE CSS E IMAGENES.
 app.set('view engine','ejs')                   // INDICAMOS QUE USAREMOS EJS

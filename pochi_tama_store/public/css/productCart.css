@@ -75,8 +75,8 @@
     
     .codigo-postal {   
         background-color: #cf9afd;
-        border: #7b2cbf px;
-        color: black 50%;
+        border: #7b2cbf;
+        color: black;
     }
     
     .objects-izq1 {
@@ -95,7 +95,7 @@
     .boton-calcular {
         background-color: #cf9afd;
         border: #2a024d 15px;
-        color: black 50%;
+        color: black;
     }
 
     .boton-compra {
@@ -625,7 +625,7 @@
     .boton-calcular {
         background-color: #cf9afd;
         border: #2a024d 15px;
-        color: black 50%;
+        color: black;
         border-radius: 26px;
         width: 89px;
         height: 28px;
@@ -636,8 +636,8 @@
 
     .codigo-postal {
         background-color: #cf9afd;
-        border: #7b2cbf px;
-        color: black 50%;
+        border: #7b2cbf;
+        color: black;
         width: 177px;
         height: 39px;
         border-radius: 5px;

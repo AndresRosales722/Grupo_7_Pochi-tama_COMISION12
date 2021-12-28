@@ -14,7 +14,7 @@ router.post('/',upload.single('image'),productFormValidator,controller.store);  
 
 router.get('/:id/edit', controller.edit);  // Formulario de edicion de un producto
 
-router.put('/:id',upload.single('image'),productFormValidator ,controller.update);    // Donde viaja la informacion de edicion
+router.put('/:id',upload.single('image'),controller.update);    // Donde viaja la informacion de edicion
 
 router.delete('/:id', controller.destroy);  // Eliminacion de un producto
 

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const productsFilePath = path.join(__dirname, '../database/productsDataBase.json');
+const productsFilePath = path.join(__dirname, '../database/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const writeJson = dataBase => fs.writeFileSync(productsFilePath,JSON.stringify(dataBase), 'utf-8')
 
@@ -17,12 +17,15 @@ let controller = {
 
         res.render('products/detail',{
             product,
-            toThousand
+            toThousand,
+            session: req.session
         })
     },
     
     cart:(req,res)=>{
-        res.render('products/productCart')
+        res.render('products/productCart',{
+            session: req.session
+        })
     }}
 
 

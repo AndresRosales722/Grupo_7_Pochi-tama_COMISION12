@@ -10,51 +10,57 @@
     <div class="login">
         <div class="form-container">
             <h2>Registrarse</h2>
-            <form action="/users/register" method="POST">
+            <form action="/users/register" method="POST" enctype="multipart/form-data">
                 <div class="form">
                     <div class="input-container">
                         <label for="nombre">Nombre</label>
-                        <input class="input-style" type="text" name="nombre" placeholder="Nombre" value="<%= locals.old && old.nombre %>">
-                        <% if (locals.errors && errors.nombre) { %>
-                            <small class="error-message"><%= errors.nombre.msg %></small>
+                        <input class="input-style" type="text" name="name" placeholder="Nombre" value="<%= locals.old && old.name %>">
+                        <% if (locals.errors && errors.name) { %>
+                            <small class="error-message"><%= errors.name.msg %></small>
                             <% } %>
                     </div>
                     <div class="input-container">
                         <label for="apellido">Apellido</label>
-                        <input class="input-style" type="text" name="apellido" placeholder="Apellido" value="<%= locals.old && old.apellido %>">
-                        <% if (locals.errors && errors.apellido) { %>
-                            <small class="error-message"><%= errors.apellido.msg %></small>
+                        <input class="input-style" type="text" name="last_name" placeholder="Apellido" value="<%= locals.old && old.last_name %>">
+                        <% if (locals.errors && errors.last_name) { %>
+                            <small class="error-message"><%= errors.last_name.msg %></small>
                             <% } %>
                     </div>
                     <div class="input-container">
                         <label for="email">Email</label>
-                        <input class="input-style" type="email" name="email" placeholder="Ingrese su email" value="<%= locals.old && old.email %>">
+                        <input class="input-style" type="email" name="email" placeholder="Ingrese su email">
                         <% if (locals.errors && errors.email) { %>
                             <small class="error-message"><%= errors.email.msg %></small>
                             <% } %>
                     </div>
                     <div class="input-container">
                         <label for="contraseña">Contraseña</label>
-                        <input class="input-style" type="password" name="pass" placeholder="Ingrese su contraseña">
-                        <% if (locals.errors && errors.pass) { %>
-                            <small class="error-message"><%= errors.pass.msg %></small>
-                            <% } %>
+                        <input class="input-style" type="password" name="pass1" placeholder="Ingrese su contraseña">
+                        <% if (locals.errors && errors.pass1) { %>
+                            <small class="text-danger"><%= errors.pass1.msg %> </small>
+                        <% } %>
                     </div>
                     <div class="input-container">
                         <label for="repeat contraseña">Confirmar contraseña</label>
                         <input class="input-style" type="password" name="pass2" placeholder="Repita su contraseña">
-                        <span class="error-message">Debes re-ingresar tu contraseña</span>
+                        <% if (locals.errors && errors.pass2) { %>
+                            <small class="text-danger"><%= errors.pass2.msg %> </small>
+                        <% } %>
                     </div>
                     <div class="container-file">
                         <i class="fas fa-upload"></i>
                         <p>Subir una foto</p>
-                        <input type="file" name="image" id="" value="">
+                        <input type="file" name="avatar">
+                        <% if (locals.errors && errors.image) { %>
+                            <small class="text-danger"><%= errors.image.msg %> </small>
+                        <% } %>
                     </div>
-                    <span class="error-image">Debe ingresar una imagen</span>
                     <div class="check">
                         <label for="terms">Acepto los <a href="">términos y condiciones</a></label>
                         <input type="checkbox" name="terms" id="terms">
-                        <span class="error-message">Debes aceptar los términos y condiciones</span>
+                        <% if (locals.errors && errors.terms) { %>
+                            <small class="text-danger"><%= errors.terms.msg %> </small>
+                        <% } %>
                     </div>
                     <div class="button-container">
                         <span class="error-message">Hubo errores en el envío</span>

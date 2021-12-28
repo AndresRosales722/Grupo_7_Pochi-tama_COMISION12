@@ -15,9 +15,24 @@
             <i class="fas fa-user"></i>
             <i class="fas fa-shopping-cart"></i>
         </div>
+        
 
         <!-- Lista con los elementos del menú (categorías) -->
         <ul class="menu">
+            <div class="user">
+                <% if (typeof session.user != "undefined") { %>
+                    <i class="fas fa-user"></i><span class="session"></span>
+                    <div class="menu-user">
+                        <a href="/users/profile">Mis datos</a>
+                        <a href="/users/logout">Cerrar sesión</a>
+                        <% if (session.user.rol === "ROL_ADMIN") { %>
+                            <a href="/admin/index">ADMIN</a>
+                        <% } %>
+                    </div>
+                <% } else {%>
+                    <a href="/users/login"><i class="fas fa-user"></i></a>
+                <% } %>
+            </div>
             <li class="dropdown-menu" onclick="dropSubCategoryMenu(`funko`)">
                Funko POP
                 <i class="fas fa-chevron-down" ></i>
@@ -55,11 +70,24 @@
 
        <!-- Iconos de usuario escritorio -->
        <div class="user-icons-desktop">
-            <a href="/users/register"><i class="fas fa-user"><span>Cuenta</span></i></a>
+        <div class="user">
+            <% if (typeof session.user != "undefined") { %>
+                <i class="fas fa-user"></i><span class="session"></span>
+                <div class="menu-user">
+                    <a href="/users/profile">Mis datos</a>
+                    <a href="/users/logout">Cerrar sesión</a>
+                    <% if (session.user.rol === "ROL_ADMIN") { %>
+                        <a href="/admin/index">ADMIN</a>
+                    <% } %>
+                </div>
+            <% } else {%>
+                <a href="/users/login"><i class="fas fa-user"><span>Cuenta</span></i></a>
+            <% } %>
+        </div>
             
-            <a href="/users/register"><i class="fas fa-shopping-cart"><span>Carrito</span></i></a>
+            <a href="/"><i class="fas fa-shopping-cart"><span>Carrito</span></i></a>
             
-            <a href="/users/register"><i class="fas fa-shopping-cart"><span>Contacto</span></i></a>
+            <a href="/"><i class="fas fa-shopping-cart"><span>Contacto</span></i></a>
             
         </div>
 
@@ -104,7 +132,7 @@
         <div class="subcategory_menu" id="funko">
             <div class="subcategory_header">
                 <h3><a href="">Funko POP</a></h3>
-                <img src="/images/close.png" alt="" onclick="closeWindow()">
+                <img src="/img/iconos/close.png" alt="" onclick="closeWindow()">
             </div>
             <ul>
                 <li><a href="">Subcategoria</a></li>
@@ -116,7 +144,7 @@
         <div class="subcategory_menu" id="art">
             <div class="subcategory_header">
                 <h3><a href="">ARTÍSTICA</a></h3>
-                <img src="/images/close.png" alt="" onclick="closeWindow()">
+                <img src="/img/iconos/close.png" alt="" onclick="closeWindow()">
             </div>
             <ul>
                 <li><a href="">Subcategoria</a></li>
@@ -128,7 +156,7 @@
         <div class="subcategory_menu" id="office">
             <div class="subcategory_header">
                 <h3><a href="">OFICINA</a></h3>
-                <img src="/images/close.png" alt="" onclick="closeWindow()">
+                <img src="/img/iconos/close.png" alt="" onclick="closeWindow()">
             </div>
             <ul>
                 <li><a href="">Subcategoria</a></li>
@@ -140,7 +168,7 @@
         <div class="subcategory_menu" id="caca">
             <div class="subcategory_header">
                 <h3><a href="">caca</a></h3>
-                <img src="/images/close.png" alt="" onclick="closeWindow()">
+                <img src="/img/iconos/close.png" alt="" onclick="closeWindow()">
             </div>
             <ul>
                 <li><a href="">Subcategoria</a></li>
@@ -148,8 +176,6 @@
                 <li><a href="">Subcategoria</a></li>
             </ul>
         </div>
-
-
     </nav>
 </header>
 

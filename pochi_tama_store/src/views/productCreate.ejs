@@ -29,7 +29,7 @@
                             </div>
                             <div class="input-admin">
                                 <label for="discount">Descuento</label>
-                                <input class="input-style-admin" type="text" name="discount" placeholder="Ej: 50" value='<%= locals.old && old.price %>'>
+                                <input class="input-style-admin" type="number" name="discount" placeholder="Ej: 50"  value='<%= locals.old ? old.discount : 0 %>'>
                                 <% if (locals.errors && errors.discount) { %>
                                     <small class="error-message"><%= errors.discount.msg %></small>
                                     <% } %>
@@ -48,8 +48,11 @@
                                 <i class="fas fa-upload"></i>
                                 <p>Ingrese una Imagen</p>
                                 <input type="file" name="image" id="" value="">
+                                <% if (locals.errors && errors.image) { %>
+                                    <small class="error-message"><%= errors.image.msg %></small>
+                                    <% } %>
                             </div>
-                            <span class="error-image">Debe ingresar una imagen</span>
+                            
                             
                             <div class="button-admin">
                                 <span class="error-message">Hubo errores en el envío</span>

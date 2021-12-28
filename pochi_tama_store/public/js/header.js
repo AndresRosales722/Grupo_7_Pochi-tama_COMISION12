@@ -1,4 +1,4 @@
-let navBar = document.querySelector("#navigation-bar-mobile"); // Capturo el elemento por el ID
+let navBar = document.querySelector("#navigation-bar-mobile"); //Capturo el elemento por el ID
 let searchBar = document.querySelector("#search");
 let logo = document.querySelector(".logo");
 

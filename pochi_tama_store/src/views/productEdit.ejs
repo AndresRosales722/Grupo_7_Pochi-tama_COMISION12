@@ -14,41 +14,33 @@
                         <div class="input-admin">
                             <label for="name">Nombre del Producto</label>
                             <input class="input-style-admin" type="text" name="name" placeholder="Ej: Guante del infinito" value="<%= product.name %>">
-                            <% if (locals.errors && errors.name) { %>
-                                <small class="error-message"><%= errors.name.msg %></small>
-                                <% } %>
+                            <small class="error-message">Ingresa un nombre</small>
+                                
                         </div>
                         <div class="input-admin">
                             <label for="price">Precio del producto</label>
                             <input class="input-style-admin" type="text" name="price" placeholder="Ej: 3000" value="<%= product.price %>">
-                            <% if (locals.errors && errors.price) { %>
-                                <small class="error-message"><%= errors.price.msg %></small>
-                                <% } %>
+                            <small class="error-message">Ingresa un precio al producto</small>
+
                         </div>
                         <div class="input-admin">
                             <label for="discount">Descuento</label>
                             <input class="input-style-admin" type="text" name="discount" placeholder="Ej: 50" value="<%= product.discount %>">
-                            <% if (locals.errors && errors.discount) { %>
-                                <small class="error-message"><%= errors.discount.msg %></small>
-                                <% } %>
                         </div>
                         <div class="input-admin description">
                             <label for="description">Descripcion</label>
                             <textarea class="description" name="description" id="description"><%= product.description %></textarea>
-                            <% if (locals.errors && errors.description) { %>
-                                <small class="error-message"><%= errors.description.msg %></small>
-                                <% } %>
                         </div>
                        
                         <div class="container-file">
                             <i class="fas fa-upload"></i>
                             <p>Ingrese una Imagen</p>
-                            <input type="file" name="image" id="" value="">
+                            <input type="file" name="image" id="" value="" id="inputImage" multiple>
                         </div>
-                        <span class="error-image">Debe ingresar una imagen</span>
+                        <small class="error-message">Formato invalido</small>
+                       
 
                         <div class="button-admin">
-                            <span class="error-message">Hubo errores en el envío</span>
                             <button type="submit" class="btn btn-submit">Guardar producto</button>
                         </div>
                 

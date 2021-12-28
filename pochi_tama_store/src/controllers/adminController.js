@@ -1,12 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 
-const productsFilePath = path.join(__dirname, '../database/productsDataBase.json');
+const productsFilePath = path.join(__dirname, '../database/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const writeJson = dataBase => fs.writeFileSync(productsFilePath,JSON.stringify(dataBase), 'utf-8')
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-const {validationResult} = require('express-validator')
+let {validationResult} = require('express-validator')
 
 
 let controller = {
@@ -14,16 +14,20 @@ let controller = {
 	index:(req,res)=>{
         res.render('products/products',{      
             products,
-            toThousand
+            toThousand,
+			session: req.session
         })
     },
 
     create:(req,res)=>{
-        res.render('productCreate')
+        res.render('productCreate',{
+			session: req.session
+		})
     },
 
     store:(req,res)=>{
 		let errors = validationResult(req)
+
 		if (errors.isEmpty()) {
 			const {name,price,discount,category,description} = req.body
 
@@ -53,7 +57,8 @@ let controller = {
 		} else {
 			res.render('productCreate',{
 				errors: errors.mapped(),
-				old: req.body
+				old: req.body,
+				session: req.session
 			})
 		}   
     },
@@ -63,7 +68,8 @@ let controller = {
         let productToEdit = products.find(product => product.id === productId)
 
         res.render('productEdit',{
-            product: productToEdit
+            product: productToEdit,
+			session: req.session
         })
     },
 

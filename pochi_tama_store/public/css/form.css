@@ -108,7 +108,7 @@ body.register .form-container{
 
 .yes-account a{
     color: var(--orange);
-    font-size: 1.1;
+    font-size: 1.1rem;
 }
 
 .form .re-password span a{
@@ -170,9 +170,6 @@ body.register label {
     letter-spacing: 0.5px;
 }
 
-body.register .logo img{
-    width: 150px;
-}
 
 body.register .form-container{
     border-right: 30px solid var(--orange);
@@ -297,14 +294,6 @@ select.input-select:focus {
 @media screen and (min-width: 576px) {
     body.register .form-container{
         max-width: 600px;
-    }
-
-    body.register h2{
-        
-    }
-
-    body.register label{
-        
     }
 
     .btn-submit{
