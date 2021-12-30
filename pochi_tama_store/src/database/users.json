@@ -201,4 +201,43 @@
     "cp": "",
     "city": "",
     "province": ""
+}, {
+    "id": 24,
+    "name": "nada",
+    "last_name": "nada",
+    "email": "nada@gmail.com",
+    "pass": "$2a$12$W5dwgpUb/0UPVAtE8tgRVeLd7fw/UmfZtA7JJDX5Y3tXlS7HWr7ym",
+    "avatar": "1640701434715_img_.jpg",
+    "rol": "ROL_USER",
+    "tel": "",
+    "address": "",
+    "cp": "",
+    "city": "",
+    "province": ""
+}, {
+    "id": 25,
+    "name": "andres",
+    "last_name": "nada",
+    "email": "andres@gmail.com",
+    "pass": "$2a$12$.KfcyfZBXfsOni.1DhmTLujJLlAsF9N7wSgVfLLPAp6BLrmfhjlh6",
+    "avatar": "default-image.png",
+    "rol": "ROL_USER",
+    "tel": "",
+    "address": "",
+    "cp": "",
+    "city": "",
+    "province": ""
+}, {
+    "id": 26,
+    "name": "pas",
+    "last_name": "nada",
+    "email": "pas@gmail.com",
+    "pass": "$2a$12$DZ44./8W56u48NH2vp7DsuH7Do3ZetMGoIAXc2UAFhdBypKEd8L3G",
+    "avatar": "1640809846911_img_.jpeg",
+    "rol": "ROL_USER",
+    "tel": "",
+    "address": "",
+    "cp": "",
+    "city": "",
+    "province": ""
 }]

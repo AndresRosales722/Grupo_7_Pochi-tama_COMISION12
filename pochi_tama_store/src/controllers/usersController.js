@@ -1,5 +1,6 @@
 const { users, writeUsersJSON } = require('../database/dataBase')
 const { validationResult } = require ('express-validator') // Requerimos el metodo validationResult de express-validator
+const bcrypt = require ('bcryptjs')
 
 let controller = {
     login: (req, res) => {
@@ -23,7 +24,7 @@ let controller = {
             }
 
             if (req.body.remember) {
-                const TIME_IN_MILISECONDS = 60000
+                const TIME_IN_MILISECONDS = 900000
                 res.cookie("userPochiTama",req.session.user,{
                     expires: new Date(Date.now() + TIME_IN_MILISECONDS),
                     httpOnly: true,
@@ -66,7 +67,7 @@ let controller = {
                 name,
                 last_name,
                 email, 
-                pass:pass1,
+                pass: bcrypt.hashSync(pass1,12),
                 avatar: req.file ? req.file.filename : "default-image.png",
                 rol: "ROL_USER",
                 tel: "",

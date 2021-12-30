@@ -10,19 +10,6 @@ body.detail{
     font-family: 'roboto', sans-serif;
 }
 
-/* body::before{
-    content: '';
-    position: absolute;
-    left: 0%;
-    transform: translateX(-50%) skewX(-15deg);
-    width: 20px;
-    height: 100%;
-    background: #966e4f;
-    border-left: 60px solid #eae3d2;
-    border-right: 30px solid #eae3d2;
-    opacity: 0;
-    animation: slide-in 2s 1.5s forwards 1;
-} */
 
 @keyframes slide-in{
     100%{
@@ -71,7 +58,7 @@ body.detail{
     opacity: 0;
     transform: rotate(-90deg);
     text-transform: capitalize;
-    color: #eae3d2;
+    color:white;
     padding: 5px 10px;
     width: 100px;
     font-size: 18px;
@@ -112,6 +99,7 @@ body.detail{
 .name{
     font-size: 35px;
     text-transform: capitalize;
+    height: 80px;
 }
 
 .info{
@@ -144,6 +132,7 @@ body.detail{
     margin-right: 5px;
     gap: 3px;
     color: #fbe110;
+    height: 20px;
 }
 
 .rating img{
@@ -197,6 +186,11 @@ body.detail{
 }
 
 @media (min-width: 992px){
+
+    .name{
+        height: 40px;
+    }
+
     .product{
         max-width: 1000px;
     }
