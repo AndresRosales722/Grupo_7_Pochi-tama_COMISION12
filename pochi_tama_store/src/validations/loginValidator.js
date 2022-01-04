@@ -1,5 +1,6 @@
 const {check,body} = require('express-validator') // Requeriamos el metodo Check de express validator
 const {users} = require('../database/dataBase')
+const bcrypt = require ('bcryptjs')
 
 
 // Validaciones
@@ -19,7 +20,7 @@ module.exports = [
         let user = users.find(user => user.email === req.body.email)
 
         if(user){
-            if(user.pass === req.body.pass){
+            if(bcrypt.compareSync(req.body.pass, user.pass)){
                 return true
             }else{
                 return false

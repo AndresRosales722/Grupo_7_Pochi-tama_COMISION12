@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-
+const { users, writeUsersJSON } = require('../database/dataBase')
 const productsFilePath = path.join(__dirname, '../database/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
@@ -11,7 +11,8 @@ let controller = {
         res.render('index',{
             products,
             toThousand,
-            session: req.session
+            session: req.session,
+            users
         })
     }
 }

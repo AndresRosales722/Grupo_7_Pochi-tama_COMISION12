@@ -232,12 +232,7 @@
     body main.main .main-container .section-productos article .caja:hover{
         transform: scale(0.9) ;   
     }
-
-    body main.main .main-container .section-vendido article .caja:hover{
-        transform: scale(0.9) ;   
-
-    }
-    
+  
     body .main-container .section-productos,.section-vendido{
         max-width: 900px;
     }
@@ -245,7 +240,6 @@
     body main.main .main-container .section-vendido article .caja{
         width: 230px;
         height: 230px;
-        transition: 0.5s;
     }
 
     body section.info .container-info{

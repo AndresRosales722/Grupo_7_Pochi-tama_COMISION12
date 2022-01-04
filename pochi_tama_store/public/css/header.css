@@ -204,6 +204,11 @@ i.fa-search {
         position: relative;
     }
 
+    .user {
+        position: relative;
+        display: flex;
+    }
+
     .menu-user {
         display: none;
         position: absolute;
@@ -217,6 +222,18 @@ i.fa-search {
 
     .user:hover .menu-user{
        display: block;
+
+    }
+
+    .session {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #00d900;
+        border-radius: 50px;
+        position: relative;
+        top: -5px;
+        right: 10px;
     }
 
     .main-header .user-icons-desktop i{
@@ -228,8 +245,9 @@ i.fa-search {
 
 
     .main-header .user-icons-desktop span{
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-top: 5px;
+        color: white;
     }
 
     .main-header .logo{
@@ -338,15 +356,6 @@ i.fa-search {
         width: 240px;
         order: 4;
     }
-
-    .main-header .user-icons-desktop a{
-        color: white;
-    }
-
-    .main-header .user-icons-desktop i {
-        margin-left: 10px;
-    }
-
 
 }
 

@@ -9,6 +9,23 @@ body .main-container{
     flex-direction: column;
 }
 
+span.discount{
+    padding: 4px;
+    position: absolute;
+    background-color: #8b52c4;
+    border-radius: 50px;
+    opacity: 0.9;
+    top: 10px;
+    right: 10px;
+    width: 90px;
+    color: white;
+}
+
+a.product-name{
+    color: #2c3e50;
+    display: block;
+    height: 40px;
+}
 
 body .main-container .container-carrousel .carrousel{
     height: 150px;
@@ -104,6 +121,7 @@ body .main-container .section-vendido{
 
 body .main-container .section-vendido article.producto{
     margin-bottom: 30px;
+    box-shadow: 0px -1px 5px 0px rgba(87, 87, 87, 0.74);
 }
 
 
@@ -120,11 +138,11 @@ body .main-container .section-vendido article.producto h4{
 
 body .main-container .section-vendido article.producto .caja {
     width: 190px;
-    box-shadow: 0px -1px 5px 0px rgba(87, 87, 87, 0.74);
     height: 190px;
     display: flex;
     border-bottom: 4px solid var(--orange3);
     justify-content: center;
+    position: relative;
 }
 
 body .main-container .section-vendido article.producto .caja img {
@@ -135,6 +153,9 @@ body .main-container .section-vendido article.producto .caja img {
 
 body .main-container .section-vendido article.producto .container-product-index{
     width: 190px;
+    padding: 10px;
+    background-color: #F1F1F1;
+    text-align: start;
 }
 
 body .main-container .section-vendido article.producto .botones{
@@ -245,11 +266,12 @@ body section.info .container-info .tarjeta{
 
 body section.info .container-info .tarjeta .text p{
     color: #2c3e50;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 body section.info .container-info .tarjeta .text label{
     color: #666;
+    font-size: 0.9rem;
 }
 
 body section.info .container-info .tarjeta .icon-tarjeta{
@@ -279,7 +301,25 @@ body section.info .container-info .tarjeta i{
 @media (min-width: 768px) {
     body .main-container .section-vendido article.producto .container-product-index{
         width: 230px;
-}
+    }
+
+    body section.info .container-info{
+        justify-content: space-around;
+    }
+
+    body section.info .container-info .tarjeta-shield{
+    display: block;
+    }
+
+    body section.info .container-info .tarjeta-card{
+    display: block;
+    }
+
+    a.product-name:hover{
+        text-decoration: underline;
+        color: purple;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -290,6 +330,6 @@ body section.info .container-info .tarjeta i{
 
 @media (min-width: 1200px) {
     body .main-container .section-vendido article.producto .container-product-index{
-        width: 300px;
+        
 }
 }
