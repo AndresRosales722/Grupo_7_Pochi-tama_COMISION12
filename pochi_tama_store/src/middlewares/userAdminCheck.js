@@ -1,10 +1,10 @@
-const USER_ROL = 'USER_ADMIN'
+const session = require('../controllers/adminController')
 
 function userAdminCheck(req,res,next){
-    if(USER_ROL === 'USER_ADMIN'){
+    if(req.session.user === 'USER_ADMIN'){
         next()
     }else{
-        res.send('NO PODES INGRESAR')
+        res.redirect('/users/login')
     }  
 }
 
