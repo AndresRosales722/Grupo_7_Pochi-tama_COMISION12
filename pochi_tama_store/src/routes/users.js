@@ -4,6 +4,8 @@ let controller = require('../controllers/usersController')
 let loginValidator = require('../validations/loginValidator')
 let registerValidator = require('../validations/registerValidator')
 let uploadFile = require('../middlewares/uploadAvatar')
+let userCheck = require('../middlewares/userCheck')
+
 
 /* GET Formulario de Login */
 router.get('/login',controller.login)
