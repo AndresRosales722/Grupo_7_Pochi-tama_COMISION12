@@ -1,4 +1,3 @@
-
 [
     {
         "id": 1,
@@ -281,6 +280,19 @@
         "cp": "",
         "city": "",
         "province": ""
+    },
+    {
+        "id": 28,
+        "name": "Carlos",
+        "last_name": "Terada",
+        "email": "teradacarlos@hotmail.com",
+        "pass": "$2a$12$JOkksMPm/sP71B7fX5WRCu0Nke6uiO26sUImuRVHo2.2Js.srXgky",
+        "avatar": "1641511605124_img_.png",
+        "rol": "ROL_USER",
+        "tel": "",
+        "address": "",
+        "cp": "",
+        "city": "",
+        "province": ""
     }
 ]
-

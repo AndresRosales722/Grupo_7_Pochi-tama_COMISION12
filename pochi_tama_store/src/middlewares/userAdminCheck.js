@@ -1,10 +1,10 @@
-const session = require('../controllers/adminController')
 
 function userAdminCheck(req,res,next){
-    if(req.session.user === 'USER_ADMIN'){
+    console.log(req.session.user)
+    if(req.session.user.rol === 'USER_ADMIN'){
         next()
     }else{
-        res.redirect('/users/login')
+        res.redirect('/')
     }  
 }
 

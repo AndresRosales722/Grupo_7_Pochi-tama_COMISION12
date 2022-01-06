@@ -1,10 +1,10 @@
 const USER_LOGIN = "USER"
 
 function userCheck(req,res,next){
-    if(USER_LOGIN === 'USER'){
+    if(req.session.user.rol === 'ROL_USER'){
         next()
     }else{
-        res.send('Tu vieja')
+        res.redirect('/')
     }  
 }
 

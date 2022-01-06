@@ -98,10 +98,10 @@ let controller = {
         }
         res.redirect('/')
     },
-    profile:(req,res)=>{
-        let user = users.find(user => user.id === req.session.user.id)
+    profile:(req,res)=>{ console.log(req.session.user)
+        let user = users.find(user => user.id === +req.session.user.id)
         
-        res.render('userProfile',{
+        res.render('users/userProfile',{
             user,
             session:req.session
         })
