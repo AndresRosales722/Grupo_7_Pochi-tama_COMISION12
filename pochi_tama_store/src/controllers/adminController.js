@@ -8,7 +8,6 @@ const writeJson = dataBase => fs.writeFileSync(productsFilePath,JSON.stringify(d
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 let {validationResult} = require('express-validator')
 
-
 let controller = {
     
 	index:(req,res)=>{
@@ -20,7 +19,7 @@ let controller = {
     },
 
     create:(req,res)=>{
-        res.render('productCreate',{
+        res.render('admin/products/productCreate',{
 			session: req.session
 		})
     },
@@ -55,7 +54,7 @@ let controller = {
 
 			res.redirect('/admin')
 		} else {
-			res.render('productCreate',{
+			res.render('admin/products/productCreate',{
 				errors: errors.mapped(),
 				old: req.body,
 				session: req.session
@@ -67,7 +66,7 @@ let controller = {
         let productId = +req.params.id
         let productToEdit = products.find(product => product.id === productId)
 
-        res.render('productEdit',{
+        res.render('admin/products/productEdit',{
             product: productToEdit,
 			session: req.session
         })

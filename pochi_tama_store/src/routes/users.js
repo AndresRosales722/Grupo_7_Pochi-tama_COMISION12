@@ -23,7 +23,6 @@ router.post('/register',uploadFile.single('avatar'),registerValidator, controlle
 router.get('/logout',controller.logout)
 
 /* GET perfil de usuario */
-
 router.get('/profile',controller.profile)
 
 

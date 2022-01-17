@@ -25,13 +25,11 @@ app.set('view engine','ejs')                   // INDICAMOS QUE USAREMOS EJS
 app.set('views',path.join(__dirname,'views')) //INDICA LA UBICACION DE LA CARPETA DE VIEWS
 
 
-
 // Enrutadores
 let indexRouter = require('./routes/index') 
 let productsRouter = require('./routes/products')
 let adminRouter = require('./routes/admin')
 let usersRouter = require('./routes/users')
-
 
 
 // Middlewares de rutas
@@ -40,7 +38,7 @@ app.use('/admin',adminRouter)
 app.use('/users', usersRouter)
 app.use('/products', productsRouter)
 
-// Error 4040
+// Error 404
 app.use((req, res, next)=>{
     res.status(404).render('404-page')
 })

@@ -6,7 +6,7 @@ body.detail{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: #dfdfdf;
+    background: whitesmoke;
     font-family: 'roboto', sans-serif;
 }
 
@@ -16,6 +16,14 @@ body.detail{
         opacity: 1;
         left: 50%;
     }
+}
+
+.prices{
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    align-items: center;
 }
 
 .product{
@@ -33,14 +41,14 @@ body.detail{
 }
 
 .product-img{
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 20px 20px 0 0;
     width: 80%;
     height: 350px;
     background: #fff;
     position: relative;
-    opacity: 0;
+    /* opacity: 0;
     transform: translateY(-50px);
-    animation: fade-in 1s forwards 1;
+    animation: fade-in 1s forwards 1; */
 }
 
 .product-img img{
@@ -66,6 +74,7 @@ body.detail{
     background-color: var(--orange3);
     user-select: none;
     animation: tag .5s 1s forwards 1;
+    display: none;
 }
 
 @keyframes tag{
@@ -79,14 +88,15 @@ body.detail{
     width: 80%;
     height: auto;
     background: #60307b;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     color: white;
-    opacity: 0;
+    /* opacity: 0;
     transform: translateY(50px);
     animation: fade-in 1s forwards 1;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px; */
+    border-radius: 0 0 20px 20px;
 }
 
 @keyframes fade-in{
@@ -97,9 +107,9 @@ body.detail{
 }
 
 .name{
-    font-size: 35px;
+    font-size: 2rem;
     text-transform: capitalize;
-    height: 80px;
+    
 }
 
 .info{
@@ -109,19 +119,20 @@ body.detail{
 }
 
 .price{
-    font-size: 45px;
+    font-size: 1.5rem;
     font-weight: 100;
-    margin-bottom: 20px;
 }
 
 .price:nth-child(2n){
     font-size: 1.5rem;
+    margin-right: 20px;
 }
 
 .btn-and-rating-box{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .rating{
@@ -161,13 +172,13 @@ body.detail{
     text-transform: capitalize;
     font-size: 16px;
     cursor: pointer;
-    width: 130px;
+    width: 100%;
     height: 40px;
 }
 
-.btn-detail:hover{
+/* .btn-detail:hover{
     background-color: var(--orange3);
-}
+} */
 
 @media (min-width: 768px){
     .product{

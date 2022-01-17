@@ -1,5 +1,4 @@
-
-function userAdminCheck(req,res,next){
+/* function userAdminCheck(req,res,next){
     console.log(req.session.user)
     if(req.session.user.rol === 'USER_ADMIN'){
         next()
@@ -9,3 +8,4 @@ function userAdminCheck(req,res,next){
 }
 
 module.exports = userAdminCheck
+ */

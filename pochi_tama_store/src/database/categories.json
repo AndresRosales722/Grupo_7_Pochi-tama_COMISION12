@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 1,
+        "name" : "accesorios",
+        "code" : "accesorios",
+        "image": "banner.jpg"
+    },
+    {
+        "id" : 2,
+        "name" : "Coleccionables",
+        "code" : "colec",
+        "image": "banner.jpg"
+    },
+    {
+        "id" : 3,
+        "name" : "tazas",
+        "code" : "tazas",
+        "image": "banner.jpg"
+    },
+    {
+        "id" : 4,
+        "name" : "lamparas",
+        "code" : "lamparas",
+        "image": "banner.jpg"
+    },
+    {
+        "id" : 5,
+        "name" : "mangas",
+        "code" : "mangas",
+        "image": "banner.jpg"
+    },
+    {
+        "id" : 6,
+        "name" : "peluches",
+        "code" : "peluches",
+        "image": "banner.jpg"
+    }
+]
