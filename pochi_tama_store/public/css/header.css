@@ -148,7 +148,8 @@ i.fa-search {
 .subcategory_menu.active {
     display: block;
     background-color: var(--orange3);
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
 }
 

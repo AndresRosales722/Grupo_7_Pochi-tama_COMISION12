@@ -3,15 +3,24 @@
     color: var(--primary);
     margin: 0 auto;
     max-width: 900px;
-    border-radius: .8rem;
-    padding: 2rem .5rem;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem;
+}
+
+.userProfile a.btn-edit{
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color:#8e44ad;
+    color: #F1F1F1;
 }
 
 .userProfile .avatar{
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    background-color: blanchedalmond;
+    background-color: rgb(228, 210, 184);
     margin: 1rem auto;
 }
 
@@ -26,36 +35,94 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
-    padding: 1rem;
-    border-radius: .8rem;
+    padding: 0.2rem;
+    border-radius: 5px;
 }
 
-.userProfile_box {
-    margin: 1rem 0;
+.userProfile_box{
+    padding: 1rem;
+    border: 1px solid silver;
+    background-color: #F1F1F1;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.userProfile_box i{
+    display: flex;
+    align-items: center;
+    color: #8e44ad;
+}
+
+.userProfile_box i p{
+    margin-left: 10px;
+    color:#2c3e50;
+    font-weight: 500;
 }
 
 .userProfile_title {
     border-bottom: 1px solid var(--primary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
+    margin-top: 2.5rem;
+    color: #2c3e50;
+    font-size: 1.3rem;
 }
 
 .userProfile_item {
     margin: 1rem 0;
+    color:#2c3e50 ;
+}
+
+section.info-cart .userProfile_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.info-cart .userProfile_box i::before{
+    font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
+
+    .userProfile_title{
+       margin-top: 1.5rem;
+    }
+
     .userProfile {
         font-size: 1.2rem;
+        margin: 0 auto;
     }
 
     .userProfile-container {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1rem;
+        margin: 0 auto;
+        max-width: 800px;
     }
 
     .userProfile_box {
-        width: 47%;
+        width: 100%;
+    }
+
+    section.info-user{
+        width: 350px;
+    }
+
+    section.info-cart{
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .userProfile-container {
+        max-width: 1100px;
+    }
+
+    section.info-user{
+        width: 400px;
+    }
+
+    section.info-cart{
+        width: 800px;
     }
 }
