@@ -1,11 +1,29 @@
 let {products, categories} = require('../database/dataBase')
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const { Op } = require("sequelize");
 
 let controller = {
     
     detail:(req,res)=>{
-    let productId = +req.params.id
+        db.Product.findByPk(req.params.id)
+        .then((product) => {
+            res.render('products/detail',{
+                product,
+                toThousand,
+                session: req.session
+            })
+        })
+
+
+
+
+
+
+
+
+    /* let productId = +req.params.id
 
     let product = products.find(product => product.id === productId)
 
@@ -13,7 +31,7 @@ let controller = {
             product,
             toThousand,
             session: req.session
-        })
+        }) */
     },
     category: (req,res) =>{
         let categoryId = +req.params.id;

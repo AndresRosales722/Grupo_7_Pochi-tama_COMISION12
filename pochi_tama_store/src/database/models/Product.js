@@ -31,13 +31,24 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     const config = {
-        /* timestamp:false */
+        timestamp: true,
         tableName: "products",
-        createdAt: "created_at",
-        updatedAt: "updated_at"
     }
 
     const Product = sequelize.define(alias, cols, config)
+
+    /* Product.associate = function (models) {
+        Product.belongsTo(models.Subcategories,{
+            as: 'Subcategories',
+            foreignKey: 'subcategory_id'
+        })
+        
+        Product.hasMany(models.ProductImages,{
+            as: 'images',
+            foreignKey: 'product_id'
+        })
+
+    } */
 
     return Product
 }

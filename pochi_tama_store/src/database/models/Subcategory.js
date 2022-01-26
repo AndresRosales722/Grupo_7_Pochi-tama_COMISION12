@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    const alias = "Subcategories"
+    const alias = "Subcategory"
     const cols = {
         id:{
             type: dataTypes.INTEGER(11).UNSIGNED,
@@ -24,6 +24,20 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     const Subcategory = sequelize.define(alias, cols, config)
+
+    /* Subcategory.associate = function (models) {
+        
+        Subcategory.belongsTo(models.Products,{
+            as: 'Products',
+            foreignKey: 'subcategory_id'
+        })
+        
+        Subcategory.hasMany(models.Categories,{
+            as: 'Category',
+            foreignKey: 'category_id'
+        })
+
+    } */
 
     return Subcategory
 }

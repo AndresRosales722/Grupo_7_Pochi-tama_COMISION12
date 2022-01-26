@@ -87,7 +87,7 @@
                         <a href="/products/detail/<%- product.id %>"><img src="/img/imagenes home/<%- product.image %>" alt=""></a>
                     </div>
                 <div class="container-product-index">         
-                <a href="" class="product-name"><%- product.name %></a>
+                <a href="/products/detail/<%- product.id %>" class="product-name"><%- product.name %></a>
                 <div class="pri-dis">
                     <h4>$<%- toThousand(product.price - product.price * product.discount / 100) %></h4>
                     <span class="discount"><%- product.discount > 0 ? `${product.discount}$ OFF` : " " %></span>
