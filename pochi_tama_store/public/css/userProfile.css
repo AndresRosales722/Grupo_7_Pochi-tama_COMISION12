@@ -74,7 +74,19 @@
 section.info-cart .userProfile_box{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.box-cart{
+    margin-left: 1rem;
+}
+
+.box-cart p{
+    margin: 7px 0 7px;
+}
+
+.box-cart a{
+    color: #8e44ad;
 }
 
 section.info-cart .userProfile_box i::before{

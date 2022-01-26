@@ -3,7 +3,7 @@ body .main{
 }
 
 body .main-container{
-    background-color: white;
+    background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/assets/themes/material/static/images/patterns/maze.png?1246682174");
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -98,6 +98,7 @@ body .main-container hr.hr1{
     border-bottom: 4px solid var(--orange3);
     /* transition: all 0.5s ease-in-out; */
     justify-content: center;
+    background-color: white;
 }
 
 body .main-container .section-productos article .caja img {
@@ -145,6 +146,7 @@ body .main-container .section-productos article .caja img {
     border-bottom: 4px solid var(--orange3);
     justify-content: center;
     position: relative;
+    background-color: white;
 }
 
 .section-vendido article.producto .caja img {
@@ -239,7 +241,7 @@ body .main-container section.zonas{
 
 
 body section.info{
-    background-color: #F1F1F1;
+    background-color: #E1E1E1;
     width: 100%;
     height: 100px;
     margin:20px 0;
@@ -307,6 +309,7 @@ body section.info .container-info .tarjeta i{
 
     body section.info .container-info{
         justify-content: space-around;
+        user-select: none;
     }
 
     body section.info .container-info .tarjeta-shield{

@@ -191,11 +191,12 @@
     body main.main .main-container section.zonas{
         display: flex;
         flex-wrap: wrap;
-        max-width: 100%;
+        max-width: 800px;
     }
 
     body main.main .main-container section.zonas article.card-bg.marvel{
-        width: 400px;
+        width: 350px;
+        user-select: none;
         transition: 0.7s;
     }
 
@@ -204,7 +205,8 @@
     }
 
     body main.main .main-container section.zonas article.card-bg.dc{
-        width: 400px;
+        width: 350px;
+        user-select: none;
         transition: 0.7s;
 
     }
@@ -215,8 +217,9 @@
 
 
     body main.main .main-container section.zonas article.card-bg.anime{
-        width: 400px;
+        width: 350px;
         transition: 0.7s;
+        user-select: none;
     }
 
     body main.main .main-container section.zonas article.card-bg.anime:hover{
@@ -290,7 +293,7 @@
     }
 
     body main.main .main-container section.zonas{
-        max-width: 1000px;
+    
     }
 
     
