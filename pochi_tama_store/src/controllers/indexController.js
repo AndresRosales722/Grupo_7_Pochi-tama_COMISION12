@@ -13,8 +13,15 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 let controller = {
     index:(req,res) => {
-        db.Product.findAll()
+        db.Product.findAll({
+            include: [
+                {association: 'subcategory'},
+                {association: 'images'},
+      
+            ]
+        })
         .then((products) => {
+            res.send(products)
             res.render('index',{
                 products,
                 toThousand,
@@ -23,6 +30,7 @@ let controller = {
                 categories
             })
         }) 
+        .catch((error)=>console.log(error))
     }
 }
 

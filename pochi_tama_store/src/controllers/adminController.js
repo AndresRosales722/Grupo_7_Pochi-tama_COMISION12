@@ -5,27 +5,32 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const writeJson = dataBase => fs.writeFileSync(productsFilePath,JSON.stringify(dataBase), 'utf-8')
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 let {validationResult} = require('express-validator')
-const db = require('../database/models')
-const {Op} = require('sequelize')
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const { Op } = require("sequelize");
 
 
 let controller = {
     
-	index:(req,res)=>{
-        res.render('products/products',{      
-            products,
-            toThousand,
-			session: req.session
-        })
+	list:(req,res)=>{
+		db.Product.findAll()
+		.then((products) => {
+			res.render('products/products',{
+				products,
+				toThousand,
+				session: req.session,	
+			})
+		}) 
+		.catch((error)=>console.log(error))
     },
 
-    create:(req,res)=>{
+    add:(req,res)=>{
         res.render('admin/products/productCreate',{
 			session: req.session
 		})
     },
 
-    store:(req,res)=>{
+    create:(req,res)=>{
 		let errors = validationResult(req)
 
 		if (errors.isEmpty()) {

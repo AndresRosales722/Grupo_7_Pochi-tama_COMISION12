@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    const alias = "Category"
+    const alias = "OrderItem"
     const cols = {
         id:{
             type: dataTypes.INTEGER(11).UNSIGNED,
@@ -7,11 +7,15 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true,
             allowNull: false
         },
-        name: {
-            type: dataTypes.STRING(45),
+        order_id: {
+            type: dataTypes.INTEGER(11),
             allowNull: false,
         },
-        category_id:{
+        product_id:{
+            type: dataTypes.INTEGER(11),
+            allowNull:false
+        },
+        quantity:{
             type: dataTypes.INTEGER(11),
             allowNull:false
         }
@@ -19,18 +23,11 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     const config = {
-        tableName: "categories",
+        tableName: "order_items",
         timestamps: false
     }
 
     const Category = sequelize.define(alias, cols, config)
-
-       Category.associate = function (models) {
-            Category.hasMany(models.Subcategory,{
-                as: 'subcategories',
-                foreignKey: 'category_id'
-            })
-        }
 
     return Category
 }

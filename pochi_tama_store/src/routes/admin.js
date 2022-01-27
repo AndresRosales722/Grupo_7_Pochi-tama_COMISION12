@@ -7,13 +7,13 @@ let productFormValidator = require('../validations/productFormValidator')
 
 
 // listado de productos
-router.get('/', /* userAdminCheck, */ controller.index)
+router.get('/', /* userAdminCheck, */ controller.list)
 
 // Formulario de creacion de un producto
-router.get('/Create/', /* userAdminCheck, */ controller.create);
+router.get('/Create/', /* userAdminCheck, */ controller.add);
 
 // Donde viaja la informacion de creacion del producto
-router.post('/',upload.single('image'), /* userAdminCheck, */productFormValidator,controller.store);  
+router.post('/',upload.single('image'), /* userAdminCheck, */productFormValidator,controller.create);  
 
 // Formulario de edicion de un producto
 router.get('/:id/edit', /* userAdminCheck, */ controller.edit);

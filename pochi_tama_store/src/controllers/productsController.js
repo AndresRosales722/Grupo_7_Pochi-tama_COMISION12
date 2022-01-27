@@ -1,8 +1,8 @@
 let {products, categories} = require('../database/dataBase')
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-const db = require('../database/models');
-const sequelize = db.sequelize;
-const { Op } = require("sequelize");
+const db = require('../database/models'); // Requerimos los modelos
+const sequelize = db.sequelize; 
+const { Op } = require("sequelize");  // Requerimos los operadores de Sequelize
 
 let controller = {
     
@@ -15,23 +15,8 @@ let controller = {
                 session: req.session
             })
         })
+        .catch((error)=>console.log(error))
 
-
-
-
-
-
-
-
-    /* let productId = +req.params.id
-
-    let product = products.find(product => product.id === productId)
-
-        res.render('products/detail',{
-            product,
-            toThousand,
-            session: req.session
-        }) */
     },
     category: (req,res) =>{
         let categoryId = +req.params.id;
