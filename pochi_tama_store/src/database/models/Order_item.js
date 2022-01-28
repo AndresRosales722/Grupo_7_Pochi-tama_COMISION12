@@ -8,15 +8,15 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         order_id: {
-            type: dataTypes.INTEGER(11),
+            type: dataTypes.INTEGER(11).UNSIGNED,
             allowNull: false,
         },
         product_id:{
-            type: dataTypes.INTEGER(11),
+            type: dataTypes.INTEGER(11).UNSIGNED,
             allowNull:false
         },
         quantity:{
-            type: dataTypes.INTEGER(11),
+            type: dataTypes.INTEGER(11).UNSIGNED,
             allowNull:false
         }
        
@@ -27,7 +27,18 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     }
 
-    const Category = sequelize.define(alias, cols, config)
+    const Order_items = sequelize.define(alias, cols, config)
 
-    return Category
+    Order_items.associate = models => {
+        Order_items.belongsTo(models.Order, {
+            as:"order",
+            foreignKey: "order_id"
+        })
+        Order_items.belongsTo(models.Product, {
+            as:"products",
+            foreignKey: "product_id"
+        })
+    }
+
+    return Order_items
 }

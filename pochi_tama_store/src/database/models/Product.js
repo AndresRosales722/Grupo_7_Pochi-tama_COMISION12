@@ -1,6 +1,6 @@
 module.exports = (sequelize, dataTypes) => {
-    const alias = "Product"  // Nombre del modelo
-    const cols = {           // Configuracion de las columnas y sus datos
+    const alias = "Product" 
+    const cols = {          
         id:{
             type: dataTypes.INTEGER(11).UNSIGNED,
             primaryKey: true,
@@ -30,21 +30,25 @@ module.exports = (sequelize, dataTypes) => {
     
     }
 
-    const config = {   // 
-        timestamp: true,
+    const config = {  
         tableName: "products",
+        timestamp: true,
     }
 
     const Product = sequelize.define(alias, cols, config)
 
-    Product.associate = function (models) {       // Hacemos la asociacion con el modulo de subcategory y ProductImage
+    Product.associate = models => {  
         Product.belongsTo(models.Subcategory,{
-            as: 'subcategory',
+            as: 'subcategories',
             foreignKey: 'subcategory_id'
         })
         Product.hasMany(models.ProductImage,{
-            as: 'images',
+            as: 'productImages',
             foreignKey: 'product_id'
+        })
+        Product.hasMany(models.OrderItem, {
+            as: "order_items",
+            foreignKey: "product_id"
         })
         
     }

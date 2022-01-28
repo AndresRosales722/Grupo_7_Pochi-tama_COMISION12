@@ -15,13 +15,12 @@ let controller = {
     index:(req,res) => {
         db.Product.findAll({
             include: [
-                {association: 'subcategory'},
-                {association: 'images'},
-      
+                {association: 'subcategories'},
+                {association: 'productImages'},
             ]
         })
         .then((products) => {
-            res.send(products)
+            /* res.send(products) */
             res.render('index',{
                 products,
                 toThousand,
