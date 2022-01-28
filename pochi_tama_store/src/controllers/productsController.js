@@ -4,10 +4,20 @@ const db = require('../database/models'); // Requerimos los modelos
 const sequelize = db.sequelize; 
 const { Op } = require("sequelize");  // Requerimos los operadores de Sequelize
 
+const Products = db.Product;
+const Categories = db.Category;
+const Subcategories = db.Subcategory;
+
+
 let controller = {
     
     detail:(req,res)=>{
-        db.Product.findByPk(req.params.id)
+        Products.findOne({
+            where: {
+                id: req.params.id
+            },
+            include: [{association:'productImages'}]
+        })
         .then((product) => {
             res.render('products/detail',{
                 product,
