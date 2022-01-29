@@ -2,6 +2,9 @@ const { users, writeUsersJSON } = require('../database/dataBase')
 const { validationResult } = require ('express-validator') // Requerimos el metodo validationResult de express-validator
 const bcrypt = require ('bcryptjs')
 
+
+
+
 let controller = {
     login: (req, res) => {
         res.render('users/login',{

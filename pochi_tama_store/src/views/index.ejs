@@ -84,7 +84,7 @@
                 <% products.forEach(product => { %>
                 <article class="producto">
                     <div class="caja">
-                        <a href="/products/detail/<%- product.id %>"><img src="/img/imagenes home/<%- product.image %>" alt=""></a>
+                        <a href="/products/detail/<%- product.id %>"><img src="/img/imagenes home/<%- product.productImages[0].image %>" alt=""></a>
                     </div>
                 <div class="container-product-index">         
                 <a href="/products/detail/<%- product.id %>" class="product-name"><%- product.name %></a>

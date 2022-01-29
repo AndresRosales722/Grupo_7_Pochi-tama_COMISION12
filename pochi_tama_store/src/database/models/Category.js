@@ -11,7 +11,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(45),
             allowNull: false,
         },
-        category_id:{
+        banner:{
             type: dataTypes.INTEGER(11),
             allowNull:false
         }

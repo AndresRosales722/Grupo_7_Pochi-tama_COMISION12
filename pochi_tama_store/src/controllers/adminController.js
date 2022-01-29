@@ -10,6 +10,7 @@ const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 
 
+
 let controller = {
     
 	list:(req,res)=>{
