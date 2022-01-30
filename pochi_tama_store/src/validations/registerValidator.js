@@ -1,8 +1,9 @@
 // Requeriamos el metodo Check de express validator
 // Validaciones
 const { check, body } = require('express-validator');
-const { users } = require('../database/dataBase')
+const db = require('../database/models')
 
+const Users = db.User
 
 module.exports = [
     check('name')
@@ -18,16 +19,18 @@ module.exports = [
     .withMessage('Debes ingresar un email válido'),
 
     body('email').custom(value => {
-       let user = users.find(user=>{ 
-            return user.email == value 
-        })
-
+      return Users.findOne({
+          where: {
+              email: value
+          }
+      })
+      .then((user) => {
         if(user){
-            return false
-        }else{
-            return true
+            return Promise.reject('Email ya registrado')
         }
-    }).withMessage('Email ya registrado'),
+      })
+
+    }),
 
     check('pass1')
     .notEmpty()

@@ -1,7 +1,8 @@
 const { users, writeUsersJSON } = require('../database/dataBase')
 const { validationResult } = require ('express-validator') // Requerimos el metodo validationResult de express-validator
 const bcrypt = require ('bcryptjs')
-
+const db = require('../database/models')
+const Users = db.User
 
 
 
@@ -55,40 +56,23 @@ let controller = {
         let errors = validationResult(req);
        
         if(errors.isEmpty()){
-            let lastId = 1;
-
-            users.forEach(user => {
-                if(user.id > lastId){
-                    lastId = user.id
-                }
-            });
-
             let { name, last_name, email, pass1 } = req.body
-
-            let newUser = {
-                id: lastId + 1,
+            Users.create({
                 name,
                 last_name,
-                email, 
-                pass: bcrypt.hashSync(pass1,12),
-                avatar: req.file ? req.file.filename : "default-image.png",
-                rol: "ROL_USER",
-                tel: "",
-                address: "",
-                cp: "",
-                city: "",
-                province: ""
-            }
-
-            users.push(newUser)
-
-            writeUsersJSON(users)
-
-            res.redirect('/users/login')
+                email,
+                pass: bcrypt.hashSync(pass1, 10),
+                avatar: req.file ? req.file.filename : 'default-image.png',
+                rol: 0
+            })
+            .then(() => {
+                res.redirect('/users/login')
+            })
 
         }else{
             res.render('/users/register', {
                 errors: errors.mapped(),
+                old: req.body,
                 session: req.session
             })
         }
