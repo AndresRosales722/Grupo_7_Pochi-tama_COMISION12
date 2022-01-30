@@ -11,7 +11,7 @@ router.get('/productCart',controller.cart)  // Carrito de compras
 router.get('/category/:id', controller.category)
 
 /* GET - List of product (Subcategories) */
-router.get('/subcategory/:subcategory/:categoryId', controller.subcategory)
+router.get('/subcategory/:subcategory/:category_id', controller.subcategory)
 
 /* GET Buscador */
 router.get('/search',controller.search)

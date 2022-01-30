@@ -1,4 +1,3 @@
-/* let {products, categories} = require('../database/dataBase') */
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const db = require('../database/models'); 
 const sequelize = db.sequelize; 
@@ -29,7 +28,6 @@ let controller = {
 
     },
     category: (req,res) =>{
-
         Categories.findOne({
             where:{
                 id: req.params.id
@@ -74,7 +72,7 @@ let controller = {
             }]
         })
         .then((subcategory) => {
-            Categories.findByPk(req.params.categoryId ,{
+            Categories.findByPk(req.params.category_id ,{
                 include:[{association:'subcategories'}]
             })
             .then((category) => {
@@ -100,7 +98,7 @@ let controller = {
         Products.findAll({
             where:{
                 name:{
-                    [Op.like]: `%${req.query.keywords}`
+                    [Op.substring]: req.query.keywords
                 }
             },
             include: [{association:'productImages'}]
