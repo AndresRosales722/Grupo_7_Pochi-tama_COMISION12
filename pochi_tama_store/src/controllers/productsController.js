@@ -96,16 +96,23 @@ let controller = {
         })
     },
 
-    search: (req,res)=>{
-        let keywords = req.query.keywords.trim().toLowerCase()
-
-        let result = products.filter(product => product.name.toLowerCase().includes(keywords))
-        
-        res.render('searchResult',{
-            result,
-            search: keywords,
-            session: req.session
+    search: (req, res) => {
+        Products.findAll({
+            where:{
+                name:{
+                    [Op.like]: `%${req.query.keywords}`
+                }
+            },
+            include: [{association:'productImages'}]
         })
+        .then((result) => {
+            res.render('searchResult', {
+                result,
+                search: req.query.keywords,
+                session: req.session
+            })
+        })
+
     }
 }
 
