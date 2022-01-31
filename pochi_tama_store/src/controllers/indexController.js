@@ -21,7 +21,6 @@ let controller = {
             ]
         })
         .then((products) => {
-            /* res.send(products)  */
             res.render('index',{
                 products,
                 toThousand,

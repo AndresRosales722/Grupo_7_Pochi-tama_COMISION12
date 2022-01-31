@@ -241,8 +241,7 @@
     }
 
     body main.main .main-container .section-vendido article .caja{
-        width: 230px;
-        height: 230px;
+        width: 100%;
     }
 
     body section.info .container-info{
@@ -288,8 +287,7 @@
     }
 
     body main.main .main-container .section-vendido article.producto .caja{
-        width: 250px;
-        height: 250px;
+        width: 100%;
     }
 
     body main.main .main-container section.zonas{
