@@ -4,7 +4,7 @@
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 999; /* Stay on top */
-    top: 105px;
+    top: 95px;
     left: 0;
     height: 45vh;
     background-color: #F1F1F1; /* Black*/
@@ -61,6 +61,10 @@
   }
 
 /* Main */
+.container{
+  padding: 10px;
+}
+
 .categories {
   display: flex;
   flex-direction: column;

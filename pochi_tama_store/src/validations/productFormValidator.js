@@ -5,17 +5,15 @@ module.exports = [
     .notEmpty()
     .withMessage('El campo nombre es obligatorio').bail()
     .isLength({min:5, max:50})
-    .withMessage('El nombre debe tener entre 5 y 50 caracteres')
-    ,
-    
-    
-    /* check('category')
+    .withMessage('El nombre debe tener entre 5 y 50 caracteres'),
+     
+    check('category')
     .notEmpty()
-    .withMessage('Debes elegir una categoria'),
+    .withMessage('Debes elegir una categoría'),
 
     check('subcategory')
     .notEmpty()
-    .withMessage('Debes elegir una subcategoria'), */
+    .withMessage('Debes elegir una subcategoría'),
 
     check('price')
     .notEmpty()
@@ -28,6 +26,6 @@ module.exports = [
     .withMessage('Solo numeros'),
 
     check('description')
-    .isLength({max:300})
+    .isLength({max:500})
     .withMessage('El nombre puede tener hasta 300 caracteres')
 ]

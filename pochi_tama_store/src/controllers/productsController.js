@@ -107,7 +107,8 @@ let controller = {
             res.render('searchResult', {
                 result,
                 search: req.query.keywords,
-                session: req.session
+                session: req.session,
+                toThousand
             })
         })
 

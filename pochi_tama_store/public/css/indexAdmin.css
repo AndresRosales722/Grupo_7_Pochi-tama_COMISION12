@@ -115,11 +115,7 @@
 .panel-admin .tablas table tbody tr {
     margin-bottom: 15px;
 }
-/*.panel-admin .tablas table tbody tr td {
-    text-align: right;
-    padding-right: 15px;;
-    position: relative;
-}*/
+
 .panel-admin .tablas table tbody tr form {
     display: inline-block;
 }

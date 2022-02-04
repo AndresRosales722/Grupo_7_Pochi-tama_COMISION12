@@ -130,8 +130,8 @@ body.register .form-container{
 .button-container {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
     width: 100%;
 }
 
@@ -169,6 +169,7 @@ body.register label {
     margin-bottom: 5px;
     letter-spacing: 0.5px;
     user-select: none;
+    color: #2c3e50;
 }
 
 

@@ -103,12 +103,6 @@
     
 }
 
-/*
-.header-admin .container-header-admin .container-header-bot-admin .nav-var-admin2{
-display: flex;
-flex-direction: row;
-} */
-
 .bot-list-admin {
     display: flex;
     justify-content: space-evenly;

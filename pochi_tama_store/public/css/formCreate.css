@@ -15,6 +15,15 @@ body.admin .form-container-admin .input-admin{
     margin-top: 20px;
 }
 
+body.admin .form-container-admin select.form-select{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    width: 100%;
+    padding-left: 10px;
+    outline: none;
+}
+
 body.admin .form-container-admin .form-admin .input-admin:nth-child(4n){
     margin-bottom: 20px;
 }

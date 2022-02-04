@@ -5,11 +5,11 @@
 }
 
 .admin-stock .datos-admin{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .admin-stock .datos-admin .cajita-datos-1{
