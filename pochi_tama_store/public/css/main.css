@@ -118,7 +118,6 @@ body .main-container .section-productos article .caja img {
     justify-content: space-between;
     text-align: center;
     max-width: 450px;
-    margin: 0 auto;
 }
 
 .section-vendido article.producto{
