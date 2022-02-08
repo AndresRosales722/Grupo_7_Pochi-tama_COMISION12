@@ -134,9 +134,9 @@ let controller = {
                 })
                 .then((images) => {
                     images.forEach((image) => {
-                        fs.existsSync(path.join(__dirname,'../public/img/products/'), image.image)
-                        ? fs.unlinkSync(`${path.join(__dirname,'../public/img/products/')}${image.image}`)
-                        : console.log('No se encontró el archivo')
+                        fs.existsSync('./public/img/products/', image.image)
+                        ? fs.unlinkSync(`${'./public/img/products/'}${image.image}`)
+                        : console.log('No se encontro el archivo')
                     })
                     ProductImages.destroy({
                         where: {

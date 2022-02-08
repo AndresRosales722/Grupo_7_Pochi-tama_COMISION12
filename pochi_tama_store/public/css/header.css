@@ -7,6 +7,38 @@ nav .navigation-bar
     display: none;
 }
 
+ul.menu li .desplegable{
+    background-color: #f1f1f1;
+    flex-direction: column;
+    position: absolute;
+    width: 170px;
+    top: 145px;
+    display: flex;
+}
+
+ul.menu li .desplegable a {
+    width: 100%;
+    padding: 15px;
+    color: black;
+}
+
+ul.menu li .desplegable a:hover{
+    background-color:rgb(218, 132, 98) ;
+}
+
+ul.menu li:first-child{
+    width: 170px;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.menu li:hover .desplegable{
+    display: flex;
+}
+
 header {
     position: sticky;
     top: 0;

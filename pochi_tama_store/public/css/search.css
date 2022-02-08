@@ -3,12 +3,23 @@ body h2.subtitle{
     font-size: 1.5rem;
     line-height: 1.5;
     padding: 20px 5px;
-    width: 95%;
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
 }
 
 body .container-search-page{
     padding: 10px;
     max-width: 950px;
+    width: 100%;
+}
+
+@media(min-width:576px){
+
+    body h2.subtitle{
+        max-width: 560px;
+    }
+    
 }
 
 @media(min-width:768px){
@@ -18,4 +29,15 @@ body .container-search-page{
         padding: 30px 15px;
     }
 
+    body h2.subtitle{
+        max-width: 800px;
+    }
+}
+
+@media(min-width:992px){
+
+    body h2.subtitle{
+        max-width: 1000px;
+    }
+    
 }
