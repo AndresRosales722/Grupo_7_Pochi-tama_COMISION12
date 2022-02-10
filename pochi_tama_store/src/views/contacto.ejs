@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+    
+    <%- include('./partials/header.ejs') %>
+    
+    <div class="contact">
+        <div class="container-god">  
+            <div class="container">
+                <h2>Mendoza</h2>
+                <div class="container-second">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9205.16044915725!2d-68.80045604844874!3d-32.90133049217035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0ea0bc78593d%3A0x61932a53d62932c7!2sMendoza%20Plaza%20Shopping!5e0!3m2!1ses-419!2sar!4v1644444673386!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contactanos-container">
+            <div class="contactanos">
+                <h4></h4>
+                <ul>
+                    <li class="row">
+                        <img src="/img/iconos/email.png" alt="icono de email">
+                        <label>PochiTamaStore@gmail.com</label>
+                    </li>
+                    <li class="row">
+                        <img src="/img/iconos/whatsapp.png" alt="icono de whatsapp">
+                        <label>+54 2613023687</label>
+                    </li>
+                    <li class="row">
+                        <img src="/img/iconos/marcador-de-posicion.png" alt="icono de ubicacion">
+                        <label>Mendoza Plaza Shopping-795</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="login">
+            <h2>Nuestro equipo se pondra en contacto contigo</h2>
+            <div class="form-container">
+                <form action="" method="">
+                    <div class="form">
+                        <div class="input-container">
+                            <label for="nombre" class="control-label">Nombre y apellido</label>
+                            <input class="input-style" type="text" name="nombre" placeholder="Ej: Andres Rosales">
+                        </div> 
+                        <div class="input-container">
+                            <label for="email" class="control-label">Email</label>
+                            <input class="input-style" type="email" name="email" placeholder="Ej: juanperez@gmail.com">
+                        </div>  
+                        <div class="input-container">
+                            <label for="mensaje" class="control-label">Mensaje</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>                  
+                        </div>
+                        <div class="button-container">
+                            <button type="submit" class="btn btn-submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>

@@ -30,6 +30,12 @@ let controller = {
             })
         }) 
         .catch((error)=>console.log(error)) 
+    },
+    contacto:(req,res) => {
+        res.render('contacto',{
+            session: req.session,
+        
+        })
     }
 }
 

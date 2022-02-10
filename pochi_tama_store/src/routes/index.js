@@ -4,4 +4,7 @@ const controller = require('../controllers/indexController') // Requerimos el co
 
 router.get('/',controller.index) // Hacemos la conexion con el medoto index del controlado 
 
+router.get('/contacto',controller.contacto) 
+
+
 module.exports = router // Para exportarlo 

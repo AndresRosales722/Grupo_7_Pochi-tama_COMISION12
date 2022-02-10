@@ -12,18 +12,24 @@ ul.menu li .desplegable{
     flex-direction: column;
     position: absolute;
     width: 170px;
-    top: 145px;
+    top: 140px;
+    display: none;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175)
+}
+
+ul.menu li:hover .desplegable{
     display: flex;
 }
 
 ul.menu li .desplegable a {
     width: 100%;
     padding: 15px;
-    color: black;
+    color: #2c3e50;
+    transition: all 400ms ease;
 }
 
 ul.menu li .desplegable a:hover{
-    background-color:rgb(218, 132, 98) ;
+    background-color:#cecece;
 }
 
 ul.menu li:first-child{
@@ -35,8 +41,13 @@ ul.menu li:first-child{
     justify-content: center;
 }
 
-ul.menu li:hover .desplegable{
+ul.menu li{
+    width: 140px;
+    padding: 10px;
+    height: 50px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -339,6 +350,10 @@ i.fa-search {
 
 /* Escritorio */
 @media screen and (min-width: 992px) {
+
+    ul.menu li .desplegable{
+        width: 190px;
+    }
 
     .main-header .logo{
         width: 130px;

@@ -1,0 +1,102 @@
+.contact{
+    padding: 10px;
+    max-width: 550px;
+    margin: 0 auto;
+    margin: 3rem auto;
+}
+
+.contact .container-god{
+    padding: 10px;
+}
+
+.contact .container-god .container h2{
+    margin: 15px 0px;
+    color: #2c3e50;
+}
+
+.contact .container{
+    border: 1px solid silver;
+    background-color: #f1f1f1;
+}
+
+.contact .container .container-second{
+    width: 100%;
+}
+
+.contact .contactanos img{
+    width: 30px;
+}
+
+.contact .contactanos-container{
+    padding:10px;
+}
+
+.contact .contactanos-container .contactanos{
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 2px;
+    background-color: white;
+    max-width: 300px;
+}
+
+.contact .contactanos-container .contactanos ul li.row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact .contactanos-container .contactanos ul li.row label{
+    margin-left: 10px;
+}
+
+.contact .login{
+    padding: 10px;
+}
+
+.contact .login h2{
+    margin: 1.5rem 0rem;
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.4rem;
+}
+
+.contact .login .form-container{
+    border-right: 10px solid var(--orange);
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+    border-left: 1px solid silver;
+    border-radius: 2px;
+}
+
+.contact .login .form-container form .input-container textarea{
+    border-radius: 5px;
+    height: 2.5rem;
+    padding: .5rem;
+    border: 1px solid lightgrey;
+    background-color: #f2f2f2;
+    width: 100%;
+    outline: none;
+    height: 150px;
+}
+
+.contact .login .form-container form .input-container label{
+    margin-bottom: 5px;
+}
+
+iframe{
+    width: 100%;
+}
+
+@media(min-width: 992px){
+    .contact{
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .contact .contactanos-container{
+        order: 1;
+    }
+}
