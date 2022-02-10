@@ -10,7 +10,7 @@
 }
 
 .contact .container-god .container h2{
-    margin: 15px 0px;
+    margin: 10px 0px;
     color: #2c3e50;
 }
 
@@ -93,10 +93,48 @@ iframe{
         max-width: 100%;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contact .container{
+        width: 450px;
     }
 
     .contact .contactanos-container{
         order: 1;
+        position: relative;
+        right: 250px;
+        bottom: 30px;
+        
     }
+
+    .contact .contactanos-container .contactanos{
+        max-width: 100%;
+        width: 450px;
+    }
+}
+
+@media(min-width: 1200px){
+
+    .contact{
+        max-width: 1100px;
+    }
+
+    .contact .container{
+        width: 500px;
+    }
+
+    .contact .login{
+        width: 500px;
+    }
+
+    .contact .contactanos-container{
+        right: 260px;
+    }
+
+    .contact .contactanos-container .contactanos{
+        width: 500px;
+    }
+
 }
