@@ -1,139 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
+        
+        <%- include('../partials/head.ejs')  %> 
+        
+</head>
+<body>
+        
+        <%- include('../partials/header.ejs')  %>    
+        
+        <div class="cart">
+                <div class="container-cart">
+                        <h2>Carrito de compras</h2>
+                        
+                        <form action="">
+                                <div class="container-form">
+                                        <section class="container-product">
+                                                <div class="product-1">
+                                                        <figure><a href=""><img src="/img/casco/casco1.png" alt=""></a></figure>
+                                                </div> 
+                                                <div class="detail">
+                                                        <h3>Producto de prueba</h3>
+                                                        <div class="container-cantidad">
+                                                                <input type="number">
+                                                        </div>
+                                                        <div class="price-cart">
+                                                                <span>10.000</span>             
+                                                        </div>
+                                                        <div class="button-trash">
+                                                                <span><i class="fas fa-trash"></i></span>
+                                                        </div>
+                                                </div>
+                                        </section>
+                                        
+                                        <section class="container-subtotal">
+                                            <div class="subtotal">
+                                                <span>Subtotal</span>
+                                                <span>$ 5.000</span>
+                                            </div>    
+                                        </section>
 
+                                        <section class="container-send">
 
- <%- include('../partials/head.ejs')  %> 
+                                             <div class="medios">
+                                                <span><i class="fas fa-truck"></i></span>
+                                                <span>Medios de envio</span>
+                                             </div>  
+                                             
+                                             <div class="postal">
+                                                <div class="input-postal">
+                                                        <input type="number" name="" id="">
+                                                </div>
 
+                                                <div class="calcular">
+                                                        <button>
+                                                                <span>CALCULAR</span>
+                                                        </button>
+                                                </div>
+                                             </div>
 
-<body class="body-header" style="background: linear-gradient(rgb(255, 164, 89), rgba(100, 68, 241, 0.651));">
-    
-    <%- include('../partials/header.ejs')  %> 
-
-    <main>
-
-        <br>
-        <div class="cart-buys-p">
-             <p >CARRITO DE COMPRAS</p>
-        </div>
-        <br>
-        <br>
-        <hr>
-
-        <div class="space-buys">
-            <div>
-                <article class="art-buys">
-                    <div class="image-compra">
-                        <img src="/img/duende/duende1.png" alt="" class="img-duende">
-                        <div class="name-product1">
-                            <p>Baby Yoda</p>
-                        </div>
-                        <div class="circulo-stock1">
-                            stock
-                        </div>
-                        <div class="precio1">
-                            <p>precio</p>   
-                        </div>
-                        <div class="preciofinal1">
-                            <p>precio final</p>
-                        </div>
-                        <div>
-                            <i class="fas fa-plus" id="sum-icon1" style="position: relative; left: 70px; top: 7px;"></i>
-                            <input type="number" name="cantidad" id="cantidad" class="cuadrado-cantidad1">
-                            <i class="fas fa-minus" id="min-icon1" style="position: relative; left: -5px; top: -40px;"></i>
-                        </div>
-                       
-                    </div>
-                </article>
-                <br>
-                <article class="art-buys">
-                    <div class="image-compra">
-                        <img src="/img/casco/casco3.jpg" alt="" class="img-casco">
-                        <div class="name-product2">
-                            <p>Casco Boba Fett</p>
-                        </div>
-                        <div class="circulo-stock2">
-                            stock
-                        </div>
-                        <div class="precio2">
-                            <p>precio</p>
-                        </div>
-                        <div class="preciofinal2">
-                            <p>precio final</p>
-                        </div>
-                        <div>
-                            <i class="fas fa-plus" id="sum-icon2" style="position: relative; left: 70px; top: 7px;"></i>
-                            <input type="number" name="cantidad" id="cantidad" class="cuadrado-cantidad2">
-                            <i class="fas fa-minus" id="min-icon2" style="position: relative; left: -5px; top: -40px;"></i>
-                        </div>
-                    </div>
-                </article>
-                <br>
-                <article class="art-buys">
-                    <div class="image-compra">
-                        <img src="/img/productDetail/kirby-1.jpg" alt="" class="img-guante">
-                        <div class="name-product3">
-                            <p>kirby</p>
-                        </div>
-                        <div class="circulo-stock3">
-                            stock
-                        </div>
-                        <div>
-                            <p class="precio3">precio</p>
-                            <p class="preciofinal3">precio final</p>
-                        </div>
-                        <div>
-                            <i class="fas fa-plus" id="sum-icon3" style="position: relative; left: 70px; top: 7px;"></i>
-                            <input type="number" name="cantidad" id="cantidad" class="cuadrado-cantidad3">
-                            <i class="fas fa-minus" id="min-icon3" style="position: relative; left: -5px; top: -40px;"></i>
-                        </div>
-                    </div>
-                </article>
-                <br>
-            </div>
-            <article>
-                <div class="cuadrado-buy">
-                    <div>
-                        <p class="precio4">precio</p>
-                        <p class="preciofinal4">precio final</p>
-                    </div>
-
-                    <h4 class="objects-izq1">SUBTOTAL (sin envio):</h4>
-                    <br>
-                    <hr>
-
-                    <h4>MEDIOS DE ENVIOS:</h4>
-    
-                    <input class="codigo-postal" type="number" name="codigo postal" id="codigo postal"
-                        placeholder="Ingrese su codigo postal">
-                    <button class="boton-calcular" name="button">CALCULAR</button>
-                    <br>
-                    <br>
-                    <button class="boton-compra" name="button">
-                        <p>Correo Argentino - Envio a domicilio</p>
-                    </button>
-                    <button class="boton-compra" name="button">
-                        <p>Correo Argentino - Retiro sucursal</p>
-                    </button>
-                    <br>
-                    <br>
-                    <a href="https://www.correoargentino.com.ar/formularios/cpa" target="_blank" style="color:orange; opacity: 50%;">¿Cuál es mi código postal?</a>
-                    <br>
-                    <br>
-                    <hr>
-                    <h5 class="objects-izq2">TOTAL:</h5>
-                    <br>
-                    <button class="boton-compra" name="button">INICIAR COMPRA</button>
-                    <a href="/" style="color:orange; opacity: 50%;">ver más productos</a>
-                    <br>
-                    <br>
+                                             <div class="no-se">
+                                                     <a href="">No se mi codigo postal</a>
+                                             </div>
+                                             
+                                        </section>
+                                        
+                                </div>
+                        </form>
                 </div>
-            </article>
-
+                
         </div>
-    </main>
-
-    <%- include('../partials/footer.ejs')  %> 
-
+        
+        <%- include('../partials/footer.ejs')  %> 
+        
 </body>
-
 </html>
