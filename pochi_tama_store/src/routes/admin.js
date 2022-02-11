@@ -3,14 +3,14 @@ let router = express.Router()
 const upload = require('../middlewares/uploadProductFiles')  // Requerimos a multer
 let controller = require('../controllers/adminController')
 let productFormValidator = require('../validations/productFormValidator')
-/* let userAdminCheck= require('../middlewares/userAdminCheck') */
+let userAdminCheck= require('../middlewares/userAdminCheck') 
 
 
 // listado de productos
-router.get('/', /* userAdminCheck, */ controller.list)
+router.get('/',  userAdminCheck,  controller.list)
 
 // Formulario de creacion de un producto
-router.get('/Create/', /* userAdminCheck, */ controller.add);
+router.get('/Create/', userAdminCheck, controller.add);
 
 // Donde viaja la informacion de creacion del producto
 router.post('/',upload.single('image'), /* userAdminCheck, */productFormValidator,controller.create);  
