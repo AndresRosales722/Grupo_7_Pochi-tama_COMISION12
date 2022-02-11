@@ -1,5 +1,5 @@
 const {check,body} = require('express-validator') // Requeriamos el metodo Check de express validator
-const {users} = require('../database/dataBase')
+/* const {users} = require('../database/dataBase') */
 const bcrypt = require ('bcryptjs')
 const db = require('../database/models')
 const Users = db.User

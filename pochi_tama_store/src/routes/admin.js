@@ -13,13 +13,13 @@ router.get('/', /* userAdminCheck, */ controller.list)
 router.get('/Create/', /* userAdminCheck, */ controller.add);
 
 // Donde viaja la informacion de creacion del producto
-router.post('/',upload.array('image'), /* userAdminCheck, */productFormValidator,controller.create);  
+router.post('/',upload.single('image'), /* userAdminCheck, */productFormValidator,controller.create);  
 
 // Formulario de edicion de un producto
 router.get('/:id/edit', /* userAdminCheck, */ controller.edit);
 
 // Donde viaja la informacion de edicion
-router.put('/:id',upload.array('image'),/*  userAdminCheck,  */controller.update);
+router.put('/:id',upload.single('image'),/*  userAdminCheck,  */controller.update);
 
 // Eliminacion de un producto
 router.delete('/:id', /* userAdminCheck, */ controller.destroy);

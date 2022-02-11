@@ -187,13 +187,13 @@ i.fa-search {
 }
 
 
-.subcategory_menu.active {
+/* .subcategory_menu.active {
     display: block;
     background-color: var(--orange3);
     position: sticky;
     top: 155px;
     width: 100%;
-}
+} */
 
 .subcategory_menu .subcategory_header {
     display: flex;

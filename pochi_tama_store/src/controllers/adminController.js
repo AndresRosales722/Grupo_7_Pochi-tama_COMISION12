@@ -69,7 +69,7 @@ let controller = {
                     .catch(error => console.log(error))
                 }else {
                     ProductImages.create({
-                        image: 'default-image.jpg',
+                        image: 'default-image.png',
                         product_id: product.id
                     })
                     .then(() => {res.redirect('/admin')})
@@ -113,6 +113,7 @@ let controller = {
 
     update: (req, res) => {
         let errors = validationResult(req)
+       
         if(errors.isEmpty()){
             const {name, price, category, subcategory, description, discount} = req.body
             Products.update({
@@ -135,7 +136,7 @@ let controller = {
                 .then((images) => {
                     images.forEach((image) => {
                         fs.existsSync('./public/img/products/', image.image)
-                        ? fs.unlinkSync(`${'./public/img/products/'}${image.image}`)
+                        ? fs.unlinkSync(`./public/img/products/${image.image}`)
                         : console.log('No se encontro el archivo')
                     })
                     ProductImages.destroy({
@@ -145,7 +146,7 @@ let controller = {
                     })
                     .then(() => {
                         ProductImages.create({
-                            image: req.file ? req.file.filename : 'default-image.jpg',
+                            image: req.file ? req.file.filename : 'default-image.png',
                             product_id: req.params.id
                         })
                         .then(() => {
@@ -185,8 +186,8 @@ let controller = {
 		})
 		.then((images) => {
 			images.forEach((image) => {
-				fs.existsSync('./public/img/products/', image.image)
-				? fs.unlinkSync(`${'./public/img/products/'}${image.image}`)
+				fs.existsSync('../public/img/products/', image.image)
+				? fs.unlinkSync(`${'../public/img/products/'}${image.image}`)
 				: console.log('No se encontro el archivo')
 			})
 			ProductImages.destroy({

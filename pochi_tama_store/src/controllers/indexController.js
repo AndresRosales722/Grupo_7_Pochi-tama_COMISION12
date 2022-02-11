@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { users, writeUsersJSON , categories} = require('../database/dataBase')
+/* const { users, writeUsersJSON , categories} = require('../database/dataBase') */
 
 const db = require('../database/models');
 const sequelize = db.sequelize;
@@ -25,8 +25,8 @@ let controller = {
                 products,
                 toThousand,
                 session: req.session,
-                users,
-                categories
+               /*  users,
+                categories */
             })
         }) 
         .catch((error)=>console.log(error)) 

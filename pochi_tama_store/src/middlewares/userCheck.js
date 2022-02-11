@@ -1,7 +1,7 @@
-const USER_LOGIN = "USER"
+const USER_LOGIN = 0
 
 function userCheck(req,res,next){
-    if(req.session.user.rol === 'ROL_USER'){
+    if(req.session.user.rol == 0){
         next()
     }else{
         res.redirect('/')
