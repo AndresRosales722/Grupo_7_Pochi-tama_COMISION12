@@ -69,7 +69,7 @@ let controller = {
                     .catch(error => console.log(error))
                 }else {
                     ProductImages.create({
-                        image: 'default-image.png',
+                        image: 'default-image.jpg',
                         product_id: product.id
                     })
                     .then(() => {res.redirect('/admin')})
@@ -146,7 +146,7 @@ let controller = {
                     })
                     .then(() => {
                         ProductImages.create({
-                            image: req.file ? req.file.filename : 'default-image.png',
+                            image: req.file ? req.file.filename : 'default-image.jpg',
                             product_id: req.params.id
                         })
                         .then(() => {

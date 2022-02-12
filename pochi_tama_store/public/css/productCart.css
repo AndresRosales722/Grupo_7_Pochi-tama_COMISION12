@@ -8,7 +8,9 @@
 }
 
 .cart .container-cart h2{
-    margin: 15px 0px;
+    margin: 0px 0px 20px 0px;
+    font-variant: small-caps;
+    text-align: center;
 }
 
 .cart .container-cart form .container-form{
@@ -98,7 +100,7 @@
     -webkit-box-shadow: 0 0 3px #ccc;
     box-shadow: 0 0 3px #ccc;
     color: #2c3e50;
-    border-bottom: 1px solid rgba(44, 62, 80, 0.2);
+    border: 2px solid #b794d5;
 }
 
 .cart .container-cart form .container-form section.container-subtotal .subtotal{

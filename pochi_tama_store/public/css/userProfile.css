@@ -114,6 +114,7 @@ section.info-cart .userProfile_box i::before{
 
     .userProfile_box {
         width: 100%;
+        border: #8e44ad 3px solid;
     }
 
     section.info-user{

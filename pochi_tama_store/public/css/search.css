@@ -14,6 +14,15 @@ body .container-search-page{
     width: 100%;
 }
 
+body .img-noresults {
+    display: flex;
+    width: 150px;
+    padding: 30px;
+    position: absolute;
+    left: 930px;
+    top: 145px;
+}
+
 @media(min-width:576px){
 
     body h2.subtitle{

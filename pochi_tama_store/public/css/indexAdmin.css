@@ -83,7 +83,7 @@
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--orange3);
+    color: #cca1de;
     font-weight: 500;
     
 }
@@ -96,16 +96,16 @@
     background-color: var(--orange3);
 }
 .panel-admin .tablas table thead tr th {
-    font-size: 1rem;
+    font-size: 12px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     padding: 1rem .5rem;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     border: 1px solid white;
 }
 .panel-admin .tablas table tbody tr td {
-    background-color: rgb(182, 182, 182) ;
+    background-color: #b470d0a1;
     text-align: center;
     padding: .9rem 0;
     border: 1px solid white;
