@@ -1,5 +1,5 @@
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+.container-d {
     position: relative;
   }
   
@@ -68,7 +68,7 @@
   /* Six columns side by side */
   .column {
     float: left;
-    width: 16.66%;
+    width: 25%;
   }
   
   /* Add a transparency effect for thumnbail images */
@@ -80,3 +80,101 @@
   .demo:hover {
     opacity: 1;
   }
+
+
+.product-detail{
+  padding: 30px 0px;
+}
+
+.product-detail section.panel-detail .panel-container .container-envios{
+  padding: 10px 10px;
+}
+
+.container-product-detail{
+  padding: 0px 15px;
+}
+
+section.panel-detail{
+  padding: 10px 10px;
+}
+
+.container-data{
+  padding: 10px 10px;
+}
+
+.container-data .title-product h1{
+  font-size: 1.8rem;
+  color: var(--orange3);
+}
+
+.container-data .price-product{
+  margin: 20px 0px;
+}
+
+.container-data .price-product p{
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.container-data .container-cantidad .cantidad-inp{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-data .container-cantidad label{
+  width: 50%;
+}
+
+.container-data .container-cantidad .cantidad-inp .input-cant-detail{
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.container-data .container-cantidad .cantidad-inp .input-cant-detail input{
+  width: 70px;
+  border: 0;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-bottom: 2px solid rgba(44, 62, 80, 0.5);
+  background: #ececec;
+  box-shadow: none;
+  outline: none;
+  height: 40px;
+  text-align: center;
+}
+
+.container-data .container-cantidad .cantidad-inp{
+  border-top: 1px solid rgba(44, 62, 80, 0.2);
+  border-bottom: 1px solid rgba(44, 62, 80, 0.2);
+  padding: 12px 0px;
+}
+
+.container-data .container-cantidad .cantidad-inp label{
+  font-size: 1.1rem;
+  color: var(--orange3);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+section.descripcion{
+  padding: 20px 10px;
+}
+
+section.descripcion .descripcion-container h2{
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: var(--orange3);
+}
+
+section.descripcion .descripcion-container p{
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+.panel-container .container-envios section.ubicacion-local .gratis.second{
+  top: 0;
+}
