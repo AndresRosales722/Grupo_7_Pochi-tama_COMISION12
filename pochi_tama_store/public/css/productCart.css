@@ -135,31 +135,31 @@
     font-size: 0.9rem;
 }
 
-.cart .container-cart form .container-form section.container-send{
+section.container-send{
     padding: 10px 0px;
     color: #2c3e50;
 }
 
-.cart .container-cart form .container-form section.container-send .medios{
+section.container-send .medios{
     margin-bottom: 10px;
 }
 
-.cart .container-cart form .container-form section.container-send .medios span{
+section.container-send .medios span{
     margin-left: 5px;
 }
 
-.cart .container-cart form .container-form section.container-send .postal{
+section.container-send .postal{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.cart .container-cart form .container-form section.container-send .postal .input-postal{ 
+section.container-send .postal .input-postal{ 
     width: 50%;
 }
 
-.cart .container-cart form .container-form section.container-send .postal .input-postal input{
+section.container-send .postal .input-postal input{
     width: 100%; 
     border: none;
     border-bottom-color: currentcolor;
@@ -172,11 +172,11 @@
     font-size: 1rem;
 }
 
-.cart .container-cart form .container-form section.container-send .postal .calcular{ 
+section.container-send .postal .calcular{ 
     width: 50%; 
 }
 
-.cart .container-cart form .container-form section.container-send .postal .calcular button{ 
+section.container-send .postal .calcular button{ 
     width: 100%;
     border: none;
     padding: 13px 10px;
@@ -188,21 +188,21 @@
     font-size: 0.9rem;
 }
 
-.cart .container-cart form .container-form section.container-send .postal .calcular button span{  
+section.container-send .postal .calcular button span{  
     font-weight: 500;
 }
 
-.cart .container-cart form .container-form section.container-send .no-se{
+section.container-send .no-se{
     width: 100%;  
     margin-top: 5px;
 }
 
-.cart .container-cart form .container-form section.container-send .no-se a{
+section.container-send .no-se a{
     color: var(--orange3);
     font-size: 0.8rem;
 }
 
-.cart .container-cart form .container-form .local{
+.local{
     padding: 20px 10px;
     color: #2c3e50;
     margin-top: 1rem;
@@ -210,47 +210,47 @@
     border-top: 1px solid rgba(44, 62, 80, 0.2) !important;
 }
 
-.cart .container-cart form .container-form .local span{
+.local span{
     margin-left: 5px;
 }
 
-.cart .container-cart form .container-form section.ubicacion-local{
+section.ubicacion-local{
     display: flex;
     padding: 15px;
     position: relative;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1), 0 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-.cart .container-cart form .container-form section.ubicacion-local .gratis{
+section.ubicacion-local .gratis{
     position: relative;
     bottom: 10px;
 }
 
-.cart .container-cart form .container-form section.ubicacion-local .gratis h2{
+section.ubicacion-local .gratis h2{
     color: #2c3e50;
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.cart .container-cart form .container-form section.ubicacion-local .detalle-ubicacion{
+section.ubicacion-local .detalle-ubicacion{
     padding: 5px 20px;
 }
 
-.cart .container-cart form .container-form section.ubicacion-local .detalle-ubicacion span{
+section.ubicacion-local .detalle-ubicacion span{
     color: #2c3e50;
     font-size: 0.8rem;
     opacity: 0.8;
 }
 
-.cart .container-cart form .container-form section.ubicacion-local .container-radio{
+section.ubicacion-local .container-radio{
     padding: 5px 0px;
 }
 
-.cart .container-cart form .container-form section.total-compra{
+ section.total-compra{
     padding: 10px;
 }
 
-.cart .container-cart form .container-form section.total-compra .total-resultado{
+ section.total-compra .total-resultado{
     margin: 25px 0px;
     display: flex;
     justify-content: space-between;
@@ -259,19 +259,19 @@
     color: var(--orange3)
 }
 
-.cart .container-cart form .container-form section.total-compra .total-resultado span{
+ section.total-compra .total-resultado span{
     font-weight: 500; 
 }
 
-.cart .container-cart form .container-form section.total-compra .total-resultado span.s-total{
+ section.total-compra .total-resultado span.s-total{
     margin-right: 15px;
 }
 
-.cart .container-cart form .container-form section.total-compra .container-compra{
+ section.total-compra .container-compra{
     padding: 10px 0px;
 }
 
-.cart .container-cart form .container-form section.total-compra .container-compra button{
+ section.total-compra .container-compra button{
     width: 100%;
     border: none;
     padding: 13px 8px;
@@ -284,7 +284,7 @@
     cursor: pointer;
 }
 
-.cart .container-cart form .container-form section.total-compra .container-compra button:hover{
+ section.total-compra .container-compra button:hover{
     background-color: #ff8f56;
 }
 
