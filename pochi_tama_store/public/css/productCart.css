@@ -142,6 +142,7 @@ section.container-send{
 
 section.container-send .medios{
     margin-bottom: 10px;
+    font-size: 0.9rem;
 }
 
 section.container-send .medios span{
@@ -170,6 +171,7 @@ section.container-send .postal .input-postal input{
     padding: 12px 10px;
     outline: none;
     font-size: 1rem;
+    color: #555;
 }
 
 section.container-send .postal .calcular{ 
@@ -200,6 +202,10 @@ section.container-send .no-se{
 section.container-send .no-se a{
     color: var(--orange3);
     font-size: 0.8rem;
+}
+
+section.container-send .no-se a:hover{
+    text-decoration: underline;
 }
 
 .local{
