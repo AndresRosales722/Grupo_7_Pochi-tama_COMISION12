@@ -4,6 +4,8 @@ const controller = require('../controllers/indexController') // Requerimos el co
 
 router.get('/',controller.index) // vista del home
 
+router.get('/comoComprar',controller.comprar) // vista como comprar
+
 router.get('/contacto',controller.contacto) // vista de contacto
 
 

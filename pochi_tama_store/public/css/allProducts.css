@@ -14,22 +14,22 @@ main.allProducts{
     color: var(--orange3);
 }
 
-.products-t ul{
+ul.atajos{
     display: flex;  
     font-size: 0.9rem; 
     gap: 2px;
     color: var(--bluedark);
 }
 
-.products-t ul li a{
+ul.atajos li a{
     color: var(--orange3);
 }
 
-.products-t ul li a.inicio{
-    color: rgba(44, 62, 80, 0.6);
+ul.atajos li a.inicio{
+    color: var(--bluedark)
 }
 
-.products-t ul li a.inicio:hover{
+ul.atajos li a.inicio:hover{
     text-decoration: underline;
     color: var(--bluedark);
 }
