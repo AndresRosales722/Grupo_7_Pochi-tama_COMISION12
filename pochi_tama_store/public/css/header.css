@@ -7,6 +7,53 @@ nav .navigation-bar
     display: none;
 }
 
+a.closebtn{
+    padding: 10px 20px;
+    font-size: 36px;
+    color: var(--bluedark);
+    text-align: center;
+    transition: all 400ms ease;
+}
+
+a.closebtn:hover{
+    background: #c1c1c1;
+}
+
+ul.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+ul.menu .user{
+    color: var(--bluedark);
+    width: 100%;
+    display: flex;
+}
+
+ul.menu .user a{
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid silver;
+    border-bottom: 1px solid silver; 
+    background: #f1f1f1;   
+    transition: all 400ms ease;
+    color: var(--bluedark);
+}
+
+ul.menu .user a:hover{
+    background: #cecece;;
+}
+
+ul.menu .user span{
+    font-family:'Roboto', sans-serif;
+}
+
+ul.menu .user .menu-user{
+    display: flex;
+    width: 100%;
+}
+
 ul.menu li .desplegable{
     background-color: #f1f1f1;
     flex-direction: column;
@@ -32,23 +79,14 @@ ul.menu li .desplegable a:hover{
     background-color:#cecece;
 }
 
-ul.menu li:first-child{
-    width: 170px;
-    padding: 10px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 ul.menu li{
-    width: 140px;
+    width: 100%;
     padding: 10px;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
 header {
     position: sticky;
@@ -76,6 +114,7 @@ header {
     font-size: 1.5rem;
     order: 0;
     color: white;
+    cursor: pointer;
 }
 
 .main-header .logo {
@@ -132,7 +171,6 @@ i.fa-search {
 
 .search-bar input::placeholder {
     color: var(--grey);
-    font-family: var(--font_poppins);
 }
 
 .search-bar button {
@@ -156,21 +194,39 @@ i.fa-search {
     order: 4;
     width: 100%;
     display: none;
+    position: absolute;
+    background: #f1f1f1;
+    top: 95px;
+    color: #2c3e50;
+    height: 100vh;
 }
 
 .main-header .navigation-bar ul.menu li {
-    padding: 10px 0;
+    padding: 20px ;
     cursor: pointer;
-    transition: color .5s ease;
+    transition: all 400ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(44, 62, 80, 0.25);
+}
+
+.main-header .navigation-bar ul.menu li i{
+    font-size: 1.5rem;
+}
+
+.main-header .navigation-bar ul.menu li a{
+    color: #2c3e50;
 }
 
 .main-header .navigation-bar ul.menu li:hover {
-    color: var(--primary);
+    background: #c1c1c1;
 }
 
 .main-header .navigation-bar .user-icons-mobile {
-    display: flex;
+    display: none;
     justify-content: flex-end;
+
 }
 
 .main-header .navigation-bar .user-icons-mobile i{
@@ -182,23 +238,42 @@ i.fa-search {
 /* Menu desplegable de subcategorías */
 
 .nav_menu {
-    font-family: var(--font_poppins);
     font-size: 1rem;
 }
 
 
 .subcategory_menu.active {
     display: block;
-    background-color: var(--orange3);
+    background-color: #f1f1f1;
     position: sticky;
     top: 155px;
     width: 100%;
+    height: 100vh;
 }
 
-.subcategory_menu .subcategory_header {
+.subcategory_menu .subcategory_header{
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    align-items: center;
+    transition: all 400ms ease;
+    border-bottom: 1px solid rgba(44, 62, 80, 0.25);
+}
+
+.subcategory_menu .subcategory_header:hover{
+    background: #c1c1c1;
+}
+
+.subcategory_menu .subcategory_header a{
+    color: var(--bluedark);
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+.subcategory_menu .subcategory_header a.closebtn{
+    padding: 10px 10px;
+    width: 60px;
+    text-align: center;
+    font-size: 36px;
 }
 
 .subcategory_menu .subcategory_header img {
@@ -207,8 +282,18 @@ i.fa-search {
     cursor: pointer;
 }
 
-.subcategory_menu ul {
-    padding: 15px;
+.subcategory_menu ul li{
+    padding: 20px;
+    border-bottom: 1px solid rgba(44, 62, 80, 0.25);
+    transition: all 400ms ease;
+}
+
+.subcategory_menu ul li:hover{
+    background: #c1c1c1;
+}
+
+.subcategory_menu ul li a{
+    color: var(--bluedark);
 }
 
 .header-opacity {
@@ -232,6 +317,19 @@ i.fa-search {
 /* MEDIA QUERIES */
 /* Tablet */
 @media (min-width: 768px){
+
+    ul.menu li .desplegable{
+        top: 45px;
+    }
+
+    ul.menu {
+        flex-direction: inherit;
+      }
+
+    .navigation-bar{
+        height: 50px;
+        position: inherit;
+    }
 
     .main-header .user-icons-desktop{
         width: 200px;

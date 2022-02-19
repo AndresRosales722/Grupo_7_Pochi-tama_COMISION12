@@ -75,7 +75,7 @@ let controller = {
             })
 
         }else{
-            res.render('/users/register', {
+            res.render('users/register', {
                 errors: errors.mapped(),
                 old: req.body,
                 session: req.session

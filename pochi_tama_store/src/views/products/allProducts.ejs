@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>   
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    
+
+
+
+    <main class="allProducts">
+
+        <div class="products-t">
+            <ul>
+                <li><a href="" class="inicio">Inicio</a></li>
+                <li>/</li>
+                <li><a href="">Productos</a></li>
+            </ul>
+            <h1>Productos</h1>
+        </div>
+   
+        <div class="filter">
+            <form action="/products/allProducts" method="get">
+                <label for="filter">Ordenar por:</label>
+                <div class="select-container">
+                    <select class="select" name="filter" id="filter" onChange= this.form.submit()>
+                        <option value=""></option>
+                        <option value="priceMin">Precio: Menor a Mayor</option>
+                        <option value="priceMay">Precio: Mayor a Menor</option>
+                        <option value="nameAsc" >A - Z</option>
+                        <option value="nameDesc">Z - A</option>
+                    </select>
+                </div>
+                
+            </form>
+        </div>
+
+        <section class="section-vendido allProducts">
+            <% products.forEach(product => { %>
+            <article class="producto">
+                <div class="caja">
+                    <a href="/products/detail/<%- product.id %>"><img src="/img/products/<%- product.productImages[0].image %>" alt=""></a>
+                </div>
+            <div class="container-product-index">         
+            <a href="/products/detail/<%- product.id %>" class="product-name"><%- product.name %></a>
+            <div class="pri-dis">
+                <h4>$<%- toThousand(product.price - product.price * product.discount / 100) %></h4>
+                <span class="discount"><%- product.discount > 0 ? `${product.discount}$ OFF` : " " %></span>
+            </div>
+            </div>
+            </article>
+            <% }) %>
+        </section>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+<%- include('../partials/footer.ejs') %>
+</body>
+</html>

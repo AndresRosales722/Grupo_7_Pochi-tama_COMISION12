@@ -6,21 +6,30 @@
     z-index: 999; /* Stay on top */
     top: 95px;
     left: 0;
-    height: 45vh;
+    height: 100vh;
     background-color: #F1F1F1; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 15px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+
+  .subcategories_menu-mobile{
+    display: flex;
+    justify-content: center;
   }
   
   /* The sidepanel links */
+  .sidepanel a:first-child{
+    border: none;
+  }
+
   .sidepanel a {
     padding: 20px;
     text-decoration: none;
     font-size: 1rem;
     color: #2c3e50;
     display: block;
-    transition: all 400ms ease
+    transition: all 400ms ease;
+    border-bottom: 1px solid rgba(44, 62, 80, 0.25)
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -28,11 +37,15 @@
     background: #cecece;
     
   }
+  
+  .boton-close{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
 
   .sidepanel a.closebtn {
     padding: 10px 10px;
-    position: relative;
-    left: 185px;
     width: 60px;
     text-align: center
   }
@@ -48,16 +61,16 @@
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: black;
+    background-color: var(--orange3);
     color: white;
     padding: 10px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
-    margin: 1rem;
+    margin: 1rem
   }
   
   .openbtn:hover {
-    background-color: #444;
+    background-color: #ff945b;
   }
 
 /* Main */

@@ -182,12 +182,18 @@ section.container-send .postal .calcular button{
     width: 100%;
     border: none;
     padding: 13px 10px;
-    background-color: white;
+    background: #f9f9f9;
     border: 1px solid rgba(44, 62, 80, 0.3);
     border-radius: 5px;
     cursor: pointer;
     color: var(--orange3);
     font-size: 0.9rem;
+}
+
+section.container-send .postal .calcular button:hover{
+    color: #ff9865; 
+    background: #f9f9f9;
+    opacity: 0.8;
 }
 
 section.container-send .postal .calcular button span{  
