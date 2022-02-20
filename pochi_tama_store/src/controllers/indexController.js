@@ -1,4 +1,4 @@
-const fs = require('fs');
+/* const fs = require('fs');
 const path = require('path');
 const db = require('../database/models');
 const sequelize = db.sequelize;
@@ -44,4 +44,4 @@ let controller = {
     }
 }
 
-module.exports = controller
+module.exports = controller */
