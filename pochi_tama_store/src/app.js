@@ -7,7 +7,7 @@ const session = require('express-session')
 const cookieParser = require('cookie-parser')
 const cookieSession = require('./middlewares/cookieSession')
 
-
+/* Middlewares */
 app.use(express.static('public'))
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: false}))
