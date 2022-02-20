@@ -41,7 +41,8 @@
   .boton-close{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(44, 62, 80, 0.25);
   }
 
   .sidepanel a.closebtn {

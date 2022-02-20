@@ -13,6 +13,7 @@ a.closebtn{
     color: var(--bluedark);
     text-align: center;
     transition: all 400ms ease;
+    order: 1;
 }
 
 a.closebtn:hover{
@@ -255,12 +256,8 @@ i.fa-search {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 400ms ease;
-    border-bottom: 1px solid rgba(44, 62, 80, 0.25);
-}
-
-.subcategory_menu .subcategory_header:hover{
-    background: #c1c1c1;
+    transition: all 400ms ease;   
+    
 }
 
 .subcategory_menu .subcategory_header a{
@@ -283,7 +280,6 @@ i.fa-search {
 }
 
 .subcategory_menu ul li{
-    padding: 20px;
     border-bottom: 1px solid rgba(44, 62, 80, 0.25);
     transition: all 400ms ease;
 }
@@ -294,6 +290,8 @@ i.fa-search {
 
 .subcategory_menu ul li a{
     color: var(--bluedark);
+    display: flex;
+    padding: 20px;
 }
 
 .header-opacity {

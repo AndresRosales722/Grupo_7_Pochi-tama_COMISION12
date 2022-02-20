@@ -51,7 +51,10 @@
                     Figuras
                     <i class="fa-solid fa-angle-right"></i>
                 </li>
-                <li><a href="/contacto">Contacto</a></li>
+                <li class="dropdown-menu" onclick="dropSubCategoryMenu(`ayuda`)">
+                    Ayuda
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
                 
             </ul>
         </nav>
@@ -70,6 +73,7 @@
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
         </form>
+
 
         <!-- Iconos de usuario escritorio -->
         <div class="user-icons-desktop">
@@ -90,7 +94,7 @@
 
             <a href="/"><i class="fas fa-shopping-cart"><span>Carrito</span></i></a>
 
-            <a href="/contacto"><i class="fas fa-envelope"><span>Contacto</span></i></a>
+            <a href=""><i class="fas fa-envelope"><span>Ayuda</span></i></a>
 
         </div>
 
@@ -153,7 +157,7 @@
                     <a href="">Boku no hero</a>
                 </div>
             </li>
-            <li><a href="/contacto">Contacto</a></li>
+            <li><a href="">Ayuda</a></li>
         </ul>
     </nav>
     <nav class="nav_menu">
@@ -172,10 +176,11 @@
         <div class="subcategory_menu" id="colec">
             <div class="boton-close">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
+                <div class="subcategory_header">
+                    <a href="">Coleccionables</a>
+                </div>
             </div>
-            <div class="subcategory_header">
-                <a href="">Coleccionables</a>
-            </div>
+           
             <ul>
                 <li><a href="">Subcategoria</a></li>
                 <li><a href="">Subcategoria</a></li>
@@ -184,9 +189,11 @@
         </div>
 
         <div class="subcategory_menu" id="tazas">
-            <div class="subcategory_header">
-                <h3><a href="">Tazas</a></h3>
-                <img src="/img/iconos/close.png" alt="" onclick="closeWindow()">
+            <div class="boton-close">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
+                <div class="subcategory_header">
+                    <a href="">Tazas</a>
+                </div>
             </div>
             <ul>
                 <li><a href="">Subcategoria</a></li>
@@ -196,9 +203,11 @@
         </div>
 
         <div class="subcategory_menu" id="lamparas">
-            <div class="subcategory_header">
-                <h3><a href="">Lamparas</a></h3>
-                <img src="/img/iconos/close.png" alt="" onclick="closeWindow()">
+            <div class="boton-close">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
+                <div class="subcategory_header">
+                    <a href="">Lamparas</a>
+                </div>
             </div>
             <ul>
                 <li><a href="">Subcategoria</a></li>
@@ -208,14 +217,30 @@
         </div>
 
         <div class="subcategory_menu" id="figuras">
-            <div class="subcategory_header">
-                <h3><a href="">Figuras</a></h3>
-                <img src="/img/iconos/close.png" alt="" onclick="closeWindow()">
+            <div class="boton-close">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
+                <div class="subcategory_header">
+                    <a href="">Figuras</a>
+                </div>
             </div>
             <ul>
                 <li><a href="">Subcategoria</a></li>
                 <li><a href="">Subcategoria</a></li>
                 <li><a href="">Subcategoria</a></li>
+            </ul>
+        </div>
+
+        <div class="subcategory_menu" id="ayuda">
+            <div class="boton-close">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
+                <div class="subcategory_header">
+                    <a href="">Ayuda</a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="/sucursales">Sucursales</a></li>
+                <li><a href="/comocomprar">Como Comprar</a></li>
+                <li><a href="/terms">Terminos y Condiciones</a></li>
             </ul>
         </div>
 

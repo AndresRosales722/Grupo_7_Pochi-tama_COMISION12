@@ -26,15 +26,19 @@ let controller = {
         }) 
         .catch((error)=>console.log(error)) 
     },
-    contacto:(req,res) => {
-        res.render('contacto',{
+    sucursales:(req,res) => {
+        res.render('sucursales',{
             session: req.session,
         
         })
     },
-
     comprar:(req,res) => {
         res.render('comprar',{
+            session: req.session,
+        })
+    },
+    terms:(req,res) => {
+        res.render('terms',{
             session: req.session,
         })
     }

@@ -4,9 +4,11 @@ const controller = require('../controllers/indexController') // Requerimos el co
 
 router.get('/',controller.index) // vista del home
 
-router.get('/comoComprar',controller.comprar) // vista como comprar
+router.get('/comoComprar',controller.comprar) // vista  de como comprar
 
-router.get('/contacto',controller.contacto) // vista de contacto
+router.get('/terms',controller.terms) // vista de  terminos y condiciones
+
+router.get('/sucursales',controller.sucursales) // vista de contacto
 
 
 module.exports = router // Para exportarlo 
