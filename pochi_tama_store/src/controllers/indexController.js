@@ -46,4 +46,3 @@ let controller = {
 
 module.exports = controller  */
 
-let naada
