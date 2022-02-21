@@ -1,22 +1,19 @@
-document.addEventListener("keyup", e=>{
+document.addEventListener("keyup", e =>{
     
-    let buscador = document.querySelector('#buscador') 
+    let inputSearch = document.querySelector('#buscador') 
     
-    let producto = Array.from(document.querySelectorAll('.producto'))
+    let productSearch = Array.from(document.querySelectorAll('.producto'))
     
-    buscador.addEventListener('keyup', (e) => {
-        
+    inputSearch.addEventListener('keyup', (e) => {
 
         if(e.key === "Escape"){
             e.target.value = ""
         }
 
-        producto.forEach(element => {
-            if(element.textContent.toLocaleLowerCase().includes(e.target.value)){
-                element.classList.remove('filtro')
-            }else{
-                element.classList.add('filtro')
-            }
+        productSearch.forEach(product => {        
+            (product.textContent.toLowerCase().trim().includes(e.target.value.toLowerCase().trim))
+                ? product.classList.remove('filtro')
+                : product.classList.add('filtro')   
         })
 
     })
