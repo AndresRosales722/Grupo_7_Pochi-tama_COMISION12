@@ -10,39 +10,44 @@
     <div class="login">
         <div class="form-container">
             <h2>Registrarse</h2>
-            <form action="/users/register" method="POST" enctype="multipart/form-data">
+            <form id="form" action="/users/register" method="POST" enctype="multipart/form-data">
                 <div class="form">
                     <div class="input-container">
                         <label for="nombre">Nombre</label>
-                        <input class="input-style" type="text" name="name" placeholder="Nombre" value="<%= locals.old && old.name %>">
+                        <input id="name" class="input-style" type="text" name="name" placeholder="Nombre" value="<%= locals.old && old.name %>">
+                        <span id="nameErrors"></span>
                         <% if (locals.errors && errors.name) { %>
                             <small class="error-message"><%= errors.name.msg %></small>
                             <% } %>
                     </div>
                     <div class="input-container">
                         <label for="apellido">Apellido</label>
-                        <input class="input-style" type="text" name="last_name" placeholder="Apellido" value="<%= locals.old && old.last_name %>">
+                        <input id="lastName" class="input-style" type="text" name="last_name" placeholder="Apellido" value="<%= locals.old && old.last_name %>">
+                        <span id="lastNameErrors"></span>
                         <% if (locals.errors && errors.last_name) { %>
                             <small class="error-message"><%= errors.last_name.msg %></small>
                             <% } %>
                     </div>
                     <div class="input-container">
                         <label for="email">Email</label>
-                        <input class="input-style" type="email" name="email" placeholder="Ingrese su email">
+                        <input id="email" class="input-style" type="email" name="email" placeholder="Ingrese su email">
+                        <span id="emailErrors"></span>
                         <% if (locals.errors && errors.email) { %>
                             <small class="error-message"><%= errors.email.msg %></small>
                             <% } %>
                     </div>
                     <div class="input-container">
                         <label for="contraseña">Contraseña</label>
-                        <input class="input-style" type="password" name="pass1" placeholder="Ingrese su contraseña">
+                        <input id="pass" class="input-style" type="password" name="pass1" placeholder="Ingrese su contraseña">
+                        <span id="passErrors"></span>
                         <% if (locals.errors && errors.pass1) { %>
                             <small class="text-danger"><%= errors.pass1.msg %> </small>
                         <% } %>
                     </div>
                     <div class="input-container">
                         <label for="repeat contraseña">Confirmar contraseña</label>
-                        <input class="input-style" type="password" name="pass2" placeholder="Repita su contraseña">
+                        <input id="pass2" class="input-style" type="password" name="pass2" placeholder="Repita su contraseña">
+                        <span id="pass2Errors"></span>
                         <% if (locals.errors && errors.pass2) { %>
                             <small class="text-danger"><%= errors.pass2.msg %> </small>
                         <% } %>
@@ -56,14 +61,16 @@
                         <% } %>
                     </div>
                     <div class="check">
-                        <label for="terms">Acepto los <a href="">términos y condiciones</a></label>
+                        <label id="labelTerms" for="terms">Acepto los términos y condiciones</label>
                         <input type="checkbox" name="terms" id="terms">
+                        <span id="termsErrors"></span>
                         <% if (locals.errors && errors.terms) { %>
                             <small class="text-danger"><%= errors.terms.msg %> </small>
                         <% } %>
                     </div>
                     <div class="button-container">
                         <span class="error-message">Hubo errores en el envío</span>
+                        <span id="submitErrors"></span>
                         <button type="submit" class="btn btn-submit">Registrarme</button>
                     </div>
     
@@ -85,6 +92,8 @@
             </form>
         </div>
     </div>
+
+        <script src="/js/register.js"></script>
         <%- include('../partials/footer.ejs')  %> 
 
     </body>

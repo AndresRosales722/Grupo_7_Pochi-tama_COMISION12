@@ -1,5 +1,34 @@
+.invalid{
+    border-color: crimson !important;
+    border-top-color: lightgrey;
+    border-right-color: lightgrey;
+    border-bottom-color: lightgrey;
+    border-left-color: lightgrey;
+}
+
+.valid{
+    border-color: green !important;
+    border-top-color: lightgrey;
+    border-right-color: lightgrey;
+    border-bottom-color: lightgrey;
+    border-left-color: lightgrey;
+} 
+
+.label-valid{
+    color: green !important;
+}
+
+.label-invalid{
+    color: crimson !important;
+}
+
+small.error-message{
+    padding: 5px 5px;
+    font-size: 14px;
+    color: crimson;
+}
+
 body.register {
-    background: white;
     height: 100%;
 }
 
@@ -9,7 +38,7 @@ body .login {
 
 body .login .container-file {
     width: 90%;
-    height: 40px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +174,7 @@ body.register .form-container{
 }
 
 span.error-message {
-    color: red;
+    color: crimson;
     font-size: 10px;
     margin: 5px auto;
     display: none;
@@ -156,7 +185,7 @@ input.input-style {
     height: 2.5rem;
     padding: .5rem;
     border: 1px solid lightgrey;
-    background-color: #f2f2f2;
+    background-color: #f1f1f1;
 }
 
 input.input-style::placeholder {
