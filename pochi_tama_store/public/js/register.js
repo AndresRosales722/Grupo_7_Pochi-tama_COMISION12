@@ -52,13 +52,13 @@ window.addEventListener('load', function () {
     $inputLastName.addEventListener('blur', function(){
         switch (true) {
             case !$inputLastName.value.trim():
-                $lastNameErrors.innerHTML = 'El campo nombre es obligatorio'
+                $lastNameErrors.innerHTML = 'El campo apellido es obligatorio'
                 $inputLastName.classList.add('invalid')
                 $inputLastName.classList.remove('valid')
                 validationsErrors = true
                 break;
             case !regExAlpha.test($inputLastName.value):
-                $lastNameErrors.innerHTML = 'Ingrese un nombre valido'
+                $lastNameErrors.innerHTML = 'Ingrese un apellido valido'
                 $inputLastName.classList.add('invalid')
                 $inputLastName.classList.remove('valid')
                 validationsErrors = true
@@ -123,7 +123,7 @@ window.addEventListener('load', function () {
     $pass2.addEventListener('blur', function(){
         switch (true) {
             case !$pass2.value.trim():
-                $pass2Errors.innerHTML = 'El campo contraseña es obligatorio'
+                $pass2Errors.innerHTML = 'Debe reingresar su contraseña'
                 $pass2.classList.add('invalid')
                 $pass2.classList.remove('valid')
                 validationsErrors = true

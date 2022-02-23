@@ -1,3 +1,19 @@
+body.register .form-container form.register span.error{
+    color: crimson;
+    font-size: 14px;
+    padding: 5px 5px;
+}
+
+body.register .form-container form.register span.error.terms{
+    font-size: 13.7px;
+    padding: 5px 0px;
+    display: flex;
+}
+
+.none{
+    display: none;
+}
+
 .invalid{
     border-color: crimson !important;
     border-top-color: lightgrey;
@@ -22,10 +38,16 @@
     color: crimson !important;
 }
 
+
+
 small.error-message{
     padding: 5px 5px;
     font-size: 14px;
     color: crimson;
+}
+
+body.register label.terms{
+    margin: 0;
 }
 
 body.register {
@@ -33,16 +55,15 @@ body.register {
 }
 
 body .login {
-    padding: 20px;
+    padding: 10px;
 }
 
 body .login .container-file {
-    width: 90%;
+    width: 100%;
     height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7px;
     border-radius: 5px;
     margin-top: 10px;
     position: relative;
@@ -82,7 +103,7 @@ body.register h2 {
     text-align: center;
     margin-bottom: 1rem;
     font-weight: 500;
-    color: var(--orange);
+    color: var(--orange3);
     font-size: 1.7rem;
     letter-spacing: 1px;
     margin-top: 1rem;
@@ -203,7 +224,7 @@ body.register label {
 
 
 body.register .form-container{
-    border-right: 30px solid var(--orange);
+    border-right: 10px solid var(--orange3);
     border-bottom: 1px solid silver;
     border-top: 1px solid silver;
     border-left: 1px solid silver;
@@ -242,7 +263,7 @@ select.input-select:focus {
     height: fit-content;
     height: -moz-fit-content;
     width: 100%;
-    padding: 1rem;
+    padding: 15px;
 }
 
 .check {
@@ -269,14 +290,15 @@ select.input-select:focus {
 
 .btn-submit {
     color: white;
-    background-color: var(--orange);
+    background-color: var(--orange3);
     width: 100%;
-    font-size: 15px;
+    font-size: 1.2rem;
     letter-spacing: 1px;
+    height: 45px;
 }
 
 .btn-submit:hover{
-    background-color: #ff9725;;
+    background-color: #ec8c26;;
 }
 
 .btn-submit.facebook{
@@ -297,7 +319,7 @@ select.input-select:focus {
 
 .btn-submit.facebook a{
     color: white;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .btn-submit.google{
@@ -318,12 +340,29 @@ select.input-select:focus {
 
 .btn-submit.google a{
     color: white;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 /* Media queries*/
 
 @media screen and (min-width: 576px) {
+
+    body.register .form-container {
+        border-right: 20px solid var(--orange3);
+    }
+
+    body .login{
+        padding: 20px;
+    }
+
+    body.register .form-container form.register span.error.terms {
+        font-size: 14px;
+    }
+
+    body .login .container-file{
+        width: 90%;
+    }
+
     body.register .form-container{
         max-width: 600px;
     }
