@@ -7,8 +7,8 @@
 
     <%- include('./partials/header.ejs') %>
 
-    <main class="main">
-        <div class="main-container">
+    
+        <div class="main-container" id="main">
 
             <%- include('./partials/carrousel.ejs') %>
 
@@ -43,7 +43,7 @@
                             <a href=""><img src="/img/categorias/peluches.jpeg" alt="imagens de categoria peluches"></a>
                         </div>
                     </div>
-                    <h4><a href="/">Peluches</a></h4>
+                    <h4><a href="/">Lamparas</a></h4>
                 </article>
 
                 <article class="productos-primary">
@@ -86,7 +86,7 @@
                     <div class="caja">
                         <a href="/products/detail/<%- product.id %>"><img src="/img/products/<%- product.productImages[0].image %>" alt=""></a>
                     </div>
-                <div class="container-product-index">         
+                <div class="container-product-index" id="card-bg">         
                 <a href="/products/detail/<%- product.id %>" class="product-name"><%- product.name %></a>
                 <div class="pri-dis">
                     <h4>$<%- toThousand(product.price - product.price * product.discount / 100) %></h4>
@@ -128,8 +128,7 @@
 
             </section>
         </div>
-    </main>
-
+    
     <section class="info">
         <div class="container-info">
 
@@ -171,8 +170,7 @@
 
     </section>
 
-    <script src="/js/carrousel.js"></script>
-    
+    <script src="/js/carrousel.js"></script>    
     <%- include('./partials/footer.ejs') %>
 
 </body>

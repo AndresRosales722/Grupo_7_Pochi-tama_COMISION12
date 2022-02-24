@@ -3,7 +3,6 @@ body .main{
 }
 
 body .main-container{
-    background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/assets/themes/material/static/images/patterns/maze.png?1246682174");
     padding: 10px;
     display: flex;
     flex-direction: column;
