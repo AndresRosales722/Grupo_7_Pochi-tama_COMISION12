@@ -1,0 +1,55 @@
+$body : #16222b;
+$container : #212e36;
+
+body{
+    background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/assets/themes/material/static/images/patterns/maze.png?1246682174");
+
+    &.dark{
+        background-image: none;
+        background-color: $body;
+    }
+}
+
+/* Dark theme Header */
+
+.main-header{
+
+    body.dark &{
+        background-color: $container;
+    }
+}
+
+nav.navigation-bar{
+    body.dark & {
+        background-color: #2a3b47;
+
+        ul.menu{
+            color: #ecf0f3;
+        }
+    }
+}
+
+/* Dark theme Footer */
+
+footer{
+
+    body.dark &{
+        background-color: $container;
+
+        h4{
+            color: #ecf0f3;
+        }
+
+        a{
+            color: #ecf0f3;
+        }
+    }
+}
+
+
+/* section.section-vendido article.producto .container-product-index{
+
+    body.dark &{
+        background-color: #212e36;
+    }
+} */
