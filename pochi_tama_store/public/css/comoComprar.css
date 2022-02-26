@@ -15,7 +15,7 @@
     line-height: 1.4;
 }
 
-.como-comprar section.lista ul li{
+.como-comprar li{
     margin-bottom: 1rem;
     color: var(--bluedark);
 }

@@ -6,6 +6,10 @@ body .footer{
     padding-bottom: 15px;
 }
 
+body .footer a{
+    color: white;
+}
+
 body .footer .container-footer-bot .container-row img{
     height: 30px;
     width: 30px;
@@ -123,7 +127,7 @@ footer .container-general .container-row-2 .email .search-bar-footer{
     margin-top: 15px;
 }
 
-footer .container-general .container-row-2 .email .search-bar-footer input{
+footer .container-general input{
     width: 100%;    
     border-radius: 2px;
     border: none;

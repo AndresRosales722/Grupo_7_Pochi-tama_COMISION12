@@ -1,10 +1,11 @@
 body {
   background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/assets/themes/material/static/images/patterns/maze.png?1246682174");
+  /* transition: 0.2s ease all; */
 }
 
 body.dark {
   background-image: none;
-  background-color: #16222b;
+  background-color: #192229;
 }
 
 /* Dark theme Header */
@@ -12,8 +13,27 @@ body.dark .main-header {
   background-color: #212e36;
 }
 
+body.dark .main-header i {
+  color: #ecf0f3;
+}
+
+body.dark .main-header .search-bar button {
+  background: #273b49;
+}
+
+body.dark .main-header input {
+  background: #273b49;
+  color: white;
+  border: 1px solid #385468;
+}
+
+body.dark .main-header input i.fas {
+  background: #212e36;
+}
+
 body.dark nav.navigation-bar {
-  background-color: #2a3b47;
+  background-color: #253640;
+  border: 1px solid #385468;
 }
 
 body.dark nav.navigation-bar ul.menu {
@@ -33,10 +53,94 @@ body.dark footer a {
   color: #ecf0f3;
 }
 
-/* section.section-vendido article.producto .container-product-index{
+body.dark footer label {
+  color: #ecf0f3;
+}
 
-    body.dark &{
-        background-color: #212e36;
-    }
-} */
+body.dark footer img {
+  opacity: 0.9;
+}
+
+body.dark footer input {
+  background: #273b49;
+  color: #ecf0f3;
+  border: 1px solid #385468;
+}
+
+body.dark footer button {
+  opacity: 0.9;
+}
+
+body.dark section.section-vendido article.producto .container-product-index {
+  background-color: #212e36;
+}
+
+body.dark section.section-vendido article.producto .container-product-index a.product-name {
+  color: #ecf0f3;
+}
+
+body.dark section.section-vendido article.producto .container-product-index span.discount {
+  color: #52a5e0;
+}
+
+body.dark section.section-vendido .producto {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* Terminos y condiciones */
+body.dark .como-comprar ul.atajos li a.inicio {
+  color: #ecf0f3;
+}
+
+body.dark .como-comprar li {
+  color: #c8ccce;
+}
+
+/* Sucursales */
+body.dark .contact ul.atajos li a.inicio {
+  color: #ecf0f3;
+}
+
+body.dark .contact .container {
+  border: 1px solid #2c4353;
+  background-color: #273b49;
+}
+
+body.dark .contact .container h2 {
+  color: var(--orange3);
+}
+
+body.dark .contact .contactanos {
+  background: #273b49;
+  border: 1px solid #2c4353;
+}
+
+body.dark .contact .contactanos label {
+  color: #ecf0f3;
+}
+
+body.dark .contact .contactanos img {
+  opacity: 0.9;
+}
+
+body.dark .contact .form-container {
+  border-right: 10px solid #53a5e1;
+  border-bottom: 1px solid #2c4353;
+  border-top: 1px solid #2c4353;
+  border-left: 1px solid #2c4353;
+  background: #273b49;
+}
+
+body.dark .contact .form-container label {
+  color: #ecf0f3;
+}
+
+body.dark .contact .form-container .btn-submit {
+  background: #53a5e1;
+}
+
+body.dark .contact h2 {
+  color: #53a5e1;
+}
 /*# sourceMappingURL=styles.css.map */

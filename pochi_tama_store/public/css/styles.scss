@@ -1,8 +1,16 @@
-$body : #16222b;
+$body : #192229;
 $container : #212e36;
+$softWhite : #ecf0f3;
+$border : #273b49;
+$borderInput : #385468;
+$whiteDark : #c8ccce;
+$borderCont : #2c4353;
+$blue : #53a5e1;
+
 
 body{
     background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/assets/themes/material/static/images/patterns/maze.png?1246682174");
+    /* transition: 0.2s ease all; */
 
     &.dark{
         background-image: none;
@@ -16,15 +24,34 @@ body{
 
     body.dark &{
         background-color: $container;
+
+        i{
+            color: $softWhite;
+        }
+
+        .search-bar button{
+            background: $border;
+        }
+
+        input{
+            background: $border;
+            color: white;
+            border: 1px solid #385468;
+
+            i.fas{
+                background: $container;
+            }
+        }
     }
 }
 
 nav.navigation-bar{
     body.dark & {
-        background-color: #2a3b47;
+        background-color: #253640;
+        border: 1px solid $borderInput;
 
         ul.menu{
-            color: #ecf0f3;
+            color: $softWhite;
         }
     }
 }
@@ -37,19 +64,125 @@ footer{
         background-color: $container;
 
         h4{
-            color: #ecf0f3;
+            color: $softWhite;
         }
 
         a{
-            color: #ecf0f3;
+            color: $softWhite;
         }
+
+        label{
+            color: $softWhite;
+        }
+
+        img{
+            opacity: 0.9;
+        }
+
+        input{
+            background: $border;
+            color: $softWhite;
+            border: 1px solid $borderInput;
+        }
+
+        button{
+            opacity: 0.9;
+        }
+
+       
     }
 }
 
 
-/* section.section-vendido article.producto .container-product-index{
+section.section-vendido article.producto .container-product-index{
 
     body.dark &{
         background-color: #212e36;
+
+        a.product-name{
+            color: #ecf0f3;
+        }
+
+        span.discount{
+            color: #52a5e0;
+        }
     }
-} */
+} 
+
+section.section-vendido .producto{
+    body.dark &{
+        box-shadow: none;
+    }
+}
+
+
+/* Terminos y condiciones */
+
+.como-comprar{
+    body.dark &{
+
+        ul.atajos li a.inicio{
+            color: $softWhite;
+        }
+
+        li{
+            color: $whiteDark;
+        }
+        
+    }
+}
+
+/* Sucursales */
+
+.contact{
+    body.dark &{
+
+        ul.atajos li a.inicio{
+            color: $softWhite;
+        }
+
+        .container{
+            border: 1px solid $borderCont;
+            background-color: $border;
+
+            h2{
+                color: var(--orange3);
+            }
+        }
+
+        .contactanos{
+            background: $border;
+            border: 1px solid $borderCont;
+
+            label{
+                color: $softWhite;
+            }
+
+            img{
+                opacity: 0.9;
+            }
+
+        }
+
+        .form-container{
+            border-right: 10px solid $blue;
+            border-bottom: 1px solid $borderCont;
+            border-top: 1px solid $borderCont;
+            border-left: 1px solid $borderCont;
+            background: $border;
+
+            label{
+                color: $softWhite;
+            }
+
+            .btn-submit{
+                background: $blue;
+            }
+        }
+
+        h2{
+            color: $blue;
+        }
+        
+    }
+}
