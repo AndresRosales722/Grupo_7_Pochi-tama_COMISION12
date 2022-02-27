@@ -93,6 +93,17 @@ footer{
     }
 }
 
+/* Pagina de Inicio */
+
+section.zonas{
+    body.dark &{
+        article.item{    
+        img{
+            border: 1px solid $borderCont;
+        }
+    }
+}
+
 
 section.section-vendido article.producto .container-product-index{
 
@@ -184,5 +195,49 @@ section.section-vendido .producto{
             color: $blue;
         }
         
+    }
+}
+
+/* Detalle de Producto */
+
+.product-detail{
+    body.dark &{
+
+        .price-product{
+            p{
+                color: $blue;
+            }
+        }
+
+        .descripcion-container{
+            p{
+                color: $softWhite;
+            }
+        }
+
+        .local{
+            i,span{
+                color: $blue;
+            }
+        }
+
+        section.ubicacion-local{
+            background: $border;
+            box-shadow: none;
+            border: 1px solid $borderCont;
+
+            span{
+                color: $softWhite;
+            }
+            h2{
+                color: $blue;
+            }
+        }
+
+        .medios{
+            span{
+                color: $blue;
+            }
+        }
     }
 }

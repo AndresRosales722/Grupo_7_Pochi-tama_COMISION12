@@ -143,4 +143,36 @@ body.dark .contact .form-container .btn-submit {
 body.dark .contact h2 {
   color: #53a5e1;
 }
+
+/* Detalle de Producto */
+body.dark .product-detail .price-product p {
+  color: #53a5e1;
+}
+
+body.dark .product-detail .descripcion-container p {
+  color: #ecf0f3;
+}
+
+body.dark .product-detail .local i, body.dark .product-detail .local span {
+  color: #53a5e1;
+}
+
+body.dark .product-detail section.ubicacion-local {
+  background: #273b49;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #2c4353;
+}
+
+body.dark .product-detail section.ubicacion-local span {
+  color: #ecf0f3;
+}
+
+body.dark .product-detail section.ubicacion-local h2 {
+  color: #53a5e1;
+}
+
+body.dark .product-detail .medios span {
+  color: #53a5e1;
+}
 /*# sourceMappingURL=styles.css.map */
