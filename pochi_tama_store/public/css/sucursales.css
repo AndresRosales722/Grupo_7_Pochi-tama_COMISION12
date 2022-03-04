@@ -17,6 +17,7 @@
 .contact .container{
     border: 1px solid silver;
     background-color: #f1f1f1;
+    margin-top: 2rem;
 }
 
 .contact .container .container-second{

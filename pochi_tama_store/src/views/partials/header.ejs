@@ -20,8 +20,8 @@
             <!-- Lista con los elementos del menú (categorías) -->
             <ul class="menu">
                 <div class="user">
-                    <% if (typeof session.user != "undefined") { %>
-                    <i class="fas fa-user"></i><span class="session"></span>
+                     <% if (typeof session.user != "undefined") { %>
+                    <span class="session"></span>
                     <div class="menu-user">
                         <a href="/users/profile">Mis datos </a> 
                         <a href="/users/logout">Cerrar sesión </a>
@@ -30,27 +30,31 @@
                         <% } %>
                     </div>
                     <% } else {%>
-                    <a href="/users/login"><i class="fas fa-user"></i></a>
+                    <a href="/users/login">Iniciar sesion</a>
+                    <a href="/users/register">Registrarse</a>
                     <% } %>
                 </div>
 
                 <li class="dropdown-menu" onclick="dropSubCategoryMenu(`colec`)">
-                    COLECCIONABLES
-                    <i class="fas fa-chevron-down"></i>
+                    Coleccionables
+                    <i class="fa-solid fa-angle-right"></i>
                 </li>
                 <li class="dropdown-menu" onclick="dropSubCategoryMenu(`tazas`)">
-                    TAZAS
-                    <i class="fas fa-chevron-down"></i>
+                    Tazas
+                    <i class="fa-solid fa-angle-right"></i>
                 </li>
                 <li class="dropdown-menu" onclick="dropSubCategoryMenu(`lamparas`)">
-                    LAMPARAS
-                    <i class="fas fa-chevron-down"></i>
+                    Lamparas
+                    <i class="fa-solid fa-angle-right"></i>
                 </li>
                 <li class="dropdown-menu" onclick="dropSubCategoryMenu(`figuras`)">
-                    FIGURAS
-                    <i class="fas fa-chevron-down"></i>
+                    Figuras
+                    <i class="fa-solid fa-angle-right"></i>
                 </li>
-                <li><a href="">Contacto</a></li>
+                <li class="dropdown-menu" onclick="dropSubCategoryMenu(`ayuda`)">
+                    Ayuda
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
                 
             </ul>
         </nav>
@@ -69,6 +73,7 @@
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
         </form>
+
 
         <!-- Iconos de usuario escritorio -->
         <div class="user-icons-desktop">
@@ -89,7 +94,7 @@
 
             <a href="/"><i class="fas fa-shopping-cart"><span>Carrito</span></i></a>
 
-            <a href="/contacto"><i class="fas fa-envelope"><span>Contacto</span></i></a>
+            <a href=""><i class="fas fa-envelope"><span>Ayuda</span></i></a>
 
         </div>
 
@@ -99,21 +104,31 @@
 
         <!-- Lista con los elementos del menú (categorías) -->
         <ul class="menu">
-            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`colec`)">
+            <li class="dropdown-menu">
                 COLECCIONABLES
                 <i class="fas fa-chevron-down"></i>
                 <div class="desplegable">
+<<<<<<< HEAD
                     <a href="">MARVEL</a>
                     <a href="">DC</a>
                     <a href="">VIDEOJUEGOS</a>
                     <a href="">ANIME</a>
                     <a href="">FUNKOS POP</a>
+=======
+                    <a href="/products/subcategory/1/1">Funkos Pop</a>
+                    <a href="/products/subcategory/2/1">Peliculas y series</a>
+                    <a href="/products/subcategory/3/1">Anime</a>
+                    <a href="/products/subcategory/4/1">Marvel</a>
+                    <a href="/products/subcategory/5/1">Dc</a>
+                    <a href="/products/subcategory/6/1">Videojuegos</a>
+>>>>>>> 5a07ddc68ba04f4698a7adbfb585cf7a52378704
                 </div>
             </li>
-            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`tazas`)">
+            <li class="dropdown-menu">
                 TAZAS
                 <i class="fas fa-chevron-down"></i>
                 <div class="desplegable">
+<<<<<<< HEAD
                     <a href="">MARVEL</a>
                     <a href="">DC</a>
                     <a href="">VIDEOJUEGOS</a>
@@ -122,30 +137,61 @@
                     <a href="">BOKU NO HERO</a>
                     <a href="">PELICULAS/SERIES</a>
                     <a href="">ONE PIECE</a>
+=======
+                    <a href="">Dc</a>
+                    <a href="">Marvel</a>
+                    <a href="">Videojuegos</a>
+                    <a href="">Boku no hero</a>
+                    <a href="">Naruto</a>
+                    <a href="">One piece</a>
+                    <a href="">Peliculas y series</a>
+>>>>>>> 5a07ddc68ba04f4698a7adbfb585cf7a52378704
                 </div>
             </li>
-            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`lamparas`)">
+            <li class="dropdown-menu">
                 LAMPARAS
                 <i class="fas fa-chevron-down"></i>
                 <div class="desplegable">
+<<<<<<< HEAD
                     <a href="">STAR WARS</a>
                     <a href="">INFANTILES</a>
                     <a href="">VIDEOJUEGOS</a>
                     <a href="">NARUTO</a>
                     <a href="">DBZ</a>
                     <a href="">HARRY POTTER</a>
+=======
+                    <a href="">Star wars</a>
+                    <a href="">Infantiles</a>
+                    <a href="">Videojuegos</a>
+                    <a href="">Naruto</a>
+                    <a href="">Harry potter</a>
+                    <a href="">Shingeki no kyojin</a>
+                    <a href="">Marvel</a>
+                    <a href="">Dc</a>
+>>>>>>> 5a07ddc68ba04f4698a7adbfb585cf7a52378704
                 </div>
             </li>
-            <li class="dropdown-menu" onclick="dropSubCategoryMenu(`figuras`)">
+            <li class="dropdown-menu">
                 FIGURAS
                 <i class="fas fa-chevron-down"></i>
                 <div class="desplegable">
+<<<<<<< HEAD
                     <a href="">MARVEL</a>
                     <a href="">DC</a>
                     <a href="">ANIME</a>
+=======
+                    <a href="">Peliculas y series</a>
+                    <a href="">Amongo Us</a>
+                    <a href="">Marvel</a>
+                    <a href="">Dc</a>
+                    <a href="">Videojuegos</a>
+                    <a href="">Kimetsu no yaiba</a>
+                    <a href="">Naruto</a>
+                    <a href="">Boku no hero</a>
+>>>>>>> 5a07ddc68ba04f4698a7adbfb585cf7a52378704
                 </div>
             </li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="">Ayuda</a></li>
         </ul>
     </nav>
     <nav class="nav_menu">
@@ -162,10 +208,13 @@
         <!-- Subcategorias desplegables -->
 
         <div class="subcategory_menu" id="colec">
-            <div class="subcategory_header">
-                <h3><a href="">COLECCIONABLES</a></h3>
-                <img src="/img/iconos/close.png" alt="" onclick="closeWindow()">
+            <div class="boton-close">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
+                <div class="subcategory_header">
+                    <a href="">Coleccionables</a>
+                </div>
             </div>
+           
             <ul>
                 <li><a href="">Subcategoria</a></li>
                 <li><a href="">Subcategoria</a></li>
@@ -174,9 +223,11 @@
         </div>
 
         <div class="subcategory_menu" id="tazas">
-            <div class="subcategory_header">
-                <h3><a href="">TAZAS</a></h3>
-                <img src="/img/iconos/close.png" alt="" onclick="closeWindow()">
+            <div class="boton-close">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
+                <div class="subcategory_header">
+                    <a href="">Tazas</a>
+                </div>
             </div>
             <ul>
                 <li><a href="">Subcategoria</a></li>
@@ -186,9 +237,11 @@
         </div>
 
         <div class="subcategory_menu" id="lamparas">
-            <div class="subcategory_header">
-                <h3><a href="">LAMPARAS</a></h3>
-                <img src="/img/iconos/close.png" alt="" onclick="closeWindow()">
+            <div class="boton-close">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
+                <div class="subcategory_header">
+                    <a href="">Lamparas</a>
+                </div>
             </div>
             <ul>
                 <li><a href="">Subcategoria</a></li>
@@ -198,14 +251,30 @@
         </div>
 
         <div class="subcategory_menu" id="figuras">
-            <div class="subcategory_header">
-                <h3><a href="">FIGURAS</a></h3>
-                <img src="/img/iconos/close.png" alt="" onclick="closeWindow()">
+            <div class="boton-close">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
+                <div class="subcategory_header">
+                    <a href="">Figuras</a>
+                </div>
             </div>
             <ul>
                 <li><a href="">Subcategoria</a></li>
                 <li><a href="">Subcategoria</a></li>
                 <li><a href="">Subcategoria</a></li>
+            </ul>
+        </div>
+
+        <div class="subcategory_menu" id="ayuda">
+            <div class="boton-close">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
+                <div class="subcategory_header">
+                    <a href="">Ayuda</a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="/sucursales">Sucursales</a></li>
+                <li><a href="/comocomprar">Como Comprar</a></li>
+                <li><a href="/terms">Terminos y Condiciones</a></li>
             </ul>
         </div>
 

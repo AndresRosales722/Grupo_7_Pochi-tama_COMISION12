@@ -1,0 +1,125 @@
+main.allProducts{
+    padding: 10px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.products-t{
+    display: flex;
+    flex-direction: column;
+}
+
+.products-t h1{
+    font-size: 1.9rem;
+    color: var(--orange3);
+}
+
+ul.atajos{
+    display: flex;  
+    font-size: 0.9rem; 
+    gap: 2px;
+    color: var(--bluedark);
+}
+
+ul.atajos li a{
+    color: var(--orange3);
+}
+
+ul.atajos li a.inicio{
+    color: var(--bluedark)
+}
+
+ul.atajos li a.inicio:hover{
+    text-decoration: underline;
+    color: var(--bluedark);
+}
+
+.filter{
+    padding: 20px 0px 30px;
+}
+
+.filter form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.filter form label{
+    margin-bottom: 1rem;
+    color: var(--bluedark);
+    font-weight: 500;
+}
+
+.filter form .select-container{
+    width: 50%;
+}
+
+.filter form .select-container select{
+    border: 0;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-bottom: 2px solid rgba(44, 62, 80, 0.5);
+    background: #ececec;
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+}
+
+
+@media(min-width:576px){
+    main.allProducts{
+        max-width: 550px;
+    }
+}
+
+@media(min-width:768px){
+    main.allProducts{
+        max-width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .products-t {
+        width: 100%;
+        padding: 10px 10px;
+      }
+
+      .section-vendido.allProducts{
+          width: 80%;
+      }
+
+      .filter {
+        padding: 10px 10px 30px 10px;
+        width: 20%;
+      }
+
+      .filter form .select-container{
+        width: 100%;
+    }
+
+    .products-t h1 {
+        font-size: 2.5rem;
+      }
+}
+
+@media(min-width:992px){
+    main.allProducts{
+        max-width: 992px;
+    }
+
+    .filter {
+        padding: 10px 30px 30px 10px;
+      }
+}
+
+@media(min-width:1200px){
+    main.allProducts{
+        max-width: 1200px;
+    }
+
+    .products-t {
+        padding: 20px 10px;
+      }
+}

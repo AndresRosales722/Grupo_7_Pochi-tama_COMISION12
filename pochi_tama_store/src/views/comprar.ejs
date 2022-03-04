@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs') %>
+    
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    
+
+    <div class="como-comprar">
+        <ul class="atajos">
+            <li><a href="/" class="inicio">Inicio</a></li>
+            <li>/</li>
+            <li><a href="">Como Comprar</a></li>
+        </ul>
+        <div class="container-como">
+            <h1>Como Comprar</h1>
+        </div>
+        <section class="lista">
+            <ul>
+                <li><label for="">1.</label class="first"><strong>Elegí</strong> los productos que quieras comprar.</li>
+                <li><label for="">2.</label>Hacé clic en el botón de "Agregar al carrito". Esto agregará el producto a tu carrito y te llevará al mismo.</li>
+                <li><label for="">3.</label>Podés seguir agregando otros productos al carrito. Una vez que hayas elegido todos tus productos, hacé clic en <strong>"Iniciar Compra"</strong>.</li>
+                <li><label for="">4.</label><strong>Completa tus datos</strong> de contacto y hacé clic en "Continuar".</li>
+                <li><label for="">5.</label>Ingresá la dirección a donde deseás recibir el producto. Luego hacé clic en "Continuar".</li>
+                <li><label for="">6.</label>
+                   <strong>Seleccioná el método de envío</strong> que prefieras y hacé clic en "Continuar". 
+                    <ul>
+                        <li class="decoration">
+                            Los envíos los realizamos a través de OCA, PUDO y Mensajería propia (con alcance limitado por Código Postal).
+                        </li>
+                    </ul>
+                </li>
+                <li><label for="">7.</label>
+                   <strong>Elegí el medio de pago: Crédito, Débito, Mercado Pago o Transferencia.</strong>
+                    <ul>
+                        <li class="decoration">
+                            Si seleccionas la opción de "Pagar mediante transferencia electrónica", <strong>¡obtendrás un descuento adicional, acumulable con todas nuestras promociones!</strong> Deberás completar el pago por este medio dentro de las primeras 24hs hábiles tras realizada la compra.
+                        </li>
+
+                        <li class="decoration">
+                            Una vez que hayas elegido el medio de pago, haz clic en "Continuar".
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li><label for="">8.</label>Finalmente en la página de "Confirmación de compra" podés revisar toda la información de la compra. Luego hacé clic en "Continuar".</li>
+                <li><label for="">9.</label>Ahí svas a tener que compeltar los datos sobre la forma de pago elegida. Después de confirmar la compra recibirás un correo de nuestra parte, ese no será un comprobante de pago.</li>
+                <li><label for="">10.</label>Una vez acreditado el pago, haremos el envío correspondiente de los productos que hayas comprado, junto al comprobante fiscal correspondiente.</li>
+            </ul>
+        </section>
+    </div>
+
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

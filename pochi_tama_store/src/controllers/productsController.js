@@ -9,6 +9,39 @@ const Subcategories = db.Subcategory;
 
 
 let controller = {
+
+    allProducts:(req,res) =>{
+        let filterProduct;
+        switch (req.query.filter) {
+            case "nameAsc":
+                filterProduct = Products.findAll({ include : [{association : "productImages"},], order : [["name", "ASC"]]})
+                break;
+            case "nameDesc":
+                filterProduct  = Products.findAll({ include : [{association : "productImages"},], order : [["name", "DESC"]]})
+                break;
+            case "priceMin":
+                filterProduct  = Products.findAll({ include : [{association : "productImages"},], order : [["price", "ASC"]]})
+                break;
+            case "priceMay":
+                filterProduct  = Products.findAll({ include : [{association : "productImages"},], order : [["price", "DESC"]]})
+                break;
+            default:
+                filterProduct  = Products.findAll({ include : [{association : "productImages"},]})
+                break;
+        }
+        
+        Promise.all([filterProduct])
+        .then(([products])=>{
+            res.render("products/allProducts", {
+                products,
+                toThousand,
+                session: req.session
+            })
+
+        }) 
+
+        
+    },
     
     detail:(req,res)=>{
         Products.findOne({
