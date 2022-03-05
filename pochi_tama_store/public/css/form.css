@@ -10,8 +10,28 @@ body.register .form-container form.register span.error.terms{
     display: flex;
 }
 
+.block{
+    display: block;
+}
+
 .none{
     display: none;
+}
+
+i.fas.fa-engine-warning{
+    color: crimson;
+    top: 34px;
+    right: 15px;
+    position: absolute;
+    font-size: 1rem;
+}
+
+i.fas.fa-check-circle{
+    color: green;
+    position: absolute;
+    top: 34px;
+    right: 15px;
+    font-size: 1rem;
 }
 
 .invalid{
@@ -183,6 +203,7 @@ body.register .form-container{
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
     width: 100%;
+    position: relative;
 }
 
 .input-container label{

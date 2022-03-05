@@ -6,6 +6,7 @@ window.addEventListener('load', function () {
 
     let $inputName = qs('#name'),
     $form = qs('#form'),
+    $i = qs('#warning'),
     $nameErrors = qs('#nameErrors'),
     $inputLastName = qs('#lastName'),
     $lastNameErrors = qs('#lastNameErrors'),
@@ -30,12 +31,14 @@ window.addEventListener('load', function () {
         switch (true) {
             case !$inputName.value.trim():
                 $nameErrors.innerHTML = 'El campo nombre es obligatorio'
+                $i.classList.remove('none')
                 $inputName.classList.add('invalid')
                 $inputName.classList.remove('valid')
                 validationsErrors = true
                 break;
             case !regExAlpha.test($inputName.value):
                 $nameErrors.innerHTML = 'Ingrese un nombre valido'
+                $i.classList.remove('none')
                 $inputName.classList.add('invalid')
                 $inputName.classList.remove('valid')
                 validationsErrors = true
@@ -43,7 +46,8 @@ window.addEventListener('load', function () {
             default:
                 $inputName.classList.remove('invalid')
                 $inputName.classList.add('valid')
-                $nameErrors.innerHTML = ""
+                $i.classList.add('none')
+                $nameErrors.innerHTML = '<i class="fas fa-check-circle"></i>'
                 validationsErrors = false
                 break;
         }
@@ -52,13 +56,13 @@ window.addEventListener('load', function () {
     $inputLastName.addEventListener('blur', function(){
         switch (true) {
             case !$inputLastName.value.trim():
-                $lastNameErrors.innerHTML = 'El campo apellido es obligatorio'
+                $lastNameErrors.innerHTML = 'El campo apellido es obligatorio <i id="warning" class="fas fa-engine-warning"></i>'
                 $inputLastName.classList.add('invalid')
                 $inputLastName.classList.remove('valid')
                 validationsErrors = true
                 break;
             case !regExAlpha.test($inputLastName.value):
-                $lastNameErrors.innerHTML = 'Ingrese un apellido valido'
+                $lastNameErrors.innerHTML = 'Ingrese un apellido valido <i id="warning" class="fas fa-engine-warning"></i>'
                 $inputLastName.classList.add('invalid')
                 $inputLastName.classList.remove('valid')
                 validationsErrors = true
@@ -66,7 +70,7 @@ window.addEventListener('load', function () {
             default:
                 $inputLastName.classList.remove('invalid')
                 $inputLastName.classList.add('valid')
-                $lastNameErrors.innerHTML = ""
+                $lastNameErrors.innerHTML = '<i class="fas fa-check-circle"></i>'
                 validationsErrors = false
                 break;
         }
@@ -75,13 +79,13 @@ window.addEventListener('load', function () {
     $email.addEventListener('blur', function(){
         switch (true) {
             case !$email.value.trim():
-                $emailErrors.innerHTML = 'El campo email es obligatorio'
+                $emailErrors.innerHTML = 'El campo email es obligatorio <i id="warning" class="fas fa-engine-warning"></i>'
                 $email.classList.add('invalid')
                 $email.classList.remove('valid')
                 validationsErrors = true
                 break;
             case !regExEmail.test($email.value):
-                $emailErrors.innerHTML = 'Debe ingresar un email válido'
+                $emailErrors.innerHTML = 'Debe ingresar un email válido <i id="warning" class="fas fa-engine-warning"></i>'
                 $email.classList.add('invalid')
                 $email.classList.remove('valid')
                 validationsErrors = true
@@ -89,7 +93,7 @@ window.addEventListener('load', function () {
             default:
                 $email.classList.remove("invalid");
                 $email.classList.add('valid')
-                $emailErrors.innerHTML = ""
+                $emailErrors.innerHTML = '<i class="fas fa-check-circle"></i>'
                 validationsErrors = false
                 break;
         }
@@ -99,13 +103,13 @@ window.addEventListener('load', function () {
     $pass.addEventListener('blur', function(){
         switch (true) {
             case !$pass.value.trim():
-                $passErrors.innerHTML = 'El campo contraseña es obligatorio'
+                $passErrors.innerHTML = 'El campo contraseña es obligatorio <i id="warning" class="fas fa-engine-warning"></i>'
                 $pass.classList.add('invalid')
                 $pass.classList.remove('valid')
                 validationsErrors = true
                 break;
             case !regExPass.test($pass.value):
-                $passErrors.innerHTML = 'La contraseña debe tener: entre 6 o 12 caracteres, al menos una mayúscula, una minúscula y un número';
+                $passErrors.innerHTML = 'La contraseña debe tener: entre 6 o 12 caracteres, al menos una mayúscula, una minúscula y un número <i id="warning" class="fas fa-engine-warning"></i>';
                 $pass.classList.add('invalid')
                 $pass.classList.remove('valid')
                 validationsErrors = true
@@ -113,7 +117,7 @@ window.addEventListener('load', function () {
             default:
                 $pass.classList.remove("invalid");
                 $pass.classList.add('valid')
-                $passErrors.innerHTML = ""
+                $passErrors.innerHTML = '<i class="fas fa-check-circle"></i>'
                 validationsErrors = false
                 break;
         }
@@ -123,13 +127,13 @@ window.addEventListener('load', function () {
     $pass2.addEventListener('blur', function(){
         switch (true) {
             case !$pass2.value.trim():
-                $pass2Errors.innerHTML = 'Debe reingresar su contraseña'
+                $pass2Errors.innerHTML = 'Debe reingresar su contraseña <i id="warning" class="fas fa-engine-warning"></i>'
                 $pass2.classList.add('invalid')
                 $pass2.classList.remove('valid')
                 validationsErrors = true
                 break;
             case $pass2.value !== $pass.value:
-                $pass2Errors.innerHTML = 'Las contraseña no coinciden';
+                $pass2Errors.innerHTML = 'Las contraseña no coinciden <i id="warning" class="fas fa-engine-warning"></i>';
                 $pass2.classList.add('invalid')
                 $pass2.classList.remove('valid')
                 validationsErrors = true
@@ -137,7 +141,7 @@ window.addEventListener('load', function () {
             default:
                 $pass2.classList.remove("invalid");
                 $pass2.classList.add('valid')
-                $pass2Errors.innerHTML = ""
+                $pass2Errors.innerHTML = '<i class="fas fa-check-circle"></i>'
                 validationsErrors = false
                 break;
         }

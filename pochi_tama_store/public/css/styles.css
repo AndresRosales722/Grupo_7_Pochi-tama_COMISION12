@@ -71,6 +71,7 @@ body.dark footer button {
   opacity: 0.9;
 }
 
+/* Pagina de Inicio */
 body.dark section.section-vendido article.producto .container-product-index {
   background-color: #212e36;
 }
@@ -173,6 +174,32 @@ body.dark .product-detail section.ubicacion-local h2 {
 }
 
 body.dark .product-detail .medios span {
+  color: #53a5e1;
+}
+
+/* Formulario de Register */
+body.dark .login .form-container {
+  background: #273b49;
+  border-bottom: 1px solid #2c4353;
+  border-top: 1px solid #2c4353;
+  border-left: 1px solid #2c4353;
+  border-radius: 2px;
+  border-right: 20px solid #53a5e1;
+}
+
+body.dark .login .form-container h2 {
+  color: #53a5e1;
+}
+
+body.dark .login .form-container label {
+  color: #ecf0f3;
+}
+
+body.dark .login .form-container span {
+  color: #ecf0f3;
+}
+
+body.dark .login .form-container .not-account a {
   color: #53a5e1;
 }
 /*# sourceMappingURL=styles.css.map */

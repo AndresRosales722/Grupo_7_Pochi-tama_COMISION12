@@ -11,7 +11,7 @@ $blue : #53a5e1;
 body{
     background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/assets/themes/material/static/images/patterns/maze.png?1246682174");
     /* transition: 0.2s ease all; */
-
+    
     &.dark{
         background-image: none;
         background-color: $body;
@@ -21,23 +21,23 @@ body{
 /* Dark theme Header */
 
 .main-header{
-
+    
     body.dark &{
         background-color: $container;
-
+        
         i{
             color: $softWhite;
         }
-
+        
         .search-bar button{
             background: $border;
         }
-
+        
         input{
             background: $border;
             color: white;
             border: 1px solid #385468;
-
+            
             i.fas{
                 background: $container;
             }
@@ -49,7 +49,7 @@ nav.navigation-bar{
     body.dark & {
         background-color: #253640;
         border: 1px solid $borderInput;
-
+        
         ul.menu{
             color: $softWhite;
         }
@@ -59,61 +59,51 @@ nav.navigation-bar{
 /* Dark theme Footer */
 
 footer{
-
+    
     body.dark &{
         background-color: $container;
-
+        
         h4{
             color: $softWhite;
         }
-
+        
         a{
             color: $softWhite;
         }
-
+        
         label{
             color: $softWhite;
         }
-
+        
         img{
             opacity: 0.9;
         }
-
+        
         input{
             background: $border;
             color: $softWhite;
             border: 1px solid $borderInput;
         }
-
+        
         button{
             opacity: 0.9;
         }
-
-       
+        
+        
     }
 }
 
 /* Pagina de Inicio */
 
-section.zonas{
-    body.dark &{
-        article.item{    
-        img{
-            border: 1px solid $borderCont;
-        }
-    }
-}
-
-
 section.section-vendido article.producto .container-product-index{
-
+    
     body.dark &{
         background-color: #212e36;
-
+        
         a.product-name{
             color: #ecf0f3;
         }
-
+        
         span.discount{
             color: #52a5e0;
         }
@@ -131,11 +121,11 @@ section.section-vendido .producto{
 
 .como-comprar{
     body.dark &{
-
+        
         ul.atajos li a.inicio{
             color: $softWhite;
         }
-
+        
         li{
             color: $whiteDark;
         }
@@ -147,50 +137,50 @@ section.section-vendido .producto{
 
 .contact{
     body.dark &{
-
+        
         ul.atajos li a.inicio{
             color: $softWhite;
         }
-
+        
         .container{
             border: 1px solid $borderCont;
             background-color: $border;
-
+            
             h2{
                 color: var(--orange3);
             }
         }
-
+        
         .contactanos{
             background: $border;
             border: 1px solid $borderCont;
-
+            
             label{
                 color: $softWhite;
             }
-
+            
             img{
                 opacity: 0.9;
             }
-
+            
         }
-
+        
         .form-container{
             border-right: 10px solid $blue;
             border-bottom: 1px solid $borderCont;
             border-top: 1px solid $borderCont;
             border-left: 1px solid $borderCont;
             background: $border;
-
+            
             label{
                 color: $softWhite;
             }
-
+            
             .btn-submit{
                 background: $blue;
             }
         }
-
+        
         h2{
             color: $blue;
         }
@@ -202,30 +192,30 @@ section.section-vendido .producto{
 
 .product-detail{
     body.dark &{
-
+        
         .price-product{
             p{
                 color: $blue;
             }
         }
-
+        
         .descripcion-container{
             p{
                 color: $softWhite;
             }
         }
-
+        
         .local{
             i,span{
                 color: $blue;
             }
         }
-
+        
         section.ubicacion-local{
             background: $border;
             box-shadow: none;
             border: 1px solid $borderCont;
-
+            
             span{
                 color: $softWhite;
             }
@@ -233,7 +223,7 @@ section.section-vendido .producto{
                 color: $blue;
             }
         }
-
+        
         .medios{
             span{
                 color: $blue;
@@ -241,3 +231,40 @@ section.section-vendido .producto{
         }
     }
 }
+
+
+/* Formulario de Register */
+
+.login {
+    body.dark & {
+
+        .form-container{
+            background: $border;
+            border-bottom: 1px solid $borderCont;
+            border-top: 1px solid $borderCont;
+            border-left: 1px solid $borderCont;
+            border-radius: 2px;
+            border-right: 20px solid $blue;
+
+            h2{
+                color: $blue;
+            }
+
+            label{
+                color: $softWhite
+            }
+
+            span{
+                color: $softWhite;
+            }
+
+            .not-account{
+                a{
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+
