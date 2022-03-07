@@ -77,8 +77,8 @@
                             <div class="container-file">
                                 <i class="fas fa-upload"></i>
                                 <p>Ingrese una Imagen</p>
-                                <input class= "buttom-image" type="file" name="image" id="image" multiple>
-                                <span id="imageError" class="error-message"></span>
+                                <input class= "" type="file" name="image" id="image" multiple>
+                                <span id="imageError" class="error"></span>
                                 <% if (locals.errors && errors.image) { %>
                                     <span class="error-message"><%= errors.image.msg %></span>
                                 <% } %>
@@ -86,7 +86,7 @@
                             
                             
                             <div class="button-admin">
-                                <span id="submit-error" class="error"> .</span>
+                                <span id="submit-error" class="error">.</span>
                                 <button type="submit" class="btn btn-submit">Crear Producto</button>
                             </div>
                             
