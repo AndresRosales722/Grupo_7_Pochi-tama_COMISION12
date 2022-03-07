@@ -1,3 +1,26 @@
+form span.error{
+    color: crimson;
+    font-size: 14px;
+    padding: 5px 5px;
+}
+
+.invalid{
+    border-color: crimson !important;
+    border-top-color: lightgrey;
+    border-right-color: lightgrey;
+    border-bottom-color: lightgrey;
+    border-left-color: lightgrey;
+}
+
+.valid{
+    border-color: green !important;
+    border-top-color: lightgrey;
+    border-right-color: lightgrey;
+    border-bottom-color: lightgrey;
+    border-left-color: lightgrey;
+} 
+
+
 body.admin .form-container-admin {
     padding:20px;
     border: 1px solid silver;
