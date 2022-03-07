@@ -12,53 +12,8 @@ const ProductImages = db.ProductImage;
 
 let controller = {
     
-    list: async (req,res) => {
-        try{
-
-            let url = `http://${req.headers.host}${req.originalUrl}`
-
-            if(url.includes("pages") && !url.includes("size")){
-                throw new SyntaxError("dato incorrecto")
-            }
-
-            const {page, size, orderBy, orderDirect, ...updateQuery} = req.query
-            const order = orderBy ? orderBy : "id"
-            const direction = orderDirect ? orderDirect : "ASC"
-
-            for(let key in updateQuery) {
-                if(updateQuery[key] == null || updateQuery[key].trim().length == 0){
-                    delete updateQuery[key]
-                }
-                if(key == "name") {
-                    updateQuery[key] = {[Op.substring]: req.query.name}
-                }
-            }
-
-            const getpagination = (page,size) => {
-                const limit = size ? +size : 5
-                const offset = page ? page * limit : 0
-                return{limit ,offset}
-            }
-            const {limit,offset} = getpagination(page,size)
-            
-
-
-            let data = await Products.findAndCountAll({
-                where: {
-
-                },
-                order: [[order, direction]],
-                limit: limit,
-                offset: offset
-            })
-
-        }catch(error){
-            return res.status(500).json({
-                msg: "Lo siento , ocurrio un error"
-            })
-        }
-    }
-    /* (req,res)=>{
+    list:(req,res)=>{
+        
         let url = `http://${req.headers.host}${req.originalUrl}`
         
         const getPageData = (data, page , limit) =>{
@@ -92,10 +47,8 @@ let controller = {
         const {page,size} = req.query
         
         const getpagination = (page,size) => {
-            
             const limit = size ? +size : 5
-            const offset = page ? page * limit : 0
-            
+            const offset = page ? page * limit : 0      
             return{limit ,offset}
         }
         const {limit,offset} = getpagination(page,size)
@@ -107,7 +60,7 @@ let controller = {
         .then(response => {
             const data = getPageData(response , page , limit)
 
-            res.json({
+             /* res.json({
                 info : {
                     count : data.count,
                     pages: data.pages,
@@ -116,7 +69,7 @@ let controller = {
                     next: data.next
                 },
                 result : data.result
-            })
+            }) */
 
             res.render('products/products',{
                 products: data.result,
@@ -130,7 +83,19 @@ let controller = {
             })
         }) 
         .catch((error)=>console.log(error))
-    } */,
+    },
+
+    all:(req,res)=>{
+
+        Subcategories.findAll()
+        .then((subcategories) => {
+            res.render('products/productsV2',{
+                subcategories,
+                toThousand,
+                session: req.session
+            })
+        })
+    },
     
     add:(req,res)=>{
         let allCategories = Categories.findAll()
