@@ -7,10 +7,8 @@ let productFormValidator = require('../validations/productFormValidator')
 
 
 // listado de productos
-router.get('/', /* userAdminCheck, */ controller.list)
 
-router.get('/all', /* userAdminCheck, */ controller.all)
-
+router.get('/', /* userAdminCheck, */ controller.all)
 
 // Formulario de creacion de un producto
 router.get('/Create/', /* userAdminCheck, */ controller.add);

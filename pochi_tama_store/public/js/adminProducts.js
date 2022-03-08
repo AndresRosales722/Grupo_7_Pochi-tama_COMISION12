@@ -91,8 +91,8 @@ window.onload = () => {
                     template.querySelector('#subcategory').textContent = product.subcategories.name;
                     template.querySelector('#price').textContent = product.price;
                     template.querySelector('#discount').textContent = product.discount;
-                    template.querySelector('#btn-edit').href = `/admin/products/edit/${product.id}`;
-                    template.querySelector('#btn-delete').href = `/admin/products/delete/${product.id}`;
+                    template.querySelector('#btn-edit').href = `/admin/${product.id}/edit`;
+                    template.querySelector('#btn-delete').href = `/admin/${product.id}/delete/?_method=DELETE`;
                     const clone = template.cloneNode(true)
                     fragment.appendChild(clone)
                 });
