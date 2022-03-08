@@ -26,10 +26,12 @@ window.addEventListener('load', function(){
             case!$inputName.value.trim():
                 $nameError.innerHTML = 'El nombre del producto es obligatorio'
                 $inputName.classList.add('invalid');
+                $inputName.classList.remove('valid')
                 validationsErrors = true
                 break;
-            case !$inputName.value.length > 5:
-                $nameError.innerHTML = 'El nombre del producto debe tener mas de 4 caracteres';
+            case $inputName.value.trim().length < 4:
+                $nameError.innerHTML = 'El nombre del producto debe tener mas de 5 caracteres';
+                $inputName.classList.remove('valid')
                 $inputName.classList.add('invalid')
                 validationsErrors = true;
                 break;
@@ -45,6 +47,7 @@ window.addEventListener('load', function(){
         switch(true){
             case !$inputPrice.value.trim():
                 $priceError.innerHTML = 'Debe ingresar un precio al producto';
+                $inputPrice.classList.remove('valid')
                 $inputPrice.classList.add('invalid');
                 validationsErrors = true
                 break;
@@ -92,12 +95,14 @@ window.addEventListener('load', function(){
         switch (true) {
             case !$description.value.trim():
                 $descriptionError.innerHTML = 'Debes agregar una descripción al producto';
+                $description.classList.remove('valid')
                 $description.classList.add('invalid')
                 validationsErrors = true
                 break;
-            case !$description.value.length > 20:
-                $nameError.innerHTML = 'La descripción del producto debe tener al menos 20 caracteres';
-                $inputName.classList.add('invalid')
+            case $description.value.trim().length < 20:
+                $descriptionError.innerHTML = 'La descripción del producto debe tener al menos 20 caracteres';
+                $description.classList.remove('valid')
+                $description.classList.add('invalid')
                 validationsErrors = true;
                 break;
             default:
@@ -117,6 +122,7 @@ window.addEventListener('load', function(){
             $imageError.innerHTML = '';
             validationsErrors = false;
         } else {
+            $image.classList.remove('valid')
             $image.classList.add('invalid');
             $imageError.innerHTML = 'Solo extensiones .jpg .jpeg .png .gif'
         }

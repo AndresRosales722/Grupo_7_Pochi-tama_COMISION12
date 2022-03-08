@@ -4,21 +4,6 @@ form span.error{
     padding: 5px 5px;
 }
 
-.invalid{
-    border-color: crimson !important;
-    border-top-color: lightgrey;
-    border-right-color: lightgrey;
-    border-bottom-color: lightgrey;
-    border-left-color: lightgrey;
-}
-
-.valid{
-    border-color: green !important;
-    border-top-color: lightgrey;
-    border-right-color: lightgrey;
-    border-bottom-color: lightgrey;
-    border-left-color: lightgrey;
-} 
 
 
 body.admin .form-container-admin {
