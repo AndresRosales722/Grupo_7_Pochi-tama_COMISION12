@@ -81,7 +81,7 @@ window.onload = () => {
 
             if(result.info.count != 0){
 
-                msg.classList.add('d.none');
+                msg.classList.add('d-none');
 
                 result.result.forEach((product) => {
 
@@ -117,7 +117,7 @@ window.onload = () => {
                 }
 
             }else{
-                msg.classList.remove('d.none')
+                msg.classList.remove('d-none')
             }
 
         }catch(error){
