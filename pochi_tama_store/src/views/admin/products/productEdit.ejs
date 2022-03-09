@@ -14,7 +14,7 @@
 
                         <div class="input-admin">
                             <label for="name">Nombre del Producto</label>
-                            <input class="input-style-admin" type="text" name="name" id="name" placeholder="Ej: Guante del infinito" value='<%= locals.old && old.name %>'>
+                            <input class="input-style-admin" type="text" name="name" placeholder="Ej: Guante del infinito" value='<%= locals.old ? old.name : product.name %>'>
                             <span id="nameError" class="error"></span>
                             <% if (locals.errors && errors.name) { %>
                             <span class="error-message"><%= errors.name.msg %></span>
@@ -23,7 +23,7 @@
 
                         <div class="input-admin">
                             <label for="price">Precio del producto</label>
-                            <input class="input-style-admin" type="text" name="price" id="price" placeholder="Ej: 3000" value='<%= locals.old && old.price %>'>
+                            <input class="input-style-admin" type="text" name="price" placeholder="Ej: 3000" value='<%= locals.old ? old.price : product.price %>'>
                             <span id="priceError" class="error"></span>
                             <% if (locals.errors && errors.price) { %>
                                 <span class="error-message"><%= errors.price.msg %></span>
@@ -32,7 +32,7 @@
 
                             <div class="input-admin">
                                 <label for="discount">Descuento</label>
-                                <input class="input-style-admin" type="number" name="discount" id="discount" placeholder="Ej: 50"  value='<%= locals.old ? old.discount : 0 %>'>
+                                <input class="input-style-admin" type="number" name="discount" placeholder="Ej: 50"  value="<%= locals.old ? old.discount : product.discount %>">
                                 <span id="discountError" class="error"></span>
                                 <% if (locals.errors && errors.discount) { %>
                                     <span class="error-message"><%= errors.discount.msg %></span>
@@ -40,10 +40,10 @@
                             </div>
 
                             <div class="input-admin">
-                                <select class="form-select categorySelect" id="category" name="category">
+                                <select class="form-select categorySelect" id="specificSizeSelect" name="category">
                                   <option selected hidden value="">Categorias</option>
                                 <% categories.forEach(category => { %>
-                                    <option value="<%- category.id %>" <%= locals.old && old.category == category.id ? "selected" : "" %> ><%- category.name %> </option>
+                                    <option value="<%- category.id %>" <%- locals.old && old.category == category.id ? "selected" : category.id == product.category ? "selected" : "" %>><%- category.name %></option>
                                 <% }) %>
                                 </select>
                                 <span id="categoryError" class="error"></span>
@@ -53,40 +53,38 @@
                             </div>
 
                             <div class="input_admin">
-                                <select class="form-select subcategorySelect" id="subcategory" name="subcategory">
+                                <select class="form-select subcategorySelect" id="specificSizeSelect" name="subcategory">
                                   <option selected hidden value="">Subcategorias</option>
                                   <% subcategories.forEach(subcategory => { %>
                                     <option value="<%- subcategory.id %>" <%= locals.old && old.subcategory == subcategory.id ? "selected" : ""  %> ><%- subcategory.name %> </option>
                                   <% }) %>
                                 </select>
-                                <span id="subcategoryError" class="error"></span>
                                 <% if (locals.errors && errors.subcategory) { %>
-                                    <span class="error-message"><%= errors.subcategory.msg %> </span>
+                                    <small class="text-danger"><%= errors.subcategory.msg %> </small>
                                 <% } %>
                             </div>
 
                             <div class="input-admin description">
                                 <label for="description">Descripcion</label>
-                                <textarea class="description" name="description" id="description"><%= locals.old && old.description %></textarea>
-                                <span id="descriptionError" class="error"></span>
+                                <textarea class="description" name="description" id="description" ><%= locals.old ? old.description : product.description %></textarea>
                                 <% if (locals.errors && errors.description) { %>
-                                    <span class="error-message" id><%= errors.description.msg %></span>
+                                    <small class="error-message"><%= errors.description.msg %></small>
                                 <% } %>      
                             </div>
                             
                             <div class="container-file">
                                 <i class="fas fa-upload"></i>
                                 <p>Ingrese una Imagen</p>
-                                <input class= "" type="file" name="image" id="image" multiple>
+                                <input type="file" name="image" id="inputImage" multiple>
                                 <% if (locals.errors && errors.image) { %>
-                                    <span class="error-message"><%= errors.image.msg %></span>
+                                    <small class="error-message"><%= errors.image.msg %></small>
                                 <% } %>
                             </div>
                             <span id="imageError" class="error"></span>
                             
                             <div class="button-admin">
                                 <span id="submit-error" class="error">.</span>
-                                <button type="submit" class="btn btn-submit">Crear Producto</button>
+                                <button type="submit" class="btn btn-submit">Guardar Producto</button>
                             </div>
                             
                         </div>

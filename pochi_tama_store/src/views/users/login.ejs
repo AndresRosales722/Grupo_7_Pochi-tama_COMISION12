@@ -13,7 +13,8 @@
                 <div class="form">
                     <div class="input-container">
                         <label for="email" class="control-label">Email</label>
-                        <input class="input-style" type="email" name="email" placeholder="Ej: juanperez@gmail.com">
+                        <input id="email" class="input-style" type="email" name="email" placeholder="Ej: juanperez@gmail.com">
+                        <span id="emailErrors" class="error"></span>
                         <% if (locals.errors && errors.email) { %>
                         <small class="error-message"><%= errors.email.msg %></small>
                         <% } %>

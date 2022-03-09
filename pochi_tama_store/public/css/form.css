@@ -162,6 +162,7 @@ flex-wrap: wrap;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
+    width: 100%;
 }
 
 .not-account span{
