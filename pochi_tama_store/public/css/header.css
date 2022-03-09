@@ -163,7 +163,7 @@ i.fa-search {
     border: none;
     flex-grow: 1;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .search-bar input:focus {

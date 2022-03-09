@@ -113,6 +113,7 @@ let controller = {
     
     update: (req, res) => {
         let errors = validationResult(req)
+       
         if(errors.isEmpty()){
             const {name, price, category, subcategory, description, discount} = req.body
             Products.update({
@@ -127,17 +128,16 @@ let controller = {
                 }
             })
             .then((result) => {
-                ProductImages.findAll({
+                ProductImages.findOne({
                     where: {
                         product_id: req.params.id
                     }
                 })
-                .then((images) => {
-                    images.forEach((image) => {
-                        fs.existsSync('./public/img/products/', image.image)
-                        ? fs.unlinkSync(`${'./public/img/products/'}${image.image}`)
-                        : console.log('No se encontro el archivo')
-                    })
+                .then((image) => {
+                    fs.existsSync('./public/img/products/', image.image)
+                    ? image.image !== 'default-image.jpg' ?
+                    fs.unlinkSync(`./public/img/products/${image.image}`) : ""
+                    : console.log('No se encontro el archivo')
                     ProductImages.destroy({
                         where: {
                             product_id: req.params.id
@@ -149,13 +149,13 @@ let controller = {
                             product_id: req.params.id
                         })
                         .then(() => {
-                            res.redirect('/admin')
+                           res.redirect('/admin')
                         })
                     })
                 })
                 .catch(error => console.log(error))
             })
-            
+           
         }else{
             let productId = Number(req.params.id);
             const productPromise = Products.findByPk(productId);
@@ -174,7 +174,7 @@ let controller = {
             })
             .catch(error => console.log(error)) 
         }
-        
+                
     },
     
     destroy : (req, res) => {

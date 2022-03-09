@@ -53,6 +53,18 @@ nav.navigation-bar{
         ul.menu{
             color: $softWhite;
         }
+
+        .desplegable{
+            background-color: $border;
+            border: 1px solid $borderInput;
+            a{
+                color: $softWhite;
+            }
+
+            a:hover{
+                background: $container;
+            }
+        }
     }
 }
 
@@ -99,6 +111,7 @@ section.section-vendido article.producto .container-product-index{
     
     body.dark &{
         background-color: #212e36;
+        border: 1px solid $borderInput;
         
         a.product-name{
             color: #ecf0f3;
@@ -113,6 +126,16 @@ section.section-vendido article.producto .container-product-index{
 section.section-vendido .producto{
     body.dark &{
         box-shadow: none;
+    }
+}
+
+.boton-productos{
+    body.dark &{
+        a{
+            h4{
+                box-shadow: none;
+            }
+        }
     }
 }
 
@@ -233,32 +256,56 @@ section.section-vendido .producto{
 }
 
 
-/* Formulario de Register */
+/* Formulario de Login y Register */
 
 .login {
     body.dark & {
-
+        
         .form-container{
-            background: $border;
+            background: $container;
             border-bottom: 1px solid $borderCont;
             border-top: 1px solid $borderCont;
             border-left: 1px solid $borderCont;
             border-radius: 2px;
             border-right: 20px solid $blue;
-
+            
             h2{
                 color: $blue;
             }
-
+            
             label{
                 color: $softWhite
             }
-
+            
             span{
                 color: $softWhite;
             }
-
+            
             .not-account{
+                a{
+                    color: $blue;
+                }
+            }
+            
+            .olvidaste{     
+                a{
+                    color: $blue;
+                }
+            }
+
+            .button-container{
+                button{
+                    background-color: $blue;
+                }
+            }
+
+            input{
+                background: $border;
+                color: white;
+                border: 1px solid $borderInput;
+            }
+
+            .yes-account{
                 a{
                     color: $blue;
                 }
@@ -268,3 +315,38 @@ section.section-vendido .producto{
 }
 
 
+/* Formulario de Creacion y Edicion */
+
+.form-container-admin{
+    body.dark &{
+        background: $container;
+        border: 1px solid $border;
+
+        label{
+            color: $softWhite;
+        }
+
+        input{
+            background: $border;
+            color: white;
+            border: 1px solid $borderInput;
+        }
+
+        textarea{
+            background: $border;
+            border: 1px solid $borderInput;
+            color: $softWhite;
+        }
+
+        select{
+            background: $border;
+            color: $softWhite;
+            border: 1px solid $borderInput;
+        }
+
+        button{
+            background: $blue;
+        }
+
+    }
+}

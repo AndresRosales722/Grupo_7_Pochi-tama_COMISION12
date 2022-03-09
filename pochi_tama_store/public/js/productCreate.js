@@ -78,7 +78,7 @@ window.addEventListener('load', function(){
     $subcategory.addEventListener('blur', function(){
         switch(true) {
             case!$subcategory.value.trim():
-                $subcategoryError.innerHTML = 'Debe elegir una categoría'
+                $subcategoryError.innerHTML = 'Debe elegir una subcategoria'
                 $subcategory.classList.add('invalid')
                 validationsErrors = true
                 break;
@@ -94,7 +94,7 @@ window.addEventListener('load', function(){
     $description.addEventListener('blur', () => {
         switch (true) {
             case !$description.value.trim():
-                $descriptionError.innerHTML = 'Debes agregar una descripción al producto';
+                $descriptionError.innerHTML = 'Debe agregar una descripción al producto';
                 $description.classList.remove('valid')
                 $description.classList.add('invalid')
                 validationsErrors = true

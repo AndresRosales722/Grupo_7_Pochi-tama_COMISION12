@@ -1,3 +1,10 @@
+section.tablas p {
+    text-align: center;
+    font-size: 1.7rem;
+    color: crimson;
+    padding: 10px 0px;
+}
+
 .d-none{
     display: none;
 }
@@ -26,7 +33,7 @@
 }
 
 .panel-admin a small.edit-admin{
-    background: green;
+    background: #388d6e;
     padding: 8px;
     width: 8rem;
     display: flex;
@@ -42,7 +49,7 @@
     background: #222933;
     height: 32px;
     cursor: pointer;
-    color: green;
+    color: #388d6e;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -110,12 +117,13 @@
 }
 
 .panel-admin nav.pagination-cont{
+    margin-top: 2rem;
 }
 
 .panel-admin nav.pagination-cont ul{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
 }
 
 .panel-admin nav.pagination-cont ul li{
@@ -233,9 +241,9 @@
     background-color: var(--orange3);
 }
 .panel-admin .tablas table thead tr th {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     padding: 1rem .5rem;
     color: white;
     text-transform: uppercase;
@@ -266,6 +274,7 @@
     cursor: pointer;
     color: #e83841;
     display: flex;
+    
     justify-content: center;
 }
 
@@ -291,6 +300,7 @@
 }
 
 @media(max-width: 550px) {
+
     .panel-admin .options-info div{
        /*  width: 90%; */
         margin: 1rem auto;
@@ -327,9 +337,36 @@
 
 
 @media(min-width: 550px) {
+    .panel-admin .tablas table tbody tr form button{
+        border-radius: 2px;
+    }
+
+    .panel-admin a .cont-edit{
+        border-radius: 2px;
+    }
+
     .panel-admin .guie ul li{
         width: 250px;
-}
+    }
+
+    .panel-admin .tablas table tbody tr a{
+        margin: 0px;
+    }
+
+    .container-accion {
+        padding: 0px 5px;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 5px;
+      }
+
+      .panel-admin form.delete small{
+          display: none;
+      }
+
+      .panel-admin a small.edit-admin{
+         display: none;
+      }
 }
 
 @media(min-width: 768px) {

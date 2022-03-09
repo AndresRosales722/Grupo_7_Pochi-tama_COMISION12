@@ -92,7 +92,7 @@ window.onload = () => {
                     template.querySelector('#price').textContent = product.price;
                     template.querySelector('#discount').textContent = product.discount;
                     template.querySelector('#btn-edit').href = `/admin/${product.id}/edit`;
-                    template.querySelector('#btn-delete').href = `/admin/${product.id}/delete/?_method=DELETE`;
+                    template.querySelector('#btn-delete').action = `/admin/${product.id}?_method=DELETE`;
                     const clone = template.cloneNode(true)
                     fragment.appendChild(clone)
                 });

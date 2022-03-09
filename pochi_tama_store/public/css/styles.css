@@ -40,6 +40,19 @@ body.dark nav.navigation-bar ul.menu {
   color: #ecf0f3;
 }
 
+body.dark nav.navigation-bar .desplegable {
+  background-color: #273b49;
+  border: 1px solid #385468;
+}
+
+body.dark nav.navigation-bar .desplegable a {
+  color: #ecf0f3;
+}
+
+body.dark nav.navigation-bar .desplegable a:hover {
+  background: #212e36;
+}
+
 /* Dark theme Footer */
 body.dark footer {
   background-color: #212e36;
@@ -74,6 +87,7 @@ body.dark footer button {
 /* Pagina de Inicio */
 body.dark section.section-vendido article.producto .container-product-index {
   background-color: #212e36;
+  border: 1px solid #385468;
 }
 
 body.dark section.section-vendido article.producto .container-product-index a.product-name {
@@ -85,6 +99,11 @@ body.dark section.section-vendido article.producto .container-product-index span
 }
 
 body.dark section.section-vendido .producto {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body.dark .boton-productos a h4 {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -177,9 +196,9 @@ body.dark .product-detail .medios span {
   color: #53a5e1;
 }
 
-/* Formulario de Register */
+/* Formulario de Login y Register */
 body.dark .login .form-container {
-  background: #273b49;
+  background: #212e36;
   border-bottom: 1px solid #2c4353;
   border-top: 1px solid #2c4353;
   border-left: 1px solid #2c4353;
@@ -201,5 +220,55 @@ body.dark .login .form-container span {
 
 body.dark .login .form-container .not-account a {
   color: #53a5e1;
+}
+
+body.dark .login .form-container .olvidaste a {
+  color: #53a5e1;
+}
+
+body.dark .login .form-container .button-container button {
+  background-color: #53a5e1;
+}
+
+body.dark .login .form-container input {
+  background: #273b49;
+  color: white;
+  border: 1px solid #385468;
+}
+
+body.dark .login .form-container .yes-account a {
+  color: #53a5e1;
+}
+
+/* Formulario de Creacion y Edicion */
+body.dark .form-container-admin {
+  background: #212e36;
+  border: 1px solid #273b49;
+}
+
+body.dark .form-container-admin label {
+  color: #ecf0f3;
+}
+
+body.dark .form-container-admin input {
+  background: #273b49;
+  color: white;
+  border: 1px solid #385468;
+}
+
+body.dark .form-container-admin textarea {
+  background: #273b49;
+  border: 1px solid #385468;
+  color: #ecf0f3;
+}
+
+body.dark .form-container-admin select {
+  background: #273b49;
+  color: #ecf0f3;
+  border: 1px solid #385468;
+}
+
+body.dark .form-container-admin button {
+  background: #53a5e1;
 }
 /*# sourceMappingURL=styles.css.map */

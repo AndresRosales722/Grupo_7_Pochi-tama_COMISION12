@@ -4,7 +4,27 @@ form span.error{
     padding: 5px 5px;
 }
 
+body.admin .form-container-admin .cont-selects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
+body.admin .form-container-admin .cont-pri-dis{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+body.admin .form-container-admin .cont-pri-dis .input-admin{
+    width: 49%;
+}
+
+body.admin .form-container-admin .cont-selects .input-admin{
+    width: 49%;
+}
 
 body.admin .form-container-admin {
     padding:20px;
@@ -19,11 +39,7 @@ body.admin .form-container-admin h2{
     margin: 5px 0 30px;
 }
 
-body.admin .form-container-admin .input-admin{
-    margin-top: 20px;
-}
-
-body.admin .form-container-admin select.form-select{
+body.admin .form-container-admin select{
     height: 40px;
     border-radius: 5px;
     border: 1px solid silver;
@@ -36,17 +52,13 @@ body.admin .form-container-admin .form-admin .input-admin:nth-child(4n){
     margin-bottom: 20px;
 }
 
-input.input-style-admin::placeholder{
-    color: rgb(99, 99, 99);
-}
-
-body.admin .form-container-admin .input-admin label{
+body.admin .form-container-admin label{
     display: block;
     color:#2c3e50;
     margin-bottom: 5px;
 }
 
-body.admin .form-container-admin .input-admin input.input-style-admin{
+body.admin .form-container-admin input{
     height: 40px;
     border-radius: 5px;
     border: 1px solid silver;
@@ -55,7 +67,7 @@ body.admin .form-container-admin .input-admin input.input-style-admin{
     outline: none;
 }
 
-body.admin .form-container-admin .form-admin textarea.description{
+body.admin .form-container-admin textarea{
     border-radius: 5px;
     border: 1px solid silver;
     min-width: 100%;
@@ -112,19 +124,19 @@ body.admin .container-file:hover {
 /* Media queries */
 
 @media  (min-width: 576px){
-
+    
     body.admin .form-container-admin{
         max-width: 550px;
         margin: 60px auto;
     }
-
+    
     body.admin .form-container-admin button{
         width: 100%;
         font-size: 1.2rem;
     }
-
+    
     body.admin .form-container-admin textarea{
         width: 2%;
     }
-
+    
 }
