@@ -11,6 +11,7 @@ body.dark {
 /* Dark theme Header */
 body.dark .main-header {
   background-color: #212e36;
+  border-bottom: 1px solid #385468;
 }
 
 body.dark .main-header i {
@@ -31,13 +32,36 @@ body.dark .main-header input i.fas {
   background: #212e36;
 }
 
+body.dark ul.menu li:hover {
+  background: #212e36;
+}
+
 body.dark nav.navigation-bar {
-  background-color: #253640;
+  background-color: #273b49;
   border: 1px solid #385468;
 }
 
 body.dark nav.navigation-bar ul.menu {
   color: #ecf0f3;
+}
+
+body.dark nav.navigation-bar ul.menu li {
+  border-bottom: 1px solid #385468;
+}
+
+body.dark nav.navigation-bar ul.menu li:hover {
+  background: #212e36;
+}
+
+body.dark nav.navigation-bar ul.menu .user a {
+  background: #273b49;
+  color: #ecf0f3;
+  border-right: 1px solid #385468;
+  border-bottom: 1px solid #385468;
+}
+
+body.dark nav.navigation-bar ul.menu .user a:hover {
+  background: #212e36;
 }
 
 body.dark nav.navigation-bar .desplegable {
@@ -50,6 +74,48 @@ body.dark nav.navigation-bar .desplegable a {
 }
 
 body.dark nav.navigation-bar .desplegable a:hover {
+  background: #212e36;
+}
+
+body.dark nav.nav_menu form {
+  background: #212e36;
+}
+
+body.dark nav.nav_menu form input {
+  background: #273b49;
+  color: #ecf0f3;
+  border: 1px solid #385468;
+}
+
+body.dark nav.nav_menu form button {
+  background: #273b49;
+}
+
+body.dark nav.nav_menu form button i {
+  color: #ecf0f3;
+}
+
+body.dark nav.nav_menu .subcategory_menu {
+  background: #273b49;
+}
+
+body.dark nav.nav_menu .subcategory_menu ul li:hover {
+  background: #212e36;
+}
+
+body.dark nav.nav_menu .subcategory_menu a {
+  color: #ecf0f3;
+}
+
+body.dark nav.nav_menu .subcategory_menu li {
+  border-bottom: 1px solid #385468;
+}
+
+body.dark nav.nav_menu .subcategory_menu .boton-close {
+  border-bottom: 1px solid #385468;
+}
+
+body.dark nav.nav_menu .subcategory_menu .boton-close a:hover {
   background: #212e36;
 }
 

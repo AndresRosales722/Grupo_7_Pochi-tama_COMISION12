@@ -24,6 +24,7 @@ body{
     
     body.dark &{
         background-color: $container;
+        border-bottom: 1px solid $borderInput;
         
         i{
             color: $softWhite;
@@ -45,27 +46,104 @@ body{
     }
 }
 
+ul.menu{
+    body.dark & {
+        li:hover{
+            background: $container;
+        }
+    }
+}
+
 nav.navigation-bar{
     body.dark & {
-        background-color: #253640;
+        background-color: $border;
         border: 1px solid $borderInput;
         
         ul.menu{
             color: $softWhite;
-        }
 
+            li{
+                border-bottom: 1px solid $borderInput;
+            }
+            
+            li:hover{
+                background: $container;
+            }
+            
+            .user{
+                a{
+                    background: $border;
+                    color: $softWhite;
+                    border-right: 1px solid $borderInput;
+                    border-bottom: 1px solid $borderInput;
+                }
+                
+                a:hover{
+                    background: $container;
+                } 
+            }
+        }
+        
         .desplegable{
             background-color: $border;
             border: 1px solid $borderInput;
             a{
                 color: $softWhite;
             }
-
+            
             a:hover{
                 background: $container;
             }
         }
     }
+}
+
+nav.nav_menu{
+    body.dark &{
+        form{
+            background: $container;
+
+            input{
+                background: $border;
+                color: $softWhite;
+                border: 1px solid $borderInput;
+            }
+
+            button{
+                background: $border;
+                i{
+                    color: $softWhite;
+                }
+            }
+        }
+
+        .subcategory_menu{
+            background: $border;
+
+            ul{
+                li:hover{
+                    background: $container;
+                }
+            }
+
+            a{
+                color: $softWhite;
+            }
+            
+            li{
+                border-bottom: 1px solid $borderInput;
+            }
+            
+            .boton-close{
+                border-bottom: 1px solid $borderInput;
+
+                a:hover{
+                    background: $container;
+                }
+            }
+        }
+    }
+    
 }
 
 /* Dark theme Footer */
@@ -292,19 +370,19 @@ section.section-vendido .producto{
                     color: $blue;
                 }
             }
-
+            
             .button-container{
                 button{
                     background-color: $blue;
                 }
             }
-
+            
             input{
                 background: $border;
                 color: white;
                 border: 1px solid $borderInput;
             }
-
+            
             .yes-account{
                 a{
                     color: $blue;
@@ -321,32 +399,32 @@ section.section-vendido .producto{
     body.dark &{
         background: $container;
         border: 1px solid $border;
-
+        
         label{
             color: $softWhite;
         }
-
+        
         input{
             background: $border;
             color: white;
             border: 1px solid $borderInput;
         }
-
+        
         textarea{
             background: $border;
             border: 1px solid $borderInput;
             color: $softWhite;
         }
-
+        
         select{
             background: $border;
             color: $softWhite;
             border: 1px solid $borderInput;
         }
-
+        
         button{
             background: $blue;
         }
-
+        
     }
 }

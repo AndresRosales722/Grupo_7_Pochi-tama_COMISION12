@@ -257,13 +257,17 @@ i.fa-search {
     justify-content: space-between;
     align-items: center;
     transition: all 400ms ease;   
-    
+    width: 100%;
 }
 
 .subcategory_menu .subcategory_header a{
     color: var(--bluedark);
     font-size: 1.2rem;
     padding: 20px;
+}
+
+.subcategory_menu .subcategory_header a.menu{
+    width: 100%;
 }
 
 .subcategory_menu .subcategory_header a.closebtn{
@@ -286,7 +290,7 @@ i.fa-search {
 
 .subcategory_menu ul li:hover{
     background: #c1c1c1;
-}
+}  
 
 .subcategory_menu ul li a{
     color: var(--bluedark);
