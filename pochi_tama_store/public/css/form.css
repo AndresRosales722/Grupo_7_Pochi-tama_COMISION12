@@ -1,9 +1,9 @@
 body.register .form-container .register-send{
     width: 100%;
-justify-content: center;
-align-items: center;
-display: flex;
-flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 body.register .form-container form.register span.error{
@@ -148,9 +148,9 @@ body.register .form-container{
 
 .form {
     display: flex;
-justify-content: space-between;
-align-items: start;
-flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
 }
 
 .re-password{
@@ -297,8 +297,8 @@ select.input-select:focus {
 }
 
 .check {
-   margin-left: 5px;
-   user-select: none;
+    margin-left: 5px;
+    user-select: none;
 }
 
 .check label {
@@ -328,7 +328,7 @@ select.input-select:focus {
 }
 
 .btn-submit:hover{
-    background-color: #ec8c26;;
+    background-color: #ff9359;
 }
 
 .btn-submit.facebook{
@@ -376,69 +376,69 @@ select.input-select:focus {
 /* Media queries*/
 
 @media screen and (min-width: 576px) {
-
+    
     body.register .form-container {
         border-right: 20px solid var(--orange3);
     }
-
+    
     body .login{
         padding: 20px;
     }
-
+    
     body.register .form-container form.register span.error.terms {
         font-size: 14px;
     }
-
+    
     body .login .container-file{
         width: 90%;
     }
-
+    
     body.register .form-container{
         max-width: 600px;
     }
-
+    
     .btn-submit{
         width: 90%;
         font-size: 1.1rem;
     }
-
+    
     .btn-submit.facebook a{
         font-size: 1.1rem;
     }
-
+    
     .btn-submit.google a{
         font-size: 1.1rem;
     }
-
+    
     .btn-submit.facebook i{
         font-size: 1.9rem;
     }
-
+    
     .btn-submit.google i{
         font-size: 1.9rem;
     }
-
+    
     .form .re-password span a{
         font-size: 1rem;
     }
-
+    
     input.input-style{
         font-size: 1rem;
         
     }
-
+    
     .not-account span{
         font-size: 1rem;
     }
-
+    
     .not-account a{
         font-size: 1rem;
     }
-
+    
     .yes-account span{
         font-size: 1rem;
     }
-
+    
     .yes-account a{
         font-size: 1rem;
     }
@@ -449,7 +449,7 @@ select.input-select:focus {
     body.register .form-container{
         max-width: 600px;
     }
-
+    
     .btn-submit{
         height: 45px;
     }
