@@ -128,7 +128,8 @@ let controller = {
                 }
             })
             .then((result) => {
-                ProductImages.findOne({
+
+                ProductImages.findAll({
                     where: {
                         product_id: req.params.id
                     }
@@ -144,6 +145,7 @@ let controller = {
                         }
                     })
                     .then(() => {
+                        
                         ProductImages.create({
                             image: req.file ? req.file.filename : 'default-image.jpg',
                             product_id: req.params.id

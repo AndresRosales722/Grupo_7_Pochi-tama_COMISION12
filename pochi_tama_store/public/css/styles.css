@@ -269,7 +269,7 @@ body.dark .login .form-container {
   border-top: 1px solid #2c4353;
   border-left: 1px solid #2c4353;
   border-radius: 2px;
-  border-right: 20px solid #53a5e1;
+  border-right: 10px solid #53a5e1;
 }
 
 body.dark .login .form-container h2 {
@@ -336,5 +336,14 @@ body.dark .form-container-admin select {
 
 body.dark .form-container-admin button {
   background: #53a5e1;
+}
+
+@media (min-width: 768px) {
+  body.dark .main-header {
+    border-bottom: none;
+  }
+  body.dark nav.navigation-bar ul.menu li {
+    border-bottom: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -345,7 +345,7 @@ section.section-vendido .producto{
             border-top: 1px solid $borderCont;
             border-left: 1px solid $borderCont;
             border-radius: 2px;
-            border-right: 20px solid $blue;
+            border-right: 10px solid $blue;
             
             h2{
                 color: $blue;
@@ -427,4 +427,24 @@ section.section-vendido .producto{
         }
         
     }
+}
+
+@media(min-width: 768px){
+    .main-header{
+        body.dark &{
+            border-bottom: none;
+        }
+    }
+
+    nav.navigation-bar{
+        body.dark &{
+            ul.menu{
+                li{
+                        border-bottom: none;        
+                }
+            }
+        }
+    }
+    
+    
 }

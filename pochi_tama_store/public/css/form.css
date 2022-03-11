@@ -148,9 +148,14 @@ body.register .form-container{
 
 .form {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* display: flex;
     justify-content: space-between;
     align-items: start;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .re-password{
@@ -167,13 +172,14 @@ body.register .form-container{
 
 .not-account span{
     color:#2c3e50;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .not-account a{
-    color: var(--orange);
-    font-size: 1.1rem;
+    color: var(--orange3);
+    font-size: 1rem;
 }
+
 .yes-account{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -186,18 +192,16 @@ body.register .form-container{
 }
 
 .yes-account a{
-    color: var(--orange);
-    font-size: 1.1rem;
+    color: var(--orange3);
+    font-size: 1rem;
 }
 
 .form .re-password span a{
-    color: var(--orange);
-    font-size: 1.1rem;
+    color: var(--orange3);
+    font-size: 1rem;
 }
 
 .form .olvidaste{
-    width: 100%;
-    margin-bottom: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -215,9 +219,6 @@ body.register .form-container{
     position: relative;
 }
 
-.input-container.small{
-    width: 49%;
-}
 
 .input-container label{
     color:#2c3e50 ;
@@ -236,7 +237,7 @@ span.error-message {
 }
 
 input.input-style {
-    border-radius: 5px;
+    border-radius: 3px;
     height: 2.5rem;
     padding: .5rem;
     border: 1px solid lightgrey;
@@ -446,12 +447,33 @@ select.input-select:focus {
 
 
 @media screen and (min-width: 768px) {
+    
+    .input-container.small{
+        width: 49%;
+    } 
+    
+    .form {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
     body.register .form-container{
         max-width: 600px;
     }
     
     .btn-submit{
         height: 45px;
+    }
+
+    .not-account a:hover{
+        text-decoration: underline;
+    }
+
+    .form .re-password span a:hover{
+        text-decoration: underline;
     }
 }
 
