@@ -40,7 +40,7 @@
                                 <select class="form-select categorySelect" id="specificSizeSelect" name="category">
                                   <option selected hidden value="">Categorias</option>
                                 <% categories.forEach(category => { %>
-                                    <option value="<%- category.id %>" <%- locals.old && old.category == category.id ? "selected" : category.id == product.category ? "selected" : "" %>><%- category.name %></option>
+                                    <option value="<%- category.id %>" <%= locals.old && old.category == category.id || category.id == product.subcategories.category_id ? "selected" : "" %>><%- category.name %></option>
                                 <% }) %>
                                 </select>
                                 <% if (locals.errors && errors.category) { %>
@@ -52,8 +52,7 @@
                             <select class="form-select subcategorySelect" id="specificSizeSelect" name="subcategory">
                               <option selected hidden value="">Subcategorias</option>
                               <% subcategories.forEach(subcategory => { %>
-                                <option value="<%- subcategory.id %>" <%= locals.old && old.subcategory == subcategory.id ? "selected" : ""  %> ><%- subcategory.name %> </option>
-                              <% }) %>
+                                    <option value="<%- subcategory.id %>" <%= locals.old && old.subcategory == product.subcategory_id || subcategory.id == product.subcategory_id ? "selected" : ""  %>><%- subcategory.name %></option><% }) %>
                             </select>
                             <% if (locals.errors && errors.subcategory) { %>
                                 <small class="text-danger"><%= errors.subcategory.msg %> </small>
