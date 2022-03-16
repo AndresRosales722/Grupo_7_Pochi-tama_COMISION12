@@ -1,36 +1,19 @@
 form span.error{
     color: crimson !important;
     font-size: 14px;
-    padding: 5px 5px;
+    padding: 5px 0px;
+    display: block;
 }
 
-body.admin .form-container-admin .cont-selects{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-body.admin .form-container-admin .cont-pri-dis{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-body.admin .form-container-admin .cont-pri-dis .input-admin{
-    width: 49%;
-}
-
-body.admin .form-container-admin .cont-selects .input-admin{
-    width: 49%;
+body.admin .form-container-admin .button-admin{
+    text-align: center;
 }
 
 body.admin .form-container-admin {
-    padding:20px;
+    padding:15px;
     border: 1px solid silver;
     border-radius: 2px;
-    margin: 25px;
+    margin: 19px;
 }
 
 body.admin .form-container-admin h2{
@@ -41,11 +24,15 @@ body.admin .form-container-admin h2{
 
 body.admin .form-container-admin select{
     height: 40px;
-    border-radius: 5px;
+    border-radius: 4px;
     border: 1px solid silver;
     width: 100%;
     padding-left: 10px;
     outline: none;
+    margin: 5px 0px 0px;
+    color: #2c3e50;
+    font-size: 0.9rem;
+    cursor: pointer;
 }
 
 body.admin .form-container-admin .form-admin .input-admin:nth-child(4n){
@@ -56,11 +43,12 @@ body.admin .form-container-admin label{
     display: block;
     color:#2c3e50;
     margin-bottom: 5px;
+    margin-top: 1rem;
 }
 
 body.admin .form-container-admin input{
     height: 40px;
-    border-radius: 5px;
+    border-radius: 4px;
     border: 1px solid silver;
     width: 100%;
     padding-left: 10px;
@@ -68,7 +56,7 @@ body.admin .form-container-admin input{
 }
 
 body.admin .form-container-admin textarea{
-    border-radius: 5px;
+    border-radius: 4px;
     border: 1px solid silver;
     min-width: 100%;
     max-width: 100%;
@@ -81,19 +69,17 @@ body.admin .form-container-admin textarea{
 
 body.admin .container-file {
     width: 100%;
-    height: 40px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 7px;
-    border-radius: 5px;
-    margin-top: 10px;
+    border-radius: 4px;
     position: relative;
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
     background-color: var(--purple);
-    margin-bottom: 1rem;
 }
 
 body.admin .container-file i {
@@ -139,4 +125,27 @@ body.admin .container-file:hover {
         width: 2%;
     }
     
+}
+
+@media  (min-width: 768px){
+
+    body.admin .form-container-admin .cont-selects{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    body.admin .form-container-admin .cont-pri-dis{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    body.admin .form-container-admin .cont-pri-dis .input-admin{
+        width: 49%;
+    }
+    
+    body.admin .form-container-admin .cont-selects .input-admin{
+        width: 49%;
+    }
 }

@@ -9,6 +9,63 @@ body.dark {
 }
 
 /* Dark theme Header */
+.switch {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: unset;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  -webkit-transition: .3 ease all;
+  transition: .3 ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background: var(--orange3);
+  color: black;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0px !important;
+}
+
 body.dark .main-header {
   background-color: #212e36;
   border-bottom: 1px solid #385468;
@@ -119,9 +176,26 @@ body.dark nav.nav_menu .subcategory_menu .boton-close a:hover {
   background: #212e36;
 }
 
+/* Section info */
+body.dark section.info {
+  background: #212e36;
+}
+
+body.dark section.info i, body.dark section.info p {
+  color: #ecf0f3;
+}
+
+body.dark section.info label {
+  color: #c8ccce;
+}
+
+body.dark section.info .icon-tarjeta {
+  background: #273b49;
+}
+
 /* Dark theme Footer */
 body.dark footer {
-  background-color: #212e36;
+  background-color: #192229;
 }
 
 body.dark footer h4 {
@@ -160,6 +234,10 @@ body.dark section.section-vendido article.producto .container-product-index a.pr
   color: #ecf0f3;
 }
 
+body.dark section.section-vendido article.producto .container-product-index h4 {
+  color: #ff955c;
+}
+
 body.dark section.section-vendido article.producto .container-product-index span.discount {
   color: #52a5e0;
 }
@@ -167,6 +245,11 @@ body.dark section.section-vendido article.producto .container-product-index span
 body.dark section.section-vendido .producto {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+body.dark section.section-vendido .producto .caja {
+  -webkit-filter: brightness(90%) contrast(110%);
+          filter: brightness(90%) contrast(110%);
 }
 
 body.dark .boton-productos a h4 {

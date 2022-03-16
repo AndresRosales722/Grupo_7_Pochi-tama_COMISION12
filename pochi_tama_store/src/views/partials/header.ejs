@@ -62,10 +62,10 @@
 
         <!-- Icono del buscador en header mobile -->
 
-        <button class="switch" id="switch">
+        <!-- <button class="switch" id="switch">
             <span><i class="fas fa-sun"></i></span>
             <span><i class="fas fa-moon"></i></span>
-        </button>
+        </button> -->
         
         <div class="search-icon" onclick="dropSearch()">
             <i class="fas fa-search"></i>
@@ -87,8 +87,8 @@
                 <% if (typeof session.user != "undefined") { %>
                 <i class="fas fa-user"><span>Cuenta</span></i><span class="session"></span>
                 <div class="menu-user">
-                    <a href="/users/profile">Mis datos</a>
-                    <a href="/users/logout">Cerrar sesión</a>
+                    <a class="sesion-datos" href="/users/profile">Mis datos</a>
+                    <a class="sesion-datos" href="/users/logout">Cerrar sesión</a>
                     <% if (session.user.rol === "ROL_ADMIN") { %>
                     <a href="/admin/index">ADMIN</a>
                     <% } %>
@@ -101,10 +101,10 @@
             <a href="/"><i class="fas fa-shopping-cart"><span>Carrito</span></i></a>
 
             <!-- Boton modo oscuro -->
-           <!--  <button class="switch" id="switch">
+            <button class="switch" id="switch">
                 <span><i class="fas fa-sun"></i></span>
                 <span><i class="fas fa-moon"></i></span>
-            </button> -->
+            </button>
             
         </div>
 

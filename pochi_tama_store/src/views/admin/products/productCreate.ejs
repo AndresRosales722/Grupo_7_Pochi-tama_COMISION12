@@ -55,12 +55,12 @@
                                 <% categories.forEach(category => { %>
                                 <option value="<%- category.id %>"
                                     <%= locals.old && old.category == category.id ? "selected" : "" %>>
-                                    <%- category.name %> </option>
+                                    <%- category.name %></option>
                                 <% }) %>
                             </select>
                             <span id="categoryError" class="error"></span>
                             <% if (locals.errors && errors.category) { %>
-                            <span class="error-message"><%= errors.category.msg %> </span>
+                            <span class="error-message"><%= errors.category.msg %></span>
                             <% } %>
                         </div>
 
@@ -75,7 +75,7 @@
                             </select>
                             <span id="subcategoryError" class="error"></span>
                             <% if (locals.errors && errors.subcategory) { %>
-                            <span class="error-message"><%= errors.subcategory.msg %> </span>
+                            <span class="error-message"><%= errors.subcategory.msg %></span>
                             <% } %>
                         </div>
 
@@ -102,7 +102,7 @@
                     <span id="imageError" class="error"></span>
 
                     <div class="button-admin">
-                        <span id="submit-error" class="error">.</span>
+                        <span id="submit-error" class="error"></span>
                         <button type="submit" class="btn btn-submit">Crear Producto</button>
                     </div>
 

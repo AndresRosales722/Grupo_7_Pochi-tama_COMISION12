@@ -24,7 +24,7 @@ window.addEventListener('load', function(){
     $inputName.addEventListener('blur', function(){
         switch(true) {
             case!$inputName.value.trim():
-                $nameError.innerHTML = 'El nombre del producto es obligatorio'
+                $nameError.innerHTML = 'Debe ingresar un nombre al producto'
                 $inputName.classList.add('invalid');
                 $inputName.classList.remove('valid')
                 validationsErrors = true

@@ -4,42 +4,31 @@ function qs(element) {
 
 window.addEventListener('load', function () {
 
-    /* Elementos seleccionados */
-
     let $btnSwitch = qs('#switch')
     let $body = qs('body')
-    /* let $bgFooter = qs('#bg-footer')
-    let $card = qs('#card-bg')
-    let $header = qs('#header')
-    let $header2 = qs('#navigation-bar-desktop') */
-   
-
 
     $btnSwitch.addEventListener('click', () => {
         $body.classList.toggle('dark')
-        /* $header.classList.toggle('dark-header')
-        $header2.classList.toggle('dark-header2')
-        $bgFooter.classList.toggle('dark-footer') */
-        /* $card.classList.toggle('dark-card') */
-
-        if($body.classList.contains('dark')){
+        $btnSwitch.classList.toggle('active')
+    
+        
+        if($body.classList.contains('dark') && $btnSwitch.classList.contains('active') ){
             localStorage.setItem('dark-mode', 'true')
+            localStorage.setItem('active', 'true')
         } else {
             localStorage.setItem('dark-mode', 'false')
+            localStorage.setItem('active', 'false')
         }
 
     })
     
-    if(localStorage.getItem('dark-mode'/* ,'dark-footer','dark-header','dark-header2' */) === 'true'){
+    if(localStorage.getItem('dark-mode') && localStorage.getItem('active') === 'true'){
         $body.classList.add('dark')
-        /* $bgFooter.classList.add('dark-footer')
-        $header.classList.add('dark-header')
-        $header2.classList.add('dark-header2') */
+        $btnSwitch.classList.add('active')
+       
     } else {
         $body.classList.remove('dark')
-        /* $bgFooter.classList.remove('dark-footer')
-        $header.classList.remove('dark-header')
-        $header2.classList.remove('dark-header2') */
+        $btnSwitch.classList.remove('active')
     }
 
 })

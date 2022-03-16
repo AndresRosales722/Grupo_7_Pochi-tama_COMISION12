@@ -13,7 +13,6 @@ window.onload = () => {
     const pageNext = document.querySelector('#page_next');
     const pagesLink = document.querySelectorAll('.page-link');
 
-
     console.log(template);
 
 
@@ -96,6 +95,11 @@ window.onload = () => {
                     const clone = template.cloneNode(true)
                     fragment.appendChild(clone)
                 });
+
+                template.querySelector('#btn-delete').addEventListener('submit',function(e){
+                    alert('hola')
+                })
+                
                 tbody.appendChild(fragment)
 
                 if(result.info.previous != null){
@@ -126,5 +130,8 @@ window.onload = () => {
 
     }
     traerDatos(urlParams)
+
+    
+
 
 }

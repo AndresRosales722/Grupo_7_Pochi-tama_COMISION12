@@ -313,7 +313,7 @@ select.input-select:focus {
 
 .btn {
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     height: 2.5rem;
     width: 8rem;

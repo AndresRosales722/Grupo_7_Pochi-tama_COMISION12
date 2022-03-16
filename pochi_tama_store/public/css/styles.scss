@@ -6,6 +6,7 @@ $borderInput : #385468;
 $whiteDark : #c8ccce;
 $borderCont : #2c4353;
 $blue : #53a5e1;
+$orangelight : #ff955c;
 
 
 body{
@@ -19,6 +20,51 @@ body{
 }
 
 /* Dark theme Header */
+
+.switch{
+    background: #343d5b ;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    &::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: unset;
+        background: #f1f1f1;
+        top: 0;
+        left: 0;
+        border-radius: 100px;
+        transition: .3 ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+    }
+    &.active{
+        background: var(--orange3);
+        color: black;
+        
+        &::after{
+            
+            right: 0;
+            left: unset;
+        }
+    }
+    span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: flex;
+        background: none;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px !important;
+    }
+}
 
 .main-header{
     
@@ -61,7 +107,7 @@ nav.navigation-bar{
         
         ul.menu{
             color: $softWhite;
-
+            
             li{
                 border-bottom: 1px solid $borderInput;
             }
@@ -102,13 +148,13 @@ nav.nav_menu{
     body.dark &{
         form{
             background: $container;
-
+            
             input{
                 background: $border;
                 color: $softWhite;
                 border: 1px solid $borderInput;
             }
-
+            
             button{
                 background: $border;
                 i{
@@ -116,16 +162,16 @@ nav.nav_menu{
                 }
             }
         }
-
+        
         .subcategory_menu{
             background: $border;
-
+            
             ul{
                 li:hover{
                     background: $container;
                 }
             }
-
+            
             a{
                 color: $softWhite;
             }
@@ -136,7 +182,7 @@ nav.nav_menu{
             
             .boton-close{
                 border-bottom: 1px solid $borderInput;
-
+                
                 a:hover{
                     background: $container;
                 }
@@ -146,12 +192,31 @@ nav.nav_menu{
     
 }
 
+/* Section info */
+
+section.info{
+    body.dark &{
+        background: $container;
+        i,p{
+            color: $softWhite;
+        }
+        
+        label{
+            color: #c8ccce;
+        }
+        
+        .icon-tarjeta{
+            background: $border;
+        }
+    }
+}
+
 /* Dark theme Footer */
 
 footer{
     
     body.dark &{
-        background-color: $container;
+        background-color: $body;
         
         h4{
             color: $softWhite;
@@ -194,6 +259,10 @@ section.section-vendido article.producto .container-product-index{
         a.product-name{
             color: #ecf0f3;
         }
+
+        h4{
+            color: $orangelight;
+        }
         
         span.discount{
             color: #52a5e0;
@@ -204,7 +273,11 @@ section.section-vendido article.producto .container-product-index{
 section.section-vendido .producto{
     body.dark &{
         box-shadow: none;
-    }
+        
+        .caja{
+            filter: brightness(90%) contrast(110%);
+        }
+    } 
 }
 
 .boton-productos{
@@ -435,12 +508,12 @@ section.section-vendido .producto{
             border-bottom: none;
         }
     }
-
+    
     nav.navigation-bar{
         body.dark &{
             ul.menu{
                 li{
-                        border-bottom: none;        
+                    border-bottom: none;        
                 }
             }
         }
