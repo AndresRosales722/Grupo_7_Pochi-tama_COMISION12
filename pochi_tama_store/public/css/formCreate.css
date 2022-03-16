@@ -16,6 +16,14 @@ body.admin .form-container-admin {
     margin: 19px;
 }
 
+body.admin .form-container-admin .input-admin.description{
+    margin-bottom: 20px;
+}
+
+body.admin .form-container-admin .input-admin.discount{
+    margin-bottom: 1rem;
+}
+
 body.admin .form-container-admin h2{
     font-size: 1.4rem;
     color: var(--orange3);
@@ -33,10 +41,6 @@ body.admin .form-container-admin select{
     color: #2c3e50;
     font-size: 0.9rem;
     cursor: pointer;
-}
-
-body.admin .form-container-admin .form-admin .input-admin:nth-child(4n){
-    margin-bottom: 20px;
 }
 
 body.admin .form-container-admin label{

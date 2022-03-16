@@ -421,6 +421,50 @@ body.dark .form-container-admin button {
   background: #53a5e1;
 }
 
+/* Carrito de Compras */
+body.dark .cart .container-cart h2 {
+  color: #ecf0f3;
+}
+
+body.dark .cart .container-cart section.container-product {
+  background: #273b49;
+  border: 1px solid #385468;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body.dark .cart .container-cart section.container-product span {
+  color: #ecf0f3;
+}
+
+body.dark .cart .container-cart section.container-product .button-trash span {
+  color: #ecf0f3 !important;
+}
+
+body.dark .cart .container-cart section.container-product a {
+  color: #ecf0f3;
+}
+
+body.dark .cart .container-cart section.container-product li {
+  color: #ff955c;
+}
+
+body.dark .cart .container-cart section.container-subtotal span {
+  color: #ecf0f3;
+}
+
+body.dark .cart .container-cart section.total-compra span {
+  color: #ff955c;
+}
+
+body.dark .cart .container-cart section.container-send a, body.dark .cart .container-cart section.container-send span {
+  color: #53a5e1;
+}
+
+body.dark .cart .container-cart .local {
+  color: #53a5e1;
+}
+
 @media (min-width: 768px) {
   body.dark .main-header {
     border-bottom: none;

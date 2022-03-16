@@ -1,91 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('../../partials/head.ejs')  %> 
+<%- include('../../partials/head.ejs')  %>
 
-    <body class="admin">
+<body class="admin">
 
-    <%- include('../../partials/header.ejs')  %> 
-    
-            <div class="form-container-admin">
-                <h2>Esta editando el producto:<%= product.name %></h2>
-                <form action="/admin/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-                    <div class="form-admin">
+    <%- include('../../partials/header.ejs')  %>
 
-                        <div class="input-admin">
-                            <label for="name">Nombre del Producto</label>
-                            <input class="input-style-admin" type="text" name="name" placeholder="Ej: Guante del infinito" value='<%= locals.old ? old.name : product.name %>'>
-                            <% if (locals.errors && errors.name) { %>
-                            <small class="error-message"><%= errors.name.msg %></small>
-                            <% } %> 
-                        </div>
-                        
-                        <div class="input-admin">
-                            <label for="price">Precio del producto</label>
-                            <input class="input-style-admin" type="text" name="price" placeholder="Ej: 3000" value='<%= locals.old ? old.price : product.price %>'>
-                            <% if (locals.errors && errors.price) { %>
-                                <small class="error-message"><%= errors.price.msg %></small>
-                                <% } %>  
-                        </div>
+    <div class="form-container-admin">
+        <h2>Esta editando el producto:<%= product.name %></h2>
+        <form id="form" action="/admin/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <div class="form-admin">
 
-                        <div class="input-admin">
-                                <label for="discount">Descuento</label>
-                                <input class="input-style-admin" type="number" name="discount" placeholder="Ej: 50"  value="<%= locals.old ? old.discount : product.discount %>">
-                                <% if (locals.errors && errors.discount) { %>
-                                    <small class="error-message"><%= errors.discount.msg %></small>
-                                    <% } %>    
-                            </div>
+                <div class="input-admin">
+                    <label for="name">Nombre del Producto</label>
+                    <input id="name" class="input-style-admin" type="text" name="name" placeholder="Ej: Guante del infinito"
+                        value='<%= locals.old ? old.name : product.name %>'>
+                    <span id="nameError" class="error"></span>
+                    <% if (locals.errors && errors.name) { %>
+                    <small class="error-message"><%= errors.name.msg %></small>
+                    <% } %>
+                </div>
 
-                        <div class="input-admin">
-                                <select class="form-select categorySelect" id="specificSizeSelect" name="category">
-                                  <option selected hidden value="">Categorias</option>
-                                <% categories.forEach(category => { %>
-                                    <option value="<%- category.id %>" <%= locals.old && old.category == category.id || category.id == product.subcategories.category_id ? "selected" : "" %>><%- category.name %></option>
-                                <% }) %>
-                                </select>
-                                <% if (locals.errors && errors.category) { %>
-                                    <small class="text-danger"><%= errors.category.msg %> </small>
-                                <% } %>
-                        </div>
+                <div class="input-admin">
+                    <label for="price">Precio del producto</label>
+                    <input id="price" class="input-style-admin" type="text" name="price" placeholder="Ej: 3000"
+                        value='<%= locals.old ? old.price : product.price %>'>
+                    <span id="priceError" class="error"></span>
+                    <% if (locals.errors && errors.price) { %>
+                    <small class="error-message"><%= errors.price.msg %></small>
+                    <% } %>
+                </div>
 
-                        <div class="input_admin">
-                            <select class="form-select subcategorySelect" id="specificSizeSelect" name="subcategory">
-                              <option selected hidden value="">Subcategorias</option>
-                              <% subcategories.forEach(subcategory => { %>
-                                    <option value="<%- subcategory.id %>" <%= locals.old && old.subcategory == product.subcategory_id || subcategory.id == product.subcategory_id ? "selected" : ""  %>><%- subcategory.name %></option><% }) %>
-                            </select>
-                            <% if (locals.errors && errors.subcategory) { %>
-                                <small class="text-danger"><%= errors.subcategory.msg %> </small>
-                            <% } %>
-                        </div>
+                <div class="input-admin discount">
+                    <label for="discount">Descuento</label>
+                    <input class="input-style-admin" type="number" name="discount" placeholder="Ej: 50"
+                        value="<%= locals.old ? old.discount : product.discount %>">
+                    <% if (locals.errors && errors.discount) { %>
+                    <small class="error-message"><%= errors.discount.msg %></small>
+                    <% } %>
+                </div>
 
-                        
-                        <div class="input-admin description">
-                            <label for="description">Descripcion</label>
-                            <textarea class="description" name="description" id="description" ><%= locals.old ? old.description : product.description %></textarea>
-                            <% if (locals.errors && errors.description) { %>
-                                <small class="error-message"><%= errors.description.msg %></small>
-                                <% } %>      
-                        </div>
-                       
-                        <div class="container-file">
-                            <i class="fas fa-upload"></i>
-                            <p>Ingrese una Imagen</p>
-                            <input type="file" name="image" id="inputImage" multiple>
-                            <% if (locals.errors && errors.image) { %>
-                                <small class="error-message"><%= errors.image.msg %></small>
-                                <% } %>
-                        </div>
-                       
+                <div class="input-admin">
+                    <select class="form-select categorySelect" id="category" name="category">
+                        <option selected hidden value="">Categorias</option>
+                        <% categories.forEach(category => { %>
+                        <option value="<%- category.id %>"
+                            <%= locals.old && old.category == category.id || category.id == product.subcategories.category_id ? "selected" : "" %>>
+                            <%- category.name %></option>
+                        <% }) %>
+                    </select>
+                    <span id="categoryError" class="error"></span>
+                    <% if (locals.errors && errors.category) { %>
+                    <small class="text-danger"><%= errors.category.msg %> </small>
+                    <% } %>
+                </div>
 
-                        <div class="button-admin">
-                            <button type="submit" class="btn btn-submit">Guardar producto</button>
-                        </div>
-                
-                    </div>
-                    
-                </form>
+                <div class="input_admin">
+                    <select class="form-select subcategorySelect" id="subcategory" name="subcategory">
+                        <option selected hidden value="">Subcategorias</option>
+                        <% subcategories.forEach(subcategory => { %>
+                        <option value="<%- subcategory.id %>"
+                            <%= locals.old && old.subcategory == product.subcategory_id || subcategory.id == product.subcategory_id ? "selected" : ""  %>>
+                            <%- subcategory.name %></option><% }) %>
+                    </select>
+                    <span id="subcategoryError" class="error"></span>
+                    <% if (locals.errors && errors.subcategory) { %>
+                    <small class="text-danger"><%= errors.subcategory.msg %> </small>
+                    <% } %>
+                </div>
+
+
+                <div class="input-admin description">
+                    <label for="description">Descripcion</label>
+                    <textarea class="description" name="description"
+                        id="description"><%= locals.old ? old.description : product.description %></textarea>
+                        <span id="descriptionError" class="error"></span>
+                    <% if (locals.errors && errors.description) { %>
+                        <span class="error-message" id><%= errors.description.msg %></span>
+                    <% } %>
+                </div>
+
+                <div class="container-file">
+                    <i class="fas fa-upload"></i>
+                    <p>Ingrese una Imagen</p>
+                    <input type="file" name="image" id="image" multiple>
+                    <% if (locals.errors && errors.image) { %>
+                        <span class="error-message"><%= errors.image.msg %></span>
+                    <% } %>
+                </div>
+                <span id="imageError" class="error"></span>
+
+
+                <div class="button-admin">
+                    <span id="submit-error" class="error"></span>
+                    <button type="submit" class="btn btn-submit">Guardar Producto</button>
+                </div>
+
             </div>
 
+        </form>
+    </div>
+
+    <script src="/js/productEdit.js"></script>
+
 </body>
+
 </html>

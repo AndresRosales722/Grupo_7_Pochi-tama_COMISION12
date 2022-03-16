@@ -394,6 +394,10 @@ i.fa-search {
         top: 30px;
         left: 10px;
     }
+
+    .menu-user a:hover{
+        background: #cecece;
+    }
     
     .user:hover .menu-user{
         display: block;

@@ -502,6 +502,63 @@ section.section-vendido .producto{
     }
 }
 
+
+/* Carrito de Compras */
+
+.cart .container-cart{
+    body.dark &{
+        h2{
+            color: $softWhite;
+        }
+
+        section.container-product{
+            background: $border;
+            border: 1px solid $borderInput;
+            box-shadow: none;
+
+            span{
+                color: $softWhite;
+            }
+    
+            .button-trash span{
+                color: $softWhite !important;
+            }
+    
+            a{
+                color: $softWhite;
+            }
+
+            li{
+                color: $orangelight;
+            }
+
+        }
+
+        section.container-subtotal{
+            span{
+                color: $softWhite;
+            }
+        }
+
+        section.total-compra{
+            span{
+                color: $orangelight;
+            }
+        }
+
+        section.container-send{
+            a,span{
+                color: $blue;
+            }
+        }
+
+        .local{
+            color: $blue;
+        }
+
+    }
+}
+
 @media(min-width: 768px){
     .main-header{
         body.dark &{

@@ -1,29 +1,29 @@
-function qs (element) {
+function qs(element) {
     return document.querySelector(element)
 }
 
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
     let $inputName = qs('#name'),
-    $nameError = qs('#nameError'),
-    $inputPrice = qs('#price'),
-    $priceError = qs('#priceError'),
-    $category = qs('#category'),
-    $categoryError = qs('#categoryError'),
-    $subcategory = qs('#subcategory'),
-    $subcategoryError = qs('#subcategoryError'),
-    $description = qs('#description'),
-    $descriptionError = qs('#descriptionError'),
-    $image = qs('#image'),
-    $imageError =qs('#imageError'),
-    $form = qs('#form'),
-    $submitError = qs('#submit-error')
-    
+        $nameError = qs('#nameError'),
+        $inputPrice = qs('#price'),
+        $priceError = qs('#priceError'),
+        $category = qs('#category'),
+        $categoryError = qs('#categoryError'),
+        $subcategory = qs('#subcategory'),
+        $subcategoryError = qs('#subcategoryError'),
+        $description = qs('#description'),
+        $descriptionError = qs('#descriptionError'),
+        $image = qs('#image'),
+        $imageError = qs('#imageError'),
+        $form = qs('#form'),
+        $submitError = qs('#submit-error')
+
     let regExImage = /(.jpg|.jpeg|.png|.gif)$/i;
     let validationsErrors = false
 
-    $inputName.addEventListener('blur', function(){
-        switch(true) {
-            case!$inputName.value.trim():
+    $inputName.addEventListener('blur', function () {
+        switch (true) {
+            case !$inputName.value.trim():
                 $nameError.innerHTML = 'El nombre del producto es obligatorio'
                 $inputName.classList.add('invalid');
                 $inputName.classList.remove('valid')
@@ -43,13 +43,19 @@ window.addEventListener('load', function(){
         }
     })
 
-    $inputPrice.addEventListener('blur', function(){
-        switch(true){
+    $inputPrice.addEventListener('blur', function () {
+        switch (true) {
             case !$inputPrice.value.trim():
                 $priceError.innerHTML = 'Debe ingresar un precio al producto';
                 $inputPrice.classList.remove('valid')
                 $inputPrice.classList.add('invalid');
                 validationsErrors = true
+                break;
+            case $inputPrice.value.trim().length < 3:
+                $priceError.innerHTML = 'El precio del producto debe tener mas de 2 caracteres';
+                $inputPrice.classList.remove('valid')
+                $inputPrice.classList.add('invalid')
+                validationsErrors = true;
                 break;
             default:
                 $inputPrice.classList.remove('invalid');
@@ -59,9 +65,9 @@ window.addEventListener('load', function(){
         }
     })
 
-    $category.addEventListener('blur', function(){
-        switch(true) {
-            case!$category.value.trim():
+    $category.addEventListener('blur', function () {
+        switch (true) {
+            case !$category.value.trim():
                 $categoryError.innerHTML = 'Debe elegir una categoría'
                 $category.classList.add('invalid')
                 validationsErrors = true
@@ -75,9 +81,9 @@ window.addEventListener('load', function(){
         }
     })
 
-    $subcategory.addEventListener('blur', function(){
-        switch(true) {
-            case!$subcategory.value.trim():
+    $subcategory.addEventListener('blur', function () {
+        switch (true) {
+            case !$subcategory.value.trim():
                 $subcategoryError.innerHTML = 'Debe elegir una Subcategoría'
                 $subcategory.classList.add('invalid')
                 validationsErrors = true
@@ -113,7 +119,7 @@ window.addEventListener('load', function(){
         }
     })
 
-    $image.addEventListener('change', ()=>{
+    $image.addEventListener('change', () => {
         if (regExImage.exec($image.value)) {
             const file = $image.files[0];
             const imagen = URL.createObjectURL(file);
@@ -128,22 +134,22 @@ window.addEventListener('load', function(){
         }
     })
 
-    $form.addEventListener('submit', function(event){
+    $form.addEventListener('submit', function (event) {
         event.preventDefault()
-        
+
         let error = false;
         let elementsForm = this.elements;
 
-        for (let index = 0; index < elementsForm.length - 1; index++){
-            if(elementsForm[index].value == ''
-            && elementsForm[index].type !== 'file'){
+        for (let index = 0; index < elementsForm.length - 1; index++) {
+            if (elementsForm[index].value == '' &&
+                elementsForm[index].type !== 'file') {
                 elementsForm[index].classList.add('invalid');
                 $submitError.innerHTML = 'Los campos señalados son obligatorios'
                 error = true
             }
         }
 
-        if(!error && !validationsErrors) {
+        if (!error && !validationsErrors) {
             $form.submit()
         }
 
