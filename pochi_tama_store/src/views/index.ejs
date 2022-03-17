@@ -22,12 +22,14 @@
                 <article class="productos-primary">
                     <div class="caja">
                         <div class="cont-fondo">
+                            <a href="/">
                             <div class="fondo-negro"></div>
                             <div class="cont-title">
-                                <h3>Figuras Coleccionables</h3>
+                                <h3>Figuras Originales</h3>
                                 <span>Encuentra esa figura que tanto estabas buscando</span>
                             </div>
-                            <a href=""><img src="/img/categorias/figuras.jpg" alt="imagen de categoria figuras"></a>
+                            <img src="/img/categorias/figuras.jpg" alt="imagen de categoria figuras">
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -35,8 +37,14 @@
                 <article class="productos-primary">
                     <div class="caja">
                         <div class="cont-fondo">
+                        <a href="">
                             <div class="fondo-negro"></div>
-                            <a href=""><img src="/img/categorias/jotaro lampara.jpg" alt="imagen de categoria lamparas"></a>
+                            <div class="cont-title">
+                                <h3>Lamparas Exclusivas</h3>
+                                <span>Encuentra esa figura que tanto estabas buscando</span>
+                            </div>
+                            <img src="/img/categorias/jotaro lampara.jpg" alt="imagen de categoria lamparas">
+                        </a>
                         </div>
                     </div>
                 </article>
@@ -44,8 +52,14 @@
                 <article class="productos-primary">
                     <div class="caja">
                         <div class="cont-fondo">
+                            <a href="">
                             <div class="fondo-negro"></div>
-                            <a href=""><img src="/img/categorias/tazas.jpg" alt="imagend de categoria tazas"></a>
+                            <div class="cont-title">
+                                <h3>Tazas</h3>
+                                <span>Encuentra esa figura que tanto estabas buscando</span>
+                            </div>
+                            <img src="/img/categorias/tazas.jpg" alt="imagend de categoria tazas">
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -53,8 +67,14 @@
                 <article class="productos-primary">
                     <div class="caja">
                         <div class="cont-fondo">
+                            <a href="">
                             <div class="fondo-negro"></div>
-                            <a href=""><img src="/img/categorias/funkos.jpg" alt="imagen categoria funkos"></a>
+                            <div class="cont-title">
+                                <h3>Funkos Pop!</h3>
+                                <span>Encuentra esa figura que tanto estabas buscando</span>
+                            </div>
+                            <img src="/img/categorias/funkos.jpg" alt="imagen categoria funkos">
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -65,9 +85,15 @@
             </div>
             <hr class="hr1">
 
-
-            <%- include('./partials/cardProduct.ejs') %>
-            
+            <div class="cont-products">
+                <div class="row">
+                    <div class="cont-two">
+                        
+                            <%- include('./partials/cardProduct.ejs') %>
+                        
+                    </div>
+                </div>
+            </div> 
 
             <div class="boton-productos">
                 <a href="/products/allProducts">
