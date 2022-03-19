@@ -12,12 +12,14 @@ const Subcategories = db.Subcategory;
 
 let controller = {
     index:(req,res) => {
+        req.session.cart = []
        Products.findAll({
             include: [
                 {association: 'productImages'},
             ]
         })
         .then((products) => {
+
             res.render('index',{
                 products,
                 toThousand,

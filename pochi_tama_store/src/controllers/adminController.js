@@ -12,7 +12,8 @@ const ProductImages = db.ProductImage;
 
 let controller = {
   all: (req, res) => {
-    Subcategories.findAll().then((subcategories) => {
+    Subcategories.findAll()
+    .then((subcategories) => {
       res.render("products/productsV2", {
         subcategories,
         toThousand,
@@ -79,6 +80,16 @@ let controller = {
         })
         .catch((error) => console.log(error));
     } else {
+      errors = errors.mapped()
+            if(req.fileValidationError) {
+                //console.log(req.fileValidationError)
+                errors = {
+                    ...errors,
+                    image : {
+                        msg: req.fileValidationError
+                    }
+                }
+            }
       let allCategories = Categories.findAll();
       let allSubcategories = Subcategories.findAll();
       Promise.all([allCategories, allSubcategories])
@@ -86,7 +97,7 @@ let controller = {
           res.render("admin/products/productCreate", {
             categories,
             subcategories,
-            errors: errors.mapped(),
+            errors,
             old: req.body,
             session: req.session,
           });
@@ -150,12 +161,15 @@ let controller = {
               product_id: req.params.id,
             },
           }).then((image) => {
-            /* fs.existsSync(
-              "./public/img/products/",
-              image.image && image.image !== "default-image.jpg"
-            )
-              ? fs.unlinkSync(`./public/img/products/${image.image}`)
-              : console.log("No se encontro el archivo"); */
+            console.log('AAAAAAAAAAAAAAAAAAA');
+            /* res.send(image) */
+             image.forEach(item => {
+               console.log(item);
+               fs.existsSync(
+                "./public/img/products/",item.image && item.image !== "default-image.jpg")
+                ? fs.unlinkSync(`./public/img/products/${item.image}`)
+                : console.log("No se encontro el archivo");
+            }) 
             ProductImages.destroy({
               where: {
                 product_id: +req.params.id,

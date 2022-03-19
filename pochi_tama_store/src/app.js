@@ -1,7 +1,8 @@
-let express = require('express');   //REQUERIMOS EL MODULO EXPRESS
-let app = express();                //EJECUTAMOS EXPRESS
+require('dotenv').config()
+const express = require('express');   //REQUERIMOS EL MODULO EXPRESS
+const app = express();                //EJECUTAMOS EXPRESS
 const PORT = 3000;                  //DEFINIMOS EL PUERTO 
-let path = require('path')          //USAMOS EL METODO PATH
+const path = require('path')          //USAMOS EL METODO PATH
 const methodOverride =  require('method-override') //PARA USAR EL METODO PUT Y DELETE
 const session = require('express-session')
 const cookieParser = require('cookie-parser')

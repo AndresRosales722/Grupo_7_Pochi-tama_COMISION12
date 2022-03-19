@@ -5,26 +5,11 @@
     <%- include('./partials/header.ejs') %>
     <main class="categories">
         <div class="container-search-page">
-            <% if (result.length > 0) { %>
+            <% if (products.length > 0) { %>
                 <h2 class="subtitle">Resultados de la búsqueda de: “<%- search %>“</h2>
 
-                <section class="section-vendido">
-                    <% result.forEach(product => { %>
-                    <article class="producto" id="productos">
-                        <div class="caja">
-                            <a href="/products/detail/<%- product.id %>"><img src="/img/products/<%- product.productImages[0].image %>" alt=""></a>
-                        </div>
-                    <div class="container-product-index">         
-                    <a href="/products/detail/<%- product.id %>" class="product-name"><%- product.name %></a>
-                    <div class="pri-dis">
-                        <h4>$<%- toThousand(product.price - product.price * product.discount / 100) %></h4>
-                        <span class="discount"><%- product.discount > 0 ? `${product.discount}$ OFF` : " " %></span>
-                    </div>
-                    </div>
-                    </article>
-                    <% }) %>
-                </section>
-
+            <%- include('./partials/cardProduct.ejs') %>
+                
             <% }else{%>
                 <h2 class="subtitle">No hay resultados de la búsqueda de <%- search %></h2>
             <% } %>

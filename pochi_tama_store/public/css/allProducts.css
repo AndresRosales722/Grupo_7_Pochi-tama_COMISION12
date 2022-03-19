@@ -1,6 +1,7 @@
 main.allProducts{
     padding: 10px;
     max-width: 450px;
+    padding-top:2rem ;
     margin: 0 auto;
 }
 
@@ -52,7 +53,7 @@ ul.atajos li a.inicio:hover{
 }
 
 .filter form .select-container{
-    width: 50%;
+    width: 45%;
 }
 
 .filter form .select-container select{
@@ -83,7 +84,7 @@ ul.atajos li a.inicio:hover{
 
     .products-t {
         width: 100%;
-        padding: 10px 10px;
+        padding: 10px 35px;
       }
 
       .section-vendido.allProducts{
@@ -91,8 +92,8 @@ ul.atajos li a.inicio:hover{
       }
 
       .filter {
-        padding: 10px 10px 30px 10px;
-        width: 20%;
+        padding: 10px 10px 30px 35px;
+        width: 25%;
       }
 
       .filter form .select-container{
@@ -105,12 +106,17 @@ ul.atajos li a.inicio:hover{
 }
 
 @media(min-width:992px){
+
+    .products-t {
+        padding: 10px 30px;
+      }
+
     main.allProducts{
         max-width: 992px;
     }
 
     .filter {
-        padding: 10px 30px 30px 10px;
+        padding: 10px 30px 30px 30px;
       }
 }
 
@@ -120,6 +126,10 @@ ul.atajos li a.inicio:hover{
     }
 
     .products-t {
-        padding: 20px 10px;
+        padding: 20px 80px;
+      }
+
+      .filter {
+        padding: 10px 30px 30px 80px;
       }
 }

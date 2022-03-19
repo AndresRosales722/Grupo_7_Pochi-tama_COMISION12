@@ -6,7 +6,9 @@ $borderInput : #385468;
 $whiteDark : #c8ccce;
 $borderCont : #2c4353;
 $blue : #53a5e1;
+$blueligth : #67c0ff;
 $orangelight : #ff955c;
+$orangelight2 : #ff8c4e;
 
 
 body{
@@ -265,7 +267,7 @@ section.section-vendido article.producto .container-product-index{
         }
         
         span.discount{
-            color: #52a5e0;
+            color: $blueligth;
         }
     }
 } 
@@ -276,6 +278,7 @@ section.section-vendido .producto{
         
         .caja{
             filter: brightness(90%) contrast(110%);
+            border-bottom: 4px solid $blueligth;
         }
     } 
 }
@@ -366,10 +369,42 @@ section.section-vendido .producto{
 
 .product-detail{
     body.dark &{
+
+        h1{
+            color: $orangelight2;
+        }
+
+        .calcular{
+            button{
+                border: 1px solid $borderInput;
+                background: $border;
+                span{
+                    color: $blueligth;
+                }
+            }
+
+            button:hover{
+                background: $borderInput;
+            }
+        }
+
+        .input-postal{
+            input{
+                background: #273b49;
+                border-bottom: 2px solid #67c0ff;
+                color: $softWhite;
+            }
+        }
         
         .price-product{
             p{
-                color: $blue;
+                color: $blueligth;
+            }
+        }
+
+        .cantidad-inp{
+            label{
+                color: $orangelight;
             }
         }
         
@@ -377,11 +412,14 @@ section.section-vendido .producto{
             p{
                 color: $softWhite;
             }
+            h2{
+                color: $orangelight;
+            }
         }
         
         .local{
             i,span{
-                color: $blue;
+                color: $blueligth;
             }
         }
         
@@ -394,13 +432,18 @@ section.section-vendido .producto{
                 color: $softWhite;
             }
             h2{
-                color: $blue;
+                color: $blueligth
             }
         }
         
         .medios{
             span{
-                color: $blue;
+                color: $blueligth;
+            }
+        }
+        .no-se{
+            a{
+                color: $orangelight;
             }
         }
     }

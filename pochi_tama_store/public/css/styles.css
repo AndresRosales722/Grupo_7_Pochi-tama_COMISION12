@@ -239,7 +239,7 @@ body.dark section.section-vendido article.producto .container-product-index h4 {
 }
 
 body.dark section.section-vendido article.producto .container-product-index span.discount {
-  color: #52a5e0;
+  color: #67c0ff;
 }
 
 body.dark section.section-vendido .producto {
@@ -250,6 +250,7 @@ body.dark section.section-vendido .producto {
 body.dark section.section-vendido .producto .caja {
   -webkit-filter: brightness(90%) contrast(110%);
           filter: brightness(90%) contrast(110%);
+  border-bottom: 4px solid #67c0ff;
 }
 
 body.dark .boton-productos a h4 {
@@ -314,16 +315,47 @@ body.dark .contact h2 {
 }
 
 /* Detalle de Producto */
+body.dark .product-detail h1 {
+  color: #ff8c4e;
+}
+
+body.dark .product-detail .calcular button {
+  border: 1px solid #385468;
+  background: #273b49;
+}
+
+body.dark .product-detail .calcular button span {
+  color: #67c0ff;
+}
+
+body.dark .product-detail .calcular button:hover {
+  background: #385468;
+}
+
+body.dark .product-detail .input-postal input {
+  background: #273b49;
+  border-bottom: 2px solid #67c0ff;
+  color: #ecf0f3;
+}
+
 body.dark .product-detail .price-product p {
-  color: #53a5e1;
+  color: #67c0ff;
+}
+
+body.dark .product-detail .cantidad-inp label {
+  color: #ff955c;
 }
 
 body.dark .product-detail .descripcion-container p {
   color: #ecf0f3;
 }
 
+body.dark .product-detail .descripcion-container h2 {
+  color: #ff955c;
+}
+
 body.dark .product-detail .local i, body.dark .product-detail .local span {
-  color: #53a5e1;
+  color: #67c0ff;
 }
 
 body.dark .product-detail section.ubicacion-local {
@@ -338,11 +370,15 @@ body.dark .product-detail section.ubicacion-local span {
 }
 
 body.dark .product-detail section.ubicacion-local h2 {
-  color: #53a5e1;
+  color: #67c0ff;
 }
 
 body.dark .product-detail .medios span {
-  color: #53a5e1;
+  color: #67c0ff;
+}
+
+body.dark .product-detail .no-se a {
+  color: #ff955c;
 }
 
 /* Formulario de Login y Register */
