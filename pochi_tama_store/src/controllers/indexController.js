@@ -13,10 +13,8 @@ const Subcategories = db.Subcategory;
 let controller = {
     index:(req,res) => {
         req.session.cart = []
-        Products.findAll({
-        include : [{association : "productImages"},], order : [["id","DESC"]],limit: [20]})
+        Products.findAll({ include : [{association : "productImages"},], order : [["name", "ASC"]],limit:[20]})
         .then((products) => {
-            
             res.render('index',{
                 products,
                 toThousand,
@@ -28,7 +26,7 @@ let controller = {
     sucursales:(req,res) => {
         res.render('sucursales',{
             session: req.session,
-            
+        
         })
     },
     comprar:(req,res) => {
