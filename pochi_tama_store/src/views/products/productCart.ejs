@@ -1,129 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-        
-        <%- include('../partials/head.ejs')  %> 
-        
-</head>
-<body>
-        
-        <%- include('../partials/header.ejs')  %>    
-        
-        <div class="cart">
-                <div class="container-cart">
-                        <h2>Carrito de compras</h2>
-                        
-                        <form action="">
-                                <div class="container-form">
-                                        <section class="container-product">
-                                                <ul>
-                                                        <li class="prod">Producto</li>
-                                                        <li class="cant">Cantidad</li>
-                                                        <li class="pri">Precio</li>
-                                                        <li class="sub">Subtotal</li>
-                                                </ul>
-                                                <div class="product-1">
-                                                        <figure><a href=""><img src="/img/casco/casco1.png" alt=""></a></figure>
-                                                </div> 
-                                                <div class="detail">
-                                                        
-                                                        <div class="title-product">
-                                                                <a href="">Lorem ipsum dolor sit amet consectetur.</a>
-                                                        </div>
-                                                        
-                                                        <div class="container-number">
-                                                                <div class="container-cantidad">
-                                                                        <input type="number">
-                                                                </div>
-                                                                <div class="price-sub">
-                                                                        <span>$10.000</span>             
-                                                                </div>
+  <head>
+    <%- include('../partials/head.ejs') %>
+  </head>
 
-                                                                <div class="price-cart">
-                                                                        <span>$5.000</span>             
-                                                                </div>
-                                                        </div>
-                                                        <div class="button-trash">
-                                                                <span><i class="fas fa-trash"></i></span>
-                                                        </div>
-                                                </div>
-                                        </section>
-                                        
-                                        <section class="container-subtotal">
-                                            <div class="subtotal">
-                                                <span class="">Subtotal <small>(Sin envio) :</small></span>
-                                                <span class="price-subtotal">$5.000</span>
-                                            </div>    
-                                        </section>
-                                        
-                                <div class="container-envios">
-                                        <section class="container-send">
+  <body>
+    <%- include('../partials/header.ejs') %>
 
-                                             <div class="medios">
-                                                <span><i class="fas fa-truck"></i></span>
-                                                <span>Medios de envio</span>
-                                             </div>  
-                                             
-                                             <div class="postal">
-                                                <div class="input-postal">
-                                                        <input type="number" name="" id="" placeholder="Tu codigo postal">
-                                                </div>
+    <div class="cart">
+      <div class="container-cart">
+        <h2>Carrito de compras</h2>
 
-                                                <div class="calcular">
-                                                        <button>
-                                                                <span>CALCULAR</span>
-                                                        </button>
-                                                </div>
-                                             </div>
-
-                                             <div class="no-se">
-                                                <a href="https://www.correoargentino.com.ar/formularios/cpa" target="_blank">No se mi codigo postal</a>
-                                             </div>
-
-                                        </section>
-
-                                        <div class="local">
-                                                <i class="fas fa-store"></i>
-                                                <span>Nuestro local</span>
-                                        </div>
-                                        
-                                        <section class="ubicacion-local">
-                                                <div class="container-radio">
-                                                        <input type="radio">
-                                                </div>
-
-                                                <div class="detalle-ubicacion">
-                                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta quo corrupti laboriosam, cupiditate quos voluptatum fugiat illum deleniti in amet a cumque placeat maiores ut tempora. Obcaecati, aliquid voluptatum!</span>
-                                                </div>
-
-                                                <div class="gratis">
-                                                        <h2>Gratis</h2>
-                                                </div>
-                                        </section>
-                                </div>
-
-                                <div class="container-compras">
-
-                                </div>
-
-                                        <section class="total-compra">
-                                                <div class="total-resultado">
-                                                        <span class="s-total">Total:</span>
-                                                        <span>$5.000,12</span>
-                                                </div>
-
-                                                <div class="container-compra">
-                                                        <button>INICIAR COMPRA</button>
-                                                </div>
-                                        </section>
-
-                                </div>
-                        </form>
+        <form action="">
+          <div class="container-form">
+            <section class="container-product">
+              <ul>
+                <li class="prod">Producto</li>
+                <li class="cant">Cantidad</li>
+                <li class="pri">Precio</li>
+                <li class="sub">Subtotal</li>
+              </ul>
+              <div class="product-1">
+                <figure>
+                  <a href=""
+                    ><img src="/img/products/1644051475619_img_.jpg" alt=""
+                  /></a>
+                </figure>
+              </div>
+              <div class="detail">
+                <div class="title-product">
+                  <a href="">Lorem ipsum dolor sit amet consectetur.</a>
                 </div>
-                
-        </div>
-        
-        <%- include('../partials/footer.ejs')  %> 
-        
-</body>
+
+                <div class="container-number">
+                  <div class="container-cantidad">
+                    <input type="number" />
+                  </div>
+                  <div class="price-sub">
+                    <span>$10.000</span>
+                  </div>
+
+                  <div class="price-cart">
+                    <span>$5.000</span>
+                  </div>
+                </div>
+                <div class="button-trash">
+                  <span><i class="fas fa-trash"></i></span>
+                </div>
+              </div>
+            </section>
+
+            <section class="container-subtotal">
+              <div class="subtotal">
+                <span class="">Subtotal <small>(Sin envio) :</small></span>
+                <span class="price-subtotal">$5.000</span>
+              </div>
+            </section>
+
+            <div class="container-envios">
+              <section class="container-send">
+                <div class="medios">
+                  <span><i class="fas fa-truck"></i></span>
+                  <span>Medios de envio</span>
+                </div>
+
+                <div class="postal">
+                  <div class="input-postal">
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      placeholder="Tu codigo postal"
+                    />
+                  </div>
+
+                  <div class="calcular">
+                    <button>
+                      <span>CALCULAR</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="no-se">
+                  <a
+                    href="https://www.correoargentino.com.ar/formularios/cpa"
+                    target="_blank"
+                    >No se mi codigo postal</a
+                  >
+                </div>
+              </section>
+
+              <div class="local">
+                <i class="fas fa-store"></i>
+                <span>Nuestro local</span>
+              </div>
+
+              <section class="ubicacion-local">
+                <div class="container-radio">
+                  <input type="radio" />
+                </div>
+
+                <div class="detalle-ubicacion">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam dicta quo corrupti laboriosam, cupiditate quos
+                    voluptatum fugiat illum deleniti in amet a cumque placeat
+                    maiores ut tempora. Obcaecati, aliquid voluptatum!</span
+                  >
+                </div>
+
+                <div class="gratis">
+                  <h2>Gratis</h2>
+                </div>
+              </section>
+            </div>
+
+            <div class="container-compras"></div>
+
+            <section class="total-compra">
+              <div class="total-resultado">
+                <span class="s-total">Total:</span>
+                <span>$5.000,12</span>
+              </div>
+
+              <div class="container-compra">
+                <button>INICIAR COMPRA</button>
+              </div>
+            </section>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <%- include('../partials/infoEnvios.ejs') %> 
+    <%-include('../partials/footer.ejs') %>
+  </body>
 </html>

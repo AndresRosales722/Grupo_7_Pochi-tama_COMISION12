@@ -1,19 +1,97 @@
+body.register .form-container .register-send{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body.register .form-container form.register span.error{
+    color: crimson;
+    font-size: 14px;
+    padding: 5px 5px;
+}
+
+body.register .form-container form.register span.error.terms{
+    font-size: 13.7px;
+    padding: 5px 0px;
+    display: flex;
+}
+
+.block{
+    display: block;
+}
+
+.none{
+    display: none;
+}
+
+i.fas.fa-engine-warning{
+    color: crimson;
+    top: 34px;
+    right: 15px;
+    position: absolute;
+    font-size: 1rem;
+}
+
+i.fas.fa-check-circle{
+    color: green;
+    position: absolute;
+    top: 34px;
+    right: 15px;
+    font-size: 1rem;
+}
+
+.invalid{
+    border-color: crimson !important;
+    border-top-color: lightgrey;
+    border-right-color: lightgrey;
+    border-bottom-color: lightgrey;
+    border-left-color: lightgrey;
+}
+
+.valid{
+    border-color: green !important;
+    border-top-color: lightgrey;
+    border-right-color: lightgrey;
+    border-bottom-color: lightgrey;
+    border-left-color: lightgrey;
+} 
+
+.label-valid{
+    color: green !important;
+}
+
+.label-invalid{
+    color: crimson !important;
+}
+
+
+
+small.error-message{
+    padding: 5px 5px;
+    font-size: 14px;
+    color: crimson;
+}
+
+body.register label.terms{
+    margin: 0;
+}
+
 body.register {
-    background: white;
     height: 100%;
 }
 
 body .login {
-    padding: 20px;
+    padding: 10px;
 }
 
 body .login .container-file {
-    width: 90%;
-    height: 40px;
+    width: 100%;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7px;
     border-radius: 5px;
     margin-top: 10px;
     position: relative;
@@ -53,7 +131,7 @@ body.register h2 {
     text-align: center;
     margin-bottom: 1rem;
     font-weight: 500;
-    color: var(--orange);
+    color: var(--orange3);
     font-size: 1.7rem;
     letter-spacing: 1px;
     margin-top: 1rem;
@@ -70,9 +148,14 @@ body.register .form-container{
 
 .form {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap; */
 }
 
 .re-password{
@@ -84,17 +167,19 @@ body.register .form-container{
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
+    width: 100%;
 }
 
 .not-account span{
     color:#2c3e50;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .not-account a{
-    color: var(--orange);
-    font-size: 1.1rem;
+    color: var(--orange3);
+    font-size: 1rem;
 }
+
 .yes-account{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -107,18 +192,16 @@ body.register .form-container{
 }
 
 .yes-account a{
-    color: var(--orange);
-    font-size: 1.1rem;
+    color: var(--orange3);
+    font-size: 1rem;
 }
 
 .form .re-password span a{
-    color: var(--orange);
-    font-size: 1.1rem;
+    color: var(--orange3);
+    font-size: 1rem;
 }
 
 .form .olvidaste{
-    width: 100%;
-    margin-bottom: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -133,7 +216,9 @@ body.register .form-container{
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
     width: 100%;
+    position: relative;
 }
+
 
 .input-container label{
     color:#2c3e50 ;
@@ -145,22 +230,18 @@ body.register .form-container{
 }
 
 span.error-message {
-    color: red;
+    color: crimson;
     font-size: 10px;
     margin: 5px auto;
     display: none;
 }
 
 input.input-style {
-    border-radius: 5px;
+    border-radius: 3px;
     height: 2.5rem;
     padding: .5rem;
     border: 1px solid lightgrey;
-    background-color: #f2f2f2;
-}
-
-input.input-style::placeholder {
-    color: rgb(99, 99, 99);
+    background-color: #f1f1f1;
 }
 
 body.register label {
@@ -174,7 +255,7 @@ body.register label {
 
 
 body.register .form-container{
-    border-right: 30px solid var(--orange);
+    border-right: 10px solid var(--orange3);
     border-bottom: 1px solid silver;
     border-top: 1px solid silver;
     border-left: 1px solid silver;
@@ -203,7 +284,7 @@ select.input-select {
 input.input-style:focus,
 .input-file-container,
 select.input-select:focus {
-    box-shadow: 0 0 6px rgb(255, 255, 255);
+    
     outline: none;
 }
 
@@ -213,12 +294,12 @@ select.input-select:focus {
     height: fit-content;
     height: -moz-fit-content;
     width: 100%;
-    padding: 1rem;
+    padding: 15px;
 }
 
 .check {
-   margin-left: 5px;
-   user-select: none;
+    margin-left: 5px;
+    user-select: none;
 }
 
 .check label {
@@ -232,7 +313,7 @@ select.input-select:focus {
 
 .btn {
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     height: 2.5rem;
     width: 8rem;
@@ -240,14 +321,15 @@ select.input-select:focus {
 
 .btn-submit {
     color: white;
-    background-color: var(--orange);
+    background-color: var(--orange3);
     width: 100%;
-    font-size: 15px;
+    font-size: 1.2rem;
     letter-spacing: 1px;
+    height: 45px;
 }
 
 .btn-submit:hover{
-    background-color: #ff9725;;
+    background-color: #ff9359;
 }
 
 .btn-submit.facebook{
@@ -268,7 +350,7 @@ select.input-select:focus {
 
 .btn-submit.facebook a{
     color: white;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .btn-submit.google{
@@ -289,58 +371,75 @@ select.input-select:focus {
 
 .btn-submit.google a{
     color: white;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 /* Media queries*/
 
 @media screen and (min-width: 576px) {
+    
+    body.register .form-container {
+        border-right: 20px solid var(--orange3);
+    }
+    
+    body .login{
+        padding: 20px;
+    }
+    
+    body.register .form-container form.register span.error.terms {
+        font-size: 14px;
+    }
+    
+    body .login .container-file{
+        width: 90%;
+    }
+    
     body.register .form-container{
         max-width: 600px;
     }
-
+    
     .btn-submit{
         width: 90%;
         font-size: 1.1rem;
     }
-
+    
     .btn-submit.facebook a{
         font-size: 1.1rem;
     }
-
+    
     .btn-submit.google a{
         font-size: 1.1rem;
     }
-
+    
     .btn-submit.facebook i{
         font-size: 1.9rem;
     }
-
+    
     .btn-submit.google i{
         font-size: 1.9rem;
     }
-
+    
     .form .re-password span a{
         font-size: 1rem;
     }
-
+    
     input.input-style{
         font-size: 1rem;
         
     }
-
+    
     .not-account span{
         font-size: 1rem;
     }
-
+    
     .not-account a{
         font-size: 1rem;
     }
-
+    
     .yes-account span{
         font-size: 1rem;
     }
-
+    
     .yes-account a{
         font-size: 1rem;
     }
@@ -348,12 +447,33 @@ select.input-select:focus {
 
 
 @media screen and (min-width: 768px) {
+    
+    .input-container.small{
+        width: 49%;
+    } 
+    
+    .form {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
     body.register .form-container{
         max-width: 600px;
     }
-
+    
     .btn-submit{
         height: 45px;
+    }
+
+    .not-account a:hover{
+        text-decoration: underline;
+    }
+
+    .form .re-password span a:hover{
+        text-decoration: underline;
     }
 }
 

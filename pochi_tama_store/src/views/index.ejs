@@ -7,8 +7,8 @@
 
     <%- include('./partials/header.ejs') %>
 
-    <main class="main">
-        <div class="main-container">
+    
+        <div class="main-container" id="main">
 
             <%- include('./partials/carrousel.ejs') %>
 
@@ -21,56 +21,62 @@
 
                 <article class="productos-primary">
                     <div class="caja">
-                        <div>
-                            <a href=""><img src="/img/imagenes home/araña.jpg" alt=""></a>
+                        <div class="cont-fondo">
+                            <a href="/">
+                            <div class="fondo-negro"></div>
+                            <div class="cont-title">
+                                <h3>Figuras Originales</h3>
+                                <span>Encuentra esa figura que tanto estabas buscando</span>
+                            </div>
+                            <img src="/img/categorias/figuras.jpg" alt="imagen de categoria figuras">
+                            </a>
                         </div>
                     </div>
-                    <h4><a href="/">Comics y Manga</a></h4>
                 </article>
 
                 <article class="productos-primary">
                     <div class="caja">
-                        <div>
-                            <a href=""><img src="/img/imagenes home/iron.jpg" alt=""></a>
+                        <div class="cont-fondo">
+                        <a href="">
+                            <div class="fondo-negro"></div>
+                            <div class="cont-title">
+                                <h3>Lamparas Exclusivas</h3>
+                                <span>Encuentra esa figura que tanto estabas buscando</span>
+                            </div>
+                            <img src="/img/categorias/jotaro lampara.jpg" alt="imagen de categoria lamparas">
+                        </a>
                         </div>
                     </div>
-                    <h4><a href="/">Tazas</a></h4>
                 </article>
 
                 <article class="productos-primary">
                     <div class="caja">
-                        <div>
-                            <a href=""><img src="/img/categorias/peluches.jpeg" alt="imagens de categoria peluches"></a>
+                        <div class="cont-fondo">
+                            <a href="">
+                            <div class="fondo-negro"></div>
+                            <div class="cont-title">
+                                <h3>Tazas</h3>
+                                <span>Encuentra esa figura que tanto estabas buscando</span>
+                            </div>
+                            <img src="/img/categorias/tazas.jpg" alt="imagend de categoria tazas">
+                            </a>
                         </div>
                     </div>
-                    <h4><a href="/">Peluches</a></h4>
                 </article>
 
                 <article class="productos-primary">
                     <div class="caja">
-                        <div>
-                            <a href=""><img src="/img/categorias/jotaro lampara.jpg" alt="imagen de categoria lamparas"></a>
+                        <div class="cont-fondo">
+                            <a href="">
+                            <div class="fondo-negro"></div>
+                            <div class="cont-title">
+                                <h3>Funkos Pop!</h3>
+                                <span>Encuentra esa figura que tanto estabas buscando</span>
+                            </div>
+                            <img src="/img/categorias/funkos.jpg" alt="imagen categoria funkos">
+                            </a>
                         </div>
                     </div>
-                    <h4><a href="/">Lamparas</a></h4>
-                </article>
-
-                <article class="productos-primary">
-                    <div class="caja">
-                        <div>
-                            <a href=""><img src="/img/imagenes home/god.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <h4><a href="/">Videojuegos</a></h4>
-                </article>
-
-                <article class="productos-primary">
-                    <div class="caja">
-                        <div>
-                            <a href=""><img src="/img/categorias/funkos.jpg" alt="imagen categoria funkos"></a>
-                        </div>
-                    </div>
-                    <h4><a href="/">Funko Pop!</a></h4>
                 </article>
             </section>
 
@@ -79,23 +85,15 @@
             </div>
             <hr class="hr1">
 
-
-            <section class="section-vendido">
-                <% products.forEach(product => { %>
-                <article class="producto">
-                    <div class="caja">
-                        <a href="/products/detail/<%- product.id %>"><img src="/img/products/<%- product.productImages[0].image %>" alt=""></a>
+            <div class="cont-products">
+                <div class="row">
+                    <div class="cont-two">
+                        
+                            <%- include('./partials/cardProduct.ejs') %>
+                        
                     </div>
-                <div class="container-product-index">         
-                <a href="/products/detail/<%- product.id %>" class="product-name"><%- product.name %></a>
-                <div class="pri-dis">
-                    <h4>$<%- toThousand(product.price - product.price * product.discount / 100) %></h4>
-                    <span class="discount"><%- product.discount > 0 ? `${product.discount}$ OFF` : " " %></span>
                 </div>
-                </div>
-                </article>
-                <% }) %>
-            </section>
+            </div> 
 
             <div class="boton-productos">
                 <a href="/products/allProducts">
@@ -128,52 +126,11 @@
 
             </section>
         </div>
-    </main>
-
-    <section class="info">
-        <div class="container-info">
-
-            <div class="tarjeta-truck">
-                <div class="tarjeta">
-                    <div class="icon-tarjeta">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <div class="text">
-                        <p>Envios a todo el pais</p>
-                        <label>Por correo Argentino</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tarjeta-shield">
-                <div class="tarjeta">
-                    <div class="icon-tarjeta">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="text">
-                        <p>Sitio seguro</p>
-                        <label>Protegemos tus datos</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tarjeta-card">
-                <div class="tarjeta">
-                    <div class="icon-tarjeta">
-                        <i class="fas fa-credit-card"></i>
-                    </div>
-                    <div class="text">
-                        <p>Paga con tarjeta de credito</p>
-                        <label>Hasta en 12 cuotas</label>
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-    <script src="/js/carrousel.js"></script>
-
-    <%- include('./partials/footer.ejs') %>
+    
+        <%- include('./partials/infoEnvios.ejs') %>
+        <%- include('./partials/footer.ejs') %>
+        <%- include('./partials/scripts.ejs') %>
+        <script src="/js/carrousel.js"></script>    
 
 </body>
 

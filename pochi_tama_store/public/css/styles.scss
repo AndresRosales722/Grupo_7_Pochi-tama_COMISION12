@@ -1,0 +1,623 @@
+$body : #192229;
+$container : #212e36;
+$softWhite : #ecf0f3;
+$border : #273b49;
+$borderInput : #385468;
+$whiteDark : #c8ccce;
+$borderCont : #2c4353;
+$blue : #53a5e1;
+$blueligth : #67c0ff;
+$orangelight : #ff955c;
+$orangelight2 : #ff8c4e;
+
+
+body{
+    background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/assets/themes/material/static/images/patterns/maze.png?1246682174");
+    /* transition: 0.2s ease all; */
+    
+    &.dark{
+        background-image: none;
+        background-color: $body;
+    }
+}
+
+/* Dark theme Header */
+
+.switch{
+    background: #343d5b ;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    &::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: unset;
+        background: #f1f1f1;
+        top: 0;
+        left: 0;
+        border-radius: 100px;
+        transition: .3 ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+    }
+    &.active{
+        background: var(--orange3);
+        color: black;
+        
+        &::after{
+            
+            right: 0;
+            left: unset;
+        }
+    }
+    span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: flex;
+        background: none;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px !important;
+    }
+}
+
+.main-header{
+    
+    body.dark &{
+        background-color: $container;
+        border-bottom: 1px solid $borderInput;
+        
+        i{
+            color: $softWhite;
+        }
+        
+        .search-bar button{
+            background: $border;
+        }
+        
+        input{
+            background: $border;
+            color: white;
+            border: 1px solid #385468;
+            
+            i.fas{
+                background: $container;
+            }
+        }
+    }
+}
+
+ul.menu{
+    body.dark & {
+        li:hover{
+            background: $container;
+        }
+    }
+}
+
+nav.navigation-bar{
+    body.dark & {
+        background-color: $border;
+        border: 1px solid $borderInput;
+        
+        ul.menu{
+            color: $softWhite;
+            
+            li{
+                border-bottom: 1px solid $borderInput;
+            }
+            
+            li:hover{
+                background: $container;
+            }
+            
+            .user{
+                a{
+                    background: $border;
+                    color: $softWhite;
+                    border-right: 1px solid $borderInput;
+                    border-bottom: 1px solid $borderInput;
+                }
+                
+                a:hover{
+                    background: $container;
+                } 
+            }
+        }
+        
+        .desplegable{
+            background-color: $border;
+            border: 1px solid $borderInput;
+            a{
+                color: $softWhite;
+            }
+            
+            a:hover{
+                background: $container;
+            }
+        }
+    }
+}
+
+nav.nav_menu{
+    body.dark &{
+        form{
+            background: $container;
+            
+            input{
+                background: $border;
+                color: $softWhite;
+                border: 1px solid $borderInput;
+            }
+            
+            button{
+                background: $border;
+                i{
+                    color: $softWhite;
+                }
+            }
+        }
+        
+        .subcategory_menu{
+            background: $border;
+            
+            ul{
+                li:hover{
+                    background: $container;
+                }
+            }
+            
+            a{
+                color: $softWhite;
+            }
+            
+            li{
+                border-bottom: 1px solid $borderInput;
+            }
+            
+            .boton-close{
+                border-bottom: 1px solid $borderInput;
+                
+                a:hover{
+                    background: $container;
+                }
+            }
+        }
+    }
+    
+}
+
+/* Section info */
+
+section.info{
+    body.dark &{
+        background: $container;
+        i,p{
+            color: $softWhite;
+        }
+        
+        label{
+            color: #c8ccce;
+        }
+        
+        .icon-tarjeta{
+            background: $border;
+        }
+    }
+}
+
+/* Dark theme Footer */
+
+footer{
+    
+    body.dark &{
+        background-color: $body;
+        
+        h4{
+            color: $softWhite;
+        }
+        
+        a{
+            color: $softWhite;
+        }
+        
+        label{
+            color: $softWhite;
+        }
+        
+        img{
+            opacity: 0.9;
+        }
+        
+        input{
+            background: $border;
+            color: $softWhite;
+            border: 1px solid $borderInput;
+        }
+        
+        button{
+            opacity: 0.9;
+        }
+        
+        
+    }
+}
+
+/* Pagina de Inicio */
+
+section.section-vendido article.producto .container-product-index{
+    
+    body.dark &{
+        background-color: #212e36;
+        border: 1px solid $borderInput;
+        
+        a.product-name{
+            color: #ecf0f3;
+        }
+
+        h4{
+            color: $orangelight;
+        }
+        
+        span.discount{
+            color: $blueligth;
+        }
+    }
+} 
+
+section.section-vendido .producto{
+    body.dark &{
+        box-shadow: none;
+        
+        .caja{
+            filter: brightness(90%) contrast(110%);
+            border-bottom: 4px solid $blueligth;
+        }
+    } 
+}
+
+.boton-productos{
+    body.dark &{
+        a{
+            h4{
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+
+/* Terminos y condiciones */
+
+.como-comprar{
+    body.dark &{
+        
+        ul.atajos li a.inicio{
+            color: $softWhite;
+        }
+        
+        li{
+            color: $whiteDark;
+        }
+        
+    }
+}
+
+/* Sucursales */
+
+.contact{
+    body.dark &{
+        
+        ul.atajos li a.inicio{
+            color: $softWhite;
+        }
+        
+        .container{
+            border: 1px solid $borderCont;
+            background-color: $border;
+            
+            h2{
+                color: var(--orange3);
+            }
+        }
+        
+        .contactanos{
+            background: $border;
+            border: 1px solid $borderCont;
+            
+            label{
+                color: $softWhite;
+            }
+            
+            img{
+                opacity: 0.9;
+            }
+            
+        }
+        
+        .form-container{
+            border-right: 10px solid $blue;
+            border-bottom: 1px solid $borderCont;
+            border-top: 1px solid $borderCont;
+            border-left: 1px solid $borderCont;
+            background: $border;
+            
+            label{
+                color: $softWhite;
+            }
+            
+            .btn-submit{
+                background: $blue;
+            }
+        }
+        
+        h2{
+            color: $blue;
+        }
+        
+    }
+}
+
+/* Detalle de Producto */
+
+.product-detail{
+    body.dark &{
+
+        h1{
+            color: $orangelight2;
+        }
+
+        .calcular{
+            button{
+                border: 1px solid $borderInput;
+                background: $border;
+                span{
+                    color: $blueligth;
+                }
+            }
+
+            button:hover{
+                background: $borderInput;
+            }
+        }
+
+        .input-postal{
+            input{
+                background: #273b49;
+                border-bottom: 2px solid #67c0ff;
+                color: $softWhite;
+            }
+        }
+        
+        .price-product{
+            p{
+                color: $blueligth;
+            }
+        }
+
+        .cantidad-inp{
+            label{
+                color: $orangelight;
+            }
+        }
+        
+        .descripcion-container{
+            p{
+                color: $softWhite;
+            }
+            h2{
+                color: $orangelight;
+            }
+        }
+        
+        .local{
+            i,span{
+                color: $blueligth;
+            }
+        }
+        
+        section.ubicacion-local{
+            background: $border;
+            box-shadow: none;
+            border: 1px solid $borderCont;
+            
+            span{
+                color: $softWhite;
+            }
+            h2{
+                color: $blueligth
+            }
+        }
+        
+        .medios{
+            span{
+                color: $blueligth;
+            }
+        }
+        .no-se{
+            a{
+                color: $orangelight;
+            }
+        }
+    }
+}
+
+
+/* Formulario de Login y Register */
+
+.login {
+    body.dark & {
+        
+        .form-container{
+            background: $container;
+            border-bottom: 1px solid $borderCont;
+            border-top: 1px solid $borderCont;
+            border-left: 1px solid $borderCont;
+            border-radius: 2px;
+            border-right: 10px solid $blue;
+            
+            h2{
+                color: $blue;
+            }
+            
+            label{
+                color: $softWhite
+            }
+            
+            span{
+                color: $softWhite;
+            }
+            
+            .not-account{
+                a{
+                    color: $blue;
+                }
+            }
+            
+            .olvidaste{     
+                a{
+                    color: $blue;
+                }
+            }
+            
+            .button-container{
+                button{
+                    background-color: $blue;
+                }
+            }
+            
+            input{
+                background: $border;
+                color: white;
+                border: 1px solid $borderInput;
+            }
+            
+            .yes-account{
+                a{
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+
+/* Formulario de Creacion y Edicion */
+
+.form-container-admin{
+    body.dark &{
+        background: $container;
+        border: 1px solid $border;
+        
+        label{
+            color: $softWhite;
+        }
+        
+        input{
+            background: $border;
+            color: white;
+            border: 1px solid $borderInput;
+        }
+        
+        textarea{
+            background: $border;
+            border: 1px solid $borderInput;
+            color: $softWhite;
+        }
+        
+        select{
+            background: $border;
+            color: $softWhite;
+            border: 1px solid $borderInput;
+        }
+        
+        button{
+            background: $blue;
+        }
+        
+    }
+}
+
+
+/* Carrito de Compras */
+
+.cart .container-cart{
+    body.dark &{
+        h2{
+            color: $softWhite;
+        }
+
+        section.container-product{
+            background: $border;
+            border: 1px solid $borderInput;
+            box-shadow: none;
+
+            span{
+                color: $softWhite;
+            }
+    
+            .button-trash span{
+                color: $softWhite !important;
+            }
+    
+            a{
+                color: $softWhite;
+            }
+
+            li{
+                color: $orangelight;
+            }
+
+        }
+
+        section.container-subtotal{
+            span{
+                color: $softWhite;
+            }
+        }
+
+        section.total-compra{
+            span{
+                color: $orangelight;
+            }
+        }
+
+        section.container-send{
+            a,span{
+                color: $blue;
+            }
+        }
+
+        .local{
+            color: $blue;
+        }
+
+    }
+}
+
+@media(min-width: 768px){
+    .main-header{
+        body.dark &{
+            border-bottom: none;
+        }
+    }
+    
+    nav.navigation-bar{
+        body.dark &{
+            ul.menu{
+                li{
+                    border-bottom: none;        
+                }
+            }
+        }
+    }
+    
+    
+}

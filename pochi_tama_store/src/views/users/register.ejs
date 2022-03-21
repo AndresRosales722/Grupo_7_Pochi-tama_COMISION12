@@ -10,43 +10,52 @@
     <div class="login">
         <div class="form-container">
             <h2>Registrarse</h2>
-            <form action="/users/register" method="POST" enctype="multipart/form-data">
+            <form id="form" action="/users/register" class="register" method="POST" enctype="multipart/form-data">
                 <div class="form">
-                    <div class="input-container">
+                    
+                    <div class="input-container small">
                         <label for="nombre">Nombre</label>
-                        <input class="input-style" type="text" name="name" placeholder="Nombre" value="<%= locals.old && old.name %>">
+                        <input id="name" class="input-style" type="text" name="name" placeholder="Nombre" value="<%= locals.old && old.name %>">
+                        <span id="nameErrors" class="error"></span>
+                        <i id="warning" class="fas fa-engine-warning none"></i>
                         <% if (locals.errors && errors.name) { %>
                             <small class="error-message"><%= errors.name.msg %></small>
                             <% } %>
                     </div>
-                    <div class="input-container">
+                    <div class="input-container small">
                         <label for="apellido">Apellido</label>
-                        <input class="input-style" type="text" name="last_name" placeholder="Apellido" value="<%= locals.old && old.last_name %>">
+                        <input id="lastName" class="input-style" type="text" name="last_name" placeholder="Apellido" value="<%= locals.old && old.last_name %>">
+                        <span id="lastNameErrors" class="error"></span>
                         <% if (locals.errors && errors.last_name) { %>
                             <small class="error-message"><%= errors.last_name.msg %></small>
                             <% } %>
                     </div>
                     <div class="input-container">
                         <label for="email">Email</label>
-                        <input class="input-style" type="email" name="email" placeholder="Ingrese su email">
+                        <input id="email" class="input-style" type="email" name="email" placeholder="Ingrese su email">
+                        <span id="emailErrors" class="error"></span>
                         <% if (locals.errors && errors.email) { %>
                             <small class="error-message"><%= errors.email.msg %></small>
                             <% } %>
                     </div>
-                    <div class="input-container">
+                    <div class="input-container small">
                         <label for="contraseña">Contraseña</label>
-                        <input class="input-style" type="password" name="pass1" placeholder="Ingrese su contraseña">
+                        <input id="pass" class="input-style" type="password" name="pass1" placeholder="Ingrese su contraseña">
+                        <span id="passErrors" class="error"></span>
                         <% if (locals.errors && errors.pass1) { %>
                             <small class="text-danger"><%= errors.pass1.msg %> </small>
                         <% } %>
                     </div>
-                    <div class="input-container">
+                    <div class="input-container small">
                         <label for="repeat contraseña">Confirmar contraseña</label>
-                        <input class="input-style" type="password" name="pass2" placeholder="Repita su contraseña">
+                        <input id="pass2" class="input-style" type="password" name="pass2" placeholder="Repita su contraseña">
+                        <span id="pass2Errors" class="error"></span>
                         <% if (locals.errors && errors.pass2) { %>
                             <small class="text-danger"><%= errors.pass2.msg %> </small>
                         <% } %>
                     </div>
+
+                <div class="register-send">
                     <div class="container-file">
                         <i class="fas fa-upload"></i>
                         <p>Subir una foto</p>
@@ -56,36 +65,33 @@
                         <% } %>
                     </div>
                     <div class="check">
-                        <label for="terms">Acepto los <a href="">términos y condiciones</a></label>
+                        <label id="labelTerms" for="terms" class="terms">Acepto los términos y condiciones</label>
                         <input type="checkbox" name="terms" id="terms">
+                        <span id="termsErrors" class="error terms"></span>
                         <% if (locals.errors && errors.terms) { %>
                             <small class="text-danger"><%= errors.terms.msg %> </small>
                         <% } %>
                     </div>
                     <div class="button-container">
                         <span class="error-message">Hubo errores en el envío</span>
+                        <span id="submitErrors" class="error"></span>
                         <button type="submit" class="btn btn-submit">Registrarme</button>
                     </div>
-    
-                    <div class="button-container">
-                        
-                        <button type="submit" class="btn btn-submit facebook"><i class="fab fa-facebook-square"></i><a href="">Continuar con Facebook</a></button>
-                    </div>
-    
-                    <div class="button-container">
-                        <button type="submit" class="btn btn-submit google"><i class="fab fa-google-plus-square"></i><a href="" class="google">Continuar con Google</a></button>
-                    </div>
-                    
+        
                     <div class="yes-account">
                         <span>¿Ya tenés una cuenta?</span><br>
                         <span><a href="/users/login">Inicia sesion</a></span>
                     </div>
                 </div>
+            </div>
                 
             </form>
         </div>
     </div>
-        <%- include('../partials/footer.ejs')  %> 
+
+        <script src="/js/register.js"></script>
+        <%- include('../partials/infoEnvios.ejs') %>
+        <%- include('../partials/footer.ejs') %> 
 
     </body>
     </html>

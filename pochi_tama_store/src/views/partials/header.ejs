@@ -1,5 +1,5 @@
 <header>
-    <div class="main-header">
+    <div class="main-header" id="header">
         <div class="logo">
             <a href="/">
                 <img src="/img/pochita.svg" alt="">
@@ -23,10 +23,17 @@
                      <% if (typeof session.user != "undefined") { %>
                     <span class="session"></span>
                     <div class="menu-user">
+<<<<<<< HEAD
                         <a href="/users/profile">Mis datos </a> 
                         <a href="/users/logout">Cerrar sesión </a>
                         <% if (session.user.rol === "ROL_ADMIN") { %>
                         <a href="/admin/index">ADMIN</a>
+=======
+                        <a href="/users/profile">Mis datos</a>
+                        <a href="/users/logout">Cerrar sesión</a>
+                        <% if (session.user.rol === 1) { %>
+                            <a href="/admin">Admin</a>
+>>>>>>> develop
                         <% } %>
                     </div>
                     <% } else {%>
@@ -61,6 +68,12 @@
 
 
         <!-- Icono del buscador en header mobile -->
+
+        <!-- <button class="switch" id="switch">
+            <span><i class="fas fa-sun"></i></span>
+            <span><i class="fas fa-moon"></i></span>
+        </button> -->
+        
         <div class="search-icon" onclick="dropSearch()">
             <i class="fas fa-search"></i>
         </div>
@@ -69,7 +82,7 @@
 
         <form action="/products/search" method="GET" class="search-form-desktop">
             <div class="search-bar">
-                <input type="search" name="keywords" placeholder="¿Que estas buscando?">
+                <input type="search" name="keywords" placeholder="¿Que estas buscando?" id="buscador">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
         </form>
@@ -81,21 +94,25 @@
                 <% if (typeof session.user != "undefined") { %>
                 <i class="fas fa-user"><span>Cuenta</span></i><span class="session"></span>
                 <div class="menu-user">
-                    <a href="/users/profile">Mis datos</a>
-                    <a href="/users/logout">Cerrar sesión</a>
-                    <% if (session.user.rol === "ROL_ADMIN") { %>
-                    <a href="/admin/index">ADMIN</a>
+                    <% if (session.user.rol === 1) { %>
+                    <a href="/admin">Admin</a>
                     <% } %>
+                    <a class="sesion-datos" href="/users/profile">Mis datos</a>
+                    <a class="sesion-datos" href="/users/logout">Cerrar sesión</a>
                 </div>
                 <% } else {%>
                 <a href="/users/login"><i class="fas fa-user"><span>Cuenta</span></i></a>
                 <% } %>
             </div>
 
-            <a href="/"><i class="fas fa-shopping-cart"><span>Carrito</span></i></a>
+            <a href="/products/productcart"><i class="fas fa-shopping-cart"><span>Carrito</span></i></a>
 
-            <a href=""><i class="fas fa-envelope"><span>Ayuda</span></i></a>
-
+            <!-- Boton modo oscuro -->
+            <button class="switch" id="switch">
+                <span><i class="fas fa-sun"></i></span>
+                <span><i class="fas fa-moon"></i></span>
+            </button>
+            
         </div>
 
     </div>
@@ -129,6 +146,7 @@
                 <i class="fas fa-chevron-down"></i>
                 <div class="desplegable">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <a href="">MARVEL</a>
                     <a href="">DC</a>
                     <a href="">VIDEOJUEGOS</a>
@@ -146,12 +164,22 @@
                     <a href="">One piece</a>
                     <a href="">Peliculas y series</a>
 >>>>>>> 5a07ddc68ba04f4698a7adbfb585cf7a52378704
+=======
+                    <a href="/products/subcategory/7/2">Dc</a>
+                    <a href="/products/subcategory/8/2">Marvel</a>
+                    <a href="/products/subcategory/9/2">Videojuegos</a>
+                    <a href="/products/subcategory/10/2">Boku no hero</a>
+                    <a href="/products/subcategory/11/2">Naruto</a>
+                    <a href="/products/subcategory/12/2">One piece</a>
+                    <a href="/products/subcategory/13/2">Peliculas y series</a>
+>>>>>>> develop
                 </div>
             </li>
             <li class="dropdown-menu">
                 LAMPARAS
                 <i class="fas fa-chevron-down"></i>
                 <div class="desplegable">
+<<<<<<< HEAD
 <<<<<<< HEAD
                     <a href="">STAR WARS</a>
                     <a href="">INFANTILES</a>
@@ -169,12 +197,23 @@
                     <a href="">Marvel</a>
                     <a href="">Dc</a>
 >>>>>>> 5a07ddc68ba04f4698a7adbfb585cf7a52378704
+=======
+                    <a href="/products/subcategory/14/3">Star wars</a>
+                    <a href="/products/subcategory/15/3">Anime</a>
+                    <a href="/products/subcategory/16/3">Videojuegos</a>
+                    <a href="/products/subcategory/17/3">Naruto</a>
+                    <a href="/products/subcategory/18/3">Harry potter</a>
+                    <a href="/products/subcategory/19/3">Shingeki no kyojin</a>
+                    <a href="/products/subcategory/20/3">Marvel</a>
+                    <a href="/products/subcategory/21/3">Dc</a>
+>>>>>>> develop
                 </div>
             </li>
             <li class="dropdown-menu">
                 FIGURAS
                 <i class="fas fa-chevron-down"></i>
                 <div class="desplegable">
+<<<<<<< HEAD
 <<<<<<< HEAD
                     <a href="">MARVEL</a>
                     <a href="">DC</a>
@@ -189,6 +228,16 @@
                     <a href="">Naruto</a>
                     <a href="">Boku no hero</a>
 >>>>>>> 5a07ddc68ba04f4698a7adbfb585cf7a52378704
+=======
+                    <a href="/products/subcategory/22/4">Peliculas y series</a>
+                    <a href="/products/subcategory/23/4">Amongo Us</a>
+                    <a href="/products/subcategory/24/4">Marvel</a>
+                    <a href="/products/subcategory/25/4">Dc</a>
+                    <a href="/products/subcategory/26/4">Videojuegos</a>
+                    <a href="/products/subcategory/27/4">Naruto</a>
+                    <a href="/products/subcategory/28/4">Kimetsu no yaiba</a>
+                    <a href="/products/subcategory/29/4">Boku no hero</a>
+>>>>>>> develop
                 </div>
             </li>
             <li><a href="">Ayuda</a></li>
@@ -211,7 +260,7 @@
             <div class="boton-close">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
                 <div class="subcategory_header">
-                    <a href="">Coleccionables</a>
+                    <a class="menu" href="">Coleccionables</a>
                 </div>
             </div>
            
@@ -226,7 +275,7 @@
             <div class="boton-close">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
                 <div class="subcategory_header">
-                    <a href="">Tazas</a>
+                    <a class="menu" href="">Tazas</a>
                 </div>
             </div>
             <ul>
@@ -240,7 +289,7 @@
             <div class="boton-close">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
                 <div class="subcategory_header">
-                    <a href="">Lamparas</a>
+                    <a class="menu" href="">Lamparas</a>
                 </div>
             </div>
             <ul>
@@ -254,7 +303,7 @@
             <div class="boton-close">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
                 <div class="subcategory_header">
-                    <a href="">Figuras</a>
+                    <a class="menu" href="">Figuras</a>
                 </div>
             </div>
             <ul>
@@ -268,7 +317,7 @@
             <div class="boton-close">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeWindow()">&times;</a>
                 <div class="subcategory_header">
-                    <a href="">Ayuda</a>
+                    <a class="menu" href="">Ayuda</a>
                 </div>
             </div>
             <ul>
@@ -280,5 +329,5 @@
 
     </nav>
 </header>
-
 <script src="/js/header.js"></script>
+<script src="/js/search.js"></script>    

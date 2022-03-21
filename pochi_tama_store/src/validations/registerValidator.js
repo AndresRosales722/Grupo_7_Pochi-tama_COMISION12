@@ -8,11 +8,15 @@ const Users = db.User
 module.exports = [
     check('name')
     .notEmpty()
-    .withMessage('El nombre es requerido'),
+    .withMessage('El Nombre es requerido')
+    .isLength({min:5, max:50})
+    .withMessage('El Nombre debe tener entre 5 y 30 caracteres'),
 
     check('last_name')
     .notEmpty()
-    .withMessage('El apellido es requerido'),
+    .withMessage('El Apellido es requerido')
+    .isLength({min:5, max:50})
+    .withMessage('El Apellido debe tener entre 5 y 30 caracteres'),
 
     check('email')
     .isEmail()

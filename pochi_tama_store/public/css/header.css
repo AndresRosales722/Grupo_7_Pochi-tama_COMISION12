@@ -1,10 +1,22 @@
 .main-header .navigation-bar,
-.main-header .user-icons-desktop,
 .main-header .search-form-desktop,
 .nav_menu .subcategory_menu,
 nav .navigation-bar
 {
     display: none;
+}
+
+.main-header .user-icons-desktop{
+    display: block;
+}
+
+.main-header .user-icons-desktop .user{
+    display: none;
+}
+
+.main-header .user-icons-desktop a{
+    display: none;
+    padding: 10px 10px;
 }
 
 a.closebtn{
@@ -83,11 +95,12 @@ ul.menu li .desplegable a:hover{
 
 ul.menu li{
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 12px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    transition: 0.4s ease all;
+}
 
 header {
     position: sticky;
@@ -163,7 +176,7 @@ i.fa-search {
     border: none;
     flex-grow: 1;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .search-bar input:focus {
@@ -227,7 +240,7 @@ i.fa-search {
 .main-header .navigation-bar .user-icons-mobile {
     display: none;
     justify-content: flex-end;
-
+    
 }
 
 .main-header .navigation-bar .user-icons-mobile i{
@@ -242,8 +255,12 @@ i.fa-search {
     font-size: 1rem;
 }
 
+<<<<<<< HEAD
 
 /* .subcategory_menu.active {
+=======
+.subcategory_menu.active {
+>>>>>>> develop
     display: block;
     background-color: #f1f1f1;
     position: sticky;
@@ -261,13 +278,17 @@ i.fa-search {
     justify-content: space-between;
     align-items: center;
     transition: all 400ms ease;   
-    
+    width: 100%;
 }
 
 .subcategory_menu .subcategory_header a{
     color: var(--bluedark);
     font-size: 1.2rem;
     padding: 20px;
+}
+
+.subcategory_menu .subcategory_header a.menu{
+    width: 100%;
 }
 
 .subcategory_menu .subcategory_header a.closebtn{
@@ -290,7 +311,7 @@ i.fa-search {
 
 .subcategory_menu ul li:hover{
     background: #c1c1c1;
-}
+}  
 
 .subcategory_menu ul li a{
     color: var(--bluedark);
@@ -319,20 +340,34 @@ i.fa-search {
 /* MEDIA QUERIES */
 /* Tablet */
 @media (min-width: 768px){
+    
+    .main-header .user-icons-desktop .user{
+        display: flex;
+    }
+    
+    .main-header .user-icons-desktop a{
+        display: block;
+        color: #2c3e50;
+        transition: all 400ms ease;
+    }
 
+    .main-header .user a.sesion-datps:hover{
+        background: #cecece;
+    }
+    
     ul.menu li .desplegable{
         top: 45px;
     }
-
+    
     ul.menu {
         flex-direction: inherit;
-      }
-
+    }
+    
     .navigation-bar{
-        height: 50px;
+        height: 45px;
         position: inherit;
     }
-
+    
     .main-header .user-icons-desktop{
         width: 200px;
         display: flex;
@@ -342,33 +377,56 @@ i.fa-search {
         color: white;
         height: 70px;
     }
-
+    
     .main-header .user-icons-desktop .user{
         position: relative;
     }
-
+    
     .user {
         position: relative;
         display: flex;
     }
-
+    
     .menu-user {
         display: none;
         position: absolute;
         font-size: 1rem;
         width: 9rem;
+<<<<<<< HEAD
         background-color: #ffffff;
         padding: 1rem;
         /* border-radius: .5rem; */
+=======
+        background-color: white;
+        border-radius: 3px;
+>>>>>>> develop
         margin-left: -3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        top: 30px;
+        left: 10px;
     }
 
+    .menu-user a:hover{
+        background: #cecece;
+    }
+    
     .user:hover .menu-user{
-       display: block;
-
+        display: block;
     }
 
+    .user .menu-user{
+        transition: 1s ease all;
+    }
 
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> develop
     .session {
         display: inline-block;
         width: 8px;
@@ -379,71 +437,71 @@ i.fa-search {
         top: -5px;
         right: 10px;
     }
-
+    
     .main-header .user-icons-desktop i{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-
-
+    
+    
     .main-header .user-icons-desktop span{
         font-size: 1rem;
         margin-top: 5px;
         color: white;
     }
-
+    
     .main-header .logo{
         order: 0;
     }
-
+    
     .main-header .search-form-desktop{
         display: block;
         width: 55%;
     }
-
+    
     .main-header .search-form-desktop .search-bar input{
         width: 100%;
         font-size: 1rem;
         height: 40px;
     }
-
+    
     .main-header .burguer-menu-icon{
         display: none;
     }
-
+    
     .main-header .search-icon i{
         display: none;        
     }
-
+    
     .search-form-mobile {
         width: 35%;
         margin: 0 auto;
     }
-
+    
     nav.navigation-bar{
         width: 100%;
         display: block;
         background-color: var(--purple);
     }
-
+    
     nav.navigation-bar ul{
         display: flex;
         justify-content: space-evenly;
-        height: 50px;
+        height: 45px;
         align-items: center;
         color: white;
     }
-
+    
     nav.navigation-bar ul li{
         letter-spacing: 0.5px;
     }
     nav.navigation-bar ul i{
-
+        
         margin-left: 5px;
     }
-
+    
     nav.navigation-bar ul li a{
         color: white;
     }
@@ -451,54 +509,54 @@ i.fa-search {
 
 /* Escritorio */
 @media screen and (min-width: 992px) {
-
+    
     ul.menu li .desplegable{
         width: 190px;
     }
-
+    
     .main-header .logo{
         width: 130px;
     }
-
+    
     .main-header {
         height: 100px;
         padding: 10px 30px;
     }
-
+    
     .main-header {
         flex-wrap: nowrap;
     }
-
+    
     .main-header .navigation-bar {
         display: inherit;
         order: 1;
     }
-
+    
     .main-header .navigation-bar .menu {
         display: flex;
         align-items: center;
         flex-grow: 1;
         justify-content: space-around;
     }
-
-        
+    
+    
     .main-header .navigation-bar#navigation-bar-desktop {
         display:inherit;
     }
-
+    
     
     .main-header .navigation-bar#navigation-bar-mobile {
         display: none;
     }
-
-   .main-header .burguer-menu-icon{
+    
+    .main-header .burguer-menu-icon{
         display: none;
     }    
-
+    
     .main-header .search-icon {
         display: none;
     }
-
+    
     
     .main-header .search-form-desktop {
         order: 3;
@@ -507,12 +565,12 @@ i.fa-search {
     .main-header .navigation-bar .user-icons-mobile {
         display: none;
     }
-
+    
     .main-header .user-icons-desktop {
         display: flex;
         width: 240px;
         order: 4;
     }
-
+    
 }
 

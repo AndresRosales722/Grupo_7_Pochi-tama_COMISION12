@@ -22,11 +22,11 @@ function dropSearch() {
     let subcategoryMenu = document.querySelector(".active");
     if (searchBar.style.display === "block") {
       searchBar.style.display = "none";
-      subcategoryMenu.classList.remove("active");
+      /* subcategoryMenu.classList.remove("active"); */
     } else {
       searchBar.style.display = "block";
       navBar.style.display = "none";
-      subcategoryMenu.classList.remove("active");
+      /* subcategoryMenu.classList.remove("active"); */
     }
   }
 

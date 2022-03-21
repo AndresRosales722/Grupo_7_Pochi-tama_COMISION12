@@ -6,9 +6,6 @@
 <body>
     <%- include('../partials/header.ejs') %>
     
-
-
-
     <main class="allProducts">
 
         <div class="products-t">
@@ -36,35 +33,12 @@
             </form>
         </div>
 
-        <section class="section-vendido allProducts">
-            <% products.forEach(product => { %>
-            <article class="producto">
-                <div class="caja">
-                    <a href="/products/detail/<%- product.id %>"><img src="/img/products/<%- product.productImages[0].image %>" alt=""></a>
-                </div>
-            <div class="container-product-index">         
-            <a href="/products/detail/<%- product.id %>" class="product-name"><%- product.name %></a>
-            <div class="pri-dis">
-                <h4>$<%- toThousand(product.price - product.price * product.discount / 100) %></h4>
-                <span class="discount"><%- product.discount > 0 ? `${product.discount}$ OFF` : " " %></span>
-            </div>
-            </div>
-            </article>
-            <% }) %>
-        </section>
-
+        <%- include('../partials/cardProduct.ejs') %>
 
     </main>
 
 
-
-
-
-
-
-
-
-
+<%- include('../partials/infoEnvios.ejs') %>
 <%- include('../partials/footer.ejs') %>
 </body>
 </html>

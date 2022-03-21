@@ -1,3 +1,7 @@
+.filtro{
+    display: none;
+}
+
 body h2.subtitle{
     color: #2c3e50;
     font-size: 1.5rem;
@@ -12,6 +16,7 @@ body .container-search-page{
     padding: 10px;
     max-width: 950px;
     width: 100%;
+    margin: 0 auto;
 }
 
 body .img-noresults {
@@ -35,18 +40,23 @@ body .img-noresults {
 
     body h2.subtitle{
         font-size: 1.8rem;
-        padding: 30px 15px;
+        padding: 30px 45px;
     }
 
     body h2.subtitle{
         max-width: 800px;
+        margin: 0 auto;
     }
 }
 
 @media(min-width:992px){
 
     body h2.subtitle{
-        max-width: 1000px;
+        max-width: 1100px;
+    }
+
+    body h2.subtitle{
+        padding: 30px 30px;
     }
     
 }

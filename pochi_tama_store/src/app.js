@@ -1,19 +1,20 @@
-let express = require('express');   //REQUERIMOS EL MODULO EXPRESS
-let app = express();                //EJECUTAMOS EXPRESS
+require('dotenv').config()
+const express = require('express');   //REQUERIMOS EL MODULO EXPRESS
+const app = express();                //EJECUTAMOS EXPRESS
 const PORT = 3000;                  //DEFINIMOS EL PUERTO 
-let path = require('path')          //USAMOS EL METODO PATH
+const path = require('path')          //USAMOS EL METODO PATH
 const methodOverride =  require('method-override') //PARA USAR EL METODO PUT Y DELETE
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
 const cookieSession = require('./middlewares/cookieSession')
 
-
+/* Middlewares */
 app.use(express.static('public'))
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: false}))
 app.use(express.json())
 app.use(session({
-    secret: "PochiTama",
+    secret: "PochiTama", 
     resave: false,
     saveUninitialized: true
 }))
@@ -30,13 +31,14 @@ let indexRouter = require('./routes/index')
 let productsRouter = require('./routes/products')
 let adminRouter = require('./routes/admin')
 let usersRouter = require('./routes/users')
-
+let apiRouter = require('./routes/api/apiProducts.js')
 
 // Middlewares de rutas
 app.use('/', indexRouter)
 app.use('/admin',adminRouter)
 app.use('/users', usersRouter)
 app.use('/products', productsRouter)
+app.use(apiRouter)
 
 // Error 404
 app.use((req, res, next)=>{

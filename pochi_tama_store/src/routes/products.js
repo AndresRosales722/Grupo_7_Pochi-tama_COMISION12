@@ -8,6 +8,7 @@ router.get('/allProducts', controller.allProducts);   // Detalle del producto
 router.get('/detail/:id/', controller.detail);   // Detalle del producto
 
 router.get('/productCart',controller.cart)  // Carrito de compras
+router.post('/:id',controller.add)  
  
 /* GET - List of products */
 router.get('/category/:id', controller.category)

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html style="font-size:65%;" lang="es">
+
+<%- include('../partials/head.ejs')  %>  
+
+<body>
+  <%- include('../partials/headerAdmin') %>
+  
+  <div class="container-fluid">
+    <div class="row">
+      
+      <main class="panel-admin">
+        
+          <div class="table-responsive my-3">
+            <div class="container-filtros">
+              <div class="agregar-admin">
+                <h2>Productos</h2>
+                
+                <div class="btn-agregar">
+                  <a href="/admin/create" class="btn btn-sm btn-outline-secondary">Agregar</a>
+                </div>
+                
+              </div>
+              <div class="filtros" id="filter">
+                <div class="cont-input-admin">
+                  <input type="text" name="name" placeholder="Name" id="name" class="form-control">
+                </div>
+                
+                <div class="container-filter">
+                  
+                  <div class="subcategorias">
+                    <select class="form-select" name="subcategory_id" aria-label="Default select example" id="">
+                      <option value="0" selected>Subcategoria</option>
+                      <% subcategories.forEach(subcategory => { %>
+                        <option value="<%= subcategory.id %>">
+                          <%= subcategory.name %> 
+                        </option>
+                        <% }) %>
+                      </select>
+                    </div>
+                    <div class="ordenar">
+                      <select class="form-select" name="orderDirect" aria-label="Default select example" id="">
+                        <option value="0" selected>Ordenar Por</option>
+                        <option value="ASC">Ascendente</option>
+                        <option value="DESC">Descendente</option>
+                      </select>
+                    </div>
+
+                    <div class="limit " id="size">
+                      <select class="form-select" name="size" aria-label="Default select example" id="">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                      </select>
+                    </div>
+    
+                  </div>
+                  
+                </div>
+              </div>
+            <section class="tablas">
+              <table class="table table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Categoría</th>
+                    <th scope="col">Subcategoría</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Descuento</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody id="container-result"></tbody>
+              </table>
+              <p id="msg-0" class="d-none text-center text-danger my-4">No se encontraron resultados</p>
+            </div>
+                              
+              <nav aria-label="..." class="pagination-cont">
+                <ul class="pagination mb-0">
+                  <li class="page-item">
+                    <a href="" id="page_previous" class="page-link">Anterior</a>
+                  </li>
+                  <li class="page-item">
+                    <a href="" id="page_next" class="page-link">Siguiente</a>
+                  </li>
+                </ul>
+              </nav>       
+            
+            <template id="template">
+
+              <tr>    
+                <td id="id" data-label="ID"></td>
+                <td id="name" data-label="NOMBRE"></td>
+                <td id="category" data-label="CATEGORIA"></td>
+                <td id="subcategory" data-label="SUBCATEGORIA"></td>
+                <td id="price" data-label="PRECIO"></td>
+                <td id="discount" data-label="DESCUENTO"></td>
+
+                <td>
+                  <div class="container-accion">
+                  <a href="" id="btn-edit" class="btn-success">
+                    <div class="cont-edit">
+                      <i class="fas fa-edit"></i>
+                    </div>
+                    <small class="edit-admin">Editar</small>
+                  </a>
+                  <form class="delete" action="" id="btn-delete" method="POST">
+                    <button type="submit" id="boton-delete" class="btn-danger">
+                      <div class="cont-trash">
+                        <i class="fas fa-trash"></i>
+                      </div>
+                      <small>Eliminar</small>
+                    </button>       
+                  </form>
+                </div>
+                </td>
+              </tr>
+
+            </template>
+          </section>
+        </main>
+      </div>
+    </div>
+    
+    <script src="/js/adminProducts.js"></script>
+  </body>
+  
+</body>
+</html>
+
+
