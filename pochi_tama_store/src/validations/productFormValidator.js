@@ -27,5 +27,5 @@ module.exports = [
 
     check('description')
     .isLength({max:500})
-    .withMessage('El nombre puede tener hasta 300 caracteres')
+    .withMessage('La descripcion puede tener hasta 500 caracteres')
 ]
