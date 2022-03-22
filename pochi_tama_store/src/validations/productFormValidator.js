@@ -26,6 +26,6 @@ module.exports = [
     .withMessage('Solo numeros'),
 
     check('description')
-    .isLength({max:500})
-    .withMessage('La descripcion puede tener hasta 500 caracteres')
+    .isLength({min:20, max:500})
+    .withMessage('La descripcion debe tener entre 20 y 500 caracteres')
 ]

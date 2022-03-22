@@ -69,9 +69,15 @@ i.fas.fa-check-circle{
 
 
 small.error-message{
-    padding: 5px 5px;
+    padding: 0px 5px;
     font-size: 14px;
     color: crimson;
+    position: relative;
+    bottom: 7px;
+}
+
+small.error-message.file{
+    bottom: 0px;
 }
 
 body.register label.terms{

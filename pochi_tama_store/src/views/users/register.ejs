@@ -43,7 +43,7 @@
                         <input id="pass" class="input-style" type="password" name="pass1" placeholder="Ingrese su contraseña">
                         <span id="passErrors" class="error"></span>
                         <% if (locals.errors && errors.pass1) { %>
-                            <small class="text-danger"><%= errors.pass1.msg %> </small>
+                            <small class="error-message"><%= errors.pass1.msg %> </small>
                         <% } %>
                     </div>
                     <div class="input-container small">
@@ -51,7 +51,7 @@
                         <input id="pass2" class="input-style" type="password" name="pass2" placeholder="Repita su contraseña">
                         <span id="pass2Errors" class="error"></span>
                         <% if (locals.errors && errors.pass2) { %>
-                            <small class="text-danger"><%= errors.pass2.msg %> </small>
+                            <small class="error-message"><%= errors.pass2.msg %> </small>
                         <% } %>
                     </div>
 
@@ -61,15 +61,16 @@
                         <p>Subir una foto</p>
                         <input type="file" name="avatar">
                         <% if (locals.errors && errors.image) { %>
-                            <small class="text-danger"><%= errors.image.msg %> </small>
+                            <small class="error-message"><%= errors.image.msg %></small>
                         <% } %>
                     </div>
+                    
                     <div class="check">
                         <label id="labelTerms" for="terms" class="terms">Acepto los términos y condiciones</label>
                         <input type="checkbox" name="terms" id="terms">
                         <span id="termsErrors" class="error terms"></span>
                         <% if (locals.errors && errors.terms) { %>
-                            <small class="text-danger"><%= errors.terms.msg %> </small>
+                            <small class="error-message"><%= errors.terms.msg %> </small>
                         <% } %>
                     </div>
                     <div class="button-container">

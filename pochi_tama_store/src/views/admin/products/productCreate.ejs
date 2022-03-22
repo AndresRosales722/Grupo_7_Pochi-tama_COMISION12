@@ -19,7 +19,7 @@
                             placeholder="Ej: Guante del infinito" value='<%= locals.old && old.name %>'>
                         <span id="nameError" class="error"></span>
                         <% if (locals.errors && errors.name) { %>
-                        <span class="error-message"><%= errors.name.msg %></span>
+                        <small class="error-message"><%= errors.name.msg %></small>
                         <% } %>
                     </div>
 
@@ -31,7 +31,7 @@
                                 value='<%= locals.old && old.price %>'>
                             <span id="priceError" class="error"></span>
                             <% if (locals.errors && errors.price) { %>
-                            <span class="error-message"><%= errors.price.msg %></span>
+                            <small class="error-message"><%= errors.price.msg %></small>
                             <% } %>
                         </div>
 
@@ -41,7 +41,7 @@
                                 placeholder="Ej: 50" value='<%= locals.old ? old.discount : 0 %>'>
                             <span id="discountError" class="error"></span>
                             <% if (locals.errors && errors.discount) { %>
-                            <span class="error-message"><%= errors.discount.msg %></span>
+                            <small class="error-message"><%= errors.discount.msg %></small>
                             <% } %>
                         </div>
 
@@ -60,7 +60,7 @@
                             </select>
                             <span id="categoryError" class="error"></span>
                             <% if (locals.errors && errors.category) { %>
-                            <span class="error-message"><%= errors.category.msg %></span>
+                            <small class="error-message"><%= errors.category.msg %></small>
                             <% } %>
                         </div>
 
@@ -75,7 +75,7 @@
                             </select>
                             <span id="subcategoryError" class="error"></span>
                             <% if (locals.errors && errors.subcategory) { %>
-                            <span class="error-message"><%= errors.subcategory.msg %></span>
+                            <small class="error-message"><%= errors.subcategory.msg %></small>
                             <% } %>
                         </div>
 
@@ -87,7 +87,7 @@
                             id="description"><%= locals.old && old.description %></textarea>
                         <span id="descriptionError" class="error"></span>
                         <% if (locals.errors && errors.description) { %>
-                        <span class="error-message" id><%= errors.description.msg %></span>
+                        <small class="error-message" id><%= errors.description.msg %></small>
                         <% } %>
                     </div>
 
@@ -95,10 +95,10 @@
                         <i class="fas fa-upload"></i>
                         <p>Ingrese una Imagen</p>
                         <input class="" type="file" name="image" id="image" multiple>
-                        <% if (locals.errors && errors.image) { %>
-                        <span class="error-message"><%= errors.image.msg %></span>
-                        <% } %>
                     </div>
+                    <% if (locals.errors && errors.image) { %>
+                    <small class="error-message file"><%= errors.image.msg %></small>
+                    <% } %>
                     <span id="imageError" class="error"></span>
 
                     <div class="button-admin">
