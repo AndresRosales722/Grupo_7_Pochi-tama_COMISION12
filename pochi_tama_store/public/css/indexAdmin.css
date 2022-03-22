@@ -241,11 +241,7 @@ section.tablas p {
     background-color: var(--orange3);
 }
 .panel-admin .tablas table thead tr th {
-<<<<<<< HEAD
-    font-size: 12px;
-=======
     font-size: 1.1rem;
->>>>>>> develop
     text-align: center;
     font-weight: 500;
     padding: 1rem .5rem;
@@ -254,11 +250,7 @@ section.tablas p {
     border: 1px solid white;
 }
 .panel-admin .tablas table tbody tr td {
-<<<<<<< HEAD
-    background-color: #b470d0a1;
-=======
     background-color: #f1f1f1 ;
->>>>>>> develop
     text-align: center;
     padding: 1.2rem 0;
     border: 1px solid silver;

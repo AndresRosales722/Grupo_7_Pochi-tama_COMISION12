@@ -255,23 +255,14 @@ i.fa-search {
     font-size: 1rem;
 }
 
-<<<<<<< HEAD
-
-/* .subcategory_menu.active {
-=======
 .subcategory_menu.active {
->>>>>>> develop
     display: block;
     background-color: #f1f1f1;
     position: sticky;
     top: 155px;
     width: 100%;
-<<<<<<< HEAD
-} */
-=======
     height: 100vh;
 }
->>>>>>> 5a07ddc68ba04f4698a7adbfb585cf7a52378704
 
 .subcategory_menu .subcategory_header{
     display: flex;
@@ -392,14 +383,8 @@ i.fa-search {
         position: absolute;
         font-size: 1rem;
         width: 9rem;
-<<<<<<< HEAD
-        background-color: #ffffff;
-        padding: 1rem;
-        /* border-radius: .5rem; */
-=======
         background-color: white;
         border-radius: 3px;
->>>>>>> develop
         margin-left: -3rem;
         flex-direction: column;
         justify-content: center;
@@ -422,11 +407,7 @@ i.fa-search {
         transition: 1s ease all;
     }
 
-<<<<<<< HEAD
-
-=======
     
->>>>>>> develop
     .session {
         display: inline-block;
         width: 8px;

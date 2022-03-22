@@ -128,7 +128,7 @@ let controller = {
 
   update: (req, res) => {
     let errors = validationResult(req);
-    console.log(req.files);
+    /* console.log(req.files); */
 
     if (errors.isEmpty()) {
       let arrayImages = [];
@@ -164,7 +164,7 @@ let controller = {
             console.log('AAAAAAAAAAAAAAAAAAA');
             /* res.send(image) */
              image.forEach(item => {
-               console.log(item);
+               /* console.log(item); */
                fs.existsSync(
                 "./public/img/products/",item.image && item.image !== "default-image.jpg")
                 ? fs.unlinkSync(`./public/img/products/${item.image}`)
