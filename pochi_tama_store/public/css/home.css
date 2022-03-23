@@ -237,7 +237,7 @@
     }
   
     body .main-container .section-productos,.section-vendido{
-        max-width: 900px;
+        max-width: 768px;
     }
 
     body main.main .main-container .section-vendido article .caja{
@@ -290,6 +290,10 @@
         width: 100%;
     }
 
+
+    body .main-container .section-productos, .section-vendido {
+        max-width: 992px;
+      }
     
 }
 

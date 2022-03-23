@@ -128,8 +128,7 @@ let controller = {
 
   update: (req, res) => {
     let errors = validationResult(req);
-    /* console.log(req.files); */
-
+    
     if (errors.isEmpty()) {
       let arrayImages = [];
       if (req.files) {
