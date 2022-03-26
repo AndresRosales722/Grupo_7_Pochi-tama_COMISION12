@@ -9,13 +9,21 @@ module.exports = [
     check('name')
     .notEmpty()
     .withMessage('El Nombre es requerido')
+<<<<<<< HEAD
     .isLength({min:3, max:50})
+=======
+    .isLength({min:1, max:50})
+>>>>>>> 6b63c9e61d64b7c8cd17f4c0641b3ce441a74b05
     .withMessage('El Nombre debe tener entre 5 y 30 caracteres'),
 
     check('last_name')
     .notEmpty()
     .withMessage('El Apellido es requerido')
+<<<<<<< HEAD
     .isLength({min:3, max:50})
+=======
+    .isLength({min:1, max:50})
+>>>>>>> 6b63c9e61d64b7c8cd17f4c0641b3ce441a74b05
     .withMessage('El Apellido debe tener entre 5 y 30 caracteres'),
 
     check('email')
@@ -40,7 +48,7 @@ module.exports = [
     .notEmpty()
     .withMessage('Debes escribir tu contraseña')
     .isLength({
-        min: 6,
+        min: 5,
         max: 12
     })
     .withMessage('La contraseña debe tener entre 6 y 12 caracteres'),
