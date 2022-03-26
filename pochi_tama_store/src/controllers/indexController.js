@@ -12,7 +12,6 @@ const Subcategories = db.Subcategory;
 
 let controller = {
     index:(req,res) => {
-        req.session.cart = []
         Products.findAll({ include : [{association : "productImages"},], order : [["name", "ASC"]],limit:[20]})
         .then((products) => {
             res.render('index',{

@@ -663,6 +663,126 @@ section.section-vendido .producto{
     }
 }
 
+/* Categorias */
+
+main.categories{
+    body.dark &{
+        .cat_banner{
+            img{
+                opacity: 0.8;
+            }
+        }
+
+        h2{
+            color:$softWhite;
+        }
+
+        .subcategories_menu-mobile{
+            .sidepanel{
+                background: $border;
+                a{
+                    color: $softWhite;
+                    border-bottom: 1px solid $borderInput;
+                }
+
+                a:hover{
+                    background: $container;
+                }
+
+                .boton-close{
+                    border-bottom: 1px solid $borderInput;
+                    a{
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        .container{
+            .cont-title-sub{
+                ul{
+                    li{
+                        a.inicio{
+                            color: $softWhite;
+                        }
+
+                        a{
+                            color: $orangelight;
+                        }
+                    }
+                }
+
+                .container-como{
+                    h1{
+                        color: $orangelight;
+                    }
+                }
+            }
+
+            .sidePanel2{
+                box-shadow: none;
+                border: 1px solid $borderInput;
+                a{
+                    background: $container;
+                    color: $softWhite;
+                }
+            }
+        }
+
+    }
+}
+
+/* Panel de admin */
+
+.container-fluid{
+    body.dark &{
+        main.panel-admin{
+            .table-responsive{
+                .container-filtros{
+                    .agregar-admin{
+                        h2{
+                            color: $softWhite;
+                        }
+                    }
+
+                    .filtros{
+                        input{
+                            background: $border;
+                            border: 1px solid $borderInput;
+                            color: $softWhite;
+                        }
+                    }
+
+                    .container-filter{
+                        select{
+                            background: $border;
+                            color: $softWhite;
+                            border: 1px solid $borderInput;
+                        }
+                    }
+                }
+
+                section.tablas{
+                    table{
+                        td{
+                            background: $border;
+                            color: $softWhite;
+                            border: 1px solid $borderInput;
+                        }
+                        thead{
+                            background: $container;
+                            th{
+                                color: $softWhite;
+                                border: 1px solid $borderInput;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(min-width: 768px){
     .main-header{
         body.dark &{

@@ -569,6 +569,91 @@ body.dark .cart .container-cart .local {
   color: #53a5e1;
 }
 
+/* Categorias */
+body.dark main.categories .cat_banner img {
+  opacity: 0.8;
+}
+
+body.dark main.categories h2 {
+  color: #ecf0f3;
+}
+
+body.dark main.categories .subcategories_menu-mobile .sidepanel {
+  background: #273b49;
+}
+
+body.dark main.categories .subcategories_menu-mobile .sidepanel a {
+  color: #ecf0f3;
+  border-bottom: 1px solid #385468;
+}
+
+body.dark main.categories .subcategories_menu-mobile .sidepanel a:hover {
+  background: #212e36;
+}
+
+body.dark main.categories .subcategories_menu-mobile .sidepanel .boton-close {
+  border-bottom: 1px solid #385468;
+}
+
+body.dark main.categories .subcategories_menu-mobile .sidepanel .boton-close a {
+  border: none;
+}
+
+body.dark main.categories .container .cont-title-sub ul li a.inicio {
+  color: #ecf0f3;
+}
+
+body.dark main.categories .container .cont-title-sub ul li a {
+  color: #ff955c;
+}
+
+body.dark main.categories .container .cont-title-sub .container-como h1 {
+  color: #ff955c;
+}
+
+body.dark main.categories .container .sidePanel2 {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #385468;
+}
+
+body.dark main.categories .container .sidePanel2 a {
+  background: #212e36;
+  color: #ecf0f3;
+}
+
+/* Panel de admin */
+body.dark .container-fluid main.panel-admin .table-responsive .container-filtros .agregar-admin h2 {
+  color: #ecf0f3;
+}
+
+body.dark .container-fluid main.panel-admin .table-responsive .container-filtros .filtros input {
+  background: #273b49;
+  border: 1px solid #385468;
+  color: #ecf0f3;
+}
+
+body.dark .container-fluid main.panel-admin .table-responsive .container-filtros .container-filter select {
+  background: #273b49;
+  color: #ecf0f3;
+  border: 1px solid #385468;
+}
+
+body.dark .container-fluid main.panel-admin .table-responsive section.tablas table td {
+  background: #273b49;
+  color: #ecf0f3;
+  border: 1px solid #385468;
+}
+
+body.dark .container-fluid main.panel-admin .table-responsive section.tablas table thead {
+  background: #212e36;
+}
+
+body.dark .container-fluid main.panel-admin .table-responsive section.tablas table thead th {
+  color: #ecf0f3;
+  border: 1px solid #385468;
+}
+
 @media (min-width: 768px) {
   body.dark .main-header {
     border-bottom: none;

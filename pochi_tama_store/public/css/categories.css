@@ -85,6 +85,12 @@
   /* padding-top: 3rem; */
 }
 
+.cont-title-sub{
+  max-width: 450px;
+  margin: 0 auto;
+
+}
+
 .categories {
   display: flex;
   flex-direction: column;
@@ -145,6 +151,10 @@
     max-width: 570px;
     
   }
+
+  .cont-title-sub{
+    max-width: 550px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -152,6 +162,7 @@
   .cont-title-sub{
     width: 100%;
     margin-bottom: 2rem;
+    max-width: 100%;
   }
   
   .cont-title-sub ul{
@@ -190,6 +201,7 @@
     flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
+    min-width: 768px;
   }
   
   .subcategories_menu-mobile {
@@ -207,6 +219,7 @@
   
   .container {
     max-width: 1100px;
+    min-width: 1100px;
   }
   
   .sidePanel2 {

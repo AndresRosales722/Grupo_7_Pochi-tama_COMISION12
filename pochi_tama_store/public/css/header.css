@@ -347,6 +347,15 @@ i.fa-search {
         transition: all 400ms ease;
     }
 
+    .main-header .user-icons-desktop i:hover {
+        color: #ffffff;
+    }
+
+    .main-header .user-icons-desktop i:hover span{
+        
+        text-decoration: underline;
+    }
+
     .main-header .user a.sesion-datps:hover{
         background: #cecece;
     }

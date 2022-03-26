@@ -39,11 +39,45 @@ let controller = {
                     })
                 }
     
-                res.locals.user = req.session.user
+                req.session.cart = []
+
+                db.Order.findOne({
+                    where:{
+                        user_id: req.session.user.id,
+                        status: 'pending'
+                    },
+                    include:[
+                        {
+                            association: 'orderItems',
+                            include: [
+                                {
+                                    association: 'products',
+                                    include: ['productImages']
+                                }
+                            ]
+                        }
+                    ]
+                }).then(order => {
+                    if (order) {
+                        order.orderItems.forEach(item => {
+                            let product = {
+                                id: item.product_id,
+                                name: item.product.name,
+                                price: item.product.price,
+                                discount:item.product.discount,
+                                image: item.product.productImages[0].image,
+                                amount: +item.quantity,
+                                total: +item.product.price * item.quantity ,
+                                order_id: order.id
+                            }
+                            req.session.cart.push(product)
+                        });
+                    }
+                    res.redirect('/')
+                })
     
-                res.redirect('/')
     
-            })
+            }).catch(error => console.log(error))
 
         }else{
             res.render('users/login',{

@@ -38,25 +38,16 @@ module.exports = {
     },
     add: async (req,res) => {
         try {
-            let index = productVerify(req.session.cart,req.params.id)
 
-            if (index === -1) {
-                let product = await db.Product.findByPk(req.params.id,{
-                    include: [
-                        {association: 'productImages',
-                            attributes: ['image']
-                        }
-                    ]
-                })
-    
-                if (!product) {
-                    return res.status(500).json({
-                        ok:false,
-                        msg:'comuniquese con el administrador'
-                    })
-                }
-    
-                const {id,name,price,discount} = product
+            let product = await db.Product.findByPk(req.params.id,{
+                include: [
+                    {association: 'productImages',
+                        attributes: ['image']
+                    }
+                ]
+            })
+
+            const {id,name,price,discount} = product
     
                 let item = {
                     id,
@@ -67,18 +58,73 @@ module.exports = {
                     amount: 1,
                     total: price 
                 }
-                if (!req.session.cart) {
-                    req.session.cart = []
+
+            if (req.session.cart.length === 0) {
+                
+                let order = await db.Order.create({
+                    user_id: req.session.user.id,
+                    status: 'pending'
+                })
+
+                item = {
+                    ...item,
+                    order_id: order.id
                 }
                 
+                await db.Order_items.create({
+                    order_id: order.id,
+                    product_id: item.id,
+                    quantity:1,
+                    user_id: order.user_id,
+                }) 
+
                 req.session.cart.push(item)
-    
-                
+
             }else{
-                let product = req.session.cart[index]
-                product.amount++
-                product.total = product.amount * product.price
-                req.session.cart[index] = product
+
+                let index = productVerify(req.session.cart,req.params.id)
+
+                let order = await db.Order.findOne({
+                    where:{
+                        user_id: req.session.user.id,
+                        status: 'pending'
+                    }
+                })
+
+                if (index === -1) {
+                    item = {
+                        ...item,
+                        order_id : order.id
+                    }
+
+                    req.session.cart.push(item)
+
+                    await db.Order_items.create({
+                        order_id: order.id,
+                        product_id: item.id,
+                        quantity:1,
+                        user_id: order.user_id,
+                    })
+                }else{
+
+                    let product = req.session.cart[index]
+                    product.amount++
+                    product.total = product.amount * product.price
+                    req.session.cart[index] = product
+
+                    await db.Order_items.update(
+                        {
+                            quantity: product.amount
+                        },
+                        {
+                            where: {
+                                order_id: product.order_id,
+                                product_id : product.id
+                            }
+                        }
+                    )
+                }
+
             }
 
             let response = {
@@ -91,11 +137,9 @@ module.exports = {
     
             return res.status(200).json(response)
 
-
-            
-
         } catch (error) {
             console.log(error);
+            return res.status(500).json(error)
         }
     },
     remove : async (req,res) => {

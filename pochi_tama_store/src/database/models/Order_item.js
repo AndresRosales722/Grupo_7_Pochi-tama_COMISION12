@@ -21,7 +21,6 @@ module.exports = (sequelize, dataTypes) => {
         },
         quantity:{
             type: dataTypes.INTEGER(11).UNSIGNED,
-            allowNull:false
         }
        
     }
