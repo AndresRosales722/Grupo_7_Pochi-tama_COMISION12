@@ -15,6 +15,10 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.INTEGER(11).UNSIGNED,
             allowNull:false
         },
+        user_id:{
+            type: dataTypes.INTEGER(11).UNSIGNED,
+            allowNull:false
+        },
         quantity:{
             type: dataTypes.INTEGER(11).UNSIGNED,
             allowNull:false

@@ -1,19 +1,87 @@
 console.log('carrito conectado')
 
+const $ = (id) => document.getElementById(id)
+
+const carrito = $('carrito')
+
 const getCarrito = async () => {
 
-    try {
-        const response = await fetch('/products/productCart')
-        const result = await response.json()
+  try {
+      const response = await fetch('/api/cart/show')
+      const result = await response.json()
 
+      if (result.ok) {
 
-        if (result.ok) {
-            console.log(result);
-        }
+          cargarTabla(result.data)
+      }
 
-    } catch (error) {
-        console.error(error);
-    }
+  } catch (error) {
+      console.error(error);
+  }
+
 }
 
-getCarrito()
+
+
+const addItem = async (id) => {
+
+  try {
+      const response = await fetch(`/api/cart/${id}`, {
+          method: 'POST'
+      })
+      const result = await response.json()
+
+      if (result.ok) {
+          cargarTabla(result.data)
+      }
+
+  } catch (error) {
+      console.error(error);
+  }
+
+}
+
+const removeItem = async (id) => {
+
+    try {
+
+          const response = await fetch(`/api/cart/${id}`, {
+              method: 'DELETE'
+          })
+          const result = await response.json()
+
+          if (result.ok) {
+              cargarTabla(result.data)
+          }
+      } catch (error) {
+          console.error(error)
+      }
+}
+
+
+const cargarTabla = (data) => {
+
+      carrito.innerHTML = null
+
+      data.forEach(({id,amount,image,name,price,total}) => {
+          let item = `
+          <tr>
+          <th scope="row">
+          <button onclick="removeItem('${id}')" ><i class="fas fa-minus-square"></i></button>
+          ${amount}
+          <button onclick="addItem('${id}')" ><i class="fas fa-plus-square"></i></button>
+          </th>
+          <td><img src="/img/products/${image}" /></td>
+          <td>${name}</td>
+          <td>${price}</td>
+          <td>${total}</td>
+          <td><button><i class="fas fa-trash-alt"></i></button></td>
+          </tr>
+          `
+        carrito.innerHTML += item
+
+      });
+
+}
+
+carrito && getCarrito()

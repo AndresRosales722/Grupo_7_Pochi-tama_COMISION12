@@ -90,6 +90,7 @@ let controller = {
         }
         res.redirect('/')
     },
+
     profile:(req,res)=>{ console.log(req.session.user)
         Users.findByPk(req.session.user.id, {
             include: [{association: 'addresses'}]
@@ -100,9 +101,8 @@ let controller = {
                 session:req.session
             })
         })
-        
-        
-    }
+    },
 }
+
 
 module.exports = controller

@@ -20,6 +20,7 @@ ul.atajos{
     font-size: 0.9rem; 
     gap: 2px;
     color: var(--bluedark);
+    margin-bottom: 2rem;
 }
 
 ul.atajos li a{

@@ -69,7 +69,7 @@
 
                 <section class="total-compra">
                     <div class="container-compra">
-                            <button>AGREGAR AL CARRITO</button>
+                        <button onclick="addItem('<%=product.id%>')">AGREGAR AL CARRITO</button>
                     </div>
                 </section>
 
@@ -136,6 +136,7 @@
     
     <%- include('../partials/infoEnvios.ejs') %>
     <%- include('../partials/footer.ejs')  %>
+    <%- include('../partials/scripts.ejs')  %>
     <script src="/js/productDetail.js"></script>
     
 </body>

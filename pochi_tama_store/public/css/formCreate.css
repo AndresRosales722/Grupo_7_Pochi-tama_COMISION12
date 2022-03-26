@@ -14,6 +14,7 @@ body.admin .form-container-admin {
     border: 1px solid silver;
     border-radius: 2px;
     margin: 19px;
+    margin-top: 5rem;
 }
 
 body.admin .form-container-admin .input-admin.description{
@@ -117,7 +118,8 @@ body.admin .container-file:hover {
     
     body.admin .form-container-admin{
         max-width: 550px;
-        margin: 60px auto;
+        margin: 5rem auto;
+        width: 100%;
     }
     
     body.admin .form-container-admin button{

@@ -38,6 +38,7 @@ app.use('/', indexRouter)
 app.use('/admin',adminRouter)
 app.use('/users', usersRouter)
 app.use('/products', productsRouter)
+app.use('/api/cart',require('./routes/cart'))
 app.use(apiRouter)
 
 // Error 404

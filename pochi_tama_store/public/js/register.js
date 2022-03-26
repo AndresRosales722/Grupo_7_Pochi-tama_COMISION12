@@ -18,6 +18,9 @@ window.addEventListener("load", function () {
     $terms = qs("#terms"),
     $termsErrors = qs("#termsErrors"),
     $labelTerms = qs("#labelTerms"),
+    $file = qs('#formFile'),
+    $fileErrors = qs('#fileErrors'),
+    $imgPreview = qs('#img-preview'),
     regExAlpha = /^[a-zA-Z\sñáéíóúü ]*$/,
     regExEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i,
     regExPass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,12}$/;
@@ -201,4 +204,23 @@ window.addEventListener("load", function () {
       $form.submit();
     }
   });
+
+
+  $file.addEventListener('change',function fileValidation(){
+    let filePath = $file.value
+    let allowedExtensions = /(.jpg|.hpeg|.png|.gif|.web)$/i
+
+    if (!allowedExtensions.exec(filePath)){
+      $fileErrors.innerHTML = 'Carga un archivo de imagen valido, con las extenciones (.jpg - .jpeg - .png - .gif)'
+      $file.value = ''
+      $imgPreview.innerHTML = ''
+      return false
+    }
+  })
+
+
+
+
 });
+
+

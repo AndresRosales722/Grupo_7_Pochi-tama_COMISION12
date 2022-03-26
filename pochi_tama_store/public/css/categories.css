@@ -82,7 +82,7 @@
 /* Main */
 .container{
   padding: 20px;
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
 }
 
 .categories {

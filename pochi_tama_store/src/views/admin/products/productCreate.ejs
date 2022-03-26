@@ -4,9 +4,9 @@
 
 <body>
 
-    <%- include('../../partials/header.ejs')  %>
+    <%- include('../../partials/headerAdmin') %>
 
-    <body class="admin">
+    <body class="admin form">
         <div class="form-container-admin">
             <h2>Formulario de Creacion de producto</h2>
             <form action="/admin" method="POST" enctype="multipart/form-data" id="form">
@@ -91,19 +91,21 @@
                         <% } %>
                     </div>
 
+                        <span id="fileErrors" class="error"></span>
                     <div class="container-file">
                         <i class="fas fa-upload"></i>
                         <p>Ingrese una Imagen</p>
-                        <input class="" type="file" name="image" id="image" multiple>
+                        <input class="" type="file" name="image" id="formFile" multiple>
                     </div>
                     <% if (locals.errors && errors.image) { %>
                     <small class="error-message file"><%= errors.image.msg %></small>
                     <% } %>
-                    <span id="imageError" class="error"></span>
+                   
 
                     <div class="button-admin">
                         <span id="submit-error" class="error"></span>
                         <button type="submit" class="btn btn-submit">Crear Producto</button>
+                        <a class="boton-cancelar" href="/admin">Cancelar</a>
                     </div>
 
                 </div>

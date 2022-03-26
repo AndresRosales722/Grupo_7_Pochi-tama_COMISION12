@@ -72,6 +72,7 @@ section.tablas p {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .panel-admin .container-filtros .agregar-admin h2{

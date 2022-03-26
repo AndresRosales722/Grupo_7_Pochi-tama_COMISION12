@@ -1,145 +1,116 @@
-/* HEADER TOP */ 
- .header-admin{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 999;
+.main-header.admin{
+    justify-content: space-between;
 }
 
- .header-admin .container-header-admin .container-header-top-admin .logo-admin a img{
-    width: 130px;
-    
+
+.main-header.admin .logo{
+    order: 0;
 }
 
-.header-admin .container-header-admin .container-header-top-admin .menu-admin{
-    order: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row-reverse;
+.main-header.admin .user-icons-desktop i {
+    font-size: 2.3rem;
 }
 
-.header-admin .container-header-admin .container-header-top-admin .menu-admin h3{
-    font-size: 1.5rem;
-    color: white;
-    display: none;
+.main-header.admin .user-icons-desktop span {
+    font-size: 2.3rem;
 }
 
-.header-admin .container-header-admin .container-header-top-admin{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color:var(--orange3);
-    flex-wrap: wrap;
-    padding: 12px;
-}
+.main-header.admin .search-form-desktop .search-bar input {
+    font-size: 1.5rem;   
+  }
 
- .header-admin .container-header-admin .container-header-top-admin .logo-admin a img{
-    width: 130px;
-}
-
- .header-admin .container-header-admin .container-header-top-admin .menu-admin button{
-    background-color: var(--orange3);
-    border: 0px;
-    color: white;   
-}
-
- .header-admin .container-header-admin .container-header-top-admin .menu-admin button i{
-    font-size: 25px;
-}
-
- .header-admin .container-header-admin .container-header-top-admin .search-bar-admin{
-    display: none;
-}
-
- .header-admin .container-header-admin .container-header-top-admin .search-bar-admin input{
-    width: 100%;
-    border: 1px solid white;
-    border-radius: 10px;
-    border-style: none;
-    padding: 10px;
-    outline: none;
-    display: none;
-}
-
- .header-admin .container-header-admin .container-header-top-admin .search-bar-admin .boton-admin{
-    position: relative;
-    right: 10px;
-}
-
- .header-admin .container-header-admin .container-header-top-admin .search-bar-admin .boton-admin i{
-    color: white;
+.main-header.admin .search-form-desktop .search-bar button i {
     font-size: 1.5rem;
 }
 
- .header-admin .container-header-admin .container-header-top-admin .nav-bar-admin{
-    display: none;
-}
-
- .header-admin .container-header-admin .container-header-top-admin .nav-bar-admin ul .inicio-admin{
-    display: none;
-}
-
- .header-admin .container-header-admin .container-header-top-admin .nav-bar-admin ul .cuenta-admin{
-    display: none;
-}
-
- .header-admin .container-header-admin .container-header-top-admin .nav-bar-admin ul .carrito-admin li i{
-    color: white;
-    font-size: 1.5rem;
-    display: none;
-}
-
- .header-admin .container-header-admin .container-header-top-admin .nav-bar-admin ul .carrito-admin li a label{
-    display: none;
-}
-
-
-/*---------------------HEADER BOT---------------------*/
-
-  .header-admin .container-header-admin .container-header-bot-admin{
-
-    background-color: var(--purple);
-    
-}
-
-.bot-list-admin {
+header.admin .navigation-bar{
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 9px;
-    padding-bottom: 12px;
-    font-style: italic;
+background: var(--purple);
+color: #2c3e50;
+height: 45px;
+justify-content: space-between;
+align-items: center;
 }
 
-
-@media (min-width: 768px) {
-
-.header-admin .container-header-admin .container-header-top-admin .search-bar-admin{
-    display: flex;
-}
-
-.header-admin .container-header-admin .container-header-top-admin .menu-admin h3{
-    display: flex;
-    margin-right: 15px;
-}
-
-.header-admin .container-header-admin .container-header-top-admin .search-bar-admin{
+header.admin .navigation-bar a{
     width: 50%;
+text-align: center;
+color: white;
+font-size: 1.7rem;
+padding: 12px;
+transition: 400ms ease all;
 }
 
-.header-admin .container-header-admin .container-header-top-admin .search-bar-admin input{
-    display: flex;
-    
+header.admin .navigation-bar a:hover{
+    background: #5B228C;
 }
 
-.header-admin .container-header-admin .container-header-top-admin .search-bar-admin .boton-admin{
-    right: 30px;
-    top: 7px
+body.admin.form .navigation-bar a{
+    font-size: 1.1rem;
 }
 
-.header-admin .container-header-admin .container-header-top-admin .search-bar-admin .boton-admin i{
-    color: black;
+body.admin.form .user-icons-desktop{
+   
+}
+
+body.admin.form .user-icons-desktop i{
+    font-size: 1rem;
+}
+
+body.admin.form .user-icons-desktop .user i{
     font-size: 1.5rem;
 }
-    
+
+body.admin.form .user-icons-desktop .user span{
+    font-size: 1.5rem;
 }
+
+
+@media(min-width:768px){
+
+    body.admin.form .user-icons-desktop .user .menu-user{
+        width: 8rem;
+        font-size: 1rem;
+        position: absolute;
+        left: 70px;
+    }
+
+    body.admin.form .user-icons-desktop{
+        width: 250px;
+    }
+
+    .main-header.admin{
+        justify-content: space-between;
+        padding: 1px 15px;
+        
+    }
+
+    .main-header.admin .search-form-desktop {
+        width: 50%;
+    }
+
+    .main-header.admin .user-icons-desktop {
+        width: 250px;
+      }
+
+      .main-header.admin .user-icons-desktop .user {
+        gap: 5px;
+      }
+
+      .main-header.admin .user-icons-desktop .switch span i {
+        font-size: 2rem;
+      }
+
+      .main-header.admin .user-icons-desktop .user .menu-user{
+          width: 13rem;
+          font-size: 1.5rem;
+          left: 80px;
+          position: absolute;
+      }
+
+      .main-header.admin .user-icons-desktop .user span.session {
+        top: -5px;
+        right: 5px;
+      }
+}
+

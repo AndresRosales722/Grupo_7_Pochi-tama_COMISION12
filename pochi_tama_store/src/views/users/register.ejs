@@ -56,10 +56,11 @@
                     </div>
 
                 <div class="register-send">
+                    <span id="fileErrors" class="error"></span>
                     <div class="container-file">
                         <i class="fas fa-upload"></i>
                         <p>Subir una foto</p>
-                        <input type="file" name="avatar">
+                        <input type="file" name="avatar" id="formFile">
                         <% if (locals.errors && errors.image) { %>
                             <small class="error-message"><%= errors.image.msg %></small>
                         <% } %>

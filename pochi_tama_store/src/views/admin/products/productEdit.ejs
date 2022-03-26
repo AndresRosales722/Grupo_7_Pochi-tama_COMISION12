@@ -3,14 +3,16 @@
 
 <%- include('../../partials/head.ejs')  %>
 
-<body class="admin">
+<body class="admin form">
 
-    <%- include('../../partials/header.ejs')  %>
+    <%- include('../../partials/headerAdmin') %>
+
 
     <div class="form-container-admin">
         <h2>Esta editando el producto:<%= product.name %></h2>
         <form id="form" action="/admin/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
             <div class="form-admin">
+
 
                 <div class="input-admin">
                     <label for="name">Nombre del Producto</label>
@@ -22,6 +24,8 @@
                     <% } %>
                 </div>
 
+            <div class="cont-pri-dis">
+
                 <div class="input-admin">
                     <label for="price">Precio del producto</label>
                     <input id="price" class="input-style-admin" type="text" name="price" placeholder="Ej: 3000"
@@ -32,6 +36,7 @@
                     <% } %>
                 </div>
 
+                
                 <div class="input-admin discount">
                     <label for="discount">Descuento</label>
                     <input class="input-style-admin" type="number" name="discount" placeholder="Ej: 50"
@@ -40,6 +45,10 @@
                     <small class="error-message"><%= errors.discount.msg %></small>
                     <% } %>
                 </div>
+
+            </div>
+
+            <div class="cont-selects">
 
                 <div class="input-admin">
                     <select class="form-select categorySelect" id="category" name="category">
@@ -56,7 +65,7 @@
                     <% } %>
                 </div>
 
-                <div class="input_admin">
+                <div class="input-admin">
                     <select class="form-select subcategorySelect" id="subcategory" name="subcategory">
                         <option selected hidden value="">Subcategorias</option>
                         <% subcategories.forEach(subcategory => { %>
@@ -70,6 +79,8 @@
                     <% } %>
                 </div>
 
+            </div>
+
 
                 <div class="input-admin description">
                     <label for="description">Descripcion</label>
@@ -81,10 +92,11 @@
                     <% } %>
                 </div>
 
+                    <span id="fileErrors" class="error"></span>
                 <div class="container-file">
                     <i class="fas fa-upload"></i>
                     <p>Ingrese una Imagen</p>
-                    <input type="file" name="image" id="image" multiple>
+                    <input type="file" name="image" id="formFile" multiple>
                     <% if (locals.errors && errors.image) { %>
                         <small class="error-message"><%= errors.image.msg %></span>
                     <% } %>
@@ -95,6 +107,7 @@
                 <div class="button-admin">
                     <span id="submit-error" class="error"></span>
                     <button type="submit" class="btn btn-submit">Guardar Producto</button>
+                    <a class="boton-cancelar" href="/admin">Cancelar</a>
                 </div>
 
             </div>

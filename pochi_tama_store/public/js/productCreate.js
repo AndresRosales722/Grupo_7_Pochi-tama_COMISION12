@@ -13,10 +13,11 @@ window.addEventListener('load', function () {
         $subcategoryError = qs('#subcategoryError'),
         $description = qs('#description'),
         $descriptionError = qs('#descriptionError'),
-        $image = qs('#image'),
-        $imageError = qs('#imageError'),
         $form = qs('#form'),
-        $submitError = qs('#submit-error')
+        $submitError = qs('#submit-error'),
+        $file = qs('#formFile'),
+        $fileErrors = qs('#fileErrors'),
+        $imgPreview = qs('#img-preview')
 
     let regExImage = /(.jpg|.jpeg|.png|.gif)$/i;
     let validationsErrors = false
@@ -119,21 +120,6 @@ window.addEventListener('load', function () {
         }
     })
 
-    $image.addEventListener('change', () => {
-        if (regExImage.exec($image.value)) {
-            const file = $image.files[0];
-            const imagen = URL.createObjectURL(file);
-            $image.classList.remove('invalid');
-            $image.classList.add('valid');
-            $imageError.innerHTML = '';
-            validationsErrors = false;
-        } else {
-            $image.classList.remove('valid')
-            $image.classList.add('invalid');
-            $imageError.innerHTML = 'Solo extensiones .jpg .jpeg .png .gif'
-        }
-    })
-
     $form.addEventListener('submit', function (event) {
         event.preventDefault()
 
@@ -154,6 +140,19 @@ window.addEventListener('load', function () {
         }
 
     })
+
+
+    $file.addEventListener('change',function fileValidation(){
+        let filePath = $file.value
+        let allowedExtensions = /(.jpg|.hpeg|.png|.gif|.web)$/i
+    
+        if (!allowedExtensions.exec(filePath)){
+          $fileErrors.innerHTML = 'solo extenciones (.jpg - .jpeg - .png - .gif)'
+          $file.value = ''
+          $imgPreview.innerHTML = ''
+          return false
+        }
+      })
 
 
 })

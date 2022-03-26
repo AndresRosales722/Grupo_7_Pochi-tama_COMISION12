@@ -1,6 +1,6 @@
 window.onload = () => {
 
-    let url = new URL(`http://localhost:3000/api/v1/products/?page=0&size=5`)
+    let url = new URL(`http://localhost:3000/api/v1/products/?page=0&size=10`)
     console.log(url.search);
     let urlParams = new URLSearchParams(url.search);
     const filter = document.querySelector('#filter');

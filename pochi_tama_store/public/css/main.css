@@ -75,7 +75,7 @@ body .main-container .titulo{
 
 body .main-container hr.hr1{
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
     background: linear-gradient(to right,#eea849,#f46b45);
     height: 5px;
     border: 0;
