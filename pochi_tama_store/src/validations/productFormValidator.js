@@ -4,7 +4,7 @@ module.exports = [
     check('name')
     .notEmpty()
     .withMessage('El campo nombre es obligatorio').bail()
-    .isLength({min:5, max:50})
+    .isLength({min:2, max:50})
     .withMessage('El nombre debe tener entre 5 y 50 caracteres'),
      
     check('category')
@@ -26,6 +26,6 @@ module.exports = [
     .withMessage('Solo numeros'),
 
     check('description')
-    .isLength({min:20, max:500})
+    .isLength({min:10, max:500})
     .withMessage('La descripcion debe tener entre 20 y 500 caracteres')
 ]

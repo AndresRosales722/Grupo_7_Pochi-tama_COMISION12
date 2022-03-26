@@ -8,7 +8,7 @@
     <%- include('../../partials/header.ejs')  %>
 
     <div class="form-container-admin">
-        <h2>Esta editando el producto:<%= product.name %></h2>
+        <h2>Esta editando el producto: <%= product.name %></h2>
         <form id="form" action="/admin/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
             <div class="form-admin">
 
@@ -95,6 +95,7 @@
                 <div class="button-admin">
                     <span id="submit-error" class="error"></span>
                     <button type="submit" class="btn btn-submit">Guardar Producto</button>
+                    <button type="submit-cancelar" class="btn btn-submit"><a href="/admin" class="btn btn-submit">Cancelar</a></button>
                 </div>
 
             </div>

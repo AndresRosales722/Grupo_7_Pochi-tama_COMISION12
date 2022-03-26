@@ -120,9 +120,13 @@ body.admin .container-file:hover {
         margin: 60px auto;
     }
     
-    body.admin .form-container-admin button{
-        width: 100%;
-        font-size: 1.2rem;
+    body.admin .form-container-admin .button-admin {
+        text-align: center;
+        max-width: 100%;
+        display: inline-grid;
+        grid-gap: 10px;
+        grid-template-columns: 570px;
+        color: white;
     }
     
     body.admin .form-container-admin textarea{
@@ -152,4 +156,18 @@ body.admin .container-file:hover {
     body.admin .form-container-admin .cont-selects .input-admin{
         width: 49%;
     }
+
+}
+
+@media  (min-width: 991px){
+    
+    body.admin .form-container-admin .button-admin {
+        text-align: start;
+        max-width: 100%;
+        display: inline-grid;
+        grid-gap: 10px;
+        grid-template-columns: 650px;
+        color: white;
+    }
+
 }
