@@ -12,7 +12,8 @@
                 <a href="/products/detail/<%- product.id %>" class="product-name"><%- product.name %></a>
                 <div class="pri-dis">
                     <h4>$<%- toThousand(product.price - product.price * product.discount / 100) %></h4>
-                    <span class="discount"><%- product.discount > 0 ? `${product.discount}$ OFF` : " " %></span>
+                    <span class="discount"><%- product.discount > 0 ? `${product.discount}$ OFF` : null
+                     %></span>
                 </div>
                 </div>
                 </article>

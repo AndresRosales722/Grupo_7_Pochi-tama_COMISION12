@@ -70,7 +70,7 @@ module.exports = {
                     ...item,
                     order_id: order.id
                 }
-                
+
                 await db.Order_items.create({
                     order_id: order.id,
                     product_id: item.id,

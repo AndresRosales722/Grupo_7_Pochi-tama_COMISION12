@@ -336,6 +336,30 @@ i.fa-search {
 /* MEDIA QUERIES */
 /* Tablet */
 @media (min-width: 768px){
+
+    .traductor{
+        width: 12%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skiptranslate.goog-te-gadget{
+        position: absolute;
+        top: 10px;
+        opacity: 0;
+    }
+
+    .traductor i{
+        font-size: 2.5rem;
+        margin: 0!important;
+    }
+
+    ul.menu li{
+        width: 24%;
+        
+    }
     
     .main-header .user-icons-desktop .user{
         display: flex;

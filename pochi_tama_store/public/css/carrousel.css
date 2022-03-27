@@ -27,7 +27,7 @@
 .carousel-container .prev, .carousel-container .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: 50px;
     margin-top: -22px;
     padding: 16px;
@@ -45,7 +45,7 @@
     align-items: center;
 }
 
-.carousel-container .prev, .carousel-container .next , .prev {
+.carousel-container .prev, .carousel-container .next{
     display: none;
 }
 

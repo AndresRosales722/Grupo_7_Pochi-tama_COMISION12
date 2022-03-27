@@ -37,7 +37,7 @@ body .img-noresults {
     }
     
     body .container-search-page{
-        flex-direction: row;
+        flex-direction: column;
         padding: 20px;
         max-width: 768px;
         margin: 0 auto;
@@ -46,6 +46,10 @@ body .img-noresults {
 }
 
 @media(min-width:768px){
+
+    body .img-noresults {
+        width: 130px;
+      }
     
     body h2.subtitle{
         font-size: 1.8rem;
