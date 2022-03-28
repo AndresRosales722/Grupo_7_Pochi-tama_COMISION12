@@ -62,12 +62,12 @@ let controller = {
                         order.orderItems.forEach(item => {
                             let product = {
                                 id: item.product_id,
-                                name: item.product.name,
-                                price: item.product.price,
-                                discount:item.product.discount,
-                                image: item.product.productImages[0].image,
+                                name: item.products.name,
+                                price: item.products.price,
+                                discount:item.products.discount,
+                                image: item.products.productImages[0].image,
                                 amount: +item.quantity,
-                                total: +item.product.price * item.quantity ,
+                                total: +item.products.price * item.quantity ,
                                 order_id: order.id
                             }
                             req.session.cart.push(product)

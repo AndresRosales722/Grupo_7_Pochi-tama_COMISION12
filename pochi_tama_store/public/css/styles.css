@@ -657,6 +657,173 @@ body.dark .container-fluid main.panel-admin .table-responsive section.tablas tab
   border: 1px solid #385468;
 }
 
+/* Carrito de compras con Sass */
+.cart .container-cart .card .card-body {
+  background: #f1f1f1;
+  margin: 1rem 0rem;
+  position: relative;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.cart .container-cart .card .card-body .btn-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.cart .container-cart .card .card-body button.finalizar {
+  border: none;
+  padding: 10px;
+  background: var(--orange3);
+  border-radius: 3px;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  width: 130px;
+  display: none;
+}
+
+.cart .container-cart .card .card-body button.vaciar {
+  border: none;
+  padding: 10px;
+  background: #d52d4f;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  width: 130px;
+}
+
+.cart .container-cart .card .card-body table {
+  width: 100%;
+}
+
+.cart .container-cart .card .card-body table thead {
+  display: none;
+}
+
+.cart .container-cart .card .card-body table tbody td img {
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cart .container-cart .card .card-body table tbody td.name-ta {
+  width: 50%;
+  position: absolute;
+  left: 105px;
+  bottom: 50px;
+  height: 45px;
+  color: #2c3e50;
+}
+
+.cart .container-cart .card .card-body table tbody td.total-ta {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  font-size: 1.1rem;
+  color: var(--bluedark);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.cart .container-cart .card .card-body table tbody td.basura-ta {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.cart .container-cart .card .card-body table tbody td.basura-ta button {
+  border: none;
+}
+
+.cart .container-cart .card .card-body table tbody td.basura-ta i {
+  color: var(--bluedark);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cart .container-cart .card .card-body table tbody td.price-ta {
+  display: none;
+}
+
+.cart .container-cart .card .card-body table tbody tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  position: relative;
+  border: 1px solid rgba(44, 62, 80, 0.2);
+}
+
+.cart .container-cart .card .card-body table tbody tr th {
+  position: relative;
+  left: 15px;
+  width: 30%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 5px;
+  top: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart .container-cart .card .card-body table tbody tr th span {
+  color: var(--bluedark);
+  font-weight: 500;
+}
+
+.cart .container-cart .card .card-body table tbody tr th button {
+  border: 1px solid #c1c6ca;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #f1f1f1;
+}
+
+.cart .container-cart .card .card-body table tbody tr th button i {
+  font-size: 1rem;
+  color: var(--purple);
+}
+
+@media (min-width: 576px) {
+  .cart .container-cart .card .card-body table tbody td img {
+    width: 150px;
+    padding: 10px;
+  }
+  .cart .container-cart .card .card-body table tbody td.name-ta {
+    left: 150px;
+    bottom: 95px;
+  }
+  .cart .container-cart .card .card-body table tbody tr th {
+    top: 40px;
+  }
+}
+
 @media (min-width: 768px) {
   body.dark .main-header {
     border-bottom: none;

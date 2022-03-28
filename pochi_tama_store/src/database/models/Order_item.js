@@ -10,6 +10,7 @@ module.exports = (sequelize, dataTypes) => {
         order_id: {
             type: dataTypes.INTEGER(11).UNSIGNED,
             allowNull: false,
+            onDelete:'cascade'
         },
         product_id:{
             type: dataTypes.INTEGER(11).UNSIGNED,

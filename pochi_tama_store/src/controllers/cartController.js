@@ -71,7 +71,7 @@ module.exports = {
                     order_id: order.id
                 }
 
-                await db.Order_items.create({
+                await db.OrderItem.create({
                     order_id: order.id,
                     product_id: item.id,
                     quantity:1,
@@ -99,7 +99,7 @@ module.exports = {
 
                     req.session.cart.push(item)
 
-                    await db.Order_items.create({
+                    await db.OrderItem.create({
                         order_id: order.id,
                         product_id: item.id,
                         quantity:1,
@@ -112,7 +112,7 @@ module.exports = {
                     product.total = product.amount * product.price
                     req.session.cart[index] = product
 
-                    await db.Order_items.update(
+                    await db.OrderItem.update(
                         {
                             quantity: product.amount
                         },
@@ -155,9 +155,28 @@ module.exports = {
                 product.total = product.amount * product.price
                 req.session.cart[index] = product
 
+                await db.OrderItem.update(
+                    {
+                        quantity: product.amount
+                    },
+                    {
+                        where: {
+                            order_id : product.order_id,
+                            product_id : product.id
+                        }
+                    }
+                )
+
             }else{
 
                 req.session.cart.splice(index,1)
+
+                await db.OrderItem.destroy({
+                    where: {
+                        product_id: product.id,
+                        order_id : product.order_id
+                    }
+                })
 
             }
 
@@ -174,5 +193,61 @@ module.exports = {
         } catch (error) {
             
         }
+    },
+    removeItem: async (req,res)=>{
+        try {
+            let index = productVerify(req.session.cart,req.params.id)
+            let product = req.session.cart[index]
+
+            req.session.cart.splice(index,1)
+
+                await db.OrderItem.destroy({
+                    where: {
+                        product_id: product.id,
+                        order_id : product.order_id
+                    }
+                })
+
+                let response = {
+                    ok:true,
+                    meta: {
+                        total: req.session.cart.length
+                    },
+                    data: req.session.cart
+                }
+        
+                return res.status(200).json(response)
+
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json(error)
+        }
+    },
+    empty: async (req,res)=> {
+        try {
+            
+            await db.Order.destroy({
+                where:{
+                    user_id: req.session.user.id,
+                    status:'pending'
+                }
+            })
+
+            req.session.cart= []
+
+            let response = {
+                ok:true,
+                meta: {
+                    total: req.session.cart.length
+                },
+                data: req.session.cart
+            }
+    
+            return res.status(200).json(response)
+
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json(error)
+        }
     }
-}
+ }

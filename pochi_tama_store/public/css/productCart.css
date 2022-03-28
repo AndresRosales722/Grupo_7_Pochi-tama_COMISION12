@@ -5,17 +5,12 @@
 .cart .container-cart{
     padding: 10px 0px;
     width: 100%;
+    position: relative;
 }
 
 .cart .container-cart h2{
-<<<<<<< HEAD
-    margin: 0px 0px 20px 0px;
-    font-variant: small-caps;
-    text-align: center;
-=======
     margin: 30px 0px;
     color: #2c3e50;
->>>>>>> 5a07ddc68ba04f4698a7adbfb585cf7a52378704
 }
 
 .cart .container-cart form .container-form{
@@ -122,10 +117,7 @@
     padding: 10px 0px;
     margin: 15px 0;
     color: #2c3e50;
-<<<<<<< HEAD
     border: 2px solid #b794d5;
-=======
->>>>>>> 5a07ddc68ba04f4698a7adbfb585cf7a52378704
 }
 
 .cart .container-cart form .container-form section.container-subtotal .subtotal{
@@ -322,6 +314,18 @@ section.ubicacion-local .container-radio{
 
 @media(min-width:768px){
 
+    section.total-compra .container-compra {
+        width: 100%;
+    }
+
+    .container-cart section.total-compra {
+        padding: 10px;
+        position: absolute;
+        top: 630px;
+        left: 396px;
+        width: 45%;
+      }
+
     .cart{
         max-width: 768px;
         margin: 0 auto;
@@ -437,6 +441,10 @@ section.ubicacion-local .container-radio{
 
 @media(min-width:992px){
 
+    .container-cart section.total-compra {   
+        left: 500px;   
+      }
+
     .cart{
         max-width: 950px;
     }
@@ -477,6 +485,10 @@ section.ubicacion-local .container-radio{
 }
 
 @media(min-width:1200px){
+
+    .container-cart section.total-compra {   
+        left: 580px;   
+      }
 
     .cart {
         max-width: 1100px;

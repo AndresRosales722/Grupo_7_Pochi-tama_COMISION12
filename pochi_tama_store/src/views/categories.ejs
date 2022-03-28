@@ -6,7 +6,7 @@
 
     <main class="categories">
         <div class="cat_banner container-fluid">
-            <img src="/img/banners/<%= category.banner %> " alt="Portada de categoria <%= category.name %> ">
+            <img src="/img/banner_categorias/<%= category.banner %> " alt="Portada de categoria <%= category.name %> ">
         </div>
         <div class="subcategories_menu-mobile">
             <div id="mySidepanel" class="sidepanel">
@@ -29,6 +29,8 @@
 
         </div>
     </main>
+
+    <button class="ancla" id="button-up"><i class="far fa-angle-up"></i></button>
 
     <%- include('./partials/infoEnvios.ejs') %>
     <%- include('./partials/footer.ejs')%>

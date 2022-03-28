@@ -58,6 +58,36 @@ const removeItem = async (id) => {
       }
 }
 
+const removeAllItem = async (id) => {
+    try {
+        const response = await fetch(`/api/cart/${id}`, {
+            method: 'DELETE'
+        })
+        const result = await response.json()
+
+        if (result.ok) {
+            cargarTabla(result.data)
+        }
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+const emptyCart = async () =>{
+        try {
+            const response = await fetch(`/api/cart/empty`, {
+                method: 'DELETE'
+            })
+            const result = await response.json()
+    
+            if (result.ok) {
+                cargarTabla(result.data)
+            }
+        } catch (error) {
+            console.error(error)      
+        }
+}
+
 
 const cargarTabla = (data) => {
 
@@ -66,17 +96,17 @@ const cargarTabla = (data) => {
       data.forEach(({id,amount,image,name,price,total}) => {
           let item = `
           <tr>
+          <td><img src="/img/products/${image}" class="w-25" /> </td>
+          <td class="name-ta">${name}</td>
           <th scope="row">
-          <button onclick="removeItem('${id}')" ><i class="fas fa-minus-square"></i></button>
-          ${amount}
-          <button onclick="addItem('${id}')" ><i class="fas fa-plus-square"></i></button>
+          <button class="restar" onclick="removeItem('${id}')" ><i class="fas fa-minus"></i></button>
+          <span>${amount}</span>
+          <button class="agregar" onclick="addItem('${id}')" ><i class="fas fa-plus"></i></button>
           </th>
-          <td><img src="/img/products/${image}" /></td>
-          <td>${name}</td>
-          <td>${price}</td>
-          <td>${total}</td>
-          <td><button><i class="fas fa-trash-alt"></i></button></td>
-          </tr>
+          <td class="price-ta">${price}</td>
+          <td class="total-ta">${total}</td>
+          <td class="basura-ta"><button onclick="removeAllItem('${id}')"><i class="fas fa-trash"></i></button></td>
+        </tr>
           `
         carrito.innerHTML += item
 
