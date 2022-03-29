@@ -123,7 +123,7 @@ body .main-container hr.hr1{
     color: white;
     top: 105px;
     text-align: start;
-    padding: 15px 20px 15px 15px;
+    padding: 15px 10px 15px 15px;
     display: flex;
     flex-direction: column;
     z-index: 10;
@@ -145,7 +145,12 @@ body .main-container .section-productos article .caja img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    -webkit-object-fit: cover;
     transition: all 0.5s ease-in-out;
+}
+
+a.nada{
+    padding: 0px!important;
 }
 
 body .main-container .section-productos article .caja:hover img{
