@@ -1,15 +1,14 @@
 let express = require('express') 
 let router = express.Router() 
 let controller = require('../controllers/productsController')
-
+let userCheck = require('../middlewares/userCheck')
 
 router.get('/allProducts', controller.allProducts);   // Detalle del producto
 
 router.get('/detail/:id/', controller.detail);   // Detalle del producto
 
-router.get('/productCart',controller.cart)  // Carrito de compras
+router.get('/productCart',userCheck.activeUser,controller.cart)  // Carrito de compras
 
- 
 /* GET - List of products */
 router.get('/category/:id', controller.category)
 

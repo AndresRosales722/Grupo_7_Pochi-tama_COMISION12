@@ -4,17 +4,17 @@ let controller = require('../controllers/usersController')
 let loginValidator = require('../validations/loginValidator')
 let registerValidator = require('../validations/registerValidator')
 let uploadFile = require('../middlewares/uploadAvatar')
-let userAdminCheck = require('../middlewares/userAdminCheck')
+let userCheck = require('../middlewares/userCheck')
 
 
 /* GET Formulario de Login */
-router.get('/login',controller.login)
+router.get('/login',userCheck.isOffline,controller.login)
 
 /* POST Informacion del login */
 router.post('/login',loginValidator,controller.processLogin)
 
 /* GET Formulario de Registro */
-router.get('/register', controller.register)
+router.get('/register',userCheck.isOffline, controller.register)
 
 /* POST Informacion del Registro */
 router.post('/register',uploadFile.single('avatar'),registerValidator, controller.processRegister)
@@ -23,7 +23,7 @@ router.post('/register',uploadFile.single('avatar'),registerValidator, controlle
 router.get('/logout',controller.logout)
 
 /* GET perfil de usuario */
-router.get('/profile',controller.profile)
+router.get('/profile',userCheck.activeUser,controller.profile)
 
 
 

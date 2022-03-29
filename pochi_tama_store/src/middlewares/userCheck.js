@@ -1,11 +1,20 @@
-const USER_LOGIN = 0
-
-function userCheck(req,res,next){
-    if(req.session.user.rol == 0){
-        next()
-    }else{
-        res.redirect('/')
-    }  
+module.exports = {
+    
+    activeUser: (req,res,next) => {
+        if(req.session.user){
+            next()
+        }
+        else{
+            res.redirect('/')
+        }
+    },
+    isOffline: (req,res,next) => {
+        if( req.session.user === undefined){
+            next()
+        }
+        else{
+            console.log(req.session.user.email)
+            res.redirect('/')
+        }
+    }
 }
-
-module.exports = userCheck

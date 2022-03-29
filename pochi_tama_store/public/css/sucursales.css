@@ -69,7 +69,7 @@
     border-radius: 2px;
 }
 
-.contact .login .form-container form .input-container textarea{
+.contact .login .form-container textarea{
     border-radius: 5px;
     height: 2.5rem;
     padding: .5rem;
@@ -78,6 +78,7 @@
     width: 100%;
     outline: none;
     height: 150px;
+    resize: none;
 }
 
 .contact .login .form-container form .input-container label{
@@ -86,6 +87,10 @@
 
 iframe{
     width: 100%;
+}
+
+@media(min-width: 768px){
+    
 }
 
 @media(min-width: 992px){
@@ -112,8 +117,12 @@ iframe{
 
     .contact .contactanos-container .contactanos{
         max-width: 100%;
-        width: 450px;
+        width: 420px;
     }
+
+    .contact .login {
+        width: 450px;
+      }
 }
 
 @media(min-width: 1200px){

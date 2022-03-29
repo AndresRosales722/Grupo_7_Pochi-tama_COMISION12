@@ -4,6 +4,8 @@ const $ = (id) => document.getElementById(id)
 
 const carrito = $('carrito')
 
+let total = document.querySelector('#total')
+
 const getCarrito = async () => {
 
   try {
@@ -92,7 +94,7 @@ const emptyCart = async () =>{
 const cargarTabla = (data) => {
 
       carrito.innerHTML = null
-
+      let totalCart = 0
       data.forEach(({id,amount,image,name,price,total}) => {
           let item = `
           <tr>
@@ -108,9 +110,15 @@ const cargarTabla = (data) => {
           <td class="basura-ta"><button onclick="removeAllItem('${id}')"><i class="fas fa-trash"></i></button></td>
         </tr>
           `
+        totalCart = totalCart+total
         carrito.innerHTML += item
 
       });
+      let totales = `
+      <span class="s-total">Total:</span>
+      <span>${totalCart}</span>
+        `
+    total.innerHTML = totales
 
 }
 

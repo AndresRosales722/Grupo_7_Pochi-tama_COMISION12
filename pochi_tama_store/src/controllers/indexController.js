@@ -37,7 +37,8 @@ let controller = {
         res.render('terms',{
             session: req.session,
         })
-    }
+    },
+
 }
 
 module.exports = controller  

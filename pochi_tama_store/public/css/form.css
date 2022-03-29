@@ -416,7 +416,7 @@ a.boton-cancelar:hover{
     }
     
     body .login .container-file{
-        width: 90%;
+        width: 100%;
     }
     
     body.register .form-container{
@@ -424,7 +424,7 @@ a.boton-cancelar:hover{
     }
     
     .btn-submit{
-        width: 90%;
+        width: 100%;
         font-size: 1.1rem;
     }
     
@@ -505,7 +505,7 @@ a.boton-cancelar:hover{
 
 @media screen and (min-width: 992px) {
     .btn-submit{
-        width: 80%;
+        width: 100%;
     }
 }
 

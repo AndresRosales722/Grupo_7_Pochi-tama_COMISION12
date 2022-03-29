@@ -16,31 +16,28 @@
           <table class="table">
                       <thead>
                         <tr>
-                          <th scope="col">Cantidad</th>
-                          <th scope="col">Imagen</th>
-                          <th scope="col">Producto</th>
-                          <th scope="col">Precio</th>
-                          <th scope="col">Subtotal</th>
-                          <th scope="col">Acciones</th>
+                          <th scope="col" class="pro-ta">Producto</th>
+                          <th scope="col" class="can-ta">Cantidad</th>
+                          <th scope="col" class="pre-ta">Precio</th>
+                          <th scope="col" class="sub-ta">Subtotal</th>
                         </tr>
                       </thead>
                       <tbody id="carrito">
                         <tr>
-                          <th scope="row">cant</th>
-                          <td>Imagen</td>
-                          <td>Producto</td>
-                          <td>Precio</td>
-                          <td>Subtotal</td>
-                          <td>Acciones</td>
+                          <th scope="row"></th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
                         </tr>
                       </tbody>
                    
                     </table>
-                    <div class="btn-cart">
-                      <button class="vaciar" onclick="emptyCart()">Vaciar carrito</button>
-                      <button class="finalizar">Finalizar compra</button>
-                    </div>
-        </div>
+                  </div>
+                  <div class="btn-cart">
+                    <button class="vaciar" onclick="emptyCart()">Vaciar carrito</button>
+                  </div>
       </div>
       
       <!-- <section class="container-subtotal">
@@ -108,7 +105,7 @@
       <div class="container-compras"></div>
       
       <section class="total-compra">
-        <div class="total-resultado">
+        <div class="total-resultado" id="total">
           <span class="s-total">Total:</span>
           <span>$5.000,12</span>
         </div>

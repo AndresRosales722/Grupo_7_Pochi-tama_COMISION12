@@ -421,6 +421,12 @@ section.section-vendido .producto{
             .btn-submit{
                 background: $blue;
             }
+
+            textarea{
+                background: $border;
+                border: 1px solid $borderInput;
+                color: $softWhite;
+            }
         }
         
         h2{
@@ -658,10 +664,36 @@ section.section-vendido .producto{
             a,span{
                 color: $blue;
             }
+
+            input{
+                background: $border;
+                color: $softWhite;
+            }
+
+            button{
+                background: $border;
+                border: 1px solid $borderInput;
+                span{
+                    color: $softWhite;
+                }
+            }
+
+            button:hover{
+                background: #212e36;
+            }
         }
 
         .local{
             color: $blue;
+        }
+
+        section.ubicacion-local{
+            background: $border;
+            box-shadow: none;
+            border: 1px solid $borderInput;
+            span{
+                color: $softWhite;
+            }
         }
 
     }
@@ -793,31 +825,11 @@ main.categories{
 .cart{
     .container-cart{
         .card{
-            .card-body{
-                background: #f1f1f1;
-                margin: 1rem 0rem;
-                position: relative;
-                width: 100%;
-                border-radius: 3px;
-                .btn-cart{
-                    display: flex;
-                    justify-content: end;
-                    margin-top: 10px;
-                    margin-right: 5px;
-                }
-                button.finalizar{
-                    border: none;
-                    padding: 10px;
-                    background: var(--orange3);
-                    border-radius: 3px;
-                    font-size: 0.8rem;
-                    color: white;
-                    font-weight: 500;
-                    letter-spacing: 0.5px;
-                    cursor: pointer;
-                    width: 130px;
-                    display: none;
-                }
+            .btn-cart{
+                display: flex;
+                justify-content: end;
+                margin-top: 10px;
+                margin-right: 5px;
                 button.vaciar{
                     border: none;
                     padding: 10px;
@@ -830,6 +842,14 @@ main.categories{
                     cursor: pointer;
                     width: 130px;
                 }
+            }
+            .card-body{
+                background: #f1f1f1;
+                margin: 1rem 0rem;
+                position: relative;
+                width: 100%;
+                border-radius: 3px;
+
                 table{
                     width: 100%;
                     thead{
@@ -872,6 +892,7 @@ main.categories{
                             right: 10px;
                             button{
                                 border: none;
+                                background: none;
                             }
                             i{
                                 color: var(--bluedark);
@@ -912,8 +933,63 @@ main.categories{
                                     background: #f1f1f1;
                                     i{
                                         font-size: 1rem;
-                                        color: var(--purple);
+                                        color: var(--orange3);
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Carrito modo oscuro */
+
+.cart{
+    body.dark &{
+        .container-cart{
+            .card{
+                .card-body{
+                    background: $border;
+                    border: 1px solid $borderInput;
+                    table{
+                        tbody{
+                            td.name-ta{
+                                color: $softWhite;
+                            }
+                            td.total-ta{
+                                color: $softWhite;
+                            }
+                            td.basura-ta{
+                                i{
+                                    color: $softWhite;
+                                }
+                            }
+
+                            td.price-ta{
+                                color: $softWhite;
+                            }
+                            tr{
+                                th{
+                                    span{
+                                        color: $softWhite;
+                                    }
+                                    button{
+                                        background: $container;
+                                        border: 1px solid $borderInput;
+                                        i{
+                                            color: $blueligth;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        thead{
+                            tr{
+                                th{
+                                    color: $softWhite;
                                 }
                             }
                         }
@@ -941,6 +1017,68 @@ main.categories{
 }
 
 @media(min-width: 768px){
+
+    .cart .container-cart .card .card-body table tbody td img {
+        width: 110px;  
+      }
+
+      .cart .container-cart .card .card-body table tbody td.name-ta {
+        width: 32%;
+        position: initial;
+        height: 100%;
+      }
+
+      .cart .container-cart .card .card-body table tbody tr th{
+        width: 13%;
+        position: initial;
+      }
+
+      .cart .container-cart .card .card-body table tbody td.price-ta {
+        display: block;
+        width: 20%;
+        text-align: center;
+        color: var(--bluedark);
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .cart .container-cart .card .card-body table thead {
+        display: block;
+        tr{
+            display: flex;
+            justify-content: space-around;
+            th{
+                position: relative;
+                font-size: 1rem;
+                color: var(--bluedark);
+                font-weight: 500;
+            }
+            th.pro-ta{
+                right: 50px;
+            }
+            th.can-ta{
+                left: 95px;
+            }
+            th.pre-ta{
+                left: 50px;
+            }
+            th.sub-ta{
+                right: 25px;
+            }
+        }
+      }
+
+      .cart .container-cart .card .card-body table tbody td.total-ta {
+          position: initial;
+          width: 14%;
+      }
+
+      .cart .container-cart .card .card-body table tbody td.basura-ta {
+        position: initial;
+        width: 3%;
+        text-align: end;
+      }
+
     .main-header{
         body.dark &{
             border-bottom: none;
@@ -958,4 +1096,51 @@ main.categories{
     }
     
     
+}
+
+@media(min-width: 992px){
+    .cart .container-cart .card .card-body table tbody td.basura-ta {
+        width: 5%;
+      }
+
+      .cart .container-cart .card .card-body table tbody td img {
+        width: 130px;
+      }
+
+      .cart .container-cart .card .card-body table thead tr th.pro-ta {
+        right: 70px;
+      }
+
+      .cart .container-cart .card .card-body table thead tr th.can-ta {
+        left: 110px;
+      }
+
+      .cart .container-cart .card .card-body table thead tr th.pre-ta {
+        left: 58px;
+      }
+
+      .cart .container-cart .card .card-body table thead tr th.sub-ta {
+        right: 45px;
+      }
+}
+
+
+
+@media(min-width: 1200px){
+
+    .cart .container-cart .card .card-body table thead tr th.pro-ta {
+        right: 90px;
+      }
+
+      .cart .container-cart .card .card-body table thead tr th.can-ta {
+        left: 100px;
+      }
+
+      .cart .container-cart .card .card-body table thead tr th.pre-ta {
+        left: 45px;
+      }
+
+      .cart .container-cart .card .card-body table thead tr th.sub-ta {
+        right: 80px;
+      }
 }
